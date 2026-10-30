@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "photos": [],
+  "instructions": {
+    "es": "Sube imágenes a las carpetas y añade aquí cada ruta, categoría, pie y crédito. No publiques fotos sin permisos.",
+    "en": "Upload images to the folders and list each path, category, caption and credit here.",
+    "pt": "Envie as imagens às pastas e registre o caminho, a categoria, a legenda e os créditos aqui."
+  },
+  "example_not_active": {
+    "src": "assets/hero/hero-eleodoro-calderon.webp",
+    "category": "hero",
+    "alt": {
+      "es": "Escultura Agua, Tierra y Aire, de Eleodoro Calderón",
+      "en": "Agua, Tierra y Aire sculpture by Eleodoro Calderón",
+      "pt": "Escultura Água, Terra e Ar, de Eleodoro Calderón"
+    },
+    "caption": {
+      "es": "Identidad visual CESI 2025",
+      "en": "CESI 2025 visual identity",
+      "pt": "Identidade visual do CESI 2025"
+    },
+    "credit": "Autor/a de fotografía por confirmar",
+    "permission": "Pendiente"
+  }
+}
