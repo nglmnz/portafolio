@@ -138,13 +138,19 @@ Se eligió la **opción B**: primero se lee el texto de presentación del proyec
 Ruta: [`/pedagogias/`](https://nglmnz.github.io/portafolio/pedagogias/).
 
 - **Fuente principal:** `Informe_v8(5).docx`, proporcionado por el investigador; septiembre de 2026; 190 cuestionarios válidos, seis carreras, 49 preguntas, aplicación presencial entre junio y septiembre.
-- **Origen del encargo:** conexión con el seminario de grado, solicitud de ampliación de la decanatura y apoyo logístico de la Facultad. Incluye dos extractos breves de correos compartidos por el investigador; los originales no se publican.
+- **Origen del encargo:** conexión con el seminario de grado, solicitud de ampliación de la decanatura y apoyo logístico de la Facultad. La cronología resume documentalmente esa solicitud y la coordinación, sin publicar citas textuales de la correspondencia ni los correos originales.
 - **Comisión IA:** se distingue la propuesta del acta de junio (tres momentos formativos, ética e inclusión) del informe entregado en septiembre. La documentación no acredita la adopción formal de política institucional.
 - **Proceso técnico:** facsímil impreso, ingreso codificado con R Shiny, base Google Sheets, visor de consistencia, limpieza y armonización Android/iOS, cinco escalas con alfa crudo y ordinal y redacción del informe.
 - **Resultados:** explorador de cinco bloques con porcentajes por ítem; media de pantalla 6,23 horas/día; herramientas IA; diferencias muestrales entre carreras; líneas sugeridas para formación docente.
 - **Visualización:** figuras reconstruidas con HTML/CSS desde los datos publicados en el texto del informe, con etiquetas y porcentajes que no dependen solamente del color. Identidad azul marino, blanco y turquesa inspirada en el informe; vínculo al sitio UAH y su Facultad de Educación. No se presentan como reproducciones literales de figuras originales.
 - **Procedencia y límites:** muestreo no probabilístico, datos parcialmente autorreportados, estudio transversal, denominadores variables; no inferir causalidad o prevalencia poblacional. El conjunto de 190 es diferente de los 276 del seminario y no deben sumarse.
 - **Equipo:** nombres acreditados en el informe separados de Karla Medina, cuya colaboración fue mencionada directamente por el autor y no figura en los agradecimientos del documento.
-- **Foto de reunión:** para integrar la fotografía pendiente, subir una imagen con autorización a `pedagogias/assets/comision-ia.webp`. La página la muestra automáticamente si está disponible, conservando el marcador si no lo está.
+- **Foto de reunión:** el archivo `pedagogias/assets/comision-ia.webp` está incorporado a la página con pie de foto, contexto y crédito de archivo. Siguen pendientes los datos de autoría fotográfica y autorización de difusión.
 
 Archivos: `assets/pedagogias-datos.json` (datos), `assets/pedagogias.js` (interactividad y traducciones ES/EN/PT), `assets/pedagogias.css` (estilos), `pedagogias/index.html` (entrada), `pedagogias/assets/README.md` (guía visual).
+
+### Mejora de escalas y fotografía de la comisión · 1 noviembre 2026
+
+Se retiraron las dos citas textuales de correos privados que aparecían destacadas en la sección de origen (la cronología documentada permanece). El apartado de cinco escalas ahora explica para público no especialista el fenómeno que observa cada eje, ofrece una situación cotidiana, una cifra ilustrativa extraída del informe y una implicación docente; las métricas alfa se conservan en desplegables opcionales. Se aclara que los porcentajes se refieren a **ítems individuales** y no son prevalencias de una escala, que los resultados no acreditan causalidad y que el indicador de rechazo al reemplazo docente se analiza por separado de la escala de aceptación.
+
+Se confirmó la imagen subida por el autor a `pedagogias/assets/comision-ia.webp`; la interfaz le asigna pie de foto e identificación del archivo del proyecto sin atribuir nombres por apariencia. Procedencia: informe de septiembre de 2026 y documentación de trabajo proporcionada por el autor.
