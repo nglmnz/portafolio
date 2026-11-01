@@ -50,7 +50,7 @@ Se conservó el nombre de cada archivo. Las 18 imágenes `20260806_*` forman una
 
 ## Entrevista a Breno Bringel · por editar
 
-El corresponsal reporta una entrevista grabada con **Breno Bringel** y un audio externo de mejor calidad, grabado cerca de su voz. La página presenta una ficha **«grabación realizada · edición de audio pendiente»**, sin reproducir aún el material ni citar declaraciones no verificadas.
+El corresponsal ya publicó un **video corto de la entrevista a Breno Bringel** en [YouTube Shorts](https://www.youtube.com/shorts/yuRdUqAh87I). Se integró a la página mediante un reproductor en formato vertical y dominio `youtube-nocookie.com`, que solo se carga después de una acción explícita del visitante. Se conserva un enlace directo alternativo. Las citas del reportaje deben seguir cotejándose con las grabaciones completas antes de reproducirse como transcripciones verificadas.
 
 El archivo original de video pesa aproximadamente 350 MB y **no debe subirse al repositorio de GitHub Pages**. El flujo recomendado es:
 1. Conservar video y audio originales localmente.
@@ -67,3 +67,7 @@ Código: `assets/experiencias.js` y `assets/experiencias.css` (compartidos con c
 ## Rediseño visual del hero y ubicación del reportaje fotográfico (noviembre 2026)
 
 Se restauró la composición abstracta **ALAS / 75** con cuatro líneas multicolor del hero inicial, con texto e identidad visual independientes del archivo fotográfico. Las fotos se trasladaron a la sección «Del debate académico al encuentro», donde aparecen en una composición editorial de tres fotografías y luego la galería filtrable de 33 archivos, que mantiene carga gradual y fotos ampliables. Los archivos originales no fueron eliminados ni renombrados. La página sigue siendo trilingüe.
+
+## Video publicado de Breno Bringel · 2 noviembre 2026
+
+El video corto proporcionado por el autor está en https://www.youtube.com/shorts/yuRdUqAh87I y se muestra en la sección «Breno Bringel: policrisis y giro ecoterritorial» mediante un reproductor vertical de YouTube en modo de privacidad mejorada. La conexión con YouTube se realiza únicamente cuando el visitante pulsa «Reproducir», y existe enlace directo al video. No se presenta como transcripción completa ni se atribuyen citas no cotejadas. Fuente de URL: corresponsal.
