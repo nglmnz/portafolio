@@ -735,13 +735,17 @@
   ],
   "interview": {
     "subject": "Breno Bringel",
-    "status": "pending-edit",
-    "url": null,
+    "status": "published-short",
+    "url": "https://www.youtube.com/shorts/yuRdUqAh87I",
+    "videoId": "yuRdUqAh87I",
+    "platform": "YouTube Shorts",
     "description": {
-      "es": "Entrevista en edición: sincronización de audio externo y video pendiente.",
-      "en": "Interview editing: video and separate audio sync pending.",
-      "pt": "Entrevista em edição: sincronização de áudio externo e vídeo pendente."
-    }
+      "es": "Video breve de la entrevista publicado por el corresponsal. Integrado en ALAS mediante un reproductor que se activa solo al hacer clic.",
+      "en": "Short interview video published by the correspondent; embedded with click-to-play privacy safeguards.",
+      "pt": "Vídeo curto da entrevista publicado pelo correspondente, integrado com reprodução apenas após clicar."
+    },
+    "transcriptVerified": false,
+    "note": "Contenido facilitado mediante URL del autor. No se afirma que sea la entrevista completa ni que se hayan verificado citas por transcripción."
   },
   "notes": [
     "Los títulos son etiquetas provisionales derivadas de archivos, no identificaciones de las personas visibles.",
