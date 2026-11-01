@@ -33,7 +33,7 @@ const langs=node("div","langs");
 ["es","en","pt"].forEach(l=>append(langs,b(l.toUpperCase(),()=>{lang=l;history.replaceState(null,"",location.pathname+"?lang="+lang+location.hash);render()}, "",lang===l)));
 append(right,langs);append(bar,a("ÁNGEL / MUÑOZ","../?lang="+lang,"brand"),right);append(nav,bar);root.appendChild(nav);
 const hero=node("section","hero"),heroShell=node("div","case-shell hero-inner"),copy=node("div","hero-copy");
-append(copy,node("span","kicker",i("fundLabel")+" · UPLA · 2026"),h(tr(data.headline),1),para(tr(data.intro),"hero-lead"),para(tr(data.subtitle),"hero-role"));
+append(copy,node("span","kicker",i("fundLabel")+" · UPLA · 2026"),node("span","hero-geo-badge",lang==="es"?"CHILE → ESPAÑA · CIRCULACIÓN ACADÉMICA":lang==="en"?"CHILE → SPAIN · RESEARCH DISSEMINATION":"CHILE → ESPANHA · CIRCULAÇÃO ACADÊMICA"),h(tr(data.headline),1),para(tr(data.intro),"hero-lead"),para(tr(data.subtitle),"hero-role"));
 const actions=node("div","hero-actions");append(actions,a(i("discover"),"#hilos","action primary"),a(i("goSite"),"https://violenciasyresistencias.cl/","action"));append(copy,actions);
 const showcase=node("div","hero-photo-showcase");showcase.setAttribute("role","group");showcase.setAttribute("aria-label",i("heroGroup"));
 const stage=node("div","hero-photo-stage"),labelbox=node("div","hero-photo-bottom"),buttons=node("div","hero-photo-controls");
@@ -114,7 +114,7 @@ append(chile,node("span","country-tag","CHILE"),h("Valparaíso",3),para(lang==="
 append(spanish,node("span","country-tag","ESPAÑA"),h("Barcelona",3),para(tr(data.international.host)+" · "+data.international.date));
 append(route,chile,node("div","country-connector","→"),spanish);
 const detail=node("div","international-detail");
-append(detail,para(tr(data.international.methodological)),para(tr(data.international.distinction),"international-disclaimer"));
+append(detail,para(tr(data.international.methodological)),para(tr(data.international.researcherProfile),"international-profile"),para(tr(data.international.distinction),"international-disclaimer"));
 const dest=node("div","international-links");
 append(dest,a(lang==="es"?"Leer crónica UAB ↗":lang==="en"?"Read UAB account ↗":"Ler notícia UAB ↗",data.international.link,"source-link"),a(lang==="es"?"Perfil de Macarena Trujillo · CALAS ↗":lang==="en"?"Macarena Trujillo · CALAS profile ↗":"Perfil de Macarena Trujillo · CALAS ↗",data.international.calasLink,"source-link"));
 append(detail,dest);append(cross,route,detail);append(international,cross);
