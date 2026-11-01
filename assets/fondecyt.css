@@ -192,3 +192,6 @@ p{margin:0 0 16px}
 .international-disclaimer{font-size:12px!important;color:#685963!important}
 .international-links{display:flex;flex-wrap:wrap;gap:22px;margin-top:18px}
 @media(max-width:650px){.international-route{grid-template-columns:1fr;gap:7px}.country-connector{font-size:27px;transform:rotate(90deg)}.country-point{min-height:0}.international-detail{padding:20px}}
+
+.hero-geo-badge{display:inline-block;margin:16px 0 1px;padding:8px 10px;color:#f5d2dc;border:1px solid #8e627c;border-radius:5px;font-size:10px;letter-spacing:.115em;font-weight:860;line-height:1.35}
+.international-profile{font-size:13px;line-height:1.72;color:#5c4b58;border-top:1px solid #d7c6cd;padding-top:15px;margin-top:17px}
