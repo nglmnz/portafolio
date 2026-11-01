@@ -27,12 +27,7 @@ if(kind==="alas")art.setAttribute("aria-hidden","true");
 add(copy,n("span","xp-kicker",tr(data.hero.kicker)),h(tr(data.hero.title),1),p(tr(kind==="alas"?data.hero.subtitle:data.hero.subtitle),"xp-hero-lede"));
 if(kind==="alas"){
 add(copy,p(data.meta.tagline,"xp-theme-sentence"),p(data.meta.dates+" · "+data.meta.city,"xp-hero-meta"));
-art.className+=" xp-alas-visual";art.removeAttribute("aria-hidden");
-const picture=n("figure","xp-alas-cover");
-const pic=n("img");pic.src="assets/"+encodeURIComponent(album?.hero?.[0]?.src||"HEAD PORTADA.JPG");pic.alt=ui("coverNote");pic.decoding="async";pic.loading="eager";pic.setAttribute("fetchpriority","high");
-const overlay=n("figcaption","xp-alas-cover-credit",ui("coverNote"));
-add(picture,pic,overlay);add(art,picture);
-const seal=n("img","xp-alas-flyer");seal.src="assets/"+encodeURIComponent("alas flyer oficial.jpg");seal.alt=language==="es"?"Afiche oficial del XXXV Congreso ALAS, 26–31 julio 2026":language==="en"?"Official poster of the 35th ALAS Congress, 26–31 July 2026":"Cartaz oficial do 35º Congresso ALAS, 26–31 de julho de 2026";seal.loading="lazy";add(art,seal);
+add(art,n("div","xp-wave wave-a"),n("div","xp-wave wave-b"),n("div","xp-wave wave-c"),n("div","xp-wave wave-d"),n("strong","xp-art-center","ALAS / 75"));
 }else{
 add(copy,p("UAH · 2022 → 2025","xp-hero-meta"));
 art.className+=" xp-poster-visual";
@@ -108,8 +103,23 @@ const sources=part("prensa","07 / "+ui("archive"),ui("sources"),language==="es"?
 sourceCards(sources,data.sources);
 }
 function sourceCards(parent,items){const grid=n("div","xp-source-grid");items.forEach(x=>{const c=n("article","xp-reference");add(c,n("span","xp-reference-status",x.status==="verified"?(language==="es"?"Fuente cotejada":"Source checked"):(language==="es"?"Contexto · verificar":"Context · check")),h(tr(x.title||x.label),3),p(tr(x.description)),link(ui("more"),x.url,"xp-source"));add(grid,c)});add(parent,grid)}
+function photoEssayAlas(){
+const section=part("relato-visual","08 / "+ui("photos"),language==="es"?"Del debate académico al encuentro":language==="en"?"From research talks to the people behind them":"Dos debates acadêmicos às pessoas que os constroem",language==="es"?"Un recorrido en imágenes por la cobertura de ALAS. Estas tres fotografías abren el archivo documental: personas, encuentros e instancias de conversación. La galería completa permite seguir explorando sin recargar la portada.":language==="en"?"A photographic entry into the ALAS field report: people, encounters and conversations. The full archive follows in a filterable gallery.":"Um percurso fotográfico da reportagem ALAS: pessoas, encontros e conversas. O arquivo completo pode ser explorado na galeria.");
+const files=[
+{src:"portada-angel-solo.JPG",label:language==="es"?"La corresponsalía en terreno":language==="en"?"Correspondence on the ground":"A cobertura em campo",alt:language==="es"?"Registro del corresponsal en ALAS 2026":language==="en"?"Photo of the ALAS 2026 correspondent":"Registro do correspondente na ALAS 2026"},
+{src:"gabriela-mardonesyequipo de ponentes.JPG",label:language==="es"?"Participación y redes académicas":language==="en"?"Participation and scholarly networks":"Participação e redes acadêmicas",alt:language==="es"?"Registro grupal etiquetado en el archivo como ponentes de ALAS":language==="en"?"Archival group photograph labelled ALAS presenters":"Registro grupal de palestrantes no arquivo ALAS"},
+{src:"asistentes-ponencia.JPG",label:language==="es"?"El debate y sus públicos":language==="en"?"Discussion and its audiences":"O debate e seus públicos",alt:language==="es"?"Registro de asistentes en una sesión del congreso":language==="en"?"Participants at a congress session":"Participantes numa sessão do congresso"}
+];
+const grid=n("div","xp-alas-essay");
+files.forEach((item,i)=>{
+const fig=n("figure","xp-alas-essay-photo"+(i===0?" featured":"")),img=n("img");
+img.src="assets/"+encodeURIComponent(item.src);img.loading="lazy";img.decoding="async";img.alt=item.alt;
+add(fig,img,n("figcaption","",item.label));add(grid,fig);
+});
+add(section,grid,link(language==="es"?"Explorar las 33 fotografías del archivo ↓":language==="en"?"Explore 33 archive photos ↓":"Explorar as 33 fotos do arquivo ↓","#galeria","xp-essay-link"));
+}
 function galleryAlas(){
-const base=part("galeria","08 / "+ui("photos"),ui("archivePhoto"),ui("albumIntro"));
+const base=part("galeria","09 / "+ui("photos"),ui("archivePhoto"),ui("albumIntro"));
 const all=Array.isArray(album?.images)?album.images.filter(x=>x.visibility==="public_event"&&!x.sensitive):[];
 if(!all.length){add(base,p(ui("photoEmpty")));return}
 const ids=["portada","delegacion","ponencias","entorno","serie","identidad"];
@@ -148,12 +158,12 @@ loadMore.hidden=list.length<=photoLimit;
 }
 add(base,filters,tally,grid,loadMore,dialog,p(ui("pendingCredits"),"xp-footnote"));
 draw();
-const media=part("entrevista","09 / "+ui("what"),tr(data.reportage?.bringel?.title)||ui("interviewTitle"),tr(data.reportage?.bringel?.body)||ui("interviewDesc"));
+const media=part("entrevista","10 / "+ui("what"),tr(data.reportage?.bringel?.title)||ui("interviewTitle"),tr(data.reportage?.bringel?.body)||ui("interviewDesc"));
 const block=n("div","xp-interview-pending"),mark=n("div","xp-interview-icon");mark.setAttribute("aria-hidden","true");mark.textContent="▶";
 add(block,mark,n("div","xp-interview-content",tr(data.reportage?.bringel?.status)||ui("interviewState")));add(media,block);
 }
 function gallery(){
-if(kind==="alas"){galleryAlas();return}
+if(kind==="alas"){photoEssayAlas();galleryAlas();return}
 const main=part("galeria","08 / "+ui("photos"),ui("photos"),tr(data.gallery.note||data.gallery.placeholder));
 const photos=Array.isArray(album?.images)?album.images.filter(x=>x.sensitive!==true&&typeof x.permission==="string"&&/(autoriz|consent|permission granted|licensed|licencia)/i.test(x.permission)):[];
 if(!photos.length){const empty=n("div","xp-gallery-empty");add(empty,n("div","xp-gallery-mark","◎"),h(ui("photoEmpty"),3),p(ui("fileHelp")+": "+kind+"/assets/", "xp-path"));add(main,empty);return}
@@ -170,7 +180,7 @@ photos.forEach(x=>{
 add(main,grid);
 }
 function end(){
-const c=part("fuentes",(kind==="alas"?"10":"09")+" / "+ui("limitations"),ui("limitations"),tr(data.boundary||data.limitation));
+const c=part("fuentes",(kind==="alas"?"11":"09")+" / "+ui("limitations"),ui("limitations"),tr(data.boundary||data.limitation));
 add(c,p(language==="es"?"Se diferencian el testimonio del organizador y las fuentes públicas consultadas. Los materiales futuros se incorporarán con permisos y créditos.":language==="en"?"The organizer's account and independently checked public sources are kept distinct. Future media will require credits and permissions.":"O relato do organizador e as fontes públicas são diferenciados. Os materiais futuros terão créditos e autorizações.","xp-footnote"));
 const foot=n("footer","xp-footer"),bar=n("div","xp-shell");add(bar,link("← "+ui("back"),"../?lang="+language),link("CEDEUS","../cedeus/?lang="+language),link("CESI","../cesi/?lang="+language));add(foot,bar);app.appendChild(foot)
 }
