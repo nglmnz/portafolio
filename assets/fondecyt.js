@@ -77,7 +77,7 @@ if(!photoEntries.length){
  append(grid,empty);
 }else{
  photoEntries.forEach(item=>{
-  if(!item.src||item.permission===undefined||item.sensitive===true)return;
+  if(!item.src||item.sensitive===true||typeof item.permission!=="string"||!/(autoriz|consent|permission granted|licensed|licencia)/i.test(item.permission))return;
   let figure=node("figure","photo-card"),img=node("img");
   img.src="assets/"+item.src;img.loading="lazy";img.alt=tr(item.alt)||tr(item.caption);
   let cap=node("figcaption","");append(cap,node("strong","",tr(item.caption)),node("small","",item.credit||i("photoCredit")));
