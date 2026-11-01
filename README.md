@@ -214,3 +214,21 @@ Se publicaron dos nuevas experiencias, cada una con página propia, diseño adap
 **Interfaz compartida:** `assets/experiencias.js` y `assets/experiencias.css`. La portada del portafolio enlaza ambos casos en la sección de trayectoria.
 
 Fuentes principales: https://www.clacso.org/xxxv-congreso-latinoamericano-de-sociologia/ ; https://sociologia.uc.cl/noticias/alas-2026/ ; https://www.retinalatina.org/peliculas/naomi-campbel/ ; https://www.semainedelacritique.com/en/edition/2022/movie/las-criaturas-que-se-derriten-bajo-el-sol ; https://www.festival-cannes.com/en/f/la-misteriosa-mirada-del-flamenco/ .
+
+## Rediseño de navegación y sistema visual · noviembre 2026
+
+### Home · atlas de proyectos
+
+- **12 tarjetas diferenciadas** por contenido y paleta propia: Sustancia, Tesis, Pedagogías, CESI, Hilvanar/FONDECYT, ALAS, Vitrina, TRAMA, Cine y diversidades, CEDEUS, Datos demográficos y Ministerio de Educación.
+- **10 tarjetas con destino real** tienen un único enlace de superficie completa, con nombre accesible asociado al título. Los dos trabajos sin ficha publicada permanecen no clicables, sin inventar rutas o presentar un proyecto como terminado.
+- Los enlaces secundarios externos (p. ej., repositorio TRAMA o sitio Sustancia original) permanecen operables por encima del enlace principal.
+- Se preservan parámetros `?lang=es|en|pt` en los destinos internos y se traducen títulos, bajadas, rótulos visuales y llamadas a la acción.
+- Fotografías existentes: la secuencia numérica de tesis, comisión IA Pedagogías, arte oficial CESI, auditorio Hilvanar, afiche ALAS y flyer de cine. Para Sustancia, Vitrina, TRAMA y CEDEUS se usaron **visualizaciones abstractas CSS** claramente editoriales, no capturas que simulen resultados o sitios reales.
+- Las dos investigaciones destacadas y cuatro experiencias con caso público usan ahora el mismo patrón de enlace de superficie completa, enfoque por teclado y efecto hover.
+- Animaciones suaves, indicadores de enlace que no dependen solo del color, diseño adaptable a móvil y respeto de `prefers-reduced-motion`.
+
+### ALAS · restauración del hero original
+
+El caso `/alas/` vuelve a mostrar el **hero abstracto de líneas anulares multicolor** (CSS, sin imágenes pesadas en la primera pantalla). Se añadió antes de la galería completa una secuencia editorial titulada «Del debate académico al encuentro» con los archivos `portada-angel-solo.JPG`, `gabriela-mardonesyequipo de ponentes.JPG` y `asistentes-ponencia.JPG`, con descripciones prudentes y sin identificar personas por reconocimiento facial. La galería filtrable y la entrevista a Breno Bringel pendiente de montaje siguen intactas. Los archivos `HEAD PORTADA.JPG` y el afiche del congreso permanecen en el repositorio, sin usarlos como hero.
+
+Las pruebas de ejecución y revisión de rutas deben efectuarse tras los cambios de diseño; la visualización final del despliegue público depende de GitHub Pages.
