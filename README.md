@@ -198,7 +198,8 @@ Se publicaron dos nuevas experiencias, cada una con página propia, diseño adap
 - Personas de la delegación UAH según el autor: Nicolás Fleet, Gabriela Mardones, Alexis Cortés, Kenneth Fowler y Juan Pablo Rodríguez. Los perfiles públicos acreditan formación/cargos institucionales; **no se fabrican títulos de ponencias o citas de entrevistas**.
 - La noticia del Instituto de Sociología UC es una fuente de contexto, correspondiente a **otra delegación académica**, y no una confirmación de las ponencias UAH. Enlaces a Instagram, LinkedIn y blog de Modonesi se conservan con grados de verificación indicados.
 - Archivos: `alas/index.html`, `alas/README.md`, `alas/assets/galeria.json`, `assets/alas-datos.json`.
-- Fotografías pendientes: subir a `alas/assets/`, luego agregar registros y créditos al manifiesto.
+- **Fotografías incorporadas (primera edición):** 33 archivos ya disponibles en `alas/assets/` organizados en grupos de delegación UAH, ponencias, registros de cobertura, vida del congreso y materiales. Hero con `HEAD PORTADA.JPG` y afiche oficial como gráfica de apoyo; galería en ES/EN/PT con filtros, carga incremental de nueve fotos, ampliación y créditos provisionales. Es necesario afinar los pies y optimizar imágenes grandes.
+- **Entrevista a Breno Bringel:** video original de unos 350 MB y audio cercano independiente, aún no subidos ni sincronizados; sección de material por editar creada. Procedimiento recomendado: ajuste de ondas en Shotcut o herramienta FFmpeg local, reemplazo de audio de cámara y verificación de sincronía antes de publicación. No se incorpora el video original a GitHub Pages.
 
 ### `/cine-disidencias/` — dos actividades organizadas desde espacios distintos
 
