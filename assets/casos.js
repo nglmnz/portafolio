@@ -62,7 +62,7 @@ function fromThesis(){
  const card=E("article","profile");
  add(card,E("div","pct",String(x.percent).replace(".",",")+"%"),H(label(x.name),3),p(label(x.text)));
  const track=E("div","track");track.setAttribute("aria-label",x.percent+" percent of sample");
- const fill=E("div","fill");fill.style.width=x.percent+"%";add(track,fill,card.appendChild(track));
+ const fill=E("div","fill");fill.style.width=x.percent+"%";add(track,fill);add(card,track);
  if(x.hours&&x.malestar)add(card,E("small","",language==="en"?"Screen time: "+x.hours+" h · Distress index: "+x.malestar:language==="pt"?"Tela: "+x.hours+" h · Índice de mal-estar: "+x.malestar:"Pantalla: "+x.hours+" h · Índice de deterioro: "+x.malestar));
  add(cards,card);
  });add(box,cards,p(sourceText("30–33"),"tiny"));root.append(sec);
@@ -97,7 +97,7 @@ function fromThesis(){
  const bookGrid=E("div","book-grid");
  DATA.books.forEach(x=>{
  const book=E("article","book");
- const cover=E("div","book-cover"),fallback=E("span","book-fallback",x.title);
+ const cover=E("div","book-cover"),fallback=E("span","book-fallback",x.title);fallback.hidden=true;
  const img=E("img");img.alt=language==="en"?"Cover of "+x.title:language==="pt"?"Capa de "+x.title:"Portada de "+x.title;
  img.loading="lazy";img.referrerPolicy="no-referrer";img.src="https://covers.openlibrary.org/b/isbn/"+encodeURIComponent(x.isbn)+"-M.jpg?default=false";
  img.addEventListener("load",()=>{if(img.naturalWidth<25){img.remove();fallback.hidden=false}else fallback.hidden=true});
