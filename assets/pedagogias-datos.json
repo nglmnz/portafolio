@@ -710,7 +710,15 @@
       "es": "La invitación y el acta evidencian participación en un proceso de trabajo, pero no acreditan por sí solas que la Facultad haya adoptado las recomendaciones del informe.",
       "en": "Invitation and meeting notes document engagement, not formal adoption of the report's recommendations.",
       "pt": "Convites e atas documentam participação, não adoção formal das recomendações."
-    }
+    },
+    "attendeesInitial": [
+      "María Teresa Rojas Fabris",
+      "Javiera Figueroa Miralles",
+      "Gonzalo Espinoza Vásquez",
+      "Daniela Dinamarca Figueroa",
+      "Enrique Vázquez Uscanga"
+    ],
+    "attendeeSource": "Acta de reunión del 12 de junio de 2026, proporcionada por el investigador. La lista corresponde exclusivamente a participantes mencionados en esa reunión; no acredita asistencia de otras personas o nombramientos posteriores."
   },
   "suggestions": [
     {
