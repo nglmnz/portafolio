@@ -112,6 +112,127 @@ function renderAcademicReview(){
  root.append(sectionNode);
 }
 
+
+/* Five-frame numeric artwork — original photographs, not statistical results. */
+let destroyThesisMotion=null;
+const thesisMotionWords={
+ es:{eyebrow:"ENSAYO VISUAL · OBRA EN SECUENCIA",title:"Los números también se mueven.",lead:"Cinco fotografías consecutivas de una misma obra componen una pequeña secuencia en movimiento. Una pausa visual para pensar cómo las cifras cambian de posición y cómo su significado depende de la lectura que hacemos de ellas.",explain:"Este recurso es una metáfora visual del trabajo de interpretación; no es una animación de los datos recolectados en el seminario.",play:"Reproducir",pause:"Pausar",previous:"Fotograma anterior",next:"Fotograma siguiente",slow:"Contemplativo",fast:"Dinámico",speed:"Ritmo de reproducción",frame:"Fotograma",caption:"Archivo visual del seminario · Serie DSC_0022–DSC_0026 · Autoría de la obra y fotografías por acreditar",hint:"Selecciona un número, ajusta el ritmo o detén el movimiento para observar las diferencias entre fotogramas.",manual:"El movimiento automático está desactivado según las preferencias del dispositivo; puedes activarlo manualmente.",motion:"Secuencia visual de cinco fotogramas",show:"Mostrar fotograma"},
+ en:{eyebrow:"VISUAL ESSAY · A WORK IN SEQUENCE",title:"Numbers can move, too.",lead:"Five consecutive photographs of the same artwork create a short moving sequence. A visual pause to consider how figures shift position and how meaning depends on interpretation.",explain:"This is a visual metaphor for interpretation, not an animation of the data collected for the thesis.",play:"Play",pause:"Pause",previous:"Previous frame",next:"Next frame",slow:"Contemplative",fast:"Dynamic",speed:"Playback pace",frame:"Frame",caption:"Degree seminar visual archive · DSC_0022–DSC_0026 · Artwork and photo credits to be confirmed",hint:"Choose a number, change the pace or pause to compare the frames.",manual:"Automatic motion is disabled by your device preferences; you may play it manually.",motion:"Five-frame visual sequence",show:"Show frame"},
+ pt:{eyebrow:"ENSAIO VISUAL · OBRA EM SEQUÊNCIA",title:"Os números também se movem.",lead:"Cinco fotografias consecutivas da mesma obra compõem uma pequena sequência em movimento. Uma pausa visual para pensar como os números mudam de posição e como o significado depende da interpretação.",explain:"Este recurso é uma metáfora visual da interpretação; não é uma animação dos dados coletados na pesquisa.",play:"Reproduzir",pause:"Pausar",previous:"Fotograma anterior",next:"Próximo fotograma",slow:"Contemplativo",fast:"Dinâmico",speed:"Ritmo de reprodução",frame:"Fotograma",caption:"Arquivo visual da pesquisa · Série DSC_0022–DSC_0026 · Créditos da obra e das fotos a confirmar",hint:"Escolha um número, ajuste o ritmo ou pause para comparar os fotogramas.",manual:"O movimento automático está desativado pelas preferências do dispositivo; você pode ativá-lo manualmente.",motion:"Sequência visual de cinco fotogramas",show:"Mostrar fotograma"}
+};
+function renderThesisMotion(){
+ const words=thesisMotionWords[language]||thesisMotionWords.es;
+ const sources=[22,23,24,25,26].map(n=>"assets/secuencia/DSC_"+String(n).padStart(4,"0")+".JPG");
+ const sectionNode=E("section","section thesis-visual-section");sectionNode.id="visual-sequence";
+ const shell=E("div","container");add(shell,E("span","eyeline",words.eyebrow),H(words.title),p(words.lead,"thesis-visual-lead"));
+ const stage=E("div","thesis-motion-stage");stage.setAttribute("aria-label",words.motion);
+ const art=E("img","motion-art");art.alt=words.motion+" · "+words.frame+" 1/5";art.loading="lazy";art.decoding="async";art.src=sources[0];
+ const stageOverlay=E("div","motion-stage-overlay");
+ const top=E("div","motion-stage-top");add(top,E("span","motion-live-tag","● "+words.motion),E("span","motion-frame-counter","01 / 05"));add(stageOverlay,top);
+ const bottom=E("div","motion-stage-bottom");add(bottom,E("span","",words.frame+" 01"),E("span","motion-stage-progress",""));add(stageOverlay,bottom);
+ add(stage,art,stageOverlay);
+ const controls=E("div","motion-controls");
+ const transport=E("div","motion-transport");
+ const previous=button("←",false,()=>{}, "motion-arrow");previous.setAttribute("aria-label",words.previous);
+ const play=button("▶ "+words.play,false,()=>{},"motion-play");play.setAttribute("aria-label",words.play);
+ const next=button("→",false,()=>{},"motion-arrow");next.setAttribute("aria-label",words.next);
+ add(transport,previous,play,next);
+ const speeds=E("div","motion-speeds");speeds.setAttribute("role","group");speeds.setAttribute("aria-label",words.speed);
+ const slow=button(words.slow,true,()=>{},"motion-speed");const fast=button(words.fast,false,()=>{},"motion-speed");
+ add(speeds,slow,fast);add(controls,transport,speeds);
+ const timeline=E("div","motion-timeline"),sequence=E("div","motion-frame-steps");
+ const marks=sources.map((_,idx)=>{
+  const b=button(String(idx+1).padStart(2,"0"),idx===0,()=>{},"motion-frame-step");
+  b.setAttribute("aria-label",words.show+" "+(idx+1));add(sequence,b);return b;
+ });
+ add(timeline,sequence);
+ const status=E("div","motion-status");
+ const count=E("span","motion-status-text",words.frame+" 01 / 05");
+ const explanation=E("span","motion-instruction",words.hint);
+ add(status,count,explanation);add(timeline,status);
+ add(shell,stage,controls,timeline,p(words.explain,"motion-editorial-note"),p(words.caption,"motion-source-credit"));
+ add(sectionNode,shell);root.append(sectionNode);
+ let current=0,playing=false,userPaused=false,visible=false,dead=false,timer=null,observer=null,interval=2200,stepPending=false;
+ const ready=new Map();
+ function ensure(i){
+  if(ready.has(i))return ready.get(i);
+  const task=new Promise(resolve=>{
+   const pre=new Image();pre.decoding="async";
+   pre.onload=()=>resolve(true);pre.onerror=()=>resolve(false);pre.src=sources[i];
+   if(pre.complete&&pre.naturalWidth>0)resolve(true);
+  });
+  ready.set(i,task);return task;
+ }
+ function update(){
+  const idx=String(current+1).padStart(2,"0");
+  top.querySelector(".motion-frame-counter").textContent=idx+" / 05";
+  bottom.querySelector("span").textContent=words.frame+" "+idx;
+  count.textContent=words.frame+" "+idx+" / 05";
+  art.alt=words.motion+" · "+words.frame+" "+idx;
+  bottom.querySelector(".motion-stage-progress").textContent="● ".repeat(current+1)+"○ ".repeat(sources.length-current-1);
+  marks.forEach((b,i)=>b.setAttribute("aria-pressed",String(current===i)));
+  play.textContent=(playing?"Ⅱ "+words.pause:"▶ "+words.play);
+  play.setAttribute("aria-label",playing?words.pause:words.play);
+  play.setAttribute("aria-pressed",String(playing));
+  slow.setAttribute("aria-pressed",String(interval===2200));
+  fast.setAttribute("aria-pressed",String(interval===1300));
+ }
+ async function change(index){
+  const nextIdx=(index+sources.length)%sources.length;
+  const success=await ensure(nextIdx);
+  if(dead||!success)return;
+  current=nextIdx;art.src=sources[current];update();
+ }
+ function cancelClock(){if(timer!==null){clearTimeout(timer);timer=null}}
+ function stop(){playing=false;cancelClock();update()}
+ function schedule(){
+  cancelClock();
+  if(!playing||dead||!visible||document.hidden)return;
+  timer=setTimeout(async()=>{
+   if(stepPending)return;stepPending=true;
+   await change(current+1);
+   stepPending=false;
+   if(!dead)schedule();
+  },interval);
+ }
+ function start(manual=false){
+  if(manual){userPaused=false;visible=true;}
+  if(dead||(!manual&&!visible)||document.hidden)return;
+  playing=true;update();ensure((current+1)%sources.length);schedule();
+ }
+ function manualFrame(index){
+  userPaused=true;stop();void change(index);
+ }
+ previous.addEventListener("click",()=>manualFrame(current-1));
+ next.addEventListener("click",()=>manualFrame(current+1));
+ play.addEventListener("click",()=>{
+  if(playing){userPaused=true;stop()}
+  else start(true);
+ });
+ marks.forEach((b,i)=>b.addEventListener("click",()=>manualFrame(i)));
+ slow.addEventListener("click",()=>{interval=2200;update();if(playing)schedule()});
+ fast.addEventListener("click",()=>{interval=1300;update();if(playing)schedule()});
+ const reduce=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches||false;
+ const dataSaver=navigator.connection?.saveData||false;
+ if(reduce||dataSaver)explanation.textContent=words.manual;
+ const onVisibility=()=>{if(document.hidden)stop();else if(visible&&!userPaused&&!reduce&&!dataSaver)start()};
+ document.addEventListener("visibilitychange",onVisibility);
+ if("IntersectionObserver" in window){
+  observer=new IntersectionObserver(entries=>{
+   for(const entry of entries){
+    visible=entry.isIntersecting;
+    if(visible&&!reduce&&!dataSaver&&!userPaused){ensure((current+1)%sources.length);start()}
+    else stop();
+   }
+  },{threshold:0.32});
+  observer.observe(stage);
+ }else{
+  visible=true; // Manual controls work without IntersectionObserver; no implicit animation.
+ }
+ update();
+ destroyThesisMotion=()=>{dead=true;cancelClock();observer?.disconnect();document.removeEventListener("visibilitychange",onVisibility)};
+}
+
 function fromThesis(){
  document.title=label(DATA.title)+" · Ángel Muñoz";
  hero(label(DATA.overline),label(DATA.title),label(DATA.lead),label(DATA.subtitle),[[ui("viewS"),localeHref("sustancia"),true,false],[ui("viewSource"),"#limits",false,false]],ui("researcher")+" · "+ui("grade"));
@@ -119,6 +240,7 @@ function fromThesis(){
  let [sec,box]=section("intro",ui("introduction"),ui("introduction"));
  add(box,p(label(DATA.intro)));
  const quote=E("blockquote","bigquote",label(DATA.problem));add(box,quote,p(sourceText(DATA.sourcePages.intro)+" "+sourceText(DATA.sourcePages.question),"tiny"));root.append(sec);
+ renderThesisMotion();
  [sec,box]=section("question","01 / "+ui("question"),ui("question"));
  add(box,p(label(DATA.problem)));
  const frame=E("div","framework");
@@ -245,6 +367,7 @@ function drawLevel(tabs,panel){
 }
 function render(){
  if(!UI||!DATA)return;
+ if(destroyThesisMotion){destroyThesisMotion();destroyThesisMotion=null}
  document.documentElement.lang=language;initFrame();
  if(kind==="tesis")fromThesis();else fromSustancia();
  footer();
