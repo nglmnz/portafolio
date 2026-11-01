@@ -24,13 +24,13 @@
       "score": "7,0",
       "profile": "https://investigacion.uahurtado.cl/personas/claudio-ramos/",
       "photo": {
-        "src": "https://portaluchile.uchile.cl/.imaging/default/dam/imagenes/Uchile/Imagenes-DEMRE/noticias-365-directora-lanzamiento-libro-admision.jpg/jcr%3Acontent.jpg",
-        "source": "https://uchile.cl/noticias/210023/directora-del-demre-participo-en-lanzamiento-de-libro-sobre-admision",
-        "credit": "Universidad de Chile · fotografía de actividad académica de presentación de libro; Ramos a la derecha",
+        "src": "assets/revisores/ramos_claudio.jpg",
+        "source": "https://demre.cl/images/noticias-361-claudio-ramos-uah-entrevista.jpg",
+        "credit": "DEMRE · Archivo de entrevista a Claudio Ramos Zincke",
         "note": {
-          "es": "Fotografía de actividad académica, no retrato individual.",
-          "en": "Photograph from an academic event, not an individual portrait.",
-          "pt": "Fotografia de evento acadêmico, não retrato individual."
+          "es": "Fotografía vinculada a una entrevista del DEMRE; archivo alojado en el repositorio del portafolio.",
+          "en": "Photograph associated with a DEMRE interview; file hosted in the portfolio repository.",
+          "pt": "Fotografia associada a uma entrevista do DEMRE; arquivo hospedado no repositório do portfólio."
         }
       },
       "bio": {
@@ -99,7 +99,16 @@
       "date": "2026-07-21",
       "score": "6,6",
       "profile": "https://csociales.uahurtado.cl/personas/cristobal-bonelli/",
-      "photo": null,
+      "photo": {
+        "src": "assets/revisores/bonelli.jpg",
+        "source": "https://icsoh.udp.cl/cms/wp-content/uploads/2025/04/CRISTOBAL-BONELLI-UDP-scaled.jpg",
+        "credit": "ICSOH · Universidad Diego Portales",
+        "note": {
+          "es": "Retrato institucional difundido por ICSOH-UDP; archivo alojado en el repositorio del portafolio.",
+          "en": "Institutional portrait published by ICSOH-UDP; file hosted in the portfolio repository.",
+          "pt": "Retrato institucional publicado pelo ICSOH-UDP; arquivo hospedado no repositório do portfólio."
+        }
+      },
       "bio": {
         "es": "Antropólogo social y psicólogo clínico, doctor en Antropología Social por la Universidad de Edimburgo. Profesor asociado UAH y director del Centro de Estudios en Ciencia, Tecnología y Sociedad; dirigió Worlds of Lithium, financiado por el European Research Council.",
         "en": "Social anthropologist and clinical psychologist, with a PhD in Social Anthropology from the University of Edinburgh. UAH associate professor and director of its Science, Technology and Society research centre; he led the ERC-funded Worlds of Lithium project.",
