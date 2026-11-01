@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "source": "pdf_circular.pdf, gráfico «Instituciones participantes en el CESI», proporcionado por la organización. La red indica pertenencia institucional de asistentes y no implica patrocinio, financiamiento ni un convenio formal.",
+  "count": 57,
+  "colorReference": "#00C892",
+  "institutions": [
+    {
+      "id": 1,
+      "name": "U. Finis Terrae",
+      "sector": "academia"
+    },
+    {
+      "id": 2,
+      "name": "Muni. de Maipú",
+      "sector": "publico"
+    },
+    {
+      "id": 3,
+      "name": "ENAC",
+      "sector": "academia"
+    },
+    {
+      "id": 4,
+      "name": "Colegio Pedro de Valdivia",
+      "sector": "sociedad"
+    },
+    {
+      "id": 5,
+      "name": "Modernismo Latinoamericano",
+      "sector": "sociedad"
+    },
+    {
+      "id": 6,
+      "name": "U. Alberto Hurtado",
+      "sector": "academia"
+    },
+    {
+      "id": 7,
+      "name": "U. Arturo Prat",
+      "sector": "academia"
+    },
+    {
+      "id": 8,
+      "name": "U. de Playa Ancha",
+      "sector": "academia"
+    },
+    {
+      "id": 9,
+      "name": "INJUV",
+      "sector": "publico"
+    },
+    {
+      "id": 10,
+      "name": "U. Academia de Humanismo Cristiano",
+      "sector": "academia"
+    },
+    {
+      "id": 11,
+      "name": "U. Andrés Bello",
+      "sector": "academia"
+    },
+    {
+      "id": 12,
+      "name": "U. Central",
+      "sector": "academia"
+    },
+    {
+      "id": 13,
+      "name": "UDP",
+      "sector": "academia"
+    },
+    {
+      "id": 14,
+      "name": "U. Católica",
+      "sector": "academia"
+    },
+    {
+      "id": 15,
+      "name": "U. Católica de Temuco",
+      "sector": "academia"
+    },
+    {
+      "id": 16,
+      "name": "U. de Chile",
+      "sector": "academia"
+    },
+    {
+      "id": 17,
+      "name": "PIIE",
+      "sector": "sociedad"
+    },
+    {
+      "id": 18,
+      "name": "VIODEMOS",
+      "sector": "sociedad"
+    },
+    {
+      "id": 19,
+      "name": "U. de Buenos Aires",
+      "sector": "internacional"
+    },
+    {
+      "id": 20,
+      "name": "Duoc UC",
+      "sector": "academia"
+    },
+    {
+      "id": 21,
+      "name": "Liceo Emilia Toro de Balmaceda A28",
+      "sector": "sociedad"
+    },
+    {
+      "id": 22,
+      "name": "U. Católica Silva Henríquez",
+      "sector": "academia"
+    },
+    {
+      "id": 23,
+      "name": "U. de Concepción",
+      "sector": "academia"
+    },
+    {
+      "id": 24,
+      "name": "Università di Trento (IT)",
+      "sector": "internacional"
+    },
+    {
+      "id": 25,
+      "name": "OSC",
+      "sector": "sociedad"
+    },
+    {
+      "id": 26,
+      "name": "Núcleo Inv. y Acción en Juventudes/UCh",
+      "sector": "academia"
+    },
+    {
+      "id": 27,
+      "name": "Escuela de Arte UDP",
+      "sector": "academia"
+    },
+    {
+      "id": 28,
+      "name": "Galería Animita",
+      "sector": "sociedad"
+    },
+    {
+      "id": 29,
+      "name": "Núcleo de Ree-Capes UC",
+      "sector": "academia"
+    },
+    {
+      "id": 30,
+      "name": "KSA8",
+      "sector": "sociedad"
+    },
+    {
+      "id": 31,
+      "name": "Tesorería General de la República",
+      "sector": "publico"
+    },
+    {
+      "id": 32,
+      "name": "Microgalería Las Encinas",
+      "sector": "sociedad"
+    },
+    {
+      "id": 33,
+      "name": "Defensa Ambiental Cordillera",
+      "sector": "sociedad"
+    },
+    {
+      "id": 34,
+      "name": "Diócesis de Barrancabermeja (COL)",
+      "sector": "internacional"
+    },
+    {
+      "id": 35,
+      "name": "ADESJOVEM (BR)",
+      "sector": "internacional"
+    },
+    {
+      "id": 36,
+      "name": "U. Rovira i Virgili (ES)",
+      "sector": "internacional"
+    },
+    {
+      "id": 37,
+      "name": "Gendarmería de Chile",
+      "sector": "publico"
+    },
+    {
+      "id": 38,
+      "name": "Asoc. Deportiva y Cultural Fantasía",
+      "sector": "sociedad"
+    },
+    {
+      "id": 39,
+      "name": "Megamedia",
+      "sector": "sociedad"
+    },
+    {
+      "id": 40,
+      "name": "U. Autónoma de Chile",
+      "sector": "academia"
+    },
+    {
+      "id": 41,
+      "name": "U. Técnica Federico Santa María",
+      "sector": "academia"
+    },
+    {
+      "id": 42,
+      "name": "USACH",
+      "sector": "academia"
+    },
+    {
+      "id": 43,
+      "name": "CPInversiones",
+      "sector": "sociedad"
+    },
+    {
+      "id": 44,
+      "name": "AIEP",
+      "sector": "academia"
+    },
+    {
+      "id": 45,
+      "name": "U. Mayor",
+      "sector": "academia"
+    },
+    {
+      "id": 46,
+      "name": "Londres 38",
+      "sector": "sociedad"
+    },
+    {
+      "id": 47,
+      "name": "MIT",
+      "sector": "internacional"
+    },
+    {
+      "id": 48,
+      "name": "Fundación SOL",
+      "sector": "sociedad"
+    },
+    {
+      "id": 49,
+      "name": "U. de La Serena",
+      "sector": "academia"
+    },
+    {
+      "id": 50,
+      "name": "PUCV",
+      "sector": "academia"
+    },
+    {
+      "id": 51,
+      "name": "U. Adolfo Ibáñez",
+      "sector": "academia"
+    },
+    {
+      "id": 52,
+      "name": "UTEM",
+      "sector": "academia"
+    },
+    {
+      "id": 53,
+      "name": "INACAP",
+      "sector": "academia"
+    },
+    {
+      "id": 54,
+      "name": "SENAME",
+      "sector": "publico"
+    },
+    {
+      "id": 55,
+      "name": "IP Los Leones",
+      "sector": "academia"
+    },
+    {
+      "id": 56,
+      "name": "U. de Valparaíso",
+      "sector": "academia"
+    },
+    {
+      "id": 57,
+      "name": "U. Católica del Maule",
+      "sector": "academia"
+    }
+  ]
+}
