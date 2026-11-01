@@ -121,9 +121,9 @@
         "pt": "Decano da Faculdade de Ciências Sociais UAH (desde janeiro de 2026)"
       },
       "area": {
-        "es": "Sociología política, Estado y educación superior",
-        "en": "Political sociology, state and higher education",
-        "pt": "Sociologia política, Estado e educação superior"
+        "es": "Ponencia sobre nuevas tecnocracias, conocimiento y capacidades estatales en el gobierno de Boric, según la crónica del corresponsal.",
+        "en": "Paper on technocracies, expert knowledge and state capacity under Boric, in the author's draft.",
+        "pt": "Comunicação sobre tecnocracias, conhecimento e capacidades estatais no governo Boric, segundo a reportagem."
       },
       "link": "https://csociales.uahurtado.cl/personas/nicolas-fleet/",
       "profileVerified": true,
@@ -137,9 +137,9 @@
         "pt": "Estudante de graduação em Sociologia UAH (segundo o autor)"
       },
       "area": {
-        "es": "Tema de ponencia no identificado en las fuentes revisadas",
-        "en": "Paper topic not independently identified",
-        "pt": "Tema da apresentação não identificado nas fontes"
+        "es": "Investigación cualitativa sobre jóvenes electoras de la nueva derecha (15 entrevistas), según la crónica preparada para Sociología UAH.",
+        "en": "Qualitative study of young right-wing women voters (15 interviews), according to the author's UAH draft.",
+        "pt": "Pesquisa qualitativa sobre jovens eleitoras de direita (15 entrevistas), segundo a reportagem UAH."
       },
       "link": null,
       "profileVerified": false,
@@ -185,9 +185,9 @@
         "pt": "Diretor do Departamento de Sociologia UAH"
       },
       "area": {
-        "es": "Teoría social, política y movimientos sociales",
-        "en": "Social theory, politics and social movements",
-        "pt": "Teoria social, política e movimentos sociais"
+        "es": "Ponencia sobre institucionalización de movimientos sociales en Chile (2020–2026), según la crónica del corresponsal.",
+        "en": "Paper on institutionalization of Chilean social movements (2020–2026), in the correspondent's draft.",
+        "pt": "Comunicação sobre institucionalização dos movimentos sociais no Chile (2020–2026), segundo a reportagem."
       },
       "link": "https://csociales.uahurtado.cl/personas/juan-pablo-rodriguez/",
       "profileVerified": true,
@@ -409,5 +409,134 @@
     "es": "La presencia de estas cinco personas y mi función de cobertura proceden de mi registro directo del viaje. Los perfiles profesionales provienen de páginas institucionales UAH; no se asignan títulos de ponencias ni citas de entrevistas sin fuentes adicionales. La noticia de Sociología UC describe a otra delegación, no a la UAH.",
     "en": "Attendance and correspondent role are based on my first-hand account. UAH profiles verify institutional roles, not specific conference presentation titles. UC coverage refers to a different delegation.",
     "pt": "A presença das cinco pessoas e meu papel vêm do relato direto. Perfis UAH comprovam funções, não títulos de palestras. A cobertura da UC corresponde a outra delegação."
+  },
+  "reportage": {
+    "eyebrow": {
+      "es": "CRÓNICA DE CORRESPONSALÍA · DOCUMENTO ORIGINAL",
+      "en": "ORIGINAL FIELD REPORT · UAH DRAFT",
+      "pt": "REPORTAGEM ORIGINAL · UAH"
+    },
+    "title": {
+      "es": "Las investigaciones detrás de la cobertura",
+      "en": "The research stories behind the reporting",
+      "pt": "As pesquisas por trás da cobertura"
+    },
+    "intro": {
+      "es": "Esta síntesis procede de la nota «XXXV Congreso ALAS 2026: Río de Janeiro fue el epicentro de la sociología latinoamericana y Sociología UAH estuvo presente», que preparé para el Departamento de Comunicaciones UAH. Resumo las ponencias y conversaciones recogidas en el texto sin presentarlo como una publicación institucional ya difundida.",
+      "en": "This section summarizes my draft report for the UAH Sociology communications team. The report records presentations and conversations but is not represented here as a verified published institutional article.",
+      "pt": "Esta seção sintetiza a reportagem que preparei para a comunicação do Departamento de Sociologia UAH. Apresentações e conversas vêm do texto original, não de uma publicação institucional verificada."
+    },
+    "credit": {
+      "es": "Texto e investigación periodística: Ángel Muñoz · Edición prevista: Departamento de Comunicaciones UAH",
+      "en": "Reporting and article: Ángel Muñoz · Editorial context: UAH Communications Department",
+      "pt": "Texto e reportagem: Ángel Muñoz · Contexto editorial: Departamento de Comunicações UAH"
+    },
+    "articles": [
+      {
+        "id": "rodriguez",
+        "date": "29.07.2026",
+        "session": "Sesión 13 · Movimientos y Participación · Sala 111 UFRJ/ECO",
+        "name": "Juan Pablo Rodríguez",
+        "title": {
+          "es": "¿Cooptación o estrategia? Institucionalización de movimientos sociales en Chile (2020–2026)",
+          "en": "Co-optation or strategy? Institutionalization of social movements in Chile (2020–2026)",
+          "pt": "Cooptação ou estratégia? Institucionalização dos movimentos sociais no Chile (2020–2026)"
+        },
+        "question": {
+          "es": "¿Qué cambia cuando los movimientos por la vivienda, el ambiente y el feminismo ingresan a las instituciones del Estado?",
+          "en": "What changes when housing, environmental and feminist movements enter state institutions?",
+          "pt": "O que muda quando movimentos por moradia, ambiente e feminismo entram nas instituições do Estado?"
+        },
+        "summary": {
+          "es": "La crónica presenta una tensión entre la incorporación de actores sociales al gobierno y los límites reales para modificar políticas públicas. El proceso constituyente y las estrategias de los movimientos aparecen como antecedentes de ese debate.",
+          "en": "The report examines the tension between including social movement actors in government and limits to structural policy change, against the backdrop of Chile's constitutional process.",
+          "pt": "A reportagem apresenta tensões entre a entrada dos movimentos sociais no governo e os limites para mudar políticas públicas, no contexto do processo constituinte."
+        },
+        "sourceNote": {
+          "es": "Título y lectura de la ponencia registrados en la nota redactada para Sociología UAH; citas directas pendientes de contraste con la grabación.",
+          "en": "Paper title and interpretation from the author's UAH draft; verbatim quotes await audio verification.",
+          "pt": "Título e interpretação na reportagem do autor; falas literais aguardam verificação de áudio."
+        }
+      },
+      {
+        "id": "fleet",
+        "date": "31.07.2026",
+        "session": "Sesión 29 · Estado y Gobierno",
+        "name": "Nicolás Fleet",
+        "title": {
+          "es": "Nuevos profesionalismos y tecnocracias postneoliberales: articulación, conocimiento y capacidad estatal en el gobierno de Boric en Chile",
+          "en": "New professionalisms and post-neoliberal technocracies: knowledge and state capacity in Chile's Boric administration",
+          "pt": "Novos profissionalismos e tecnocracias pós-neoliberais: conhecimento e capacidade estatal no governo Boric"
+        },
+        "question": {
+          "es": "¿Hasta qué punto una nueva generación de profesionales con compromiso político pudo transformar el Estado desde dentro?",
+          "en": "How far could a new generation of politically engaged professionals transform the state from within?",
+          "pt": "Até que ponto uma nova geração de profissionais politicamente engajados conseguiu transformar o Estado?"
+        },
+        "summary": {
+          "es": "El texto describe una tecnocracia heterogénea y las tensiones entre conocimiento especializado, voluntad de transformación, estructuras institucionales consolidadas y tiempos del ciclo gubernamental.",
+          "en": "The draft considers technocracy as internally diverse, and the tension among expert knowledge, reform agendas, entrenched institutions and limited political time.",
+          "pt": "O texto discute tecnocracias heterogêneas e tensões entre conhecimento especializado, agendas de mudança, instituições consolidadas e ciclos políticos."
+        },
+        "sourceNote": {
+          "es": "Tema, fecha y desarrollo sintetizados a partir del reportaje original del corresponsal.",
+          "en": "Topic and date summarized from the correspondent's original draft.",
+          "pt": "Tema e data sintetizados a partir da reportagem original."
+        }
+      },
+      {
+        "id": "mardones",
+        "date": "Julio 2026",
+        "session": "Sesión 33 · Mujeres en la trama de lo político",
+        "name": "Gabriela Mardones",
+        "title": {
+          "es": "Cuando el movimiento feminista no representa: jóvenes electoras de la nueva derecha en las elecciones presidenciales de 2025 en Chile",
+          "en": "When the feminist movement does not represent: young women voting for Chile's new right in 2025",
+          "pt": "Quando o movimento feminista não representa: jovens eleitoras da nova direita nas eleições chilenas de 2025"
+        },
+        "question": {
+          "es": "¿Cómo entienden sus preferencias políticas jóvenes votantes de derecha que no se sienten representadas por el feminismo?",
+          "en": "How do young right-wing voters explain their preferences when they feel unrepresented by feminism?",
+          "pt": "Como jovens eleitoras de direita entendem suas escolhas quando não se sentem representadas pelo feminismo?"
+        },
+        "summary": {
+          "es": "Según la nota, Gabriela presentó una investigación cualitativa guiada por Alexis Cortés, basada en 15 entrevistas semiestructuradas a mujeres de 18 a 28 años de las regiones Metropolitana, Valparaíso y Maule. Se describen narrativas de desafección institucional, meritocracia y percepciones de distancia respecto del feminismo. Estos relatos no representan a todas las mujeres jóvenes ni permiten inferir prevalencias generales.",
+          "en": "According to the draft, Gabriela, supervised by Alexis Cortés, presented qualitative research using 15 semi-structured interviews with women aged 18–28 from three Chilean regions. The article describes narratives of institutional disenchantment, meritocracy and distance from feminism; findings should not be generalized to all young women.",
+          "pt": "Segundo a reportagem, Gabriela, orientada por Alexis Cortés, apresentou pesquisa qualitativa com 15 entrevistas semiestruturadas com mulheres de 18 a 28 anos de três regiões chilenas. O texto descreve desafeição institucional, meritocracia e distanciamento do feminismo; não são resultados generalizáveis."
+        },
+        "sourceNote": {
+          "es": "Metodología y síntesis proceden de la crónica de Ángel Muñoz; falta cotejar la ponencia o el manuscrito académico.",
+          "en": "Methods and summary are taken from the correspondent's draft; presentation/manuscript remains to be independently checked.",
+          "pt": "Método e síntese vêm da reportagem do correspondente; falta cotejar com a apresentação ou manuscrito."
+        }
+      }
+    ],
+    "bringel": {
+      "title": {
+        "es": "Breno Bringel: policrisis y giro ecoterritorial",
+        "en": "Breno Bringel: polycrisis and the ecoterritorial turn",
+        "pt": "Breno Bringel: policrise e giro ecoterritorial"
+      },
+      "subtitle": {
+        "es": "Entrevista y conversación con el investigador de IESP-UERJ e integrante del equipo organizador",
+        "en": "Interview and conversation with an IESP-UERJ scholar and member of the organizing team",
+        "pt": "Entrevista com pesquisador do IESP-UERJ e integrante da organização"
+      },
+      "body": {
+        "es": "La nota que preparé recoge su reflexión sobre formatos de diálogo más abiertos, la necesidad de elaborar categorías propias ante la policrisis latinoamericana y el lugar del territorio en disputas por agua, tierra, minerales, cuerpos y conocimientos. El video original y una pista de audio cercana están pendientes de sincronización. Las frases textuales se cotejarán con esa grabación antes de publicarse como citas verificadas.",
+        "en": "My draft discusses his views on open debate formats, Latin American approaches to polycrisis and territory as a focus of conflicts over water, land, minerals, bodies and knowledge. The interview video and close microphone track still require synchronization; direct quotations will be checked against the recording.",
+        "pt": "A reportagem aborda formatos de diálogo abertos, abordagens latino-americanas da policrise e a centralidade do território em disputas por água, terra, minerais, corpos e saberes. As gravações de vídeo e áudio ainda precisam ser sincronizadas; citações diretas aguardam conferência."
+      },
+      "status": {
+        "es": "Grabación original sin editar; no se presenta como video publicado",
+        "en": "Original recording not yet edited or published",
+        "pt": "Gravação original ainda não editada nem publicada"
+      }
+    },
+    "disclaimer": {
+      "es": "Fuente principal: borrador editorial de 13 páginas aportado por el autor. Las entrevistas recogidas allí no han sido contrastadas en esta edición con los archivos de sonido originales y no se reproducen citas textuales atribuidas.",
+      "en": "Principal source: 13-page editorial draft supplied by the author. Interview quotations have not been cross-checked against original recordings and are therefore not reproduced verbatim.",
+      "pt": "Fonte principal: reportagem de 13 páginas fornecida pelo autor. Citações das entrevistas ainda não foram conferidas com o áudio e não são reproduzidas literalmente."
+    }
   }
 }
