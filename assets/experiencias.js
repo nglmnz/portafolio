@@ -20,7 +20,7 @@ add(right,link(ui("back"),"../?lang="+language));
 for(const code of ["es","en","pt"])add(langs,button(code.toUpperCase(),()=>{language=code;history.replaceState(null,"",location.pathname+"?lang="+code+location.hash);render()}, "xp-language",language===code));
 add(right,langs);add(inner,link("ÁNGEL / MUÑOZ","../?lang="+language,"xp-brand"),right);add(top,inner);app.appendChild(top)}
 function hero(){const outer=n("section","xp-hero"),inner=n("div","xp-shell xp-hero-in"),copy=n("div","xp-hero-text"),art=n("div","xp-hero-visual");
-art.setAttribute("aria-hidden","true");
+if(kind==="alas")art.setAttribute("aria-hidden","true");
 add(copy,n("span","xp-kicker",tr(data.hero.kicker)),h(tr(data.hero.title),1),p(tr(kind==="alas"?data.hero.subtitle:data.hero.subtitle),"xp-hero-lede"));
 if(kind==="alas"){
 add(copy,p(data.meta.tagline,"xp-theme-sentence"),p(data.meta.dates+" · "+data.meta.city,"xp-hero-meta"));
