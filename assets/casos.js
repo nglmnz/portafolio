@@ -4,7 +4,7 @@ const kind=document.body.dataset.case==="sustancia"?"sustancia":"tesis";
 const valid=["es","en","pt"];
 let language=valid.includes(new URLSearchParams(location.search).get("lang"))?new URLSearchParams(location.search).get("lang"):"es";
 let selectedTheme=0,selectedLevel=0;
-let UI,DATA;
+let UI,DATA,REVIEW;
 const root=document.getElementById("case-app");
 const E=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined&&text!==null)n.textContent=String(text);return n};
 const label=o=>typeof o==="string"?o:(o?.[language]??o?.es??"");
@@ -40,6 +40,78 @@ function hero(overline,title,lead,subtitle,actions,note){
 }
 function footer(){const f=E("footer","footer"),c=E("div","container");add(c,E("span","",ui("footer")),link(ui("back"),"../?lang="+language));add(f,c);root.append(f)}
 function stats(items){const x=E("div","container"),row=E("div","stats");items.forEach(a=>{const card=E("div","stat");add(card,E("strong","",a[0]),E("span","",a[1]));add(row,card)});add(x,row);root.append(x)}
+
+function renderGlobalContext(){
+ if(!REVIEW)return;
+ const [sectionNode,box]=section("international-context","02A / CONTEXTO GLOBAL",label(REVIEW.contextTitle));
+ add(box,p(label(REVIEW.contextIntro)));
+ const grid=E("div","external-grid");
+ for(const row of REVIEW.context){
+  const item=E("article","external-card");
+  const top=E("div","external-top");
+  add(top,E("span","external-org",row.name),E("small","",row.year));
+  add(item,top,E("strong","external-stat",row.stat),H(label(row.title),3),p(label(row.description)));
+  add(item,link(language==="es"?"Leer informe ↗":language==="en"?"Read report ↗":"Ler relatório ↗",row.url,"link-inline",true));
+  add(grid,item);
+ }
+ add(box,grid,p(label(REVIEW.editorialNote),"method-note"));
+ root.append(sectionNode);
+}
+function renderAcademicReview(){
+ if(!REVIEW)return;
+ const [sectionNode,box]=section("academic-review","08A / EVALUACIÓN ACADÉMICA",label(REVIEW.title));
+ add(box,p(label(REVIEW.intro)));
+ const scores=E("div","academic-grade-ribbon");
+ for(const row of REVIEW.reviewers){
+  const cell=E("div","grade-cell");
+  add(cell,E("strong","",row.score),E("span","",row.name),E("small","",label(row.role)));
+  add(scores,cell);
+ }
+ const avg=E("div","grade-cell average-grade");
+ add(avg,E("strong","","6,8"),E("span","",language==="es"?"Promedio simple":language==="en"?"Simple average":"Média simples"),E("small","",language==="es"?"No es certificado de nota oficial":language==="en"?"Not an official final-grade certificate":"Não é certificado de nota oficial"));
+ add(scores,avg);add(box,scores);
+ const grid=E("div","reviewer-grid");
+ for(const reviewer of REVIEW.reviewers){
+  const card=E("article","reviewer-card");
+  const top=E("div","reviewer-person");
+  const photoLink=link("",reviewer.profile,"reviewer-picture",true);
+  photoLink.setAttribute("aria-label",(language==="es"?"Perfil académico de ":language==="pt"?"Perfil acadêmico de ":"Academic profile of ")+reviewer.name);
+  const initials=reviewer.name.split(" ").slice(0,2).map(x=>x[0]).join("");
+  const fallback=E("span","reviewer-initials",initials);
+  add(photoLink,fallback);
+  if(reviewer.photo?.src){
+   const im=E("img","reviewer-photo");
+   im.src=reviewer.photo.src; im.alt=reviewer.name+(language==="es"?" durante una actividad universitaria":language==="pt"?" durante uma atividade universitária":" at a university event");
+   im.loading="lazy";im.decoding="async";im.referrerPolicy="no-referrer";
+   im.addEventListener("error",()=>im.remove());
+   photoLink.appendChild(im);
+  }
+  const details=E("div","reviewer-identity");
+  add(details,E("small","reviewer-role",label(reviewer.role)),H(reviewer.name,3),E("span","reviewer-affiliation","UNIVERSIDAD ALBERTO HURTADO"));
+  add(top,photoLink,details);add(card,top,p(label(reviewer.bio),"reviewer-bio"));
+  const quote=E("blockquote","reviewer-quote",label(reviewer.quote));
+  add(card,quote);
+  const evidence=E("div","review-evidence");
+  const plus=E("div","review-positive");
+  add(plus,E("span","review-axis",language==="es"?"QUÉ DESTACÓ":language==="en"?"STRENGTHS":"PONTOS FORTES"),p(label(reviewer.strength)));
+  const caution=E("div","review-caution");
+  add(caution,E("span","review-axis",language==="es"?"QUÉ RECOMENDÓ PROFUNDIZAR":language==="en"?"AREAS TO STRENGTHEN":"PONTOS PARA APROFUNDAR"),p(label(reviewer.caveat)));
+  add(evidence,plus,caution);add(card,evidence);
+  const links=E("div","reviewer-links");
+  for(const item of reviewer.links)add(links,link(label(item.label)+" ↗",item.url,"reviewer-link",true));
+  add(card,links);
+  if(reviewer.photo?.src){
+   add(card,link(language==="es"?"Crédito de imagen · Universidad de Chile ↗":language==="en"?"Photo source · University of Chile ↗":"Fonte da foto · Universidade do Chile ↗",reviewer.photo.source,"photo-credit",true));
+   add(card,p(label(reviewer.photo.note),"tiny"));
+  }else{
+   add(card,p(language==="es"?"Retrato directo todavía no verificado. Consulta su perfil institucional.":language==="en"?"A directly verifiable portrait is not yet available. See the institutional profile.":"Retrato direto ainda não verificado. Consulte o perfil institucional.","tiny"));
+  }
+  add(grid,card);
+ }
+ add(box,grid,p(label(REVIEW.scoreNote),"method-note"),p(label(REVIEW.source),"tiny"));
+ root.append(sectionNode);
+}
+
 function fromThesis(){
  document.title=label(DATA.title)+" · Ángel Muñoz";
  hero(label(DATA.overline),label(DATA.title),label(DATA.lead),label(DATA.subtitle),[[ui("viewS"),localeHref("sustancia"),true,false],[ui("viewSource"),"#limits",false,false]],ui("researcher")+" · "+ui("grade"));
@@ -52,6 +124,7 @@ function fromThesis(){
  const frame=E("div","framework");
  DATA.framework.forEach(x=>{const item=E("article","frame");add(item,E("span","",x.author),H(x.book,3),p(label(x)),E("small","",sourceText(x.p)));add(frame,item)});
  add(box,H(ui("framework"),3),frame);root.append(sec);
+ renderGlobalContext();
  [sec,box]=section("method","02 / "+ui("method"),ui("method"));
  const methodRow=E("div","methodstats");
  DATA.method.forEach(item=>{const card=E("div","methodstat");add(card,E("strong","",item.metric),E("span","",label(item)));add(methodRow,card)});
@@ -92,6 +165,7 @@ function fromThesis(){
  add(box,list,p(sourceText(DATA.sourcePages.conclusions),"tiny"));root.append(sec);
  [sec,box]=section("limits","08 / "+ui("limitations"),ui("limitations"));
  add(box,p(label(DATA.limitations),"method-note"),p(ui("download"),"tiny"));root.append(sec);
+ renderAcademicReview();
  [sec,box]=section("reading","09 / "+ui("bibliography"),ui("bibliography"));
  add(box,p(ui("booksInfo")));
  const bookGrid=E("div","book-grid");
@@ -175,7 +249,7 @@ function render(){
  if(kind==="tesis")fromThesis();else fromSustancia();
  footer();
 }
-Promise.all([fetch("../assets/cases-ui.json"),fetch("../assets/"+(kind==="tesis"?"tesis-datos.json":"sustancia-datos.json"))])
-.then(async responses=>{if(responses.some(r=>!r.ok))throw new Error("Data unavailable");[UI,DATA]=await Promise.all(responses.map(r=>r.json()));render()})
+Promise.all([fetch("../assets/cases-ui.json"),fetch("../assets/"+(kind==="tesis"?"tesis-datos.json":"sustancia-datos.json")),...(kind==="tesis"?[fetch("../assets/tesis-evaluacion.json")]:[])])
+.then(async responses=>{if(responses.some(r=>!r.ok))throw new Error("Data unavailable");[UI,DATA,REVIEW]=await Promise.all(responses.map(r=>r.json()));render()})
 .catch(error=>{root.replaceChildren(E("main","container",language==="en"?"Content unavailable. Please refresh the page.":language==="pt"?"Conteúdo indisponível. Atualize a página.":"Contenido no disponible. Actualiza la página."));console.error(error)});
 })();
