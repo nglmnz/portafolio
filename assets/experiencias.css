@@ -158,3 +158,17 @@ body[data-case="alas"] .xp-alas-visual{aspect-ratio:auto;max-height:none;min-hei
 @media(max-width:700px){body[data-case="alas"] .xp-hero-in{grid-template-columns:1fr;padding-block:63px 88px;gap:30px}body[data-case="alas"] .xp-alas-visual{max-width:540px;min-height:0;margin-bottom:15px}.xp-alas-cover{height:clamp(340px,63vw,460px)}.xp-alas-flyer{right:-7px;width:120px}}
 @media(max-width:470px){.xp-alas-cover{height:310px}.xp-alas-cover-credit{left:14px;bottom:10px;right:110px;font-size:10px}.xp-alas-flyer{width:97px;bottom:-15px}.xp-alas-photo .xp-photo-trigger{height:235px}.xp-interview-pending{padding:18px;gap:12px}.xp-interview-icon{min-width:48px;height:48px;font-size:16px}}
 @media(prefers-reduced-motion:reduce){.xp-alas-photo .xp-photo-trigger img{transition:none}}
+
+
+/* ALAS reportage — research topics distilled from the author's UAH institutional article. */
+.xp-reportage-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:30px 0 20px}
+.xp-reportage-card{min-width:0;background:var(--xp-card);border:1px solid var(--xp-line);border-radius:12px;padding:clamp(21px,2.5vw,28px);display:flex;flex-direction:column}
+.xp-reportage-index{display:block;color:#177885;font:800 11px/1.6 ui-monospace,Consolas,monospace;letter-spacing:.08em;margin-bottom:15px}
+.xp-reportage-name{font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.095em;color:#2f6a74;line-height:1.5;margin-bottom:9px}
+.xp-reportage-card h3{font-size:clamp(1.16rem,2vw,1.55rem);margin:0 0 17px}
+.xp-reportage-question{font:italic 17px/1.42 Georgia,serif;color:#1b5a6b;border-left:3px solid #8bbfbd;padding-left:12px}
+.xp-reportage-summary{font-size:13px;color:#496875;line-height:1.69}
+.xp-reportage-note{font-size:11px;line-height:1.55;color:#617980;border-top:1px solid var(--xp-line);padding-top:13px;margin-top:auto}
+.xp-reportage-credit{display:block;font-size:12px;color:#496a73;font-weight:780;border-left:3px solid #218e91;padding-left:13px;margin:21px 0 10px}
+@media(max-width:950px){.xp-reportage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.xp-reportage-card:last-child{grid-column:span 2}}
+@media(max-width:600px){.xp-reportage-grid{grid-template-columns:1fr}.xp-reportage-card:last-child{grid-column:auto}}
