@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "origin": "Referencias aportadas por el organizador de CESI 2025. No todos los enlaces externos permiten una verificación automática de su estado o titularidad.",
   "artistCount": 19,
   "updated": "2026-11-01",
@@ -47,7 +47,14 @@
           "label": "Fundación Engel",
           "url": "https://fundacionengel.cl/Bernardo-Oyarzun"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual chileno de ascendencia mapuche, formado en la Universidad de Chile. Su obra aborda identidad, territorio, memoria y cultura popular mediante instalaciones, fotografía y otros medios. Representó a Chile en la Bienal de Venecia de 2017 con «Werken».",
+        "en": "Chilean visual artist of Mapuche heritage, trained at the University of Chile. Through installation, photography and other media, he explores identity, territory, memory and popular culture. He represented Chile at the 2017 Venice Biennale with «Werken».",
+        "pt": "Artista visual chileno de ascendência mapuche, formado pela Universidade do Chile. Sua obra aborda identidade, território, memória e cultura popular por meio de instalações, fotografia e outras linguagens. Representou o Chile na Bienal de Veneza de 2017 com «Werken»."
+      },
+      "bioSource": "https://www.artistasvisualeschilenos.cl/658/w3-propertyvalue-66448.html",
+      "bioConfidence": "verified"
     },
     {
       "name": "Voluspa Jarpa",
@@ -77,7 +84,14 @@
           "label": "YouTube · Registro",
           "url": "https://www.youtube.com/watch?v=KgDaZxpnOAo"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual chilena cuya investigación examina archivos desclasificados, memoria histórica, trauma social y relaciones de poder. Sus proyectos combinan investigación documental y dispositivos expositivos; su trayectoria incluye bienales internacionales.",
+        "en": "Chilean visual artist researching declassified archives, historical memory, social trauma and power. Her projects combine documentary research with exhibition-based practice, including participation in international biennials.",
+        "pt": "Artista visual chilena cuja pesquisa examina arquivos desclassificados, memória histórica, trauma social e relações de poder. Seus projetos combinam pesquisa documental e instalações expositivas, com participação em bienais internacionais."
+      },
+      "bioSource": "https://www.voluspajarpa.com/acerca-de/",
+      "bioConfidence": "verified"
     },
     {
       "name": "Gonzalo Tapia",
@@ -97,7 +111,14 @@
           "label": "LinkedIn",
           "url": "https://cl.linkedin.com/in/gonzalo-tapia-18327538b"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista participante de la exhibición CESI 2025, con sitio personal y registros profesionales propios. Según antecedentes facilitados por la organización, cuenta con formación en Artes Visuales de la Universidad de Chile; no se dispone aún de una descripción verificada de su línea de obra.",
+        "en": "Participating artist in the CESI 2025 exhibition, with a personal website and professional profiles. According to information provided by the organizers, he has Visual Arts training at the University of Chile; details of his artistic practice await verification.",
+        "pt": "Artista participante da exposição CESI 2025, com site pessoal e perfis profissionais. Segundo informações da organização, tem formação em Artes Visuais na Universidade do Chile; sua pesquisa artística ainda carece de confirmação documental."
+      },
+      "bioSource": "http://www.gonzalotapia.com/",
+      "bioConfidence": "organizer"
     },
     {
       "name": "Felipe Olivares",
@@ -107,7 +128,14 @@
           "label": "Instagram",
           "url": "https://www.instagram.com/horuss_sunshine/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual participante de CESI 2025. La organización lo vincula con formación en Artes Visuales de la Universidad de Chile; su trayectoria y medios de trabajo quedan pendientes de documentar con fuentes públicas adicionales.",
+        "en": "Visual artist who participated in CESI 2025. The organizers identify a Visual Arts background at the University of Chile; further public documentation is needed to describe his practice and career.",
+        "pt": "Artista visual participante do CESI 2025. A organização informa formação em Artes Visuais na Universidade do Chile; sua trajetória e seus meios de expressão dependem de fontes públicas adicionais."
+      },
+      "bioSource": "https://www.instagram.com/horuss_sunshine/",
+      "bioConfidence": "organizer"
     },
     {
       "name": "Beatriz Ahumada",
@@ -118,7 +146,14 @@
           "label": "Instagram",
           "url": "https://www.instagram.com/beakrea_/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual participante de la muestra CESI 2025, identificada también como Beatriz Ahumada Molina. La organización señala formación en Artes Visuales de la Universidad de Chile; se conservan sus redes como referencia sin atribuirle obras o especialidades no verificadas.",
+        "en": "Visual artist featured in the CESI 2025 exhibition, also identified as Beatriz Ahumada Molina. The organizers report Visual Arts training at the University of Chile; no unverified works or specializations are attributed to her.",
+        "pt": "Artista visual participante da exposição CESI 2025, também identificada como Beatriz Ahumada Molina. A organização informa formação em Artes Visuais na Universidade do Chile; não lhe atribuímos obras ou especializações sem comprovação."
+      },
+      "bioSource": "https://www.instagram.com/beakrea_/",
+      "bioConfidence": "organizer"
     },
     {
       "name": "Demian Schopf",
@@ -133,7 +168,14 @@
           "label": "SciELO Chile · Artículo",
           "url": "https://www.scielo.cl/scielo.php?pid=S0718-22012024000200075&script=sci_arttext&tlng=es"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual, ensayista e investigador chileno, doctor en Estética y Teoría del Arte por la Universidad de Chile. Su obra cruza tecnología, lenguaje, historia y sistemas algorítmicos, como en las instalaciones «Máquina Cóndor» y «Máquina de Coser».",
+        "en": "Chilean visual artist, essayist and researcher with a doctorate in Aesthetics and Art Theory from the University of Chile. His practice connects technology, language, history and algorithmic systems, as seen in «Máquina Cóndor» and «Máquina de Coser».",
+        "pt": "Artista visual, ensaísta e pesquisador chileno, doutor em Estética e Teoria da Arte pela Universidade do Chile. Seu trabalho articula tecnologia, linguagem, história e sistemas algorítmicos, como nas instalações «Máquina Cóndor» e «Máquina de Coser»."
+      },
+      "bioSource": "https://demianschopf.com/",
+      "bioConfidence": "verified"
     },
     {
       "name": "Hugo Rivera Scott",
@@ -153,7 +195,14 @@
           "label": "Artishock · Exposición MAC",
           "url": "https://artishockrevista.com/2024/12/20/hugo-rivera-scott-mac/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual, pintor, grabador y académico chileno, formado en la Escuela de Bellas Artes de Viña del Mar. Su trayectoria integra prácticas artísticas, investigación visual y docencia en instituciones chilenas y extranjeras.",
+        "en": "Chilean visual artist, painter, printmaker and academic trained at the Viña del Mar School of Fine Arts. His career combines artistic practice, visual inquiry and teaching at Chilean and international institutions.",
+        "pt": "Artista visual, pintor, gravador e acadêmico chileno, formado pela Escola de Belas Artes de Viña del Mar. Sua trajetória reúne prática artística, investigação visual e docência em instituições chilenas e internacionais."
+      },
+      "bioSource": "https://www.arteinformado.com/guia/f/hugo-rivera-scott-50359",
+      "bioConfidence": "verified"
     },
     {
       "name": "Eleodoro Calderón",
@@ -169,7 +218,14 @@
           "label": "Núcleo Digital UDP · Texto",
           "url": "https://nucleodigitalarte.udp.cl/texto-x-texto/discurso-premio-caracter-2015-eleodoro-calderon/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual chileno cuya escultura «Agua, Tierra y Aire» fue utilizada como imagen central del CESI 2025. La obra combina una tortuga, cascos militares y vegetación nativa para interrogar las relaciones entre conflicto, resistencia, vida y regeneración.",
+        "en": "Chilean visual artist whose sculpture «Agua, Tierra y Aire» became the central image of CESI 2025. The work brings together a turtle, military helmets and native plants to question conflict, resistance, life and regeneration.",
+        "pt": "Artista visual chileno cuja escultura «Agua, Tierra y Aire» tornou-se a imagem central do CESI 2025. A obra reúne uma tartaruga, capacetes militares e plantas nativas para refletir sobre conflito, resistência, vida e regeneração."
+      },
+      "bioSource": "https://cargocollective.com/EleodoroCalderon/Textos",
+      "bioConfidence": "report"
     },
     {
       "name": "Emilia Moren",
@@ -194,7 +250,14 @@
           "label": "LinkedIn",
           "url": "https://cl.linkedin.com/in/emilia-moren-b2399534a"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual egresada de la Universidad de Chile. Su trabajo transforma objetos cotidianos y materiales populares en piezas de sentido simbólico y ritual, como en la exposición «Liturgias Menores» presentada en Galería Animita en 2025.",
+        "en": "Visual artist and graduate of the University of Chile. She transforms everyday objects and popular materials into symbolic, ritual-like artworks, as in «Liturgias Menores», shown at Galería Animita in 2025.",
+        "pt": "Artista visual formada pela Universidade do Chile. Transforma objetos cotidianos e materiais populares em obras de caráter simbólico e ritual, como na exposição «Liturgias Menores», apresentada na Galería Animita em 2025."
+      },
+      "bioSource": "https://artes.uchile.cl/noticias/229702/liturgias-menores-emilia-moren-transforma-lo-cotidiano-en-ritual",
+      "bioConfidence": "verified"
     },
     {
       "name": "Ignacio Gatica",
@@ -224,7 +287,14 @@
           "label": "Artishock · TANSTAAFL",
           "url": "https://artishockrevista.com/2019/04/12/ignacio-gatica-tanstaafl-theres-no-such-thing-as-a-free-lunch-2/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual chileno cuya obra examina sistemas de conocimiento, tecnologías y estructuras económicas que organizan la experiencia urbana y cotidiana. Sus proyectos investigan cómo estas condiciones se traducen en imágenes, objetos e instalaciones.",
+        "en": "Chilean visual artist whose practice examines knowledge systems, technologies and economic structures shaping urban and everyday experience. His projects explore how these conditions translate into images, objects and installations.",
+        "pt": "Artista visual chileno cujo trabalho examina sistemas de conhecimento, tecnologias e estruturas econômicas que organizam a experiência urbana e cotidiana. Seus projetos investigam como essas condições se traduzem em imagens, objetos e instalações."
+      },
+      "bioSource": "https://galeriapready.cl/artists/ignacio-gatica",
+      "bioConfidence": "verified"
     },
     {
       "name": "Máximo Corvalán-Pincheira",
@@ -244,7 +314,14 @@
           "label": "BioBioChile · Arte y cultura",
           "url": "https://www.biobiochile.cl/noticias/artes-y-cultura/actualidad-cultural/2026/01/13/maximo-corvalan-pincheira-y-la-balsa-como-dispositivo-de-flujos-perdidos.shtml"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista chileno con formación en Artes Visuales de la Universidad ARCIS y la Universidad de Chile. Trabaja con instalación, fotografía y video en investigaciones sobre memoria, migración, desaparición, territorio e identidad, a menudo desde experiencias autobiográficas.",
+        "en": "Chilean artist trained in Visual Arts at Universidad ARCIS and the University of Chile. Working with installation, photography and video, he investigates memory, migration, disappearance, territory and identity, often through autobiographical experience.",
+        "pt": "Artista chileno com formação em Artes Visuais pela Universidade ARCIS e pela Universidade do Chile. Trabalha com instalação, fotografia e vídeo em pesquisas sobre memória, migração, desaparecimento, território e identidade, frequentemente a partir de experiências autobiográficas."
+      },
+      "bioSource": "https://maximocorvalan-pincheira.com/biografia/",
+      "bioConfidence": "verified"
     },
     {
       "name": "Javiera Eugenia Olivares",
@@ -254,7 +331,14 @@
           "label": "Instagram",
           "url": "https://www.instagram.com/libelulass_/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual participante de CESI 2025. Según los antecedentes aportados por la organización, se vincula con la formación en Artes Visuales de la Universidad de Chile. Su perfil artístico se ampliará cuando existan fuentes biográficas contrastables.",
+        "en": "Visual artist who took part in CESI 2025. According to the organizers, she has a Visual Arts background linked to the University of Chile. Her profile will be expanded when corroborated biographical sources become available.",
+        "pt": "Artista visual participante do CESI 2025. Segundo a organização, possui formação em Artes Visuais vinculada à Universidade do Chile. Seu perfil poderá ser ampliado quando houver fontes biográficas verificáveis."
+      },
+      "bioSource": "https://www.instagram.com/libelulass_/",
+      "bioConfidence": "organizer"
     },
     {
       "name": "Antonio Briceño",
@@ -269,12 +353,26 @@
           "label": "Instagram",
           "url": "https://www.instagram.com/antoniobricenolinares/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Fotógrafo y artista visual venezolano, licenciado en Biología y magíster en Artes Digitales. Su producción investiga culturas indígenas, biodiversidad y patrimonio espiritual mediante proyectos fotográficos de larga duración como «Dioses de América».",
+        "en": "Venezuelan photographer and visual artist with a degree in Biology and a master's in Digital Arts. His long-term photographic projects, including «Dioses de América», explore Indigenous cultures, biodiversity and spiritual heritage.",
+        "pt": "Fotógrafo e artista visual venezuelano, formado em Biologia e mestre em Artes Digitais. Seus projetos fotográficos de longa duração, como «Dioses de América», investigam culturas indígenas, biodiversidade e patrimônio espiritual."
+      },
+      "bioSource": "https://www.antoniobriceno.net/biografia",
+      "bioConfidence": "verified"
     },
     {
       "name": "Francisco Tapia",
       "note": "Formación en Artes Visuales, Universidad de Chile (dato facilitado).",
-      "links": []
+      "links": [],
+      "bio": {
+        "es": "Artista visual participante de CESI 2025 y licenciado en Artes Visuales por la Universidad de Chile, de acuerdo con los antecedentes entregados por la organización. No se dispone todavía de documentación pública suficiente para caracterizar sus obras.",
+        "en": "Visual artist participating in CESI 2025 and a Visual Arts graduate of the University of Chile, according to the organizers. Public documentation is not yet sufficient to describe his work in greater detail.",
+        "pt": "Artista visual participante do CESI 2025 e licenciado em Artes Visuais pela Universidade do Chile, segundo os dados da organização. Ainda não há documentação pública suficiente para detalhar suas obras."
+      },
+      "bioSource": "CESI 2025 / antecedentes proporcionados por la organización",
+      "bioConfidence": "organizer"
     },
     {
       "name": "Felipe Rivas San Martín",
@@ -294,7 +392,14 @@
           "label": "Artishock · Archivo e IA",
           "url": "https://artishockrevista.com/2025/02/21/felipe-rivas-san-martin-archivo-homosexual-ia/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista visual, ensayista e investigador chileno. Su práctica cruza crítica queer, archivos, tecnología, activismo y decolonialidad; ha trabajado con pintura, performance, video e inteligencia artificial para cuestionar ausencias de representación histórica.",
+        "en": "Chilean visual artist, essayist and researcher. His practice combines queer critique, archives, technology, activism and decoloniality across painting, performance, video and AI, questioning absences in historical representation.",
+        "pt": "Artista visual, ensaísta e pesquisador chileno. Seu trabalho articula crítica queer, arquivos, tecnologia, ativismo e decolonialidade em pintura, performance, vídeo e IA, questionando ausências na representação histórica."
+      },
+      "bioSource": "https://www.feliperivas.com/bio.html",
+      "bioConfidence": "verified"
     },
     {
       "name": "José Miguel Mardones",
@@ -315,7 +420,14 @@
           "label": "BioBioChile · Banco de Talca",
           "url": "https://www.biobiochile.cl/noticias/artes-y-cultura/actualidad-cultural/2026/05/06/banco-de-talca-reabre-sus-puertas-con-exhibicion-en-fundacion-veta-espacio-creativo.shtml"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Arquitecto y curador ligado a Talca y al Valle Central de Chile. Desarrolla proyectos territoriales, expositivos y de investigación desde Estudio Simbiotika; en CESI estuvo asociado a «Banco de Talca», iniciativa cultural que dialoga con la memoria y la actividad local.",
+        "en": "Architect and curator based in Talca, in Chile's Central Valley. Through Estudio Simbiotika he develops place-based cultural, exhibition and research projects; at CESI he was linked to «Banco de Talca».",
+        "pt": "Arquiteto e curador ligado a Talca, no Vale Central chileno. Pelo Estudio Simbiotika desenvolve projetos culturais, expositivos e de pesquisa territorial; no CESI esteve associado a «Banco de Talca»."
+      },
+      "bioSource": "https://artelaguna.world/artist/mardones-jose-miguel/",
+      "bioConfidence": "verified"
     },
     {
       "name": "Matías Valenzuela Bravo",
@@ -335,7 +447,14 @@
           "label": "Instagram · Publicación",
           "url": "https://www.instagram.com/p/C-aOyEEOlVv/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista participante de CESI 2025, con referencias públicas en el ámbito de las artes visuales y proyectos de formación y creación vinculados a Balmaceda Arte Joven. La información disponible no permite precisar aún una especialidad artística sin riesgo de atribución errónea.",
+        "en": "Artist who participated in CESI 2025, with public references in visual arts and creative projects associated with Balmaceda Arte Joven. Available information does not yet establish a specific medium or specialty reliably.",
+        "pt": "Artista participante do CESI 2025, com referências públicas em artes visuais e projetos criativos ligados à Balmaceda Arte Joven. As informações disponíveis ainda não permitem afirmar uma especialidade com segurança."
+      },
+      "bioSource": "https://www.balmacedartejoven.cl/portada/lab2-la-medida-de-todas-las-cosas/",
+      "bioConfidence": "limited"
     },
     {
       "name": "Gianfranco Foschino",
@@ -350,7 +469,14 @@
           "label": "Instagram · @gfoschino",
           "url": "https://www.instagram.com/gfoschino/"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Artista audiovisual chileno cuya obra se sitúa entre el cine documental, la fotografía y el videoarte. Es conocido por videoinstalaciones de encuadre fijo, duración extendida y movimientos mínimos que convierten el paisaje en una imagen contemplativa.",
+        "en": "Chilean audiovisual artist working across documentary film, photography and video art. His fixed-frame, long-duration video installations use subtle movement to turn landscapes into contemplative living images.",
+        "pt": "Artista audiovisual chileno que trabalha entre cinema documental, fotografia e videoarte. Suas videoinstalações de câmera fixa e longa duração empregam movimentos sutis para transformar paisagens em imagens contemplativas."
+      },
+      "bioSource": "https://iscp-nyc.org/resident/gianfranco-foschino",
+      "bioConfidence": "verified"
     },
     {
       "name": "Castro Hueche",
@@ -370,7 +496,15 @@
           "label": "ArteInformado · Rodrigo Castro Hueche",
           "url": "https://www.arteinformado.com/guia/f/rodrigo-castro-hueche-197690"
         }
-      ]
+      ],
+      "bio": {
+        "es": "Rodrigo Castro Hueche es un artista visual chileno cuya práctica interroga la identidad mapuche y mestiza desde perspectivas híbridas y decoloniales. Utiliza objetos, mobiliario, instalación y materialidades cotidianas para explorar memoria, territorio y pertenencia.",
+        "en": "Rodrigo Castro Hueche is a Chilean visual artist exploring Mapuche and mixed identity through hybrid and decolonial approaches. He works with found furniture, everyday materials and installations to examine memory, territory and belonging.",
+        "pt": "Rodrigo Castro Hueche é um artista visual chileno que investiga as identidades mapuche e mestiça por perspectivas híbridas e decoloniais. Utiliza móveis, materiais cotidianos e instalações para explorar memória, território e pertencimento."
+      },
+      "bioSource": "https://www.arteinformado.com/guia/f/rodrigo-castro-hueche-197690",
+      "bioConfidence": "verified"
     }
-  ]
+  ],
+  "biography_policy": "Las bios se basan en sitios personales, instituciones, archivos públicos y el informe del CESI. 'organizer' corresponde a datos facilitados por la organización sin otra biografía pública verificada."
 }
