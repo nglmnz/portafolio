@@ -232,3 +232,24 @@ Fuentes principales: https://www.clacso.org/xxxv-congreso-latinoamericano-de-soc
 El caso `/alas/` vuelve a mostrar el **hero abstracto de líneas anulares multicolor** (CSS, sin imágenes pesadas en la primera pantalla). Se añadió antes de la galería completa una secuencia editorial titulada «Del debate académico al encuentro» con los archivos `portada-angel-solo.JPG`, `gabriela-mardonesyequipo de ponentes.JPG` y `asistentes-ponencia.JPG`, con descripciones prudentes y sin identificar personas por reconocimiento facial. La galería filtrable y la entrevista a Breno Bringel pendiente de montaje siguen intactas. Los archivos `HEAD PORTADA.JPG` y el afiche del congreso permanecen en el repositorio, sin usarlos como hero.
 
 Las pruebas de ejecución y revisión de rutas deben efectuarse tras los cambios de diseño; la visualización final del despliegue público depende de GitHub Pages.
+
+## Entrevista a Breno Bringel y estadísticas de visitas · noviembre 2026
+
+### Video incorporado en ALAS
+
+- URL aportada por el autor: https://www.youtube.com/shorts/yuRdUqAh87I .
+- Integrado en `/alas/` como tarjeta de video vertical con botón para cargar YouTube únicamente tras clic (`youtube-nocookie.com`), enlace externo y textos ES/EN/PT. No se verificó transcripción completa de la pieza.
+- Fuentes: `assets/alas-datos.json`, `assets/experiencias.js`, `assets/experiencias.css`, `alas/assets/galeria.json`.
+
+### Analítica web preparada, todavía inactiva
+
+- **Proveedor elegido:** Cloudflare Web Analytics. Es gratuito y no requiere migrar GitHub Pages ni adquirir dominio. Cloudflare declara no usar cookies ni seguimiento de personas individuales.
+- **Cobertura:** portada y las ocho páginas de casos (9 HTML) + `/privacidad/`. El cargador es `assets/analytics.js` y la única configuración central es `assets/analytics-config.js`.
+- **Estado al entregar:** `token: ""`. **No se recopilan métricas todavía.** El script externo de Cloudflare solo se solicita con un token real, únicamente desde `nglmnz.github.io/portafolio/`. No introducir claves de API privadas; el token de medición de Cloudflare se publica normalmente en HTML.
+- **Activación:** crear una cuenta Cloudflare → Analytics & Logs → Web Analytics → Add a site → hostname `nglmnz.github.io` → copiar token de snippet → editar solo `assets/analytics-config.js` en GitHub reemplazando el valor vacío por el token → guardar cambio. Las mediciones comenzarán posteriormente, no de forma retroactiva.
+- **Interpretación:** filtrar Cloudflare por ruta de cada caso (`/portafolio/alas/`, `/portafolio/sustancia/`, etc.), fuentes de referencia, país aproximado, dispositivo y navegadores. No es un registro de identidades individuales ni un contador exacto de cada persona. Cloudflare actualmente no admite eventos personalizados ni parámetros UTM en su Web Analytics básico.
+- **Límites:** medición bloqueada por navegadores/extensiones puede faltar; el sitio no incorpora identificadores personales ni cookies propias; evaluaciones legales adicionales dependen de las obligaciones del responsable del sitio.
+- **Información a visitantes:** `/privacidad/` explica la finalidad de medición y los videos externos, y está enlazada al pie de todas las páginas.
+- **GitHub Insights → Traffic** es independiente: muestra tráfico del repositorio en la ventana de 14 días, no visitas detalladas al sitio web alojado en GitHub Pages.
+
+Referencias: https://developers.cloudflare.com/web-analytics/get-started/ ; https://developers.cloudflare.com/web-analytics/data-metrics/dimensions/ ; https://developers.cloudflare.com/web-analytics/faq/ ; https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository .
