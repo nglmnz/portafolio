@@ -1,28 +1,1367 @@
 {
-  "version": 1,
-  "description": "Archivo visual Hilvanar · FONDECYT 1220508. Manifest en espera de fotografías autorizadas y créditos verificados.",
-  "images": [],
-  "schema": {
-    "src": "images/archivo.webp",
-    "category": "apertura|exposicion|mediacion|equipo|prensa",
-    "alt": {
-      "es": "Descripción accesible",
-      "en": "Accessible description",
-      "pt": "Descrição acessível"
+  "version": 2,
+  "description": "Archivo visual Hilvanar · FONDECYT Regular 1220508. Fotografías facilitadas por Ángel Muñoz, agrupadas para navegación editorial; primer filtro excluye testimonios personales.",
+  "hero": [
+    {
+      "src": "auditorio upla.webp",
+      "caption": {
+        "es": "Apertura del recorrido público: Hilvanar, Universidad de Playa Ancha",
+        "en": "Opening of the Hilvanar public program, Universidad de Playa Ancha",
+        "pt": "Abertura do percurso público de Hilvanar, Universidad de Playa Ancha"
+      }
     },
-    "caption": {
-      "es": "Descripción contextual",
-      "en": "Context caption",
-      "pt": "Legenda contextual"
+    {
+      "src": "auditorio-academicas-presentando2.webp",
+      "caption": {
+        "es": "Investigadoras presentan el proyecto y el diálogo con sus públicos",
+        "en": "Researchers present the project and its dialogue with audiences",
+        "pt": "Pesquisadoras apresentam o projeto e o diálogo com o público"
+      }
     },
-    "credit": "Persona autora de la fotografía",
-    "permission": "Autorización documentada para publicación en portafolio personal",
-    "date": "AAAA-MM-DD o sin identificar",
-    "sensitive": false
-  },
+    {
+      "src": "auditorio-academicas-presentando3.webp",
+      "caption": {
+        "es": "Presentación pública en el auditorio de la UPLA",
+        "en": "Public presentation in the UPLA auditorium",
+        "pt": "Apresentação pública no auditório da UPLA"
+      }
+    }
+  ],
+  "images": [
+    {
+      "src": "auditorio upla.webp",
+      "category": "auditorio",
+      "order": 1,
+      "alt": {
+        "es": "Registro fotográfico de una actividad en el auditorio UPLA vinculada a Hilvanar",
+        "en": "Photograph of a Hilvanar-related event in a UPLA auditorium",
+        "pt": "Fotografia de evento de Hilvanar em um auditório da UPLA"
+      },
+      "caption": {
+        "es": "Jornada de presentación del proyecto FONDECYT Regular 1220508 en UPLA",
+        "en": "Presentation of FONDECYT Regular 1220508 at UPLA",
+        "pt": "Apresentação do projeto FONDECYT Regular 1220508 na UPLA"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "auditorio-academicas-presentando2.webp",
+      "category": "auditorio",
+      "order": 2,
+      "alt": {
+        "es": "Registro fotográfico de una actividad en el auditorio UPLA vinculada a Hilvanar",
+        "en": "Photograph of a Hilvanar-related event in a UPLA auditorium",
+        "pt": "Fotografia de evento de Hilvanar em um auditório da UPLA"
+      },
+      "caption": {
+        "es": "Jornada de presentación del proyecto FONDECYT Regular 1220508 en UPLA",
+        "en": "Presentation of FONDECYT Regular 1220508 at UPLA",
+        "pt": "Apresentação do projeto FONDECYT Regular 1220508 na UPLA"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "auditorio-academicas-presentando3.webp",
+      "category": "auditorio",
+      "order": 3,
+      "alt": {
+        "es": "Registro fotográfico de una actividad en el auditorio UPLA vinculada a Hilvanar",
+        "en": "Photograph of a Hilvanar-related event in a UPLA auditorium",
+        "pt": "Fotografia de evento de Hilvanar em um auditório da UPLA"
+      },
+      "caption": {
+        "es": "Jornada de presentación del proyecto FONDECYT Regular 1220508 en UPLA",
+        "en": "Presentation of FONDECYT Regular 1220508 at UPLA",
+        "pt": "Apresentação do projeto FONDECYT Regular 1220508 na UPLA"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "Actividad en auditorio upla .webp",
+      "category": "auditorio",
+      "order": 1,
+      "alt": {
+        "es": "Registro fotográfico de una actividad en el auditorio UPLA vinculada a Hilvanar",
+        "en": "Photograph of a Hilvanar-related event in a UPLA auditorium",
+        "pt": "Fotografia de evento de Hilvanar em um auditório da UPLA"
+      },
+      "caption": {
+        "es": "Jornada de presentación del proyecto FONDECYT Regular 1220508 en UPLA",
+        "en": "Presentation of FONDECYT Regular 1220508 at UPLA",
+        "pt": "Apresentação do projeto FONDECYT Regular 1220508 na UPLA"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "Auditorio_con_academicas presentando.webp",
+      "category": "auditorio",
+      "order": 2,
+      "alt": {
+        "es": "Registro fotográfico de una actividad en el auditorio UPLA vinculada a Hilvanar",
+        "en": "Photograph of a Hilvanar-related event in a UPLA auditorium",
+        "pt": "Fotografia de evento de Hilvanar em um auditório da UPLA"
+      },
+      "caption": {
+        "es": "Jornada de presentación del proyecto FONDECYT Regular 1220508 en UPLA",
+        "en": "Presentation of FONDECYT Regular 1220508 at UPLA",
+        "pt": "Apresentação do projeto FONDECYT Regular 1220508 na UPLA"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "angel-mediando.webp",
+      "category": "mi-mediacion",
+      "order": 1,
+      "alt": {
+        "es": "Registro de Ángel Muñoz mediando una actividad y explicando el apartado metodológico de Hilvanar",
+        "en": "Photo of Ángel Muñoz mediating an activity and discussing the project's research methodology",
+        "pt": "Registro de Ángel Muñoz mediando uma atividade e explicando a metodologia da pesquisa"
+      },
+      "caption": {
+        "es": "Mi mediación pública: explicación de las metodologías de investigación del proyecto FONDECYT 1220508",
+        "en": "My public mediation: explaining the research methods of FONDECYT 1220508",
+        "pt": "Minha mediação pública: explicação das metodologias da pesquisa FONDECYT 1220508"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": true,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "angel mediando 3.webp",
+      "category": "mi-mediacion",
+      "order": 2,
+      "alt": {
+        "es": "Registro de Ángel Muñoz mediando una actividad y explicando el apartado metodológico de Hilvanar",
+        "en": "Photo of Ángel Muñoz mediating an activity and discussing the project's research methodology",
+        "pt": "Registro de Ángel Muñoz mediando uma atividade e explicando a metodologia da pesquisa"
+      },
+      "caption": {
+        "es": "Mi mediación pública: explicación de las metodologías de investigación del proyecto FONDECYT 1220508",
+        "en": "My public mediation: explaining the research methods of FONDECYT 1220508",
+        "pt": "Minha mediação pública: explicação das metodologias da pesquisa FONDECYT 1220508"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": true,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "angel-mediando-2.webp",
+      "category": "mi-mediacion",
+      "order": 3,
+      "alt": {
+        "es": "Registro de Ángel Muñoz mediando una actividad y explicando el apartado metodológico de Hilvanar",
+        "en": "Photo of Ángel Muñoz mediating an activity and discussing the project's research methodology",
+        "pt": "Registro de Ángel Muñoz mediando uma atividade e explicando a metodologia da pesquisa"
+      },
+      "caption": {
+        "es": "Mi mediación pública: explicación de las metodologías de investigación del proyecto FONDECYT 1220508",
+        "en": "My public mediation: explaining the research methods of FONDECYT 1220508",
+        "pt": "Minha mediação pública: explicação das metodologias da pesquisa FONDECYT 1220508"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": true,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "angel-mediando-actividad.webp",
+      "category": "mi-mediacion",
+      "order": 4,
+      "alt": {
+        "es": "Registro de Ángel Muñoz mediando una actividad y explicando el apartado metodológico de Hilvanar",
+        "en": "Photo of Ángel Muñoz mediating an activity and discussing the project's research methodology",
+        "pt": "Registro de Ángel Muñoz mediando uma atividade e explicando a metodologia da pesquisa"
+      },
+      "caption": {
+        "es": "Mi mediación pública: explicación de las metodologías de investigación del proyecto FONDECYT 1220508",
+        "en": "My public mediation: explaining the research methods of FONDECYT 1220508",
+        "pt": "Minha mediação pública: explicação das metodologias da pesquisa FONDECYT 1220508"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "angel_mediando_hilvanar_valpo.webp",
+      "category": "mi-mediacion",
+      "order": 5,
+      "alt": {
+        "es": "Registro de Ángel Muñoz mediando una actividad y explicando el apartado metodológico de Hilvanar",
+        "en": "Photo of Ángel Muñoz mediating an activity and discussing the project's research methodology",
+        "pt": "Registro de Ángel Muñoz mediando uma atividade e explicando a metodologia da pesquisa"
+      },
+      "caption": {
+        "es": "Mi mediación pública: explicación de las metodologías de investigación del proyecto FONDECYT 1220508",
+        "en": "My public mediation: explaining the research methods of FONDECYT 1220508",
+        "pt": "Minha mediação pública: explicação das metodologias da pesquisa FONDECYT 1220508"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "angelmediandoactividad2.webp",
+      "category": "mi-mediacion",
+      "order": 6,
+      "alt": {
+        "es": "Registro de Ángel Muñoz mediando una actividad y explicando el apartado metodológico de Hilvanar",
+        "en": "Photo of Ángel Muñoz mediating an activity and discussing the project's research methodology",
+        "pt": "Registro de Ángel Muñoz mediando uma atividade e explicando a metodologia da pesquisa"
+      },
+      "caption": {
+        "es": "Mi mediación pública: explicación de las metodologías de investigación del proyecto FONDECYT 1220508",
+        "en": "My public mediation: explaining the research methods of FONDECYT 1220508",
+        "pt": "Minha mediação pública: explicação das metodologias da pesquisa FONDECYT 1220508"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistentes-caminandodesdeauditorio-a-exposicio2.webp",
+      "category": "recorrido",
+      "order": 1,
+      "alt": {
+        "es": "Personas realizando un recorrido entre el auditorio y la exposición",
+        "en": "People walking between auditorium and exhibition",
+        "pt": "Pessoas caminhando entre o auditório e a exposição"
+      },
+      "caption": {
+        "es": "Recorrido colectivo desde el auditorio hacia la exposición Hilvanar",
+        "en": "Collective walk from the auditorium to the Hilvanar exhibition",
+        "pt": "Percurso coletivo do auditório à exposição Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistentes-caminandodesdeauditorio-a-exposicion.webp",
+      "category": "recorrido",
+      "order": 2,
+      "alt": {
+        "es": "Personas realizando un recorrido entre el auditorio y la exposición",
+        "en": "People walking between auditorium and exhibition",
+        "pt": "Pessoas caminhando entre o auditório e a exposição"
+      },
+      "caption": {
+        "es": "Recorrido colectivo desde el auditorio hacia la exposición Hilvanar",
+        "en": "Collective walk from the auditorium to the Hilvanar exhibition",
+        "pt": "Percurso coletivo do auditório à exposição Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistentes-caminandodesdeauditorio-a-exposicion3.jpg.webp",
+      "category": "recorrido",
+      "order": 3,
+      "alt": {
+        "es": "Personas realizando un recorrido entre el auditorio y la exposición",
+        "en": "People walking between auditorium and exhibition",
+        "pt": "Pessoas caminhando entre o auditório e a exposição"
+      },
+      "caption": {
+        "es": "Recorrido colectivo desde el auditorio hacia la exposición Hilvanar",
+        "en": "Collective walk from the auditorium to the Hilvanar exhibition",
+        "pt": "Percurso coletivo do auditório à exposição Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistentes-caminandodesdeauditorio-a-exposicion4.webp",
+      "category": "recorrido",
+      "order": 4,
+      "alt": {
+        "es": "Personas realizando un recorrido entre el auditorio y la exposición",
+        "en": "People walking between auditorium and exhibition",
+        "pt": "Pessoas caminhando entre o auditório e a exposição"
+      },
+      "caption": {
+        "es": "Recorrido colectivo desde el auditorio hacia la exposición Hilvanar",
+        "en": "Collective walk from the auditorium to the Hilvanar exhibition",
+        "pt": "Percurso coletivo do auditório à exposição Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "caminando a exhibicion.webp",
+      "category": "recorrido",
+      "order": 5,
+      "alt": {
+        "es": "Personas realizando un recorrido entre el auditorio y la exposición",
+        "en": "People walking between auditorium and exhibition",
+        "pt": "Pessoas caminhando entre o auditório e a exposição"
+      },
+      "caption": {
+        "es": "Recorrido colectivo desde el auditorio hacia la exposición Hilvanar",
+        "en": "Collective walk from the auditorium to the Hilvanar exhibition",
+        "pt": "Percurso coletivo do auditório à exposição Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "exhibicion-entrada.webp",
+      "category": "exposicion",
+      "order": 1,
+      "alt": {
+        "es": "Vista del espacio público de la exposición Hilvanar",
+        "en": "View of a public space at the Hilvanar exhibition",
+        "pt": "Vista do espaço público da exposição Hilvanar"
+      },
+      "caption": {
+        "es": "Registro de la exposición Hilvanar en la Universidad de Playa Ancha",
+        "en": "Photographic record of the Hilvanar exhibition at Universidad de Playa Ancha",
+        "pt": "Registro da exposição Hilvanar na Universidad de Playa Ancha"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "exhibicion-entrada2.webp",
+      "category": "exposicion",
+      "order": 2,
+      "alt": {
+        "es": "Vista del espacio público de la exposición Hilvanar",
+        "en": "View of a public space at the Hilvanar exhibition",
+        "pt": "Vista do espaço público da exposição Hilvanar"
+      },
+      "caption": {
+        "es": "Registro de la exposición Hilvanar en la Universidad de Playa Ancha",
+        "en": "Photographic record of the Hilvanar exhibition at Universidad de Playa Ancha",
+        "pt": "Registro da exposição Hilvanar na Universidad de Playa Ancha"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "exhibicion-entrada4.webp",
+      "category": "exposicion",
+      "order": 3,
+      "alt": {
+        "es": "Vista del espacio público de la exposición Hilvanar",
+        "en": "View of a public space at the Hilvanar exhibition",
+        "pt": "Vista do espaço público da exposição Hilvanar"
+      },
+      "caption": {
+        "es": "Registro de la exposición Hilvanar en la Universidad de Playa Ancha",
+        "en": "Photographic record of the Hilvanar exhibition at Universidad de Playa Ancha",
+        "pt": "Registro da exposição Hilvanar na Universidad de Playa Ancha"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistentes-exhibicion.webp",
+      "category": "exposicion",
+      "order": 4,
+      "alt": {
+        "es": "Vista del espacio público de la exposición Hilvanar",
+        "en": "View of a public space at the Hilvanar exhibition",
+        "pt": "Vista do espaço público da exposição Hilvanar"
+      },
+      "caption": {
+        "es": "Registro de la exposición Hilvanar en la Universidad de Playa Ancha",
+        "en": "Photographic record of the Hilvanar exhibition at Universidad de Playa Ancha",
+        "pt": "Registro da exposição Hilvanar na Universidad de Playa Ancha"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistentes-exhibicion1.webp",
+      "category": "exposicion",
+      "order": 5,
+      "alt": {
+        "es": "Vista del espacio público de la exposición Hilvanar",
+        "en": "View of a public space at the Hilvanar exhibition",
+        "pt": "Vista do espaço público da exposição Hilvanar"
+      },
+      "caption": {
+        "es": "Registro de la exposición Hilvanar en la Universidad de Playa Ancha",
+        "en": "Photographic record of the Hilvanar exhibition at Universidad de Playa Ancha",
+        "pt": "Registro da exposição Hilvanar na Universidad de Playa Ancha"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistente-mirando-exhibicio.webp",
+      "category": "exposicion",
+      "order": 6,
+      "alt": {
+        "es": "Vista del espacio público de la exposición Hilvanar",
+        "en": "View of a public space at the Hilvanar exhibition",
+        "pt": "Vista do espaço público da exposição Hilvanar"
+      },
+      "caption": {
+        "es": "Registro de la exposición Hilvanar en la Universidad de Playa Ancha",
+        "en": "Photographic record of the Hilvanar exhibition at Universidad de Playa Ancha",
+        "pt": "Registro da exposição Hilvanar na Universidad de Playa Ancha"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "afiche-exhibicion.webp",
+      "category": "exposicion",
+      "order": 7,
+      "alt": {
+        "es": "Vista del espacio público de la exposición Hilvanar",
+        "en": "View of a public space at the Hilvanar exhibition",
+        "pt": "Vista do espaço público da exposição Hilvanar"
+      },
+      "caption": {
+        "es": "Registro de la exposición Hilvanar en la Universidad de Playa Ancha",
+        "en": "Photographic record of the Hilvanar exhibition at Universidad de Playa Ancha",
+        "pt": "Registro da exposição Hilvanar na Universidad de Playa Ancha"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistente-participando-de-actividades.webp",
+      "category": "actividades",
+      "order": 1,
+      "alt": {
+        "es": "Personas participando en una actividad de mediación de la exposición",
+        "en": "People participating in an exhibition mediation activity",
+        "pt": "Pessoas participando de atividade de mediação na exposição"
+      },
+      "caption": {
+        "es": "Actividad de mediación e intercambio con el público en Hilvanar",
+        "en": "Public-facing mediation and participation at Hilvanar",
+        "pt": "Mediação e participação do público em Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "asistente-participandoenactividad2.webp",
+      "category": "actividades",
+      "order": 2,
+      "alt": {
+        "es": "Personas participando en una actividad de mediación de la exposición",
+        "en": "People participating in an exhibition mediation activity",
+        "pt": "Pessoas participando de atividade de mediação na exposição"
+      },
+      "caption": {
+        "es": "Actividad de mediación e intercambio con el público en Hilvanar",
+        "en": "Public-facing mediation and participation at Hilvanar",
+        "pt": "Mediação e participação do público em Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "Valentina-baeza-mediadora.webp",
+      "category": "actividades",
+      "order": 3,
+      "alt": {
+        "es": "Personas participando en una actividad de mediación de la exposición",
+        "en": "People participating in an exhibition mediation activity",
+        "pt": "Pessoas participando de atividade de mediação na exposição"
+      },
+      "caption": {
+        "es": "Actividad de mediación e intercambio con el público en Hilvanar",
+        "en": "Public-facing mediation and participation at Hilvanar",
+        "pt": "Mediação e participação do público em Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "valentina baeza2.webp",
+      "category": "actividades",
+      "order": 4,
+      "alt": {
+        "es": "Personas participando en una actividad de mediación de la exposición",
+        "en": "People participating in an exhibition mediation activity",
+        "pt": "Pessoas participando de atividade de mediação na exposição"
+      },
+      "caption": {
+        "es": "Actividad de mediación e intercambio con el público en Hilvanar",
+        "en": "Public-facing mediation and participation at Hilvanar",
+        "pt": "Mediação e participação do público em Hilvanar"
+      },
+      "credit": "Archivo fotográfico aportado por Ángel Muñoz · autoría de la fotografía por confirmar",
+      "permission": "Publicación en el portafolio solicitada por quien facilitó los archivos; derechos de terceros por confirmar",
+      "visibility": "public_event",
+      "sensitive": false,
+      "featured": false,
+      "date": "2026 (fecha exacta no identificada)"
+    },
+    {
+      "src": "Hilvanar testimonio.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion1.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion10(1).webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion10.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion11(1).webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion11.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion12(1).webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion12.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion122.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion13.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion15.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion16.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion17.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion18.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion19.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion3.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion4.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion5.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion6.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion7.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion8.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "actividadmediacion9.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "angel-mediando-no esmuylinda.webp",
+      "category": "pendiente",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero10.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero11.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero12.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero13.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero14.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero15.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero2.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero3.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero4.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero5.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero6.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero7.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero8.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "extracto-tablero9.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "pieza-en-exhibicion.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    },
+    {
+      "src": "tablero-exhibicion.webp",
+      "category": "testimonios",
+      "alt": {
+        "es": "Detalle de archivo no publicado",
+        "en": "Unpublished archive detail",
+        "pt": "Detalhe de arquivo não publicado"
+      },
+      "caption": {
+        "es": "Archivo en revisión ética y editorial",
+        "en": "Archive under ethical and editorial review",
+        "pt": "Arquivo em revisão ética e editorial"
+      },
+      "credit": "Sin atribución verificada",
+      "permission": "Pendiente de revisión ética y derechos de reproducción",
+      "visibility": "review_required",
+      "sensitive": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "auditorio",
+      "name": {
+        "es": "Auditorio y presentación",
+        "en": "Auditorium and presentations",
+        "pt": "Auditório e apresentações"
+      }
+    },
+    {
+      "id": "mi-mediacion",
+      "name": {
+        "es": "Mi mediación metodológica",
+        "en": "My methodological mediation",
+        "pt": "Minha mediação metodológica"
+      }
+    },
+    {
+      "id": "recorrido",
+      "name": {
+        "es": "Del auditorio a la exposición",
+        "en": "From auditorium to exhibition",
+        "pt": "Do auditório à exposição"
+      }
+    },
+    {
+      "id": "exposicion",
+      "name": {
+        "es": "La exposición",
+        "en": "The exhibition",
+        "pt": "A exposição"
+      }
+    },
+    {
+      "id": "actividades",
+      "name": {
+        "es": "Actividades y mediaciones",
+        "en": "Public activities",
+        "pt": "Atividades e mediações"
+      }
+    }
+  ],
   "notes": [
-    "Las imágenes de entrevistas, mapas corporales, testimonios, relatos o fotografías realizadas por participantes de la investigación pueden tener restricciones éticas adicionales.",
-    "No asumir autorización de reproducción por aparecer en fuentes públicas o exposiciones abiertas.",
-    "Para añadir fotos, cargar los archivos a fondecyt/assets/images/ y después actualizar este manifest."
+    "Las imágenes identificadas como públicas fueron seleccionadas por mostrar actividades colectivas y recorridos. La solicitud de publicación proviene del usuario que las subió; se mantiene pendiente la acreditación de derechos y autorizaciones de terceros.",
+    "Los primeros planos de mensajes de participantes, testimonios y tableros de investigación se registran como review_required y no se muestran.",
+    "Las fotografías permanecen en fondecyt/assets/ con sus nombres originales, evitando romper enlaces. Las agrupaciones del manifiesto son lógicas, no carpetas nuevas.",
+    "Evitar identificar a personas visibles a partir de su imagen; los créditos de fotógrafos están pendientes."
   ]
 }
