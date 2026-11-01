@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "year": 2024,
+    "period": "mayo–agosto de 2024",
+    "role": "Encuestador",
+    "organization": "Centro de Desarrollo Urbano Sustentable (CEDEUS)",
+    "university": "Pontificia Universidad Católica de Chile",
+    "project": "Rol de los espacios colectivos en la cohesión social urbana: aproximación multiescalar en el Gran Santiago",
+    "researcher": "Emilio Berríos Álvarez",
+    "relatedStudy": "Midiendo la pobreza de transporte en Chile: evidencia desde Santiago y Concepción",
+    "relatedYear": 2026
+  },
+  "hero": {
+    "eyebrow": {
+      "es": "TRABAJO DE CAMPO · CEDEUS / UC · 2024",
+      "en": "FIELD RESEARCH · CEDEUS / UC · 2024",
+      "pt": "PESQUISA DE CAMPO · CEDEUS / UC · 2024"
+    },
+    "title": {
+      "es": "La ciudad también se investiga preguntando.",
+      "en": "Cities are also studied by asking people.",
+      "pt": "A cidade também se pesquisa escutando."
+    },
+    "subtitle": {
+      "es": "Encuestador · Espacios colectivos y cohesión social",
+      "en": "Field enumerator · Collective space and social cohesion",
+      "pt": "Entrevistador de campo · Espaços coletivos e coesão social"
+    },
+    "description": {
+      "es": "Participé en la recolección de datos para una investigación doctoral vinculada a CEDEUS y la Pontificia Universidad Católica de Chile. Entre mayo y agosto de 2024 recorrí comunas del Gran Santiago aplicando encuestas a residentes para estudiar la relación entre los espacios colectivos, las relaciones sociales y la cohesión urbana.",
+      "en": "I contributed to data collection for doctoral research linked to CEDEUS and Pontificia Universidad Católica de Chile. From May to August 2024, I administered surveys to residents across Greater Santiago, studying collective spaces, social relations and urban cohesion.",
+      "pt": "Participei da coleta de dados de uma pesquisa doutoral vinculada ao CEDEUS e à Pontificia Universidad Católica de Chile. Entre maio e agosto de 2024, apliquei questionários em comunas da Grande Santiago para estudar espaços coletivos, relações sociais e coesão urbana."
+    }
+  },
+  "question": {
+    "es": "¿Cómo contribuyen los espacios colectivos de una ciudad al encuentro, las relaciones sociales y la cohesión entre grupos y barrios?",
+    "en": "How do urban collective spaces shape encounters, social relationships and cohesion across neighborhoods?",
+    "pt": "Como os espaços coletivos de uma cidade contribuem para encontros, relações sociais e coesão entre bairros?"
+  },
+  "research": {
+    "title": {
+      "es": "Un doctorado sobre el espacio común y los vínculos urbanos",
+      "en": "Doctoral research on collective space and urban social bonds",
+      "pt": "Um doutorado sobre espaço coletivo e vínculos urbanos"
+    },
+    "description": {
+      "es": "El estudio doctoral de Emilio Berríos Álvarez aborda el rol de los espacios colectivos en la cohesión social a distintas escalas del Gran Santiago. El interés va más allá de la plaza o del barrio por separado: considera cómo los espacios compartidos permiten encuentros y vínculos en una metrópolis marcada por la segregación socioespacial.",
+      "en": "Emilio Berríos Álvarez’s doctoral study examines collective spaces and social cohesion at different scales of Greater Santiago. It moves beyond individual parks or neighborhoods to consider encounter and connection in a socio-spatially segregated metropolis.",
+      "pt": "A pesquisa doutoral de Emilio Berríos Álvarez examina os espaços coletivos e a coesão social em diferentes escalas da Grande Santiago, considerando encontros e vínculos em uma metrópole segregada."
+    },
+    "scope": {
+      "es": "Investigación en el Doctorado en Ciencias de la Ingeniería de la Pontificia Universidad Católica de Chile, vinculada a CEDEUS. CEDEUS identifica públicamente la investigación como «Rol de espacios colectivos en la cohesión social urbana: aproximación multiescalar en el Gran Santiago».",
+      "en": "Research in the Doctorate in Engineering Sciences at Pontificia Universidad Católica de Chile, linked to CEDEUS. The official center identifies it as “Role of collective spaces in urban social cohesion: a multiscalar approach in Greater Santiago.”",
+      "pt": "Pesquisa do Doutorado em Ciências da Engenharia da Pontificia Universidad Católica de Chile, vinculada ao CEDEUS. O centro a identifica como “Papel dos espaços coletivos na coesão social urbana: abordagem multiescalar na Grande Santiago”."
+    },
+    "authorship": {
+      "es": "Emilio Berríos es el investigador doctoral. Mi contribución consistió en labores de levantamiento en terreno, no en la autoría de sus resultados, modelos o publicaciones.",
+      "en": "Emilio Berríos is the doctoral researcher. My contribution involved field data collection, not authorship of the research findings, models or publications.",
+      "pt": "Emilio Berríos é o pesquisador doutoral. Minha contribuição foi a coleta de dados em campo, não a autoria de resultados, modelos ou publicações."
+    }
+  },
+  "tasks": [
+    {
+      "title": {
+        "es": "Aplicación presencial",
+        "en": "In-person survey administration",
+        "pt": "Aplicação presencial"
+      },
+      "description": {
+        "es": "Contacté y encuesté a habitantes en distintas comunas de Santiago mediante el instrumento definido para el estudio.",
+        "en": "I surveyed residents across Santiago using the study's established instrument.",
+        "pt": "Entrevistei moradores de várias comunas de Santiago com o instrumento definido para a pesquisa."
+      },
+      "symbol": "01"
+    },
+    {
+      "title": {
+        "es": "Registro y recolección",
+        "en": "Data recording and collection",
+        "pt": "Registro e coleta"
+      },
+      "description": {
+        "es": "Recogí respuestas sobre espacios colectivos y relaciones sociales, siguiendo los procedimientos del levantamiento.",
+        "en": "I recorded responses related to collective spaces and social relations, following survey collection procedures.",
+        "pt": "Registrei respostas sobre espaços coletivos e relações sociais, seguindo os procedimentos de coleta."
+      },
+      "symbol": "02"
+    },
+    {
+      "title": {
+        "es": "Verificación y control de calidad",
+        "en": "Verification and quality assurance",
+        "pt": "Verificação e controle de qualidade"
+      },
+      "description": {
+        "es": "Colaboré en la revisión de registros y consistencia de respuestas como parte de las tareas de campo.",
+        "en": "I helped check survey records and response consistency as part of fieldwork.",
+        "pt": "Colaborei na revisão de registros e coerência das respostas durante o trabalho de campo."
+      },
+      "symbol": "03"
+    },
+    {
+      "title": {
+        "es": "Digitalización y preparación",
+        "en": "Digitization and preparation",
+        "pt": "Digitalização e preparação"
+      },
+      "description": {
+        "es": "Apoyé la digitalización y organización de respuestas para su posterior tratamiento analítico, sin atribuirme el análisis final.",
+        "en": "I helped digitize and organize responses for subsequent analysis, without claiming authorship of the final analysis.",
+        "pt": "Apoiei a digitalização e organização das respostas para análise posterior, sem reivindicar a autoria da análise final."
+      },
+      "symbol": "04"
+    }
+  ],
+  "communes": [
+    "Recoleta",
+    "Independencia",
+    "Las Condes",
+    "Providencia",
+    "Santiago Centro",
+    "Maipú",
+    "Estación Central",
+    "Ñuñoa"
+  ],
+  "communesContext": {
+    "es": "Comunas mencionadas en mi registro de experiencia de 2024. La enumeración no representa un listado exhaustivo de la muestra ni permite inferir la distribución de casos por territorio.",
+    "en": "Municipalities listed in my 2024 work record. This is not an exhaustive sampling frame, and no per-area response counts are inferred.",
+    "pt": "Comunas citadas no registro da experiência em 2024. Não se trata da lista completa da amostra, nem há contagens de respostas por território."
+  },
+  "analyticalLenses": [
+    {
+      "title": {
+        "es": "Encuentro y sociabilidad",
+        "en": "Encounters and sociability",
+        "pt": "Encontros e sociabilidade"
+      },
+      "body": {
+        "es": "Los espacios colectivos pueden favorecer la interacción entre personas que no necesariamente pertenecen a una misma red de relaciones.",
+        "en": "Shared spaces may enable interaction between people who do not belong to the same social network.",
+        "pt": "Espaços coletivos podem favorecer encontros entre pessoas de redes sociais distintas."
+      },
+      "example": {
+        "es": "Una plaza, un paseo o un espacio comunitario como lugar donde coinciden diferentes grupos.",
+        "en": "A plaza, walkway or community venue where different groups meet.",
+        "pt": "Uma praça, passeio ou espaço comunitário onde grupos distintos se encontram."
+      }
+    },
+    {
+      "title": {
+        "es": "Pertenencia y vínculos",
+        "en": "Belonging and social ties",
+        "pt": "Pertencimento e vínculos"
+      },
+      "body": {
+        "es": "La cohesión puede incluir reconocimiento mutuo, relaciones cotidianas y vínculos con el entorno, sin que todas estas dimensiones sean idénticas.",
+        "en": "Cohesion may encompass mutual recognition, everyday relations and attachment to place without these being interchangeable.",
+        "pt": "A coesão pode incluir reconhecimento, relações cotidianas e vínculos com o território, sem serem dimensões idênticas."
+      },
+      "example": {
+        "es": "Sentirse parte del barrio no implica necesariamente mantener relaciones frecuentes con sus vecinos.",
+        "en": "Feeling part of a neighborhood does not automatically imply frequent interaction with neighbors.",
+        "pt": "Sentir pertencimento ao bairro não implica necessariamente relações frequentes com vizinhos."
+      }
+    },
+    {
+      "title": {
+        "es": "Escalas del espacio urbano",
+        "en": "Scales of urban space",
+        "pt": "Escalas do espaço urbano"
+      },
+      "body": {
+        "es": "La investigación propone atender tanto a vínculos barriales como a conexiones que atraviesan distintos sectores de la ciudad.",
+        "en": "The research considers neighborhood-level ties as well as connections across different parts of the city.",
+        "pt": "A pesquisa considera vínculos de bairro e conexões entre diferentes partes da cidade."
+      },
+      "example": {
+        "es": "Una infraestructura que reúne a personas de varios barrios puede conectar realidades que normalmente están separadas.",
+        "en": "A public facility serving multiple neighborhoods can connect otherwise separated social worlds.",
+        "pt": "Um equipamento público utilizado por vários bairros pode conectar realidades separadas."
+      }
+    },
+    {
+      "title": {
+        "es": "Desigualdad territorial",
+        "en": "Spatial inequality",
+        "pt": "Desigualdade territorial"
+      },
+      "body": {
+        "es": "Las oportunidades de encuentro no están distribuidas de manera uniforme: el diseño, el acceso y la segregación importan para interpretar las relaciones sociales.",
+        "en": "Opportunities to meet are unevenly distributed: design, access and segregation shape social relationships.",
+        "pt": "As oportunidades de encontro não são igualmente distribuídas: desenho, acesso e segregação importam."
+      },
+      "example": {
+        "es": "Comparar experiencias urbanas exige considerar las condiciones distintas en que las personas utilizan los espacios compartidos.",
+        "en": "Comparisons must consider the different conditions in which people access collective space.",
+        "pt": "Comparações exigem considerar diferentes condições de acesso aos espaços coletivos."
+      }
+    }
+  ],
+  "scopeNote": {
+    "es": "Estos cuatro ejes son una explicación editorial de las preguntas que motivan esta línea de investigación, no un inventario confirmado de variables del cuestionario ni resultados obtenidos de la encuesta de 2024.",
+    "en": "These four lenses interpret the study's broader questions; they are not a confirmed questionnaire codebook or results from the 2024 survey.",
+    "pt": "Esses quatro eixos explicam questões da pesquisa, mas não representam as variáveis confirmadas do questionário nem resultados da coleta de 2024."
+  },
+  "policy": {
+    "heading": {
+      "es": "De la evidencia urbana al debate público",
+      "en": "From urban evidence to policy debate",
+      "pt": "Da evidência urbana ao debate público"
+    },
+    "title": {
+      "es": "Por qué CEDEUS dialoga con el Estado",
+      "en": "How CEDEUS connects research with government",
+      "pt": "Por que o CEDEUS dialoga com o Estado"
+    },
+    "description": {
+      "es": "Las investigaciones sobre cohesión, movilidad y acceso a oportunidades alimentan discusiones de planificación urbana. Como ejemplo posterior y distinto de mi experiencia, CEDEUS y el Instituto de Estudios Urbanos y Territoriales UC coorganizaron en enero de 2026 la presentación del estudio «Midiendo la pobreza de transporte en Chile», donde intervino el entonces ministro de Transportes y Telecomunicaciones, Juan Carlos Muñoz.",
+      "en": "Research on social cohesion, mobility and access informs debates on urban planning. A separate and later example is CEDEUS and UC's January 2026 presentation of “Measuring transport poverty in Chile”, attended and discussed by the then Minister of Transport, Juan Carlos Muñoz. This was not my 2024 survey.",
+      "pt": "Pesquisas sobre coesão, mobilidade e acesso alimentam debates de planejamento urbano. Um exemplo posterior e distinto é a apresentação de janeiro de 2026 do estudo sobre pobreza de transporte pelo CEDEUS e pela UC, com a participação do então ministro Juan Carlos Muñoz. Não foi a pesquisa que apliquei em 2024."
+    },
+    "event": {
+      "date": "23.01.2026",
+      "city": "Santiago",
+      "speaker": "Ignacio Tiznado-Aitken",
+      "minister": "Juan Carlos Muñoz",
+      "ministerRole": {
+        "es": "Ministro de Transportes y Telecomunicaciones en la fecha del encuentro",
+        "en": "Minister of Transport and Telecommunications at the time",
+        "pt": "Ministro dos Transportes e Telecomunicações na data do evento"
+      },
+      "affiliation": "IEUT UC · CEDEUS · Mobilizing Justice",
+      "separation": {
+        "es": "Estudio diferente, de 2026. La participación ministerial acredita intercambio entre investigación y autoridades, no la incorporación formal de resultados a una política pública ni mi participación en esa encuesta.",
+        "en": "Separate 2026 study. Ministerial involvement documents dialogue between researchers and public authorities, not formal adoption into policy or my role in that survey.",
+        "pt": "Estudo distinto de 2026. A participação ministerial comprova diálogo entre pesquisa e autoridades, não adoção formal de política nem minha participação na pesquisa."
+      }
+    },
+    "additional": {
+      "es": "La presentación examinó barreras de movilidad y viajes que no pudieron realizarse. Su pertinencia para decisiones gubernamentales fue discutida públicamente; no consta aquí un acto de adopción institucional de sus conclusiones.",
+      "en": "The presentation explored barriers to mobility and trips that could not be made. Governmental relevance was publicly discussed; no official policy adoption is established here.",
+      "pt": "A apresentação abordou barreiras de mobilidade e viagens não realizadas. Sua pertinência para decisões governamentais foi debatida, sem comprovação de adoção formal."
+    }
+  },
+  "sources": [
+    {
+      "kind": "core",
+      "label": {
+        "es": "CEDEUS · Investigaciones de tesistas (2024)",
+        "en": "CEDEUS · Doctoral research (2024)",
+        "pt": "CEDEUS · Pesquisas doutorais (2024)"
+      },
+      "description": {
+        "es": "Identifica el trabajo de Emilio Berríos por título y año.",
+        "en": "Identifies Emilio Berríos’s study by title and year.",
+        "pt": "Identifica a pesquisa de Emilio Berríos pelo título e ano."
+      },
+      "url": "https://www.cedeus.cl/blog/2024/08/23/conoce-los-trabajos-de-tesistas-y-investigadores-postdoctorales-de-cedeus/"
+    },
+    {
+      "kind": "core",
+      "label": {
+        "es": "REDEUS · Proyecto doctoral de Emilio Berríos",
+        "en": "REDEUS · Emilio Berríos doctoral project",
+        "pt": "REDEUS · Projeto doutoral de Emilio Berríos"
+      },
+      "description": {
+        "es": "Fundamentación multiescalar y contexto de la investigación.",
+        "en": "Study rationale and multiscalar context.",
+        "pt": "Fundamentação multiescalar e contexto da pesquisa."
+      },
+      "url": "https://redeus.org/el-rol-de-los-espacios-colectivos-en-la-cohesion-social-urbana-aproximacion-multiescalar-en-el-gran-santiago/"
+    },
+    {
+      "kind": "core",
+      "label": {
+        "es": "UC · Entrevista académica a Emilio Berríos",
+        "en": "UC · Interview with Emilio Berríos",
+        "pt": "UC · Entrevista com Emilio Berríos"
+      },
+      "description": {
+        "es": "Fuente institucional sobre su investigación doctoral.",
+        "en": "University profile about his doctoral research.",
+        "pt": "Fonte institucional sobre sua pesquisa doutoral."
+      },
+      "url": "https://investigacion.uc.cl/noticias/ines-de-genero-y-escuela-de-graduados-realizan-taller-con-alta-convocatoria-para-integrar-mirada-de-genero-en-la-investigacion/"
+    },
+    {
+      "kind": "context",
+      "label": {
+        "es": "CEDEUS · Cohesión barrial en Santiago",
+        "en": "CEDEUS · Neighborhood cohesion in Santiago",
+        "pt": "CEDEUS · Coesão barrial em Santiago"
+      },
+      "description": {
+        "es": "Una línea relacionada de publicaciones de CEDEUS; no es un reporte de mi encuesta de 2024.",
+        "en": "Related CEDEUS research, not a report on my 2024 survey.",
+        "pt": "Pesquisa relacionada do CEDEUS, não relatório da minha coleta de 2024."
+      },
+      "url": "https://www.cedeus.cl/investigacion/sintesis/la-cohesion-social-de-los-barrios-de-santiago-en-tiempos-de-pandemia-2/"
+    },
+    {
+      "kind": "policy",
+      "label": {
+        "es": "CEDEUS · Pobreza de transporte (enero 2026)",
+        "en": "CEDEUS · Transport poverty (January 2026)",
+        "pt": "CEDEUS · Pobreza de transporte (janeiro 2026)"
+      },
+      "description": {
+        "es": "Presentación de otro proyecto y participación del ministro Juan Carlos Muñoz.",
+        "en": "Presentation of a different study with minister Juan Carlos Muñoz.",
+        "pt": "Apresentação de outra pesquisa com o ministro Juan Carlos Muñoz."
+      },
+      "url": "https://www.cedeus.cl/pobreza-de-transporte-una-brecha-pendiente-que-chile-debe-disminuir/"
+    },
+    {
+      "kind": "policy",
+      "label": {
+        "es": "CEDEUS · Convocatoria al encuentro (2026)",
+        "en": "CEDEUS · Study launch announcement (2026)",
+        "pt": "CEDEUS · Divulgação do evento (2026)"
+      },
+      "description": {
+        "es": "Atribución del proyecto a Ignacio Tiznado-Aitken, Mobilizing Justice y Núcleo Milenio en Transporte Justo.",
+        "en": "Attribution of the separate study to Ignacio Tiznado-Aitken, Mobilizing Justice and related program.",
+        "pt": "Atribuição da pesquisa distinta a Ignacio Tiznado-Aitken e Mobilizing Justice."
+      },
+      "url": "https://www.cedeus.cl/midiendo-la-pobreza-de-transporte-en-chile-evidencia-desde-santiago-y-concepcion/"
+    },
+    {
+      "kind": "policy",
+      "label": {
+        "es": "IEUT UC · Cobertura con comentarios del ministro",
+        "en": "IEUT UC · Coverage of government dialogue",
+        "pt": "IEUT UC · Cobertura com autoridades"
+      },
+      "description": {
+        "es": "Relata el encuentro con autoridades públicas sobre pobreza de transporte.",
+        "en": "Reports the discussion with public officials on transport poverty.",
+        "pt": "Relata o debate com autoridades sobre pobreza de transporte."
+      },
+      "url": "https://estudiosurbanos.uc.cl/pobreza-de-transporte-una-brecha-pendiente-que-chile-debe-disminuir/"
+    },
+    {
+      "kind": "policy",
+      "label": {
+        "es": "CEDEUS · Agenda en Santiago",
+        "en": "CEDEUS · Santiago event agenda",
+        "pt": "CEDEUS · Agenda em Santiago"
+      },
+      "description": {
+        "es": "Programa del encuentro en Santiago y participantes.",
+        "en": "Event program and participants in Santiago.",
+        "pt": "Programa do evento em Santiago e participantes."
+      },
+      "url": "https://www.cedeus.cl/agenda/santiago-midiendo-la-pobreza-de-transporte-en-chile-evidencia-desde-santiago-y-concepcion/"
+    },
+    {
+      "kind": "policy",
+      "label": {
+        "es": "CEDEUS · Difusión en LinkedIn",
+        "en": "CEDEUS · LinkedIn coverage",
+        "pt": "CEDEUS · Divulgação no LinkedIn"
+      },
+      "description": {
+        "es": "Publicación de difusión aportada por el usuario; contenido específico no verificado de forma independiente.",
+        "en": "Shared external promotion link; specific contents not independently checked.",
+        "pt": "Publicação compartilhada, conteúdo não verificado independentemente."
+      },
+      "url": "https://es.linkedin.com/posts/cedeuschile_pobrezadetransporte-movilidadjusta-activity-7417576101872406531-1uCt"
+    }
+  ],
+  "limits": {
+    "es": "El portafolio documenta tareas realizadas, no el número total de encuestas aplicadas, el tamaño muestral del estudio de 2024 ni conclusiones obtenidas. Se carece del cuestionario y la base original para publicar resultados. No atribuir al encuestador autoría del proyecto doctoral, análisis estadístico, diseño de instrumento o participación en el estudio de pobreza de transporte de 2026.",
+    "en": "The portfolio documents performed tasks, not the exact number of interviews, sample size or findings of the 2024 research. No questionnaire or dataset was supplied. The enumerator is not credited as author of the doctoral project, its models or the separate 2026 transport poverty study.",
+    "pt": "O portfólio documenta tarefas realizadas, mas não o número de questionários, amostra ou resultados do estudo de 2024. Não foram fornecidos questionário ou base. Não se atribui ao entrevistador autoria do doutorado ou da pesquisa distinta de 2026."
+  },
+  "sourcePolicy": {
+    "es": "Las funciones personales se basan en tu descripción y registro profesional público; los objetivos del estudio doctoral proceden de CEDEUS y REDEUS; la presencia del ministro está documentada en publicaciones de enero de 2026, relativas a un estudio diferente.",
+    "en": "Personal tasks are based on the author's account and professional work record; doctoral context comes from CEDEUS and REDEUS; the minister's participation is documented in January 2026 sources for a different study.",
+    "pt": "As tarefas pessoais se baseiam no relato e registro profissional do autor; o contexto doutoral vem do CEDEUS e REDEUS; a participação ministerial aparece em fontes de janeiro de 2026 sobre outro estudo."
+  }
+}
