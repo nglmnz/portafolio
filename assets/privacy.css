@@ -1,0 +1,6 @@
+/* Small consistent privacy footer appended to public portfolio pages. */
+.portfolio-privacy-footer{padding:16px 20px;text-align:center;background:#112a35;color:#e2f3f0;border-top:1px solid #456870;font:600 12px/1.55 system-ui,-apple-system,Segoe UI,sans-serif;letter-spacing:.01em}
+.portfolio-privacy-footer a{color:#bfefdb;text-decoration:underline;text-underline-offset:3px}
+.portfolio-privacy-footer a:hover{color:#fff}
+.portfolio-privacy-footer a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media print{.portfolio-privacy-footer{display:none}}
