@@ -159,8 +159,31 @@ loadMore.hidden=list.length<=photoLimit;
 add(base,filters,tally,grid,loadMore,dialog,p(ui("pendingCredits"),"xp-footnote"));
 draw();
 const media=part("entrevista","10 / "+ui("what"),tr(data.reportage?.bringel?.title)||ui("interviewTitle"),tr(data.reportage?.bringel?.body)||ui("interviewDesc"));
-const block=n("div","xp-interview-pending"),mark=n("div","xp-interview-icon");mark.setAttribute("aria-hidden","true");mark.textContent="▶";
-add(block,mark,n("div","xp-interview-content",tr(data.reportage?.bringel?.status)||ui("interviewState")));add(media,block);
+const v=data.reportage?.bringel?.video;
+if(v&&v.id==="yuRdUqAh87I"){
+ const videoBlock=n("div","xp-interview-live");
+ const context=n("div","xp-interview-meta"),head=n("span","xp-kicker",language==="es"?"ENTREVISTA AUDIOVISUAL · ALAS 2026":language==="en"?"VIDEO INTERVIEW · ALAS 2026":"ENTREVISTA EM VÍDEO · ALAS 2026");
+ add(context,head,h(tr(v.title),3),p(tr(data.reportage.bringel.status),"xp-video-status"),p(tr(v.privacy),"xp-video-privacy"),link(tr(v.external),v.url,"xp-source"),p(tr(v.note),"xp-video-note"));
+ const frame=n("div","xp-video-stage");
+ const play=button(tr(v.button),()=>{
+  if(frame.querySelectorAll("iframe").length)return;
+  const iframe=n("iframe","xp-video-iframe");
+  iframe.src=v.embed+"?autoplay=1&rel=0&playsinline=1";
+  iframe.title=tr(v.title);
+  iframe.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";
+  iframe.allowFullscreen=true;
+  iframe.setAttribute("referrerpolicy","strict-origin-when-cross-origin");
+  iframe.setAttribute("loading","lazy");
+  frame.replaceChildren(iframe);
+ },"xp-video-play");
+ add(play,n("span","xp-video-play-icon","▶"));
+ add(frame,n("span","xp-video-mark","ALAS / ENTREVISTA"),play);
+ add(videoBlock,frame,context);add(media,videoBlock);
+}else{
+ const block=n("div","xp-interview-pending"),mark=n("div","xp-interview-icon");
+ mark.setAttribute("aria-hidden","true");mark.textContent="▶";
+ add(block,mark,n("div","xp-interview-content",tr(data.reportage?.bringel?.status)||ui("interviewState")));add(media,block);
+}
 }
 function gallery(){
 if(kind==="alas"){photoEssayAlas();galleryAlas();return}
