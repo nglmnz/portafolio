@@ -18,7 +18,7 @@ Portafolio independiente de **Vitrina**, orientado a oportunidades de prácticas
 
 - Caso de proyecto de innovación pedagógica basado en el repositorio [nglmnz/sustancia](https://github.com/nglmnz/sustancia), especialmente `index.qmd`, `piloto.qmd`, `pedagogia.qmd`, `como-funciona.qmd` y `fundamentacion.qmd`.
 - Niveles interactivos de interpretación N1–N4, arquitectura propuesta, ejemplos didácticos y estado documentado de cada componente.
-- Diferencia **prototipo R Shiny + web Quarto existentes** de **motor adaptativo y vector de maestría pendientes**; ningún ejemplo simulado se presenta como evaluación de aprendizaje.
+- Distingue **explorador interactivo del vector de maestría ya existente (dos perfiles simulados, t0/t2)** de la **estimación longitudinal operativa aún no implementada**. El vector contempla seis dimensiones; el radar de ejemplo grafica siete operaciones, mientras el marco conceptual identifica ocho familias.
 - Identidad visual en azul cobalto relacionada con la web original; enlace directo al sitio y al piloto.
 - Datos y traducciones: `assets/sustancia-datos.json`.
 
@@ -106,3 +106,22 @@ La ruta `/tesis/` incorpora dos nuevas secciones cuyos datos están en `assets/t
 - **Contexto internacional**: OMS 2024, UNICEF Innocenti 2025, UNESCO GEM 2023 y OCDE 2025. Las fuentes aportan contexto externo; **no se usan como pruebas de replicación ni de causalidad**. Todos los textos están en ES/EN/PT.
 - **Trayectoria intelectual**: los enlaces de Claudio incluyen el artículo de Alexis Cortés, «El relato sociológico de Claudio Ramos», *Estudios Públicos* 181 (2026), además de su libro UAH.
 - **Títulos del manuscrito**: se conserva la portada «Habitus tecnológico y conexión cuerpo-mente» del archivo aportado y se deja constancia del título alternativo consignado en las dos pautas: «La compulsividad, no el tiempo: habitus tecnológico y deterioro de la salud mental en estudiantes universitarios de primer año».
+
+### Estado y mapa documental de Sustancia (noviembre 2026)
+
+Esta revisión sustituye la presentación centrada exclusivamente en la rúbrica N1–N4. Se relevaron las **seis áreas actualmente documentadas** de la web de Sustancia, el JavaScript del simulador y el código del prototipo accesible por enlace:
+
+| Página de origen | Qué incorpora ahora el portafolio |
+|---|---|
+| `index.qmd` | Propósito, comparación N1/N3, cuatro contextos de simulación, estado y ciclo de aprendizaje. |
+| `fundamentacion.qmd` | Bourdieu, Simondon y la decisión entre arquitectura delegativa e incorporativa. |
+| `pedagogia.qmd` | Seis dimensiones del vector, ocho familias de operaciones, N1–N4, taxonomía de errores y preguntas epistemológicas. |
+| `como-funciona.qmd` | Siete fases proyectadas desde diagnóstico a nuevo desafío; responsabilidad de estudiantes, docentes, agentes y motor. |
+| `universidades.qmd` | Estadística I, cinco módulos curriculares y tres perspectivas institucionales: estudiante, docente, universidad. |
+| `equipo.qmd` | Origen, equipo interdisciplinario y preguntas de investigación sobre error y revisión. |
+| `piloto.qmd` | Enlace al Shiny experimental (reproductor incrustado; funcionamiento depende de alojamiento). |
+| `assets/sustancia-interactions.js` | Datos exactos del radar interactivo: perfiles A/B, momento inicial t0 y escenario hipotético t2; secuencias de cuatro contextos. |
+
+**Evidencia existente:** web Quarto, piloto R Shiny, explorador interactivo del vector con siete operaciones, selector de seis dimensiones, ejemplos de revisión y modelos conceptuales. **Pendientes de implementar y evaluar:** diagnóstico basado en estudiantes reales, vector longitudinal calibrado, banco curricular conectado a motor adaptativo, selección de actividades por evidencia y paneles docentes. El perfil mostrado es ficticio y no mide resultados educativos.
+
+El caso se sirve en los idiomas ES, EN y PT mediante `assets/sustancia-datos.json` y `assets/casos.js`. Todas las traducciones del portafolio son síntesis editoriales de los textos fuente; la disponibilidad de páginas en otros idiomas dentro del proyecto original depende de ese repositorio.
