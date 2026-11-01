@@ -2,6 +2,30 @@
 
 Portafolio independiente de **Vitrina**, orientado a oportunidades de prácticas, investigación aplicada, análisis de datos, sostenibilidad e innovación en Bilbao/Euskadi.
 
+
+## Dos casos nuevos: investigación y Sustancia (2026-11-01)
+
+**Investigación de grado** → `/tesis/` — [Ver en la web](https://nglmnz.github.io/portafolio/tesis/)
+
+- Introducción, problema, marco conceptual, metodología, resultados, discusión y conclusiones basados en `sg_final_v01(1).docx` (seminario UAH, julio de 2026).
+- Visualización de tres perfiles k-means y barras de resultados por tema, tabla de asociaciones del modelo de regresión, límites y cautelas.
+- 4 referencias principales con sus fichas bibliográficas y portadas de Open Library (con alternativa textual si la cubierta no está disponible).
+- Muestra no probabilística por conveniencia (N=276 válidos). La web no presenta relaciones causales; la nota editorial señala que los tamaños válidos por ítem del original requieren una revisión antes de publicación científica.
+- **No se ha publicado en el repositorio el manuscrito original ni la base de datos.** La calificación 6,8/7,0 corresponde al dato compartido para el portafolio, no a un certificado adjunto al estudio.
+- Datos y traducciones: `assets/tesis-datos.json`.
+
+**Sustancia** → `/sustancia/` — [Ver en la web](https://nglmnz.github.io/portafolio/sustancia/)
+
+- Caso de proyecto de innovación pedagógica basado en el repositorio [nglmnz/sustancia](https://github.com/nglmnz/sustancia), especialmente `index.qmd`, `piloto.qmd`, `pedagogia.qmd`, `como-funciona.qmd` y `fundamentacion.qmd`.
+- Niveles interactivos de interpretación N1–N4, arquitectura propuesta, ejemplos didácticos y estado documentado de cada componente.
+- Diferencia **prototipo R Shiny + web Quarto existentes** de **motor adaptativo y vector de maestría pendientes**; ningún ejemplo simulado se presenta como evaluación de aprendizaje.
+- Identidad visual en azul cobalto relacionada con la web original; enlace directo al sitio y al piloto.
+- Datos y traducciones: `assets/sustancia-datos.json`.
+
+Ambas páginas comparten `assets/casos.js`, `assets/casos.css` y `assets/cases-ui.json` para la navegación y las traducciones ES/EN/PT. La navegación interna conserva el idioma por `?lang=es|en|pt`. Están enlazadas desde la portada, junto con el caso CESI. Los enlaces de libros son externos; las miniaturas se solicitan a Open Library solo al abrir la página (pueden variar según disponibilidad).
+
+La relación editorial **tesis → Sustancia** significa que las preguntas sobre autonomía y delegación intelectual motivaron una **línea pedagógica de desarrollo**, no que la tesis validase el producto ni que Sustancia fuese una intervención de salud mental.
+
 ## CESI 2025 · Identidad y archivo institucional (actualización 2026-11-01)
 
 La página `cesi/index.html` adopta la paleta extraída de la identidad original CESI: verde turquesa `#00C892`, menta clara `#99D7C9`, tinta oscura y blanco. Incluye:
