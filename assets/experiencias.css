@@ -172,3 +172,23 @@ body[data-case="alas"] .xp-alas-visual{aspect-ratio:auto;max-height:none;min-hei
 .xp-reportage-credit{display:block;font-size:12px;color:#496a73;font-weight:780;border-left:3px solid #218e91;padding-left:13px;margin:21px 0 10px}
 @media(max-width:950px){.xp-reportage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.xp-reportage-card:last-child{grid-column:span 2}}
 @media(max-width:600px){.xp-reportage-grid{grid-template-columns:1fr}.xp-reportage-card:last-child{grid-column:auto}}
+
+
+/* ALAS editorial opening: original multicolour waves, photography in its own chapter. */
+body[data-case="alas"] .xp-hero-in{grid-template-columns:minmax(0,1.2fr) minmax(270px,.82fr);gap:clamp(25px,4vw,62px);padding-block:80px 105px}
+body[data-case="alas"] .xp-hero-visual{position:relative;aspect-ratio:1;max-height:480px;min-height:330px;background:transparent;overflow:hidden;isolation:isolate}
+body[data-case="alas"] .xp-wave{display:block}
+body[data-case="alas"] .xp-art-center{display:grid}
+.xp-alas-essay{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:13px;margin:28px 0 20px}
+.xp-alas-essay-photo{margin:0;position:relative;min-height:265px;background:#193b4c;border-radius:11px;overflow:hidden;border:1px solid #729a9d}
+.xp-alas-essay-photo.featured{min-height:370px}
+.xp-alas-essay-photo img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;position:absolute;inset:0;transition:transform .35s ease}
+.xp-alas-essay-photo::after{content:"";position:absolute;inset:47% 0 0;background:linear-gradient(transparent,rgba(4,27,39,.87));pointer-events:none}
+.xp-alas-essay-photo figcaption{position:absolute;bottom:0;left:0;right:0;z-index:1;color:#eefdf9;padding:19px 15px;font-size:13px;font-weight:850;line-height:1.44}
+.xp-alas-essay-photo:hover img{transform:scale(1.035)}
+.xp-essay-link{display:inline-flex;align-items:center;margin-top:8px;border-bottom:1px solid currentColor;font-weight:850;color:#147b82;text-decoration:none;font-size:14px;padding-bottom:5px}
+.xp-essay-link:hover{color:#0f5969}
+@media(max-width:900px){body[data-case="alas"] .xp-hero-in{grid-template-columns:1fr .85fr}body[data-case="alas"] .xp-hero-visual{min-height:280px}.xp-alas-essay{grid-template-columns:1fr 1fr}.xp-alas-essay-photo.featured{grid-column:1/-1;min-height:310px}.xp-alas-essay-photo{min-height:245px}}
+@media(max-width:700px){body[data-case="alas"] .xp-hero-in{grid-template-columns:1fr;gap:10px;padding-block:65px 70px}body[data-case="alas"] .xp-hero-visual{width:min(420px,100%);max-height:365px;min-height:320px;aspect-ratio:1;margin:auto}}
+@media(max-width:470px){.xp-alas-essay{grid-template-columns:1fr}.xp-alas-essay-photo,.xp-alas-essay-photo.featured{grid-column:auto;min-height:245px}}
+@media(prefers-reduced-motion:reduce){.xp-alas-essay-photo img{transition:none}.xp-alas-essay-photo:hover img{transform:none}}
