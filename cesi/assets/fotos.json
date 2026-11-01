@@ -1,25 +1,749 @@
 {
-  "version": 1,
-  "photos": [],
-  "instructions": {
-    "es": "Sube imágenes a las carpetas y añade aquí cada ruta, categoría, pie y crédito. No publiques fotos sin permisos.",
-    "en": "Upload images to the folders and list each path, category, caption and credit here.",
-    "pt": "Envie as imagens às pastas e registre o caminho, a categoria, a legenda e os créditos aqui."
+  "version": 2,
+  "updated": "2026-11-01",
+  "photos": [
+    {
+      "src": "assets/Imagen%20principal%20tortuga%20con%20logos.webp",
+      "category": "hero",
+      "alt": {
+        "es": "Escultura «Agua, Tierra y Aire» de Eleodoro Calderón en la identidad visual del CESI",
+        "en": "CESI visual identity featuring Eleodoro Calderón’s sculpture Agua, Tierra y Aire",
+        "pt": "Identidade visual do CESI com a escultura Água, Terra e Ar de Eleodoro Calderón"
+      },
+      "caption": {
+        "es": "Escultura «Agua, Tierra y Aire» de Eleodoro Calderón en la identidad visual del CESI",
+        "en": "CESI visual identity featuring Eleodoro Calderón’s sculpture Agua, Tierra y Aire",
+        "pt": "Identidade visual do CESI com a escultura Água, Terra e Ar de Eleodoro Calderón"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "Imagen principal tortuga con logos.webp"
+    },
+    {
+      "src": "assets/hero-main.webp",
+      "category": "hero",
+      "alt": {
+        "es": "Imagen alternativa de portada CESI 2025",
+        "en": "Alternative CESI 2025 cover artwork",
+        "pt": "Imagem alternativa de capa do CESI 2025"
+      },
+      "caption": {
+        "es": "Imagen alternativa de portada CESI 2025",
+        "en": "Alternative CESI 2025 cover artwork",
+        "pt": "Imagem alternativa de capa do CESI 2025"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "hero-main.webp"
+    },
+    {
+      "src": "assets/Afiche%20Congreso%20QR.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Afiche general del congreso",
+        "en": "General congress poster",
+        "pt": "Cartaz geral do congresso"
+      },
+      "caption": {
+        "es": "Afiche general del congreso",
+        "en": "General congress poster",
+        "pt": "Cartaz geral do congresso"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "Afiche Congreso QR.webp"
+    },
+    {
+      "src": "assets/Afiche%20Congreso%203%20QR.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Variante del afiche oficial del congreso",
+        "en": "Alternative version of the official congress poster",
+        "pt": "Variação do cartaz oficial do congresso"
+      },
+      "caption": {
+        "es": "Variante del afiche oficial del congreso",
+        "en": "Alternative version of the official congress poster",
+        "pt": "Variação do cartaz oficial do congresso"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "Afiche Congreso 3 QR.webp"
+    },
+    {
+      "src": "assets/exhibicion_dearte_flyer.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Gráfica de difusión de la exhibición artística",
+        "en": "Art exhibition promotional artwork",
+        "pt": "Material de divulgação da exposição artística"
+      },
+      "caption": {
+        "es": "Gráfica de difusión de la exhibición artística",
+        "en": "Art exhibition promotional artwork",
+        "pt": "Material de divulgação da exposição artística"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "exhibicion_dearte_flyer.webp"
+    },
+    {
+      "src": "assets/flyer_panel_demogrfico.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Afiche del panel demográfico",
+        "en": "Demography panel poster",
+        "pt": "Cartaz do painel de demografia"
+      },
+      "caption": {
+        "es": "Afiche del panel demográfico",
+        "en": "Demography panel poster",
+        "pt": "Cartaz do painel de demografia"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "flyer_panel_demogrfico.webp"
+    },
+    {
+      "src": "assets/programa_dia1.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Programa académico: primera jornada",
+        "en": "Academic program: day one",
+        "pt": "Programa acadêmico: primeiro dia"
+      },
+      "caption": {
+        "es": "Programa académico: primera jornada",
+        "en": "Academic program: day one",
+        "pt": "Programa acadêmico: primeiro dia"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "programa_dia1.webp"
+    },
+    {
+      "src": "assets/programa_dia2.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Programa académico: segunda jornada",
+        "en": "Academic program: day two",
+        "pt": "Programa acadêmico: segundo dia"
+      },
+      "caption": {
+        "es": "Programa académico: segunda jornada",
+        "en": "Academic program: day two",
+        "pt": "Programa acadêmico: segundo dia"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "programa_dia2.webp"
+    },
+    {
+      "src": "assets/totebag_cesi.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Material gráfico y bolso del CESI",
+        "en": "CESI visual identity and tote bag",
+        "pt": "Identidade visual e ecobag do CESI"
+      },
+      "caption": {
+        "es": "Material gráfico y bolso del CESI",
+        "en": "CESI visual identity and tote bag",
+        "pt": "Identidade visual e ecobag do CESI"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "totebag_cesi.webp"
+    },
+    {
+      "src": "assets/Daniel-chernilo_conferencia_inaugural.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Registro de la conferencia de Daniel Chernilo",
+        "en": "Daniel Chernilo's conference record",
+        "pt": "Registro da conferência de Daniel Chernilo"
+      },
+      "caption": {
+        "es": "Registro de la conferencia de Daniel Chernilo",
+        "en": "Daniel Chernilo's conference record",
+        "pt": "Registro da conferência de Daniel Chernilo"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "Daniel-chernilo_conferencia_inaugural.webp"
+    },
+    {
+      "src": "assets/charla_chernilo.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Registro de la charla de Daniel Chernilo",
+        "en": "Daniel Chernilo lecture photograph",
+        "pt": "Registro da palestra de Daniel Chernilo"
+      },
+      "caption": {
+        "es": "Registro de la charla de Daniel Chernilo",
+        "en": "Daniel Chernilo lecture photograph",
+        "pt": "Registro da palestra de Daniel Chernilo"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "charla_chernilo.webp"
+    },
+    {
+      "src": "assets/charla_esteban1.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Registro de la presentación de Esteban Torres",
+        "en": "Record of Esteban Torres's presentation",
+        "pt": "Registro da apresentação de Esteban Torres"
+      },
+      "caption": {
+        "es": "Registro de la presentación de Esteban Torres",
+        "en": "Record of Esteban Torres's presentation",
+        "pt": "Registro da apresentação de Esteban Torres"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "charla_esteban1.webp"
+    },
+    {
+      "src": "assets/charla_esteban3.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Otra perspectiva de la presentación de Esteban Torres",
+        "en": "Another view of Esteban Torres's presentation",
+        "pt": "Outra perspectiva da apresentação de Esteban Torres"
+      },
+      "caption": {
+        "es": "Otra perspectiva de la presentación de Esteban Torres",
+        "en": "Another view of Esteban Torres's presentation",
+        "pt": "Outra perspectiva da apresentação de Esteban Torres"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "charla_esteban3.webp"
+    },
+    {
+      "src": "assets/charla_esteban5.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Participación en la charla de Esteban Torres",
+        "en": "Participation in Esteban Torres's talk",
+        "pt": "Participação na palestra de Esteban Torres"
+      },
+      "caption": {
+        "es": "Participación en la charla de Esteban Torres",
+        "en": "Participation in Esteban Torres's talk",
+        "pt": "Participação na palestra de Esteban Torres"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "charla_esteban5.webp"
+    },
+    {
+      "src": "assets/charla_modernismo.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Registro de la charla sobre modernismo",
+        "en": "Record of the lecture on modernism",
+        "pt": "Registro da palestra sobre modernismo"
+      },
+      "caption": {
+        "es": "Registro de la charla sobre modernismo",
+        "en": "Record of the lecture on modernism",
+        "pt": "Registro da palestra sobre modernismo"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "charla_modernismo.webp"
+    },
+    {
+      "src": "assets/complejidad-sala.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Sala durante una actividad sobre complejidad",
+        "en": "Room during a session on complexity",
+        "pt": "Sala durante uma atividade sobre complexidade"
+      },
+      "caption": {
+        "es": "Sala durante una actividad sobre complejidad",
+        "en": "Room during a session on complexity",
+        "pt": "Sala durante uma atividade sobre complexidade"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "complejidad-sala.webp"
+    },
+    {
+      "src": "assets/complejidad_jeannette.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Registro de actividad sobre complejidad",
+        "en": "Record of a session on complexity",
+        "pt": "Registro de atividade sobre complexidade"
+      },
+      "caption": {
+        "es": "Registro de actividad sobre complejidad",
+        "en": "Record of a session on complexity",
+        "pt": "Registro de atividade sobre complexidade"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "complejidad_jeannette.webp"
+    },
+    {
+      "src": "assets/panel_crisis.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Panel sobre crisis y transformaciones sociales",
+        "en": "Panel on crisis and social transformations",
+        "pt": "Painel sobre crise e transformações sociais"
+      },
+      "caption": {
+        "es": "Panel sobre crisis y transformaciones sociales",
+        "en": "Panel on crisis and social transformations",
+        "pt": "Painel sobre crise e transformações sociais"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "panel_crisis.webp"
+    },
+    {
+      "src": "assets/panel_expertas_genero.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Panel de expertas sobre género",
+        "en": "Expert panel on gender",
+        "pt": "Painel de especialistas sobre gênero"
+      },
+      "caption": {
+        "es": "Panel de expertas sobre género",
+        "en": "Expert panel on gender",
+        "pt": "Painel de especialistas sobre gênero"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "panel_expertas_genero.webp"
+    },
+    {
+      "src": "assets/panel_expertos_economia-destruccioncreativa.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Panel de economía y destrucción creativa",
+        "en": "Panel on economics and creative destruction",
+        "pt": "Painel de economia e destruição criativa"
+      },
+      "caption": {
+        "es": "Panel de economía y destrucción creativa",
+        "en": "Panel on economics and creative destruction",
+        "pt": "Painel de economia e destruição criativa"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "panel_expertos_economia-destruccioncreativa.webp"
+    },
+    {
+      "src": "assets/panel_expertos_medioambiente_escazu.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Panel sobre medioambiente y Acuerdo de Escazú",
+        "en": "Panel on the environment and the Escazú Agreement",
+        "pt": "Painel sobre meio ambiente e Acordo de Escazú"
+      },
+      "caption": {
+        "es": "Panel sobre medioambiente y Acuerdo de Escazú",
+        "en": "Panel on the environment and the Escazú Agreement",
+        "pt": "Painel sobre meio ambiente e Acordo de Escazú"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "panel_expertos_medioambiente_escazu.webp"
+    },
+    {
+      "src": "assets/panel_expertos_memoriayddhh.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Panel de memoria y derechos humanos",
+        "en": "Panel on memory and human rights",
+        "pt": "Painel sobre memória e direitos humanos"
+      },
+      "caption": {
+        "es": "Panel de memoria y derechos humanos",
+        "en": "Panel on memory and human rights",
+        "pt": "Painel sobre memória e direitos humanos"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "panel_expertos_memoriayddhh.webp"
+    },
+    {
+      "src": "assets/panel_violenciayseguridadciudadana.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Panel de violencia y seguridad ciudadana",
+        "en": "Panel on violence and public safety",
+        "pt": "Painel sobre violência e segurança cidadã"
+      },
+      "caption": {
+        "es": "Panel de violencia y seguridad ciudadana",
+        "en": "Panel on violence and public safety",
+        "pt": "Painel sobre violência e segurança cidadã"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "panel_violenciayseguridadciudadana.webp"
+    },
+    {
+      "src": "assets/ponencia.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Registro de una ponencia estudiantil",
+        "en": "Record of a student research presentation",
+        "pt": "Registro de uma apresentação de pesquisa estudantil"
+      },
+      "caption": {
+        "es": "Registro de una ponencia estudiantil",
+        "en": "Record of a student research presentation",
+        "pt": "Registro de uma apresentação de pesquisa estudantil"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "ponencia.webp"
+    },
+    {
+      "src": "assets/lanzamiento_libro_migraciones_lomediciones.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Lanzamiento de libro sobre migraciones",
+        "en": "Book launch on migration",
+        "pt": "Lançamento de livro sobre migrações"
+      },
+      "caption": {
+        "es": "Lanzamiento de libro sobre migraciones",
+        "en": "Book launch on migration",
+        "pt": "Lançamento de livro sobre migrações"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "lanzamiento_libro_migraciones_lomediciones.webp"
+    },
+    {
+      "src": "assets/lanzamiento_libro_migraciones_lomediciones2.webp",
+      "category": "programacion",
+      "alt": {
+        "es": "Segunda imagen del lanzamiento editorial sobre migraciones",
+        "en": "Second view of the migration book launch",
+        "pt": "Segunda imagem do lançamento editorial sobre migrações"
+      },
+      "caption": {
+        "es": "Segunda imagen del lanzamiento editorial sobre migraciones",
+        "en": "Second view of the migration book launch",
+        "pt": "Segunda imagem do lançamento editorial sobre migrações"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "lanzamiento_libro_migraciones_lomediciones2.webp"
+    },
+    {
+      "src": "assets/flyer_lanzamiento_libro_complejidad_sistemas.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Convocatoria a lanzamiento de libro sobre complejidad y sistemas",
+        "en": "Announcement of a book launch on complexity and systems",
+        "pt": "Convite para lançamento de livro sobre complexidade e sistemas"
+      },
+      "caption": {
+        "es": "Convocatoria a lanzamiento de libro sobre complejidad y sistemas",
+        "en": "Announcement of a book launch on complexity and systems",
+        "pt": "Convite para lançamento de livro sobre complexidade e sistemas"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "flyer_lanzamiento_libro_complejidad_sistemas.webp"
+    },
+    {
+      "src": "assets/exhibicion.webp",
+      "category": "exhibicion",
+      "alt": {
+        "es": "Vista general de la exhibición artística",
+        "en": "General view of the art exhibition",
+        "pt": "Vista geral da exposição artística"
+      },
+      "caption": {
+        "es": "Vista general de la exhibición artística",
+        "en": "General view of the art exhibition",
+        "pt": "Vista geral da exposição artística"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "exhibicion.webp"
+    },
+    {
+      "src": "assets/exhibicion_eleodoro_calderon%20hablando.webp",
+      "category": "exhibicion",
+      "alt": {
+        "es": "Eleodoro Calderón en actividad de la exhibición",
+        "en": "Eleodoro Calderón during an exhibition event",
+        "pt": "Eleodoro Calderón durante atividade da exposição"
+      },
+      "caption": {
+        "es": "Eleodoro Calderón en actividad de la exhibición",
+        "en": "Eleodoro Calderón during an exhibition event",
+        "pt": "Eleodoro Calderón durante atividade da exposição"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "exhibicion_eleodoro_calderon hablando.webp"
+    },
+    {
+      "src": "assets/exhibicion_hugoriveraScott.webp",
+      "category": "exhibicion",
+      "alt": {
+        "es": "Hugo Rivera Scott en la exhibición",
+        "en": "Hugo Rivera Scott at the exhibition",
+        "pt": "Hugo Rivera Scott na exposição"
+      },
+      "caption": {
+        "es": "Hugo Rivera Scott en la exhibición",
+        "en": "Hugo Rivera Scott at the exhibition",
+        "pt": "Hugo Rivera Scott na exposição"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "exhibicion_hugoriveraScott.webp"
+    },
+    {
+      "src": "assets/exhibicion_imagen_mediador_explicando%20obra.webp",
+      "category": "exhibicion",
+      "alt": {
+        "es": "Mediación de una obra durante la exhibición",
+        "en": "Art mediation during the exhibition",
+        "pt": "Mediação de uma obra durante a exposição"
+      },
+      "caption": {
+        "es": "Mediación de una obra durante la exhibición",
+        "en": "Art mediation during the exhibition",
+        "pt": "Mediação de uma obra durante a exposição"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "exhibicion_imagen_mediador_explicando obra.webp"
+    },
+    {
+      "src": "assets/exhibicion_josemiguelmardones_bancodetalca.webp",
+      "category": "exhibicion",
+      "alt": {
+        "es": "Registro de José Miguel Mardones y la obra «Banco de Talca»",
+        "en": "José Miguel Mardones and the work Banco de Talca",
+        "pt": "Registro de José Miguel Mardones e da obra Banco de Talca"
+      },
+      "caption": {
+        "es": "Registro de José Miguel Mardones y la obra «Banco de Talca»",
+        "en": "José Miguel Mardones and the work Banco de Talca",
+        "pt": "Registro de José Miguel Mardones e da obra Banco de Talca"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "exhibicion_josemiguelmardones_bancodetalca.webp"
+    },
+    {
+      "src": "assets/exhibicion_retrato-gianfrancofoschino.webp",
+      "category": "exhibicion",
+      "alt": {
+        "es": "Registro de Gianfranco Foschino en la exhibición",
+        "en": "Gianfranco Foschino exhibition record",
+        "pt": "Registro de Gianfranco Foschino na exposição"
+      },
+      "caption": {
+        "es": "Registro de Gianfranco Foschino en la exhibición",
+        "en": "Gianfranco Foschino exhibition record",
+        "pt": "Registro de Gianfranco Foschino na exposição"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "exhibicion_retrato-gianfrancofoschino.webp"
+    },
+    {
+      "src": "assets/Banco_talca_arte.webp",
+      "category": "branding",
+      "alt": {
+        "es": "Gráfica vinculada a «Banco de Talca»",
+        "en": "Promotional graphic related to Banco de Talca",
+        "pt": "Peça gráfica relacionada ao Banco de Talca"
+      },
+      "caption": {
+        "es": "Gráfica vinculada a «Banco de Talca»",
+        "en": "Promotional graphic related to Banco de Talca",
+        "pt": "Peça gráfica relacionada ao Banco de Talca"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "Banco_talca_arte.webp"
+    },
+    {
+      "src": "assets/Equipo-directivo-y-rector_uah.webp",
+      "category": "equipo",
+      "alt": {
+        "es": "Equipo directivo del CESI con rectoría UAH, según archivo",
+        "en": "CESI leadership with UAH rectorate, per file label",
+        "pt": "Equipe diretiva do CESI com reitoria UAH, segundo o arquivo"
+      },
+      "caption": {
+        "es": "Equipo directivo del CESI con rectoría UAH, según archivo",
+        "en": "CESI leadership with UAH rectorate, per file label",
+        "pt": "Equipe diretiva do CESI com reitoria UAH, segundo o arquivo"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "Equipo-directivo-y-rector_uah.webp"
+    },
+    {
+      "src": "assets/retrato_final.webp",
+      "category": "equipo",
+      "alt": {
+        "es": "Registro grupal del cierre del congreso, según archivo",
+        "en": "Group record of the congress closing, per file label",
+        "pt": "Registro coletivo do encerramento, segundo o arquivo"
+      },
+      "caption": {
+        "es": "Registro grupal del cierre del congreso, según archivo",
+        "en": "Group record of the congress closing, per file label",
+        "pt": "Registro coletivo do encerramento, segundo o arquivo"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "retrato_final.webp"
+    },
+    {
+      "src": "assets/retrato_comitiva%20UAI.webp",
+      "category": "congreso",
+      "alt": {
+        "es": "Comitiva de Universidad Adolfo Ibáñez, según archivo",
+        "en": "Universidad Adolfo Ibáñez delegation, per file label",
+        "pt": "Comitiva da Universidad Adolfo Ibáñez, segundo o arquivo"
+      },
+      "caption": {
+        "es": "Comitiva de Universidad Adolfo Ibáñez, según archivo",
+        "en": "Universidad Adolfo Ibáñez delegation, per file label",
+        "pt": "Comitiva da Universidad Adolfo Ibáñez, segundo o arquivo"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "retrato_comitiva UAI.webp"
+    },
+    {
+      "src": "assets/retrato_esteban.webp",
+      "category": "congreso",
+      "alt": {
+        "es": "Retrato identificado en archivo como «Esteban»",
+        "en": "Portrait identified as Esteban in source filename",
+        "pt": "Retrato identificado como Esteban no nome do arquivo"
+      },
+      "caption": {
+        "es": "Retrato identificado en archivo como «Esteban»",
+        "en": "Portrait identified as Esteban in source filename",
+        "pt": "Retrato identificado como Esteban no nome do arquivo"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "retrato_esteban.webp"
+    },
+    {
+      "src": "assets/Capt_prensa_UAH2.webp",
+      "category": "prensa",
+      "alt": {
+        "es": "Captura de prensa institucional UAH",
+        "en": "Screenshot of UAH institutional news",
+        "pt": "Captura de reportagem institucional da UAH"
+      },
+      "caption": {
+        "es": "Captura de prensa institucional UAH",
+        "en": "Screenshot of UAH institutional news",
+        "pt": "Captura de reportagem institucional da UAH"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "Capt_prensa_UAH2.webp"
+    },
+    {
+      "src": "assets/capt_prensa_UAH.webp",
+      "category": "prensa",
+      "alt": {
+        "es": "Otra captura de prensa de UAH",
+        "en": "Another UAH institutional news screenshot",
+        "pt": "Outra captura de reportagem da UAH"
+      },
+      "caption": {
+        "es": "Otra captura de prensa de UAH",
+        "en": "Another UAH institutional news screenshot",
+        "pt": "Outra captura de reportagem da UAH"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "capt_prensa_UAH.webp"
+    },
+    {
+      "src": "assets/captura_prensaUC.webp",
+      "category": "prensa",
+      "alt": {
+        "es": "Cobertura del Instituto de Sociología UC",
+        "en": "Coverage from the UC Institute of Sociology",
+        "pt": "Cobertura do Instituto de Sociologia da UC"
+      },
+      "caption": {
+        "es": "Cobertura del Instituto de Sociología UC",
+        "en": "Coverage from the UC Institute of Sociology",
+        "pt": "Cobertura do Instituto de Sociologia da UC"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "captura_prensaUC.webp"
+    },
+    {
+      "src": "assets/captura_prensaUValpo.webp",
+      "category": "prensa",
+      "alt": {
+        "es": "Captura de cobertura de prensa universitaria de Valparaíso",
+        "en": "Screenshot of university coverage from Valparaíso",
+        "pt": "Captura de cobertura universitária de Valparaíso"
+      },
+      "caption": {
+        "es": "Captura de cobertura de prensa universitaria de Valparaíso",
+        "en": "Screenshot of university coverage from Valparaíso",
+        "pt": "Captura de cobertura universitária de Valparaíso"
+      },
+      "credit": "Archivo CESI 2025 · Autoría fotográfica por confirmar",
+      "permission": "Uso solicitado para el portafolio por quien facilitó los archivos; créditos y derechos pendientes de revisión",
+      "source_file": "captura_prensaUValpo.webp"
+    }
+  ],
+  "curation": {
+    "hero_options": [
+      "Imagen principal tortuga con logos.webp",
+      "hero-main.webp"
+    ],
+    "excluded_duplicates": "El archivo original sigue en GitHub, pero no se publica dos veces si coincide su SHA.",
+    "source": "Inventario real de cesi/assets; leyendas descriptivas derivadas de nombres de archivo, sujetas a revisión",
+    "publication_notice": "Las fotografías se usan a petición de quien las subió al repositorio público; se deben confirmar créditos de autoría y permisos de terceros antes de difusión definitiva"
   },
-  "example_not_active": {
-    "src": "assets/hero/hero-eleodoro-calderon.webp",
-    "category": "hero",
-    "alt": {
-      "es": "Escultura Agua, Tierra y Aire, de Eleodoro Calderón",
-      "en": "Agua, Tierra y Aire sculpture by Eleodoro Calderón",
-      "pt": "Escultura Água, Terra e Ar, de Eleodoro Calderón"
+  "videos": [
+    {
+      "src": "assets/exhibicion_video_felisan.mp4",
+      "kind": "exhibicion",
+      "title": {
+        "es": "Registro audiovisual de la exhibición · Felipe Rivas San Martín",
+        "en": "Exhibition video record · Felipe Rivas San Martín",
+        "pt": "Registro audiovisual da exposição · Felipe Rivas San Martín"
+      }
     },
-    "caption": {
-      "es": "Identidad visual CESI 2025",
-      "en": "CESI 2025 visual identity",
-      "pt": "Identidade visual do CESI 2025"
-    },
-    "credit": "Autor/a de fotografía por confirmar",
-    "permission": "Pendiente"
-  }
+    {
+      "src": "assets/video_exhibicion_tortuga_eleodoro.mp4",
+      "kind": "exhibicion",
+      "title": {
+        "es": "Escultura de Eleodoro Calderón · Registro audiovisual",
+        "en": "Eleodoro Calderón sculpture · Video record",
+        "pt": "Escultura de Eleodoro Calderón · Registro audiovisual"
+      }
+    }
+  ]
 }
