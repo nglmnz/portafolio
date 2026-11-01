@@ -233,26 +233,64 @@ function draw(){
  document.title=lang==='es'?'CESI 2025 — Dirección y sociología pública':lang==='en'?'CESI 2025 — Project leadership and public sociology':'CESI 2025 — Liderança e sociologia pública';
  renderGallery();
 }
-function selectGallery(cat){selected=cat;document.querySelectorAll('[data-cat][type="button"]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.cat===selected)));renderGallery()}
-function renderGallery(){
- const gallery=document.getElementById('cesi-gallery');
- if(photos.length){
- gallery.replaceChildren(...photos.filter(x=>x.category!=='hero').filter(x=>selected==='all'||x.category===selected).map(x=>{
- const figure=document.createElement('figure');figure.className='photo';figure.dataset.cat=x.category;
+function selectGallery(cat){selected=cat;galleryLimit=12;document.querySelectorAll('[data-cat][type="button"]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.cat===selected)));renderGallery()}
+let galleryLimit=12;
+function photoFigure(x,featured=false){
+ const figure=document.createElement('figure');figure.className=featured?'photo-chapter-card':'photo';figure.dataset.cat=x.category;
  const btn=document.createElement('button');btn.type='button';btn.className='photo-open';
- const pic=document.createElement('img');pic.loading='lazy';pic.src=x.src;pic.alt=x.alt?.[lang]||x.alt?.es||'';btn.appendChild(pic);
- const cap=document.createElement('figcaption');cap.textContent=x.caption?.[lang]||x.caption?.es||'';
- const credit=document.createElement('div');credit.className='credit';credit.textContent=x.credit||'';
- btn.addEventListener('click',()=>openPhoto(x));figure.append(btn,cap,credit);return figure;
- })); 
- }else gallery.querySelectorAll('figure').forEach(el=>el.hidden=selected!=='all'&&el.dataset.cat!==selected);
+ const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=x.src;img.alt=x.alt?.[lang]||x.alt?.es||'';
+ btn.appendChild(img);
+ const caption=document.createElement('figcaption');caption.textContent=x.caption?.[lang]||x.caption?.es||'';
+ figure.append(btn,caption);
+ if(!featured){const credit=document.createElement('div');credit.className='credit';credit.textContent=x.credit||'';figure.appendChild(credit)}
+ btn.addEventListener('click',()=>openPhoto(x));return figure;
+}
+function renderGallery(){
+ const target=document.getElementById('cesi-gallery');
+ if(!photos.length){target.querySelectorAll('figure').forEach(el=>el.hidden=selected!=='all'&&el.dataset.cat!==selected);return;}
+ const candidates=photos.filter(x=>x.category!=='hero'&&(selected==='all'||x.category===selected));
+ target.replaceChildren(...candidates.slice(0,galleryLimit).map(x=>photoFigure(x)));
+ const more=document.getElementById('gallery-more-btn');more.hidden=galleryLimit>=candidates.length;
+ const prefix=Math.min(galleryLimit,candidates.length)+' / '+candidates.length;
+ document.getElementById('gallery-count').textContent=prefix+' '+(lang==='es'?'fotografías':lang==='en'?'photographs':'fotografias');
+}
+function renderFeatured(){
+ if(!photos.length)return;
+ const byFile=new Map(photos.map(p=>[p.source_file,p]));
+ const selection={
+ identity:['Afiche Congreso QR.webp','programa_dia1.webp','totebag_cesi.webp'],
+ academic:['charla_esteban3.webp','panel_expertos_memoriayddhh.webp','panel_expertas_genero.webp','ponencia.webp'],
+ artGallery:['exhibicion.webp','exhibicion_eleodoro_calderon hablando.webp','exhibicion_imagen_mediador_explicando obra.webp'],
+ teamGallery:['retrato_final.webp','Equipo-directivo-y-rector_uah.webp','retrato_comitiva UAI.webp'],
+ pressGallery:['capt_prensa_UAH.webp','Capt_prensa_UAH2.webp','captura_prensaUC.webp','captura_prensaUValpo.webp']
+ };
+ for(const [key,files] of Object.entries(selection)){
+  const target=document.getElementById(key+'Grid');
+  if(!target)continue;
+  target.replaceChildren(...files.map(name=>byFile.get(name)).filter(Boolean).map(p=>photoFigure(p,true)));
+ }
 }
 function openPhoto(x){const modal=document.getElementById('photo-modal');const im=modal.querySelector('img');im.src=x.src;im.alt=x.alt?.[lang]||x.alt?.es||'';modal.querySelector('p').textContent=(x.caption?.[lang]||x.caption?.es||'')+' · '+(x.credit||'');modal.showModal()}
 document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;history.replaceState(null,'',location.pathname+'?lang='+lang+location.hash);draw()}));
 document.querySelectorAll('.gallery-filters [data-cat]').forEach(b=>b.addEventListener('click',()=>selectGallery(b.dataset.cat)));
 document.querySelectorAll('[data-video]').forEach(btn=>btn.addEventListener('click',()=>{const id=btn.dataset.video;if(!/^[\w-]{11}$/.test(id))return;const iframe=document.createElement('iframe');iframe.loading='lazy';iframe.title='YouTube '+id;iframe.allow='accelerometer; autoplay; encrypted-media; picture-in-picture; web-share';iframe.allowFullscreen=true;iframe.referrerPolicy='strict-origin-when-cross-origin';iframe.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1';btn.replaceWith(iframe)}));
 document.querySelector('#photo-modal .modal-close').addEventListener('click',()=>document.getElementById('photo-modal').close());
-fetch('assets/fotos.json').then(r=>r.ok?r.json():null).then(data=>{if(!data||!Array.isArray(data.photos))return;photos=data.photos.filter(x=>x&&typeof x.src==='string'&&x.src.startsWith('assets/')&&x.permission&&x.permission.toLowerCase().includes('autoriz'));const cover=photos.find(x=>x.category==='hero');if(cover){const hero=document.querySelector('.hero');hero.style.backgroundImage='url("'+encodeURI(cover.src)+'")';hero.classList.add('has-photo')}renderGallery()}).catch(()=>{});
+let coverImages=[];
+function showHero(index){
+ const img=coverImages[index];if(!img)return;
+ const hero=document.querySelector('.hero');hero.style.backgroundImage='url("'+img.src+'")';hero.classList.add('has-photo');
+ document.querySelectorAll('[data-hero-index]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.heroIndex)===index)));
+ document.getElementById('hero-credit').title=(img.caption?.[lang]||img.caption?.es||'')+' · '+(img.credit||'');
+}
+document.querySelectorAll('[data-hero-index]').forEach(button=>button.addEventListener('click',()=>showHero(Number(button.dataset.heroIndex))));
+document.getElementById('gallery-more-btn').addEventListener('click',()=>{galleryLimit+=12;renderGallery()});
+fetch('assets/fotos.json').then(r=>r.ok?r.json():null).then(data=>{
+ if(!data||!Array.isArray(data.photos))return;
+ photos=data.photos.filter(x=>x&&typeof x.src==='string'&&x.src.startsWith('assets/')&&!['blocked','no publicar'].includes(String(x.permission).toLowerCase()));
+ coverImages=photos.filter(x=>x.category==='hero');
+ if(coverImages.length)showHero(0);
+ renderGallery();renderFeatured();
+}).catch(()=>{document.getElementById('gallery-count').textContent='Archivo multimedia no disponible';});
 
 let artistOrder='original';
 const artistList=document.getElementById('artist-list');
@@ -281,7 +319,7 @@ document.querySelectorAll('[data-order]').forEach(btn=>btn.addEventListener('cli
 }));
 const origDraw=draw;
 draw=function(){
- origDraw();
+ origDraw();renderFeatured();
  const placeholder={es:'Buscar artista…',en:'Search artists…',pt:'Buscar artistas…'};
  artistSearch.placeholder=placeholder[lang];
  artistSearch.setAttribute('aria-label',placeholder[lang]);
