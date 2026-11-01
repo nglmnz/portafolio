@@ -321,43 +321,191 @@ function drawChart(tabs,chart){
 }
 function fromSustancia(){
  document.title="Sustancia · Ángel Muñoz";
- hero("SUSTANCIA · 2026 · R SHINY / QUARTO",label(DATA.title),label(DATA.tagline),label(DATA.lead),
- [[ui("sTry"),DATA.urls.site,true,true],[ui("sPilot"),DATA.urls.pilot,false,true],[ui("viewT"),localeHref("tesis"),false,false]],label(DATA.project));
- const statsRow=E("div","container");
- const a=E("div","stats");
- [["N1–N4",language==="en"?"interpretation depths":language==="pt"?"níveis interpretativos":"niveles interpretativos"],["R / Shiny",language==="en"?"interactive prototype":language==="pt"?"protótipo interativo":"prototipo interactivo"],["Quarto",language==="en"?"published educational website":language==="pt"?"site pedagógico publicado":"web pedagógica publicada"],["I+D",language==="en"?"adaptive engine in development":language==="pt"?"motor adaptativo em desenvolvimento":"motor adaptativo en desarrollo"]].forEach(x=>{const n=E("div","stat");add(n,E("strong","",x[0]),E("span","",x[1]));add(a,n)});add(statsRow,a);root.append(statsRow);
- let [sec,box]=section("basis","01 / "+ui("sBase"),ui("sBase"));
- const cells=E("div","two");add(cells,p(label(DATA.basis)),panel(ui("sDesign"),label(DATA.idea),"accent-panel"));add(box,cells);root.append(sec);
- [sec,box]=section("lineage","02 / "+ui("relation"),ui("relationT"));
- const lin=E("div","lineage");
- const texts=ui("sLineage");texts.forEach((x,i)=>{const item=E("div");add(item,E("b","",String(i+1).padStart(2,"0")),p(x));add(lin,item)});
- add(box,lin,p(label(DATA.relationship)),link(ui("viewT"),localeHref("tesis"),"link-inline"));root.append(sec);
- [sec,box]=section("levels","03 / "+ui("sLevels"),ui("sLevels"));
- add(box,p(ui("sStudent")));
- const tabs=E("div","level-tabs"),levelPanel=E("div","level-panel");add(box,tabs,levelPanel);
- DATA.level.forEach((x,i)=>add(tabs,button(x.n,i===selectedLevel,()=>{selectedLevel=i;drawLevel(tabs,levelPanel)})));
- drawLevel(tabs,levelPanel);
- add(box,p(ui("sMeasure"),"method-note"));root.append(sec);
- [sec,box]=section("compare","04 / "+ui("sCompare"),ui("sCompare"));
- add(box,p(ui("sCompareNote")));
- const pair=E("div","compare");
- DATA.compare.forEach((x,i)=>{const c=E("article","panel");add(c,E("span","mini-label",i===0?"N1 / TÉCNICO":"N3–N4 / CONTEXTO"),p(label(x)));add(pair,c)});
- add(box,pair);root.append(sec);
- [sec,box]=section("workflow","05 / "+ui("sWorkflow"),ui("sWorkflow"));
- add(box,p(ui("sProcess")));
- const flow=E("div","flow-steps");
- DATA.workflow.forEach((x,i)=>{const card=E("div","flow-step");add(card,E("b","",String(i+1).padStart(2,"0")),p(label(x)));add(flow,card)});
- add(box,flow,link(ui("sFull"),DATA.urls.site,"link-inline",true));root.append(sec);
- [sec,box]=section("status","06 / "+ui("sState"),ui("sState"));
- const grid=E("div","status-grid");
- DATA.status.forEach(x=>{const card=E("article","status "+(x.kind==="next"?"next":""));add(card,E("span","state",ui(x.kind==="next"?"sStatusNext":"sStatusNow")),H(label(x.title),3),p(label(x.text)));add(grid,card)});
- add(box,grid);root.append(sec);
- [sec,box]=section("boundaries","07 / "+ui("sBoundaries"),ui("sBoundaries"));
- add(box,p(label(DATA.boundary),"method-note"),p(ui("sLegal"),"tiny"));root.append(sec);
- [sec,box]=section("links","08 / LINKS","Explorar / Explore");
+ hero("SUSTANCIA · 2026 · R SHINY / QUARTO",label(DATA.title),label(DATA.tagline),label(DATA.lead),[
+  [ui("sTry"),DATA.urls.site,true,true],
+  [ui("sPilot"),DATA.urls.pilot,false,true],
+  [ui("viewT"),localeHref("tesis"),false,false]
+ ],label(DATA.project));
+ stats([
+  ["6",language==="es"?"dimensiones del vector":language==="pt"?"dimensões do vetor":"mastery dimensions"],
+  ["8",language==="es"?"operaciones estadísticas":language==="pt"?"operações estatísticas":"statistical operations"],
+  ["N1–N4",language==="es"?"profundidad interpretativa":language==="pt"?"profundidade interpretativa":"interpretive depth"],
+  ["4",language==="es"?"laboratorios simulados":language==="pt"?"laboratórios simulados":"illustrative simulations"]
+ ]);
+ function block(id,n,title,body){const [sec,box]=section(id,n,title);if(body)add(box,p(body));root.append(sec);return box}
+ const srcNote=(file)=>language==="es"?"Fuente del modelo: "+file:language==="en"?"Project source: "+file:"Fonte do modelo: "+file;
+ const box1=block("sustancia-origin","01 / ORIGEN",language==="en"?"From digital habitus to statistical reasoning":language==="pt"?"Do habitus digital ao raciocínio estatístico":"Del habitus tecnológico al razonamiento estadístico");
+ const two=E("div","two");add(two,p(label(DATA.basis)),panel(ui("sDesign"),label(DATA.idea),"accent-panel"));add(box1,two);
+ const line=E("div","lineage");
+ ui("sLineage").forEach((x,i)=>{const cell=E("div");add(cell,E("b","",String(i+1).padStart(2,"0")),p(x));add(line,cell)});
+ add(box1,line,p(label(DATA.relationship)),link(ui("viewT"),localeHref("tesis"),"link-inline"));
+
+ const a=DATA.architecture;
+ const arch=block("incorporative-architecture","02 / PRINCIPIO DE DISEÑO",label(a.title),label(a.intro));
+ const switcher=E("div","sus-mode-switch");
+ const delegate=button(language==="es"?"Arquitectura delegativa":language==="en"?"Delegative architecture":"Arquitetura delegativa",false,()=>drawMode("delegative"),"sus-tab");
+ const incorporate=button(language==="es"?"Arquitectura incorporativa":language==="en"?"Incorporative architecture":"Arquitetura incorporativa",true,()=>drawMode("incorporative"),"sus-tab");
+ add(switcher,delegate,incorporate);
+ const diagram=E("div","sus-flow"),expl=E("p","sus-flow-description");
+ const keyText=E("p","method-note",label(a.implication));
+ function drawMode(k){
+  const del=k==="delegative";
+  delegate.setAttribute("aria-pressed",String(del));incorporate.setAttribute("aria-pressed",String(!del));
+  diagram.replaceChildren();
+  const left=E("div","sus-flow-node");
+  add(left,E("small","",language==="es"?"ESTUDIANTE":language==="en"?"LEARNER":"ESTUDANTE"),E("strong","",del?(language==="es"?"Recibe y valida":language==="en"?"Receives and validates":"Recebe e valida"):(language==="es"?"Produce y argumenta":language==="en"?"Writes and reasons":"Produz e argumenta")));
+  const arrow=E("div","sus-flow-arrow",del?"←":"→");
+  const right=E("div","sus-flow-node");
+  add(right,E("small","","IA"),E("strong","",del?(language==="es"?"Produce la respuesta":language==="en"?"Produces the answer":"Produz a resposta"):(language==="es"?"Pregunta y retroalimenta":language==="en"?"Challenges and gives feedback":"Questiona e devolve feedback")));
+  add(diagram,left,arrow,right);
+  diagram.dataset.mode=k;
+  expl.textContent=label(del?a.delegate:a.incorporate);
+ }
+ add(arch,switcher,diagram,expl,keyText,link(ui("sFull"),DATA.urls.foundation,"link-inline",true));
+ drawMode("incorporative");
+
+ const v=DATA.vector;
+ const foundation=block("reasoning-model","03 / HABILIDADES",language==="es"?"El razonamiento estadístico es una capacidad compuesta":language==="en"?"Statistical reasoning is a composite capability":"O raciocínio estatístico é uma capacidade composta",label(v.intro));
+ const axes=E("div","sus-axes");
+ const choices=E("div","sus-axes-buttons");
+ const detail=E("article","sus-axis-detail");
+ let activeAxis=0;
+ function renderAxis(i){
+  activeAxis=i;choices.querySelectorAll("button").forEach((b,j)=>b.setAttribute("aria-pressed",String(i===j)));
+  const x=v.axes[i];detail.replaceChildren(E("span","eyeline",String(i+1).padStart(2,"0")+" / 06"),H(label(x.title),3),p(label(x.desc)));
+  const test=E("div","sus-axis-example");
+  add(test,E("strong","",language==="es"?"EJEMPLO":language==="en"?"EXAMPLE":"EXEMPLO"),p(label(x.example)));
+  const evidence=E("div","sus-axis-example");
+  add(evidence,E("strong","",language==="es"?"EVIDENCIA QUE REQUIERE":language==="en"?"EVIDENCE TO SEEK":"EVIDÊNCIA NECESSÁRIA"),p(label(x.evidence)));
+  add(detail,test,evidence);
+ }
+ v.axes.forEach((x,i)=>add(choices,button(String(i+1).padStart(2,"0")+" · "+label(x.title),i===0,()=>renderAxis(i),"sus-axis-button")));
+ add(axes,choices,detail);add(foundation,axes);renderAxis(activeAxis);
+ add(foundation,p(srcNote("pedagogia.qmd · «Explora cada dimensión del perfil»"),"tiny"));
+
+ const op=block("operations-laboratory","04 / OPERACIONES",language==="es"?"Ocho operaciones, no una sola habilidad":language==="en"?"Eight operations, not one skill":"Oito operações, não uma única habilidade",language==="es"?"Las operaciones pueden combinarse en un mismo ejercicio. No constituyen una escalera rígida ni se excluyen entre sí.":language==="en"?"Multiple operations may be exercised together; they are not a rigid ladder or mutually exclusive categories.":"Várias operações podem combinar-se no mesmo exercício; não formam uma escada rígida nem categorias exclusivas.");
+ const opGrid=E("div","sus-operation-grid");
+ v.operations.forEach((x,i)=>{
+  const card=E("article","sus-operation-card");
+  add(card,E("span","sus-operation-index",String(i+1).padStart(2,"0")),H(label(x),3),p(label(v.operationExplain[i])));add(opGrid,card)
+ });
+ add(op,opGrid,p(srcNote("pedagogia.qmd · «Laboratorio de operaciones estadísticas»"),"tiny"));
+
+ const master=block("mastery-vector","05 / EXPLORADOR DE MAESTRÍA",label(v.title),language==="es"?"Compara dos perfiles hipotéticos y elige un momento de su trayectoria. La figura reproduce los mismos valores simulados del explorador existente en el proyecto original.":language==="en"?"Compare two hypothetical profiles and two moments in their pathways. The illustration uses the same simulated values as the existing project website.":"Compare dois perfis hipotéticos e dois momentos das trajetórias. O gráfico utiliza os mesmos valores simulados da demonstração do projeto.");
+ const masterbox=E("div","sus-mastery");
+ const selectors=E("div","sus-master-selectors");
+ const profileGroup=E("div","sus-choice");const momentGroup=E("div","sus-choice");
+ let activeProfile="a",activeMoment="t0";
+ const pA=button(language==="es"?"Perfil A · cálculo":language==="en"?"Profile A · computation":"Perfil A · cálculo",true,()=>{activeProfile="a";drawMaster()},"sus-tab");
+ const pB=button(language==="es"?"Perfil B · interpretación":language==="en"?"Profile B · interpretation":"Perfil B · interpretação",false,()=>{activeProfile="b";drawMaster()},"sus-tab");
+ const t0=button(language==="es"?"Entrada t0":language==="en"?"Entry t0":"Entrada t0",true,()=>{activeMoment="t0";drawMaster()},"sus-tab");
+ const t2=button(language==="es"?"Tras práctica t2 (simulado)":language==="en"?"After practice t2 (simulated)":"Após prática t2 (simulado)",false,()=>{activeMoment="t2";drawMaster()},"sus-tab");
+ add(profileGroup,pA,pB);add(momentGroup,t0,t2);add(selectors,profileGroup,momentGroup);
+ const masterlayout=E("div","sus-mastery-layout"),radarPane=E("div","sus-radar-pane"),detailPane=E("div","sus-master-detail");
+ const radar=document.createElementNS("http://www.w3.org/2000/svg","svg");
+ radar.setAttribute("viewBox","0 0 510 425");radar.setAttribute("class","sus-radar");radar.setAttribute("role","img");
+ radar.setAttribute("aria-label",language==="es"?"Perfil simulado de siete operaciones":language==="en"?"Simulated seven-operation profile":"Perfil simulado de sete operações");
+ add(radarPane,radar);
+ const desc=E("p","sus-master-copy"),name=H("",3),bars=E("div","sus-minibars");
+ add(detailPane,name,desc,bars);add(masterlayout,radarPane,detailPane);add(masterbox,selectors,masterlayout);
+ function drawMaster(){
+  [pA,pB].forEach((b,i)=>b.setAttribute("aria-pressed",String((i===0?"a":"b")===activeProfile)));
+  [t0,t2].forEach((b,i)=>b.setAttribute("aria-pressed",String((i===0?"t0":"t2")===activeMoment)));
+  const prof=v.profiles[activeProfile];const vals=prof[activeMoment],labels=v.profiles.labels;
+  name.textContent=label(prof.name);desc.textContent=label(prof.desc);
+  bars.replaceChildren(...vals.map((value,i)=>{
+   const row=E("div","sus-minibar");
+   const title=E("span","",label(labels[i]));
+   const tr=E("div","sus-bar-track");const fill=E("span","sus-bar-fill");fill.style.width=value+"%";add(tr,fill);
+   add(row,title,tr,E("b","",value+"/100"));return row;
+  }));
+  radar.replaceChildren();
+  const ns="http://www.w3.org/2000/svg",cx=255,cy=206,rr=133,n=vals.length;
+  const point=(i,factor)=>{const a=-Math.PI/2+i*2*Math.PI/n;return [cx+Math.cos(a)*rr*factor/100,cy+Math.sin(a)*rr*factor/100]};
+  const node=(type,attrs,tx)=>{const item=document.createElementNS(ns,type);Object.entries(attrs).forEach(([k,val])=>item.setAttribute(k,String(val)));if(tx!==undefined)item.textContent=tx;return item};
+  [25,50,75,100].forEach(level=>{
+   radar.appendChild(node("polygon",{points:vals.map((_,i)=>point(i,level).join(",")).join(" "),fill:"none",stroke:"#7084a8","stroke-width":1,"stroke-opacity":.55}));
+  });
+  vals.forEach((value,i)=>{
+   const outer=point(i,100);radar.appendChild(node("line",{x1:cx,y1:cy,x2:outer[0],y2:outer[1],stroke:"#60769c","stroke-width":1}));
+  });
+  radar.appendChild(node("polygon",{points:vals.map((val,i)=>point(i,val).join(",")).join(" "),fill:"#aebdff", "fill-opacity":.25,stroke:"#aebdff","stroke-width":3,"stroke-linejoin":"round"}));
+  vals.forEach((val,i)=>{
+   const xy=point(i,val),lab=point(i,123),a=-Math.PI/2+i*2*Math.PI/n;
+   radar.appendChild(node("circle",{cx:xy[0],cy:xy[1],r:5,fill:"#d4ddff",stroke:"#17233c","stroke-width":1.7}));
+   radar.appendChild(node("text",{x:lab[0],y:lab[1]+4,"text-anchor":Math.cos(a)>.3?"start":Math.cos(a)<-.3?"end":"middle",fill:"#e3eaff","font-size":12,"font-family":"system-ui"},label(labels[i])));
+  });
+ }
+ add(master,masterbox,p(label(v.warning),"method-note"),link(language==="es"?"Abrir demostración original del vector ↗":language==="en"?"Open the original mastery demonstration ↗":"Abrir a demonstração original ↗",DATA.urls.model,"link-inline",true));drawMaster();
+
+ const levels=block("levels","06 / INTERPRETACIÓN",language==="es"?"N1–N4: profundidad interpretativa, no el vector completo":language==="en"?"N1–N4: interpretive depth, not the entire vector":"N1–N4: profundidade interpretativa, não o vetor completo");
+ const levelTabs=E("div","level-tabs"),levelPanel=E("div","level-panel");
+ DATA.level.forEach((x,i)=>add(levelTabs,button(x.n,i===selectedLevel,()=>{selectedLevel=i;drawLevel(levelTabs,levelPanel)})));
+ add(levels,levelTabs,levelPanel,p(language==="es"?"Los niveles son una operacionalización propuesta inspirada en educación estadística; requieren validación.":language==="en"?"The levels are a proposed operationalization inspired by statistics education; they require validation.":"Os níveis são uma operacionalização proposta inspirada na educação estatística e exigem validação.","method-note"));
+ drawLevel(levelTabs,levelPanel);
+ const comp=E("div","compare");
+ DATA.compare.forEach((x,i)=>{const c=E("article","panel");add(c,E("span","mini-label",i===0?"N1":"N3"),p(label(x)));add(comp,c)});
+ add(levels,H(ui("sCompare"),3),p(ui("sCompareNote")),comp);
+
+ const journey=block("learner-journey","07 / EXPERIENCIA",language==="es"?"De la entrada a una trayectoria que evoluciona":language==="en"?"From entry to an evolving learning pathway":"Da entrada a uma trajetória de aprendizagem",language==="es"?"Siete momentos de una arquitectura propuesta, no siete funciones plenamente desplegadas en el piloto.":language==="en"?"Seven stages in the proposed architecture, not seven fully deployed prototype features.":"Sete momentos da arquitetura proposta, não sete funções inteiramente implementadas no piloto.");
+ const steps=E("div","sus-journey");
+ DATA.journey.forEach(x=>{const item=E("div","sus-journey-step");add(item,E("span","sus-step-num",String(x.n).padStart(2,"0")),H(label(x.title),3),p(label(x.text)));add(steps,item)});
+ add(journey,steps,link(language==="es"?"Recorrido completo del estudiante ↗":language==="en"?"Full learner journey ↗":"Percurso completo do estudante ↗",DATA.urls.how,"link-inline",true));
+
+ const scenario=block("feedback-lab","08 / LABORATORIO",language==="es"?"Cuatro contextos, cinco momentos de aprendizaje":language==="en"?"Four disciplines, five learning stages":"Quatro contextos, cinco etapas de aprendizagem",language==="es"?"Explora cómo una pregunta cambia una interpretación sin entregar de inmediato la respuesta. Todos los ejemplos son demostraciones ficticias del diseño.":language==="en"?"Explore how a guiding question changes an interpretation without supplying a finished answer. These are fictional design demonstrations.":"Explore como perguntas orientadoras podem mudar uma interpretação sem entregar a resposta pronta. São demonstrações fictícias.");
+ const shell=E("div","sus-sim-shell"),contextTabs=E("div","tabs"),stageTabs=E("div","sus-stage-tabs"),sample=E("article","sus-sim-panel");
+ let scenarioIndex=0,stageIndex=0;
+ DATA.scenarios.forEach((x,i)=>add(contextTabs,button(label(x.title),i===0,()=>{scenarioIndex=i;stageIndex=0;drawScenario()},"sus-tab")));
+ DATA.stageNames.forEach((x,i)=>add(stageTabs,button((i+1)+" · "+label(x),i===0,()=>{stageIndex=i;drawScenario()},"sus-tab")));
+ const stageHeading=E("span","eyeline"),contextHeading=H("",3),body=E("p","sus-sim-text"),next=button(language==="es"?"Siguiente momento →":language==="en"?"Next stage →":"Próxima etapa →",false,()=>{stageIndex=(stageIndex+1)%DATA.stageNames.length;drawScenario()},"action primary");
+ function drawScenario(){
+  contextTabs.querySelectorAll("button").forEach((b,i)=>b.setAttribute("aria-pressed",String(i===scenarioIndex)));
+  stageTabs.querySelectorAll("button").forEach((b,i)=>b.setAttribute("aria-pressed",String(i===stageIndex)));
+  stageHeading.textContent=label(DATA.stageNames[stageIndex])+" · "+String(stageIndex+1)+" / 05";
+  contextHeading.textContent=label(DATA.scenarios[scenarioIndex].title);
+  body.textContent=label(DATA.scenarios[scenarioIndex].stages[stageIndex]);
+ }
+ add(sample,stageHeading,contextHeading,body,next);add(shell,contextTabs,stageTabs,sample);
+ add(scenario,shell,p(ui("sMeasure"),"method-note"));drawScenario();
+
+ const dialogue=block("epistemic-dialogue","09 / CONVERSACIONES EPISTEMOLÓGICAS",language==="es"?"La IA no responde: devuelve preguntas que hacen pensar":language==="en"?"Instead of supplying answers, AI asks questions that deepen reasoning":"A IA não entrega a resposta: faz perguntas para aprofundar a reflexão",language==="es"?"La conversación epistemológica es una caja de herramientas flexible, no un cuestionario rígido.":language==="en"?"Epistemic conversation is a flexible set of tools, not a rigid questionnaire.":"A conversa epistemológica é um conjunto flexível de ferramentas, não um questionário rígido.");
+ const qgrid=E("div","sus-epistemic");
+ DATA.epistemic.forEach((x,i)=>{const card=E("div","sus-epistemic-card");add(card,E("span","sus-operation-index",String(i+1).padStart(2,"0")),H(label(x.title),3),p(label(x.question)));add(qgrid,card)});
+ add(dialogue,qgrid,p(srcNote("pedagogia.qmd · «Las conversaciones epistemológicas»"),"tiny"));
+
+ const cur=DATA.curriculum;
+ const curricular=block("curricular-engine","10 / VINCULACIÓN UNIVERSITARIA",label(cur.title),label(cur.intro));
+ const tags=E("div","sus-curriculum-tags");cur.modules.forEach((x,i)=>add(tags,E("span","",String(i+1).padStart(2,"0")+" · "+label(x))));
+ add(curricular,tags);
+ const people=E("div","sus-actors");
+ cur.actors.forEach(x=>{const card=E("article","panel");add(card,H(label(x.who),3),p(label(x.role)));add(people,card)});
+ add(curricular,H(language==="es"?"Responsabilidades para evitar la automatización ciega":language==="en"?"Responsibilities that prevent blind automation":"Responsabilidades para evitar automação sem supervisão",3),people);
+ add(curricular,link(language==="es"?"Propuesta para universidades ↗":language==="en"?"University proposal ↗":"Proposta para universidades ↗",DATA.urls.university,"link-inline",true));
+
+ const theory=block("sustancia-foundations","11 / FUNDAMENTOS",language==="es"?"Una arquitectura con fundamentos explícitos":language==="en"?"An architecture with explicit theoretical foundations":"Uma arquitetura com fundamentos explícitos");
+ const theories=E("div","sus-theory-grid");
+ DATA.theory.forEach(x=>{const card=E("article","panel");add(card,E("span","eyeline",x.author),H(label(x.concept),3),p(label(x.impact)));add(theories,card)});
+ add(theory,theories);
+
+ const state=block("sustancia-status","12 / ESTADO DEL PROYECTO",ui("sState"),language==="es"?"Diferenciamos las simulaciones que ya puedes explorar de las capacidades operativas aún por construir.":language==="en"?"The existing interactive demonstrations are separate from capabilities still to be implemented.":"As demonstrações interativas existentes são diferentes das funções operacionais ainda em desenvolvimento.");
+ const stategrid=E("div","status-grid");
+ DATA.status.forEach(x=>{const card=E("article","status "+(x.kind==="next"?"next":""));add(card,E("span","state",ui(x.kind==="next"?"sStatusNext":"sStatusNow")),H(label(x.title),3),p(label(x.text)));add(stategrid,card)});
+ add(state,stategrid);
+
+ const research=block("sustancia-research","13 / EQUIPO Y INVESTIGACIÓN",language==="es"?"Sustancia es también un proyecto de investigación educativa":language==="en"?"Sustancia is also an educational research project":"Sustancia também é pesquisa educacional",language==="es"?"La arquitectura permitiría estudiar errores, procesos de revisión y transferencia a lo largo del tiempo. Su equipo combina formación sociológica y desarrollo informático; las instituciones de procedencia no equivalen a patrocinio.":language==="en"?"The architecture could study mistakes, revisions and knowledge transfer longitudinally. The team includes sociology and computing backgrounds; affiliations do not imply sponsorship.":"A arquitetura permitiria estudar erros, revisões e transferência ao longo do tempo. O projeto combina sociologia e informática; vínculo institucional não significa patrocínio.");
+ const teamGrid=E("div","sus-team-grid");
+ DATA.projectTeam.forEach(x=>{const card=E("article","panel");add(card,H(x.name,3),p(label(x.note)));add(teamGrid,card)});
+ add(research,teamGrid,link(language==="es"?"Conocer al equipo ↗":language==="en"?"Meet the team ↗":"Conhecer a equipe ↗",DATA.urls.team,"link-inline",true));
+
+ const boundary=block("boundaries","14 / TRANSPARENCIA",ui("sBoundaries"),label(DATA.boundary));
+ add(boundary,p(label(DATA.sourceNote),"tiny"),link(language==="es"?"Ver modelo de origen ↗":language==="en"?"Inspect project source ↗":"Ver fontes do projeto ↗",DATA.urls.code,"link-inline",true));
+ const linksBlock=block("sustancia-links","15 / EXPLORA EL PROYECTO",language==="es"?"Todas las áreas de la web original":language==="en"?"All areas of the original website":"Todas as áreas do site original");
+ const siteGrid=E("div","sus-source-grid");
+ DATA.siteSections.forEach(x=>{
+  const card=link(label(x.title)+" ↗","https://nglmnz.github.io/sustancia/"+x.path,"sus-source-link",true);add(siteGrid,card)
+ });add(linksBlock,siteGrid);
  const actions=E("div","hero-actions");
- add(actions,link(ui("sTry"),DATA.urls.site,"action primary",true),link(ui("sPilot"),DATA.urls.pilot,"action",true),link(ui("sRepo"),DATA.urls.code,"action",true),link(ui("viewT"),localeHref("tesis"),"action"));
- add(box,actions);root.append(sec);
+ add(actions,link(ui("sTry"),DATA.urls.site,"action primary",true),link(ui("sRepo"),DATA.urls.code,"action",true),link(ui("viewT"),localeHref("tesis"),"action"));add(linksBlock,actions);
 }
 function drawLevel(tabs,panel){
  Array.from(tabs.querySelectorAll("button")).forEach((b,i)=>b.setAttribute("aria-pressed",String(i===selectedLevel)));
