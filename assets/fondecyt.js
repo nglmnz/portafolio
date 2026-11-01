@@ -9,6 +9,9 @@ pt:{back:"Portfólio",research:"Projeto de pesquisa",role:"Participação indivi
 Object.assign(locale.es,{"fundLabel":"INVESTIGACIÓN FONDECYT REGULAR N.º 1220508","heroGroup":"Fotografías de Hilvanar en el auditorio UPLA","heroPrev":"Imagen anterior","heroNext":"Imagen siguiente","heroPlay":"Reproducir imágenes","heroPause":"Pausar imágenes","myMed":"Mi participación en la mediación","pathPhoto":"Del auditorio a la exposición","pathIntro":"El encuentro continuó fuera del auditorio: un recorrido colectivo por la exposición y actividades de diálogo y memoria.","visualGroup":"Recorrido fotográfico"});
 Object.assign(locale.en,{"fundLabel":"FONDECYT REGULAR RESEARCH PROJECT NO. 1220508","heroGroup":"Hilvanar auditorium photography at UPLA","heroPrev":"Previous image","heroNext":"Next image","heroPlay":"Play slides","heroPause":"Pause slides","myMed":"My public mediation","pathPhoto":"From the auditorium to the exhibition","pathIntro":"The event continued beyond the auditorium through an exhibition walk and public conversations.","visualGroup":"Photo journey"});
 Object.assign(locale.pt,{"fundLabel":"PROJETO DE PESQUISA FONDECYT REGULAR N.º 1220508","heroGroup":"Fotos de Hilvanar no auditório UPLA","heroPrev":"Imagem anterior","heroNext":"Próxima imagem","heroPlay":"Reproduzir imagens","heroPause":"Pausar imagens","myMed":"Minha mediação pública","pathPhoto":"Do auditório à exposição","pathIntro":"O evento continuou além do auditório com um percurso pela exposição e conversas com o público.","visualGroup":"Percurso fotográfico"});
+Object.assign(locale.es,{"allPhotos":"Todas","countPhotos":"fotografías del encuentro","morePhotos":"Ver más fotografías","openPhoto":"Ampliar fotografía","closePhoto":"Cerrar fotografía","prevPhoto":"Anterior","nextPhoto":"Siguiente"});
+Object.assign(locale.en,{"allPhotos":"All","countPhotos":"event photographs","morePhotos":"Show more photographs","openPhoto":"Enlarge photo","closePhoto":"Close photo","prevPhoto":"Previous","nextPhoto":"Next"});
+Object.assign(locale.pt,{"allPhotos":"Todas","countPhotos":"fotografias do encontro","morePhotos":"Mostrar mais fotos","openPhoto":"Ampliar foto","closePhoto":"Fechar foto","prevPhoto":"Anterior","nextPhoto":"Próxima"});
 const i=k=>locale[lang][k]??locale.es[k]??k;
 const tr=v=>typeof v==="string"?v:v?.[lang]??v?.es??"";
 const node=(tag,cl,txt)=>{let n=document.createElement(tag);if(cl)n.className=cl;if(txt!==undefined&&txt!==null)n.textContent=String(txt);return n};
@@ -116,24 +119,43 @@ const mediaGrid=node("div","media-grid");
 append(media,filters,mediaGrid);
 drawMedia(filters,mediaGrid);
 append(media,para(i("sourceWarning"),"source-caveat"));
-const photos=section("fotografias","07 / "+i("photoSource"),i("visual"),tr(data.gallery.placeholder));
-const grid=node("div","photo-grid");
-const photoEntries=Array.isArray(gallery?.images)?gallery.images:[];
-if(!photoEntries.length){
- const empty=node("div","photo-empty");
- const art=node("div","photo-empty-art");art.setAttribute("aria-hidden","true");append(art,node("span","","◇"),node("span","","○"),node("span","","◇"));
- append(empty,art,h(i("photo"),3),para(i("noPhoto")),node("span","file-hint","fondecyt/assets/images/"));
- append(grid,empty);
-}else{
- photoEntries.forEach(item=>{
-  if(!item.src||item.sensitive===true||typeof item.permission!=="string"||!/(autoriz|consent|permission granted|licensed|licencia)/i.test(item.permission))return;
-  let figure=node("figure","photo-card"),img=node("img");
-  img.src="assets/"+item.src;img.loading="lazy";img.alt=tr(item.alt)||tr(item.caption);
-  let cap=node("figcaption","");append(cap,node("strong","",tr(item.caption)),node("small","",item.credit||i("photoCredit")));
-  append(figure,img,cap);append(grid,figure);
- });
+const photos=section("fotografias","07 / "+i("photoSource"),i("visual"),tr(data.gallery.intro||data.gallery.placeholder));
+const allowed=publicPhotos(),galleryGroups=[{id:"all",name:{es:"Todas",en:"All",pt:"Todas"}},...(gallery?.groups||[])];
+const filterRow=node("div","gallery-filters");filterRow.setAttribute("role","group");filterRow.setAttribute("aria-label",i("visual"));
+const photoCount=node("div","gallery-count"),photoGrid=node("div","photo-grid");
+const loadMore=b(i("morePhotos")+" ↓",()=>{photoLimit+=12;drawGallery()},"gallery-more");
+const dialog=node("dialog","gallery-dialog"),modalBody=node("div","gallery-dialog-inner"),bigPhoto=node("img"),bigCaption=node("p","gallery-dialog-caption"),modalNav=node("div","gallery-dialog-bar");
+const closePhoto=b("×",()=>dialog.close(),"gallery-dialog-close");closePhoto.setAttribute("aria-label",i("closePhoto"));
+const backPhoto=b("←",()=>rotate(-1),"gallery-dialog-nav");backPhoto.setAttribute("aria-label",i("prevPhoto"));
+const nextPhoto=b("→",()=>rotate(1),"gallery-dialog-nav");nextPhoto.setAttribute("aria-label",i("nextPhoto"));
+append(modalNav,backPhoto,nextPhoto,closePhoto);append(modalBody,modalNav,bigPhoto,bigCaption);append(dialog,modalBody);
+const filterButtons=galleryGroups.map(group=>{const button=b(tr(group.name),()=>{photoCategory=group.id;photoLimit=12;drawGallery()},"gallery-filter",photoCategory===group.id);append(filterRow,button);return button});
+let currentList=[],lightIndex=0;
+function rotate(direction){
+ if(!currentList.length)return;
+ lightIndex=(lightIndex+direction+currentList.length)%currentList.length;
+ const photo=currentList[lightIndex];bigPhoto.src=photoUrl(photo);bigPhoto.alt=tr(photo.alt);bigCaption.textContent=tr(photo.caption)+" · "+photo.credit;
 }
-append(photos,grid,para(i("privacy"),"photo-ethics"));
+function openLight(photo,list){
+ currentList=list;lightIndex=Math.max(0,list.indexOf(photo));rotate(0);
+ if(typeof dialog.showModal==="function")dialog.showModal();
+}
+function drawGallery(){
+ filterButtons.forEach((button,j)=>button.setAttribute("aria-pressed",String(galleryGroups[j].id===photoCategory)));
+ const items=allowed.filter(x=>photoCategory==="all"||x.category===photoCategory);
+ photoGrid.replaceChildren();photoCount.textContent=items.length+" "+i("countPhotos");
+ items.slice(0,photoLimit).forEach((photo,j)=>{
+  const figure=node("figure","photo-card"+(j%11===0?" wide":"")),trigger=b("",()=>openLight(photo,items),"gallery-photo-open");
+  trigger.setAttribute("aria-label",i("openPhoto")+": "+tr(photo.alt));
+  const image=node("img");image.src=photoUrl(photo);image.alt=tr(photo.alt);image.loading="lazy";image.decoding="async";
+  append(trigger,image);
+  const caption=node("figcaption","");append(caption,node("strong","",tr(photo.caption)),node("small","",photo.credit));
+  append(figure,trigger,caption);append(photoGrid,figure);
+ });
+ loadMore.hidden=items.length<=photoLimit;
+}
+append(photos,filterRow,photoCount,photoGrid,loadMore,dialog,para(tr(data.gallery.warning),"photo-ethics"));
+drawGallery();
 const ethics=section("etica","08 / "+i("ethic"),i("ethic"));
 const callout=node("div","ethic-panel");
 append(callout,h(i("attribution"),3),para(tr(data.attribution)),para(i("privacy")),para(i("metaNotice")));
