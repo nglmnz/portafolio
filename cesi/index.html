@@ -98,6 +98,7 @@
 @keyframes networkPulse{0%,100%{opacity:.22}50%{opacity:.56}}@media(prefers-reduced-motion:reduce){.network-edge{animation:none}}@media(max-width:950px){.sponsor-grid{grid-template-columns:repeat(2,1fr)}.org-cards{grid-template-columns:repeat(2,1fr)}.network-list{grid-template-columns:repeat(3,1fr)}.network-display{grid-template-columns:1fr}.network-caption{flex-direction:row;align-items:center;flex-wrap:wrap}.network-caption strong{min-height:0}.network-caption small{flex-basis:100%}}
 @media(max-width:650px){.cesi-sponsors-head{flex-direction:column;align-items:start}.official-site-link{max-width:unset}.sponsor-grid,.foundation-grid,.org-cards{grid-template-columns:1fr}.values-list,.network-list{grid-template-columns:repeat(2,1fr)}.network-caption-big{font-size:54px}.network-display{min-height:auto}.network-filters button{font-size:11px;padding:7px 8px}.network-searchbar label,.network-searchbar input{width:100%}}
 @media(max-width:430px){.values-list,.network-list{grid-template-columns:1fr}}
+.institution-ticker{overflow:hidden;position:relative;border-block:1px solid #2d7960;padding:9px 0;margin-top:22px;background:#0c2a20;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}.institution-ticker-track{display:flex;width:max-content;gap:29px;white-space:nowrap;animation:institutionFlow 70s linear infinite}.institution-ticker span{font-size:11px;color:#b4ecda;letter-spacing:.035em;display:inline-flex;align-items:center;gap:9px}.institution-ticker span:before{content:"●";color:#00c892;font-size:7px}.institution-ticker:hover .institution-ticker-track{animation-play-state:paused}@keyframes institutionFlow{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.institution-ticker-track{animation:none}.institution-ticker{overflow-x:auto}}.network-active-node circle{stroke:#fff!important;stroke-width:3!important}.artist-bio-wrap{margin-top:9px}.artist-card .artist-bio-source{max-width:100%;overflow-wrap:anywhere}
 </style></head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="../">ÁNGEL <span>MUÑOZ</span> / <span class="brand-label">PORTAFOLIO</span></a><div class="links"><a href="#gestion">Gestión</a><a href="#red-institucional" data-tr="navNetwork">Red</a><a href="#arte">Arte</a><a href="#fuentes">Cobertura</a><div class="lang-picker" role="group" aria-label="Seleccionar idioma"><button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="pt" aria-pressed="false">PT</button></div><a class="pill" href="../" data-home-link>← Volver al perfil</a></div></div></header>
@@ -338,7 +339,7 @@
 <section class="cesi-network section" id="red-institucional"><div class="wrap">
  <span class="sect-label" data-tr="networkKicker">06B / PROCEDENCIA INSTITUCIONAL</span><h2 data-tr="networkTitle">57 instituciones. Muchos puntos de partida.</h2>
  <p class="story" data-tr="networkIntro">La visualización reúne las instituciones declaradas como procedencia de asistentes y colaboradores. No representa acuerdos de patrocinio, convenios ni una medida de intensidad de relaciones: cada conexión expresa únicamente presencia en el registro del encuentro.</p>
- <div class="network-display"><div class="network-visual"><svg id="institutionNetwork" viewBox="0 0 860 570" role="img" aria-label="Red de instituciones participantes del CESI"><g id="network-lines"></g><g id="network-dots"></g><rect x="320" y="254" width="220" height="65" rx="8" class="network-center-box"></rect><text x="430" y="292" class="network-center-text" text-anchor="middle">C E S I</text><text x="512" y="310" class="network-center-year" text-anchor="middle">2025</text></svg></div>
+ <div class="institution-ticker" aria-hidden="true"><div id="institutionTicker" class="institution-ticker-track"></div></div><div class="network-display"><div class="network-visual"><svg id="institutionNetwork" viewBox="0 0 860 570" role="img" aria-label="Red de instituciones participantes del CESI"><g id="network-lines"></g><g id="network-dots"></g><rect x="320" y="254" width="220" height="65" rx="8" class="network-center-box"></rect><text x="430" y="292" class="network-center-text" text-anchor="middle">C E S I</text><text x="512" y="310" class="network-center-year" text-anchor="middle">2025</text></svg></div>
  <div class="network-caption"><span class="network-caption-big">57</span><span data-tr="networkCount">instituciones identificadas</span><strong id="network-active-label" aria-live="polite">CESI · 2025</strong><small data-tr="networkHint">Pasa el cursor por los nodos o explora el listado para identificar las instituciones.</small></div></div>
  <div class="network-searchbar"><label><span class="sr-only" data-tr="networkSearchLabel">Buscar institución</span><input type="search" id="networkSearch" placeholder="Buscar institución…" autocomplete="off"></label>
  <div class="network-filters" role="group" aria-label="Filtrar procedencia">
@@ -493,6 +494,7 @@ function renderArtistResources(){
   slot.replaceChildren();
   const data=artistReferenceIndex.get(item.dataset.artistName);
   const resources=(data?.links||[]).filter(x=>isSafeArtistUrl(x.url));
+  renderBiography(item,data,slot);
   if(!resources.length){
    const empty=document.createElement("span");empty.className="missing-links";empty.textContent=words.missing;slot.appendChild(empty);continue;
   }
@@ -588,9 +590,144 @@ document.addEventListener("visibilitychange",()=>{
  });
 });
 
+
+/* CESI governance, identity and documented affiliations */
+let orgData=null;
+let institutionData=null;
+let institutionFilter='all';
+let institutionQuery='';
+const localInstitutionName=(s)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+const netCategoryLabel={
+ es:{academia:'Academia',publico:'Sector público',sociedad:'Organización',internacional:'Internacional'},
+ en:{academia:'Academic',publico:'Public sector',sociedad:'Organization',internacional:'International'},
+ pt:{academia:'Academia',publico:'Setor público',sociedad:'Organização',internacional:'Internacional'}
+};
+function renderOrganization(){
+ if(!orgData)return;
+ document.getElementById('missionText').textContent=orgData.mission[lang]||orgData.mission.es;
+ document.getElementById('visionText').textContent=orgData.vision[lang]||orgData.vision.es;
+ const values=document.getElementById('valuesList');
+ values.replaceChildren(...orgData.values.map(v=>{
+  const li=document.createElement('li');const num=document.createElement('b');
+  num.textContent=String(v.id).padStart(2,'0');const t=document.createElement('span');
+  t.textContent=v.label[lang]||v.label.es;li.append(num,t);return li;
+ }));
+ const panel=document.getElementById('orgCards');
+ const opened=new Set([...panel.querySelectorAll('details[open]')].map(x=>x.dataset.orgId));
+ panel.replaceChildren(...orgData.teams.map((team)=>{
+  const det=document.createElement('details');det.dataset.orgId=team.id;det.open=opened.has(team.id);
+  const sum=document.createElement('summary');sum.textContent=team.role[lang]||team.role.es;
+  const inner=document.createElement('div');inner.className='org-detail';
+  const desc=document.createElement('p');desc.textContent=team.task[lang]||team.task.es;
+  const people=document.createElement('ul');
+  team.people.forEach(name=>{const li=document.createElement('li');li.textContent=name;people.appendChild(li)});
+  inner.append(desc,people);det.append(sum,inner);return det;
+ }));
+}
+fetch('assets/organizacion.json').then(r=>r.ok?r.json():null).then(data=>{
+ if(!data||!Array.isArray(data.values)||!Array.isArray(data.teams))return;
+ orgData=data;renderOrganization();
+}).catch(()=>{});
+function networkPoint(i,total,ring){
+ const angle=-Math.PI/2+(2*Math.PI*i/total)+(ring===1?Math.PI/31:0);
+ return {x:430+Math.cos(angle)*(ring===0?300:195),y:284+Math.sin(angle)*(ring===0?211:139)};
+}
+function renderNetworkMap(){
+ if(!institutionData)return;
+ const lineTarget=document.getElementById('network-lines');
+ const dotTarget=document.getElementById('network-dots');
+ if(lineTarget.children.length)return;
+ const ns='http://www.w3.org/2000/svg';
+ const items=institutionData.institutions;
+ for(const [idx,entry] of items.entries()){
+  const ring=idx<36?0:1;
+  const slot=ring===0?idx:idx-36;
+  const point=networkPoint(slot,ring===0?36:21,ring);
+  const line=document.createElementNS(ns,'line');line.setAttribute('x1','430');line.setAttribute('y1','284');
+  line.setAttribute('x2',String(point.x));line.setAttribute('y2',String(point.y));
+  line.setAttribute('class','network-edge');line.style.animationDelay=String(idx%13*-0.45)+'s';
+  lineTarget.appendChild(line);
+  const group=document.createElementNS(ns,'g');
+  group.setAttribute('class','network-node');group.dataset.name=entry.name;group.dataset.type=entry.sector;
+  const dot=document.createElementNS(ns,'circle');dot.setAttribute('cx',String(point.x));dot.setAttribute('cy',String(point.y));dot.setAttribute('r',ring===0?'5.9':'5.2');
+  dot.setAttribute('fill',entry.sector==='academia'?'#00c892':entry.sector==='publico'?'#b2efe0':entry.sector==='internacional'?'#f3dba0':'#6bd1bf');
+  const title=document.createElementNS(ns,'title');title.textContent=entry.name;
+  group.append(dot,title);group.addEventListener('mouseenter',()=>{document.getElementById('network-active-label').textContent=entry.name});
+  group.addEventListener('mouseleave',()=>{document.getElementById('network-active-label').textContent='CESI · 2025'});
+  dotTarget.appendChild(group);
+ }
+ const ticker=document.getElementById('institutionTicker');
+ const set=[...items,...items];
+ ticker.replaceChildren(...set.map(x=>{const span=document.createElement('span');span.textContent=x.name;return span}));
+}
+function renderInstitutionList(){
+ if(!institutionData)return;
+ const data=institutionData.institutions;
+ const matching=data.filter(x=>(institutionFilter==='all'||x.sector===institutionFilter)&&localInstitutionName(x.name).includes(localInstitutionName(institutionQuery)));
+ const target=document.getElementById('networkList');
+ target.replaceChildren(...matching.map(entry=>{
+  const li=document.createElement('li');const number=document.createElement('b');number.textContent=String(entry.id).padStart(2,'0');
+  const name=document.createElement('span');name.textContent=entry.name;
+  li.append(number,name);li.title=(netCategoryLabel[lang]||netCategoryLabel.es)[entry.sector];return li;
+ }));
+ const shown=matching.length+'/'+data.length;
+ document.getElementById('networkResults').textContent=lang==='en'?shown+' institutions shown':lang==='pt'?shown+' instituições exibidas':shown+' instituciones visibles';
+ document.querySelectorAll('[data-netfilter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.netfilter===institutionFilter)));
+ document.querySelectorAll('.network-node').forEach(n=>{
+  const categoryOk=institutionFilter==='all'||n.dataset.type===institutionFilter;
+  const nameOk=localInstitutionName(n.dataset.name).includes(localInstitutionName(institutionQuery));
+  n.style.opacity=categoryOk&&nameOk?'1':'.12';
+ });
+}
+function renderInstitutionTranslations(){
+ if(!institutionData)return;
+ const input=document.getElementById('networkSearch');
+ const p=lang==='en'?'Search institution…':lang==='pt'?'Buscar instituição…':'Buscar institución…';
+ input.placeholder=p;input.setAttribute('aria-label',p);
+ renderInstitutionList();
+}
+document.querySelectorAll('[data-netfilter]').forEach(button=>button.addEventListener('click',()=>{
+ institutionFilter=button.dataset.netfilter;renderInstitutionList();
+}));
+document.getElementById('networkSearch').addEventListener('input',(e)=>{
+ institutionQuery=e.target.value;renderInstitutionList();
+});
+fetch('assets/instituciones.json').then(r=>r.ok?r.json():null).then(data=>{
+ if(!data||!Array.isArray(data.institutions)||data.institutions.length!==57)return;
+ institutionData=data;renderNetworkMap();renderInstitutionTranslations();
+}).catch(()=>{});
+
+/* Curated short bios; use the original documentation links, no external embeds */
+const bioWords={
+ es:{expand:'Leer biografía completa',collapse:'Ocultar biografía',source:'Fuente biográfica',provisional:'Antecedentes de la organización'},
+ en:{expand:'Read full biography',collapse:'Collapse biography',source:'Biography source',provisional:'Organizer-supplied details'},
+ pt:{expand:'Ler biografia completa',collapse:'Recolher biografia',source:'Fonte biográfica',provisional:'Informações da organização'}
+};
+function renderBiography(item,data,slot){
+ if(!data?.bio)return;
+ const words=bioWords[lang]||bioWords.es;
+ const wrap=document.createElement('div');wrap.className='artist-bio-wrap';
+ const p=document.createElement('p');p.className='artist-bio';p.textContent=data.bio[lang]||data.bio.es;
+ const btn=document.createElement('button');btn.type='button';btn.className='artist-bio-toggle';
+ const expanded=item.dataset.expanded==='true';btn.setAttribute('aria-expanded',String(expanded));btn.textContent=expanded?words.collapse:words.expand;
+ btn.addEventListener('click',()=>{
+  item.dataset.expanded=item.dataset.expanded==='true'?'false':'true';
+  const now=item.dataset.expanded==='true';
+  btn.setAttribute('aria-expanded',String(now));btn.textContent=now?words.collapse:words.expand;
+ });
+ wrap.append(p,btn);
+ if(data.bioSource&&/^https?:\/\//.test(data.bioSource)){
+  const a=document.createElement('a');a.href=data.bioSource;a.target='_blank';a.rel='noopener noreferrer';a.className='artist-bio-source';
+  a.textContent=words.source+' ↗';wrap.appendChild(a);
+ }else if(data.bioConfidence==='organizer'){
+  const note=document.createElement('span');note.className='artist-bio-source';note.textContent=words.provisional;wrap.appendChild(note);
+ }
+ slot.appendChild(wrap);
+}
+
 const origDraw=draw;
 draw=function(){
- origDraw();renderFeatured();renderArtistResources();syncAmbientButtons();
+ origDraw();renderFeatured();renderArtistResources();syncAmbientButtons();renderOrganization();renderInstitutionTranslations();
  const placeholder={es:'Buscar artista…',en:'Search artists…',pt:'Buscar artistas…'};
  artistSearch.placeholder=placeholder[lang];
  artistSearch.setAttribute('aria-label',placeholder[lang]);
