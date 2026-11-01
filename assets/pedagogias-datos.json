@@ -1,0 +1,795 @@
+{
+  "title": {
+    "es": "Mediación digital e inteligencia artificial en la formación inicial docente",
+    "en": "Digital mediation and AI in initial teacher education",
+    "pt": "Mediação digital e IA na formação inicial de professores"
+  },
+  "subtitle": {
+    "es": "Diagnóstico exploratorio en estudiantes de primer año de Pedagogías UAH",
+    "en": "Exploratory diagnosis among first-year UAH teacher education students",
+    "pt": "Diagnóstico exploratório com estudantes do primeiro ano de Pedagogia UAH"
+  },
+  "lead": {
+    "es": "De una investigación de grado a un diagnóstico solicitado para seis carreras de Pedagogía. Un estudio sobre uso académico de IA, agencia epistémica, atención, saturación digital y el vínculo humano en la formación de futuros docentes.",
+    "en": "From a degree research project to a faculty-requested exploratory diagnosis across six teacher education programs: AI use, epistemic agency, attention, digital overload and the human dimension of teaching.",
+    "pt": "De uma pesquisa de graduação a um diagnóstico solicitado para seis cursos de Pedagogia: uso de IA, agência epistêmica, atenção, sobrecarga digital e relações humanas na docência."
+  },
+  "year": "2026",
+  "reportTitle": "Mediación digital e inteligencia artificial en la formación inicial docente: diagnóstico exploratorio en estudiantes de primer año de Pedagogías UAH",
+  "reportDate": "septiembre de 2026",
+  "n": 190,
+  "questions": 49,
+  "programs": 6,
+  "method": {
+    "es": "Estudio cuantitativo, transversal y no experimental. Muestreo por conveniencia; aplicación presencial entre junio y septiembre de 2026; indicadores autoinformados y registros de uso consultados por cada participante.",
+    "en": "Quantitative, cross-sectional and non-experimental design. Convenience sampling; in-class administration from June through September 2026; self-report and participant-transcribed device metrics.",
+    "pt": "Estudo quantitativo, transversal e não experimental. Amostragem por conveniência; aplicação presencial entre junho e setembro de 2026; autorrelatos e métricas dos dispositivos transcritas pelos participantes."
+  },
+  "programCount": [
+    {
+      "es": "Pedagogía en Inglés",
+      "en": "English Education",
+      "pt": "Pedagogia em Inglês",
+      "n": 68
+    },
+    {
+      "es": "Educación Parvularia",
+      "en": "Early Childhood Education",
+      "pt": "Educação Infantil",
+      "n": 38
+    },
+    {
+      "es": "Educación Básica",
+      "en": "Primary Education",
+      "pt": "Ensino Fundamental",
+      "n": 34
+    },
+    {
+      "es": "Educación Diferencial",
+      "en": "Special Education",
+      "pt": "Educação Especial",
+      "n": 32
+    },
+    {
+      "es": "Pedagogía en Matemática",
+      "en": "Mathematics Education",
+      "pt": "Pedagogia em Matemática",
+      "n": 11
+    },
+    {
+      "es": "Pedagogía en Biología",
+      "en": "Biology Education",
+      "pt": "Pedagogia em Biologia",
+      "n": 7
+    }
+  ],
+  "researchQuestion": {
+    "es": "¿Cómo se relacionan los futuros docentes con las tecnologías digitales y la IA en sus prácticas académicas, regulación de la atención, experiencias de saturación y trayectorias de socialización tecnológica?",
+    "en": "How do future teachers engage with digital technologies and AI across their studies, attention regulation, digital overload and technological socialization?",
+    "pt": "Como futuros professores se relacionam com tecnologias digitais e IA em práticas acadêmicas, atenção, sobrecarga e socialização tecnológica?"
+  },
+  "findings": [
+    {
+      "title": {
+        "es": "Delegación y deuda cognitiva",
+        "en": "Delegation and cognitive offloading",
+        "pt": "Delegação e externalização cognitiva"
+      },
+      "source": "Informe, resultados, pp. 21–22 (impresas)",
+      "description": {
+        "es": "La externalización aparece con distinta intensidad según la operación académica. Resumir es más frecuente que delegar la redacción completa o aceptar información sin corroborarla.",
+        "en": "Outsourcing varies across academic operations: summarizing is more common than delegating whole assignments or accepting unchecked answers.",
+        "pt": "A externalização varia segundo a tarefa: resumir é mais frequente do que delegar textos inteiros ou aceitar respostas sem verificação."
+      },
+      "items": [
+        {
+          "label": {
+            "es": "Resumir textos densos",
+            "en": "Summarizing dense texts",
+            "pt": "Resumir textos densos"
+          },
+          "value": 55.6
+        },
+        {
+          "label": {
+            "es": "Subir documentos para extraer información",
+            "en": "Upload documents to extract information",
+            "pt": "Enviar documentos para extrair informação"
+          },
+          "value": 41.8
+        },
+        {
+          "label": {
+            "es": "Mejorar posibilidades de calificación",
+            "en": "Improve grades",
+            "pt": "Melhorar notas"
+          },
+          "value": 33.7
+        },
+        {
+          "label": {
+            "es": "Delegar planificación, redacción y revisión",
+            "en": "Delegate full writing workflow",
+            "pt": "Delegar redação integral"
+          },
+          "value": 32.8
+        },
+        {
+          "label": {
+            "es": "IA como primera opción",
+            "en": "AI as first resort",
+            "pt": "IA como primeira opção"
+          },
+          "value": 24.7
+        },
+        {
+          "label": {
+            "es": "Aceptar información sin corroborar",
+            "en": "Accept unverified information",
+            "pt": "Aceitar informação sem verificar"
+          },
+          "value": 13.2
+        },
+        {
+          "label": {
+            "es": "No poder explicar el trabajo propio",
+            "en": "Unable to explain own work",
+            "pt": "Não explicar o próprio trabalho"
+          },
+          "value": 11.6
+        }
+      ]
+    },
+    {
+      "title": {
+        "es": "Agencia epistémica y vigilancia crítica",
+        "en": "Epistemic agency and critical verification",
+        "pt": "Agência epistêmica e vigilância crítica"
+      },
+      "source": "Informe, resultados, p. 22 (impresa)",
+      "description": {
+        "es": "Delegar algunas operaciones no excluye verificar, corregir y reelaborar. En esta muestra ambas dimensiones coexisten.",
+        "en": "Some delegation coexists with verification, correction and rewriting; these are not opposite groups.",
+        "pt": "Delegar algumas tarefas coexiste com verificar, corrigir e reelaborar."
+      },
+      "items": [
+        {
+          "label": {
+            "es": "Reflexiona sobre originalidad",
+            "en": "Reflects on originality",
+            "pt": "Reflete sobre originalidade"
+          },
+          "value": 72.7
+        },
+        {
+          "label": {
+            "es": "Detecta errores o alucinaciones",
+            "en": "Detects errors/hallucinations",
+            "pt": "Detecta erros/alucinações"
+          },
+          "value": 71.4
+        },
+        {
+          "label": {
+            "es": "Verifica fuentes de citas",
+            "en": "Verifies sources",
+            "pt": "Verifica fontes das citações"
+          },
+          "value": 70.9
+        },
+        {
+          "label": {
+            "es": "Evalúa veracidad",
+            "en": "Assesses accuracy",
+            "pt": "Avalia veracidade"
+          },
+          "value": 70.7
+        },
+        {
+          "label": {
+            "es": "Reelabora con su propio estilo",
+            "en": "Rewrites in own style",
+            "pt": "Reescreve no próprio estilo"
+          },
+          "value": 59.5
+        },
+        {
+          "label": {
+            "es": "Refina prompts",
+            "en": "Refines prompts",
+            "pt": "Refina prompts"
+          },
+          "value": 49.7
+        }
+      ]
+    },
+    {
+      "title": {
+        "es": "Atención, dependencia e interferencia",
+        "en": "Attention and digital interference",
+        "pt": "Atenção e interferência digital"
+      },
+      "source": "Informe, resultados, p. 23 (impresa)",
+      "description": {
+        "es": "La navegación prolongada no planificada supera los indicadores específicos de FOMO; atención y diseño de plataformas forman parte del problema.",
+        "en": "Unplanned extended browsing is more common than specific FOMO indicators, highlighting the role of attention regulation.",
+        "pt": "A navegação prolongada sem planejamento é mais comum que os indicadores específicos de FOMO."
+      },
+      "items": [
+        {
+          "label": {
+            "es": "Navegación más prolongada que lo previsto",
+            "en": "Browsing longer than intended",
+            "pt": "Navegação além do planejado"
+          },
+          "value": 68.8
+        },
+        {
+          "label": {
+            "es": "Satisfacción ante likes/interacciones",
+            "en": "Satisfaction from likes",
+            "pt": "Satisfação com curtidas"
+          },
+          "value": 58.1
+        },
+        {
+          "label": {
+            "es": "Revisa mecánicamente el teléfono",
+            "en": "Habitually checks phone",
+            "pt": "Verifica mecanicamente o celular"
+          },
+          "value": 44.2
+        },
+        {
+          "label": {
+            "es": "Interferencia en rendimiento académico",
+            "en": "Reported academic interference",
+            "pt": "Interferência acadêmica relatada"
+          },
+          "value": 42.9
+        },
+        {
+          "label": {
+            "es": "Comparación social",
+            "en": "Social comparison",
+            "pt": "Comparação social"
+          },
+          "value": 28.2
+        },
+        {
+          "label": {
+            "es": "FOMO",
+            "en": "FOMO",
+            "pt": "FOMO"
+          },
+          "value": 26.3
+        }
+      ]
+    },
+    {
+      "title": {
+        "es": "Saturación cognitivo-digital",
+        "en": "Cognitive and digital overload",
+        "pt": "Sobrecarga cognitivo-digital"
+      },
+      "source": "Informe, resultados, p. 23–24 (impresas)",
+      "description": {
+        "es": "La fatiga, el sueño y las dificultades de organización aparecen junto con tensiones propias de la transición universitaria; el diseño no permite atribuir causalidad.",
+        "en": "Fatigue, sleep and organization difficulties accompany the transition to university; the design does not establish causation.",
+        "pt": "Fadiga, sono e dificuldades de organização acompanham a transição universitária; o desenho não estabelece causalidade."
+      },
+      "items": [
+        {
+          "label": {
+            "es": "Cansancio físico vinculado a pantallas",
+            "en": "Screen-related fatigue",
+            "pt": "Cansaço associado às telas"
+          },
+          "value": 59
+        },
+        {
+          "label": {
+            "es": "Irritabilidad/ansiedad recientes",
+            "en": "Recent irritability/anxiety",
+            "pt": "Irritabilidade/ansiedade recente"
+          },
+          "value": 52.7
+        },
+        {
+          "label": {
+            "es": "Dificultad para mantener cronograma",
+            "en": "Difficulty maintaining study schedule",
+            "pt": "Dificuldade de manter cronograma"
+          },
+          "value": 49.2
+        },
+        {
+          "label": {
+            "es": "Dificultad para dormir por uso del teléfono",
+            "en": "Sleep difficulties associated with phone use",
+            "pt": "Dificuldade para dormir pelo uso do telefone"
+          },
+          "value": 45.7
+        },
+        {
+          "label": {
+            "es": "Abrumado por textos universitarios",
+            "en": "Overwhelmed by academic texts",
+            "pt": "Sobrecarregado por textos acadêmicos"
+          },
+          "value": 45.3
+        }
+      ]
+    },
+    {
+      "title": {
+        "es": "Aceptación tecnológica y acompañamiento humano",
+        "en": "Technology acceptance and human support",
+        "pt": "Aceitação tecnológica e acompanhamento humano"
+      },
+      "source": "Informe, resultados, pp. 26–27 (impresas)",
+      "description": {
+        "es": "Existe disposición al apoyo tecnológico, pero el rechazo a sustituir docentes o mentores por IA marca un límite claro para el diseño pedagógico.",
+        "en": "Students are open to technological support but draw a strong boundary around replacing teachers or mentors with AI.",
+        "pt": "Há abertura ao apoio tecnológico, mas um limite claro à substituição de docentes e mentores por IA."
+      },
+      "items": [
+        {
+          "label": {
+            "es": "Rechaza sustitución de docentes por IA",
+            "en": "Rejects replacing teachers with AI",
+            "pt": "Rejeita substituir docentes por IA"
+          },
+          "value": 79.5
+        },
+        {
+          "label": {
+            "es": "Aceptaría compartir datos para apoyo",
+            "en": "Would share data for support",
+            "pt": "Compartilharia dados para apoio"
+          },
+          "value": 67.9
+        },
+        {
+          "label": {
+            "es": "Sincronizaría datos de salud/smartwatch",
+            "en": "Would sync wearable health data",
+            "pt": "Sincronizaria dados de saúde"
+          },
+          "value": 67.6
+        },
+        {
+          "label": {
+            "es": "Utilizaría herramientas de bienestar digital",
+            "en": "Would use digital wellbeing tools",
+            "pt": "Usaria ferramentas de bem-estar"
+          },
+          "value": 63.6
+        }
+      ]
+    }
+  ],
+  "usage": [
+    {
+      "tool": "ChatGPT",
+      "pct": 75.3
+    },
+    {
+      "tool": "Gemini",
+      "pct": 66.3
+    },
+    {
+      "tool": "NotebookLM",
+      "pct": 44.2
+    },
+    {
+      "tool": "Claude",
+      "pct": 11.1
+    }
+  ],
+  "toolsMulti": 74.2,
+  "screenAvg": 6.23,
+  "epistemicPositions": [
+    {
+      "name": {
+        "es": "Autonomía epistémica",
+        "en": "Epistemic autonomy",
+        "pt": "Autonomia epistêmica"
+      },
+      "pct": 36.4
+    },
+    {
+      "name": {
+        "es": "Apoyo instrumental",
+        "en": "Instrumental support",
+        "pt": "Apoio instrumental"
+      },
+      "pct": 38.6
+    },
+    {
+      "name": {
+        "es": "Uso mixto",
+        "en": "Mixed use",
+        "pt": "Uso misto"
+      },
+      "pct": 22.8
+    },
+    {
+      "name": {
+        "es": "Delegación alta",
+        "en": "High delegation",
+        "pt": "Delegação alta"
+      },
+      "pct": 2.2
+    }
+  ],
+  "scales": [
+    {
+      "name": {
+        "es": "Delegación y deuda cognitiva",
+        "en": "Delegation and cognitive offloading",
+        "pt": "Delegação e externalização"
+      },
+      "alpha": 0.819,
+      "ordinal": 0.855,
+      "items": 7
+    },
+    {
+      "name": {
+        "es": "Agencia epistémica",
+        "en": "Epistemic agency",
+        "pt": "Agência epistêmica"
+      },
+      "alpha": 0.725,
+      "ordinal": 0.774,
+      "items": 6
+    },
+    {
+      "name": {
+        "es": "Dependencia/FOMO",
+        "en": "Digital dependence/FOMO",
+        "pt": "Dependência/FOMO"
+      },
+      "alpha": 0.802,
+      "ordinal": 0.837,
+      "items": 8
+    },
+    {
+      "name": {
+        "es": "Saturación cognitivo-digital",
+        "en": "Cognitive/digital overload",
+        "pt": "Sobrecarga cognitivo-digital"
+      },
+      "alpha": 0.843,
+      "ordinal": 0.868,
+      "items": 11
+    },
+    {
+      "name": {
+        "es": "Aceptación y bienestar digital",
+        "en": "Tech acceptance and wellbeing",
+        "pt": "Aceitação e bem-estar digital"
+      },
+      "alpha": 0.727,
+      "ordinal": 0.784,
+      "items": 6
+    }
+  ],
+  "process": [
+    {
+      "date": "03/2026",
+      "title": {
+        "es": "Problema e investigación de grado",
+        "en": "Problem framing and degree research",
+        "pt": "Problema e pesquisa de graduação"
+      },
+      "text": {
+        "es": "Con Claudio Ramos Zincke se delimitaron problema, literatura y variables del seminario.",
+        "en": "With Claudio Ramos Zincke: problem framing, literature review and variable selection.",
+        "pt": "Com Claudio Ramos Zincke: delimitação do problema, revisão bibliográfica e variáveis."
+      },
+      "source": "Relato de proceso del investigador"
+    },
+    {
+      "date": "03–06/2026",
+      "title": {
+        "es": "Instrumento y facsímil",
+        "en": "Survey and printed form",
+        "pt": "Instrumento e formulário impresso"
+      },
+      "text": {
+        "es": "Diseño del cuestionario, revisión académica, consentimiento y preparación para aplicación presencial.",
+        "en": "Questionnaire design, academic review, consent and printing for classroom administration.",
+        "pt": "Questionário, revisão acadêmica, consentimento e preparação da aplicação presencial."
+      },
+      "source": "Correos aportados por autor · Metodología del informe"
+    },
+    {
+      "date": "2026",
+      "title": {
+        "es": "Ampliación solicitada por decanatura",
+        "en": "Dean's invitation to expand scope",
+        "pt": "Convite da decana para ampliar o escopo"
+      },
+      "text": {
+        "es": "La decana María Teresa Rojas propuso extender el instrumento a todas las pedagogías y ofreció coordinación de clases e impresión.",
+        "en": "Dean María Teresa Rojas suggested extending the survey to all teacher education programs and offered logistical support.",
+        "pt": "A decana María Teresa Rojas propôs estender a pesquisa a todas as pedagogias e ofereceu apoio logístico."
+      },
+      "source": "Correspondencia compartida por el autor"
+    },
+    {
+      "date": "12/06/2026",
+      "title": {
+        "es": "Comisión IA y troncos comunes",
+        "en": "AI working group and shared curriculum",
+        "pt": "Comissão de IA e currículo comum"
+      },
+      "text": {
+        "es": "El acta incluye el uso de IA por estudiantes de pedagogía como insumo para el diseño de una línea formativa. La colaboración se incorpora a las conversaciones de la comisión.",
+        "en": "The meeting minutes include student AI-use evidence as an input to designing teacher education pathways.",
+        "pt": "A ata registra o uso estudantil de IA como insumo para propostas curriculares."
+      },
+      "source": "Acta de comisión IA (correo facilitado por autor)"
+    },
+    {
+      "date": "06–09/2026",
+      "title": {
+        "es": "Levantamiento presencial",
+        "en": "In-class survey collection",
+        "pt": "Coleta presencial"
+      },
+      "text": {
+        "es": "Aplicación voluntaria en seis pedagogías, con apoyo de estudiantes y coordinación de la Facultad de Educación.",
+        "en": "Voluntary in-class administration across six programs with student collaborators and faculty coordination.",
+        "pt": "Aplicação voluntária em seis cursos com colaboração estudantil e coordenação da faculdade."
+      },
+      "source": "Informe, Metodología pp. 15–16"
+    },
+    {
+      "date": "2026",
+      "title": {
+        "es": "Digitalización y monitorización",
+        "en": "Data entry and monitoring",
+        "pt": "Digitalização e acompanhamento"
+      },
+      "text": {
+        "es": "Aplicación R Shiny para ingresar facsímiles codificados a Google Sheets, con validaciones y visor interactivo para revisar variables y consistencia.",
+        "en": "R Shiny entered coded paper surveys into Google Sheets with validation and an interactive dashboard for data checks.",
+        "pt": "R Shiny digitalizou formulários no Google Sheets, com validação e dashboard interativo."
+      },
+      "source": "Informe, Metodología pp. 16–18; relato del investigador"
+    },
+    {
+      "date": "09/2026",
+      "title": {
+        "es": "Análisis, indicadores e informe",
+        "en": "Analysis, indicators and report",
+        "pt": "Análise, indicadores e relatório"
+      },
+      "text": {
+        "es": "Limpieza, armonización Android/iOS, consistencia de escalas y redacción de un diagnóstico exploratorio para autoridades.",
+        "en": "Cleaning, Android/iOS harmonization, scale reliability and an exploratory faculty report.",
+        "pt": "Limpeza, harmonização Android/iOS, consistência das escalas e relatório exploratório para autoridades."
+      },
+      "source": "Informe completo, septiembre 2026"
+    }
+  ],
+  "team": [
+    {
+      "name": "Claudio Ramos Zincke",
+      "role": {
+        "es": "Colaboración académica y dirección del seminario de origen",
+        "en": "Academic collaboration and original thesis supervision",
+        "pt": "Colaboração acadêmica e orientação da pesquisa original"
+      },
+      "source": "Informe, agradecimientos"
+    },
+    {
+      "name": "Nicolás Madariaga",
+      "role": {
+        "es": "Colaboración en el levantamiento",
+        "en": "Survey collaboration",
+        "pt": "Colaboração na coleta"
+      },
+      "source": "Informe, agradecimientos"
+    },
+    {
+      "name": "Tamara Gómez",
+      "role": {
+        "es": "Colaboración en el levantamiento",
+        "en": "Survey collaboration",
+        "pt": "Colaboração na coleta"
+      },
+      "source": "Informe, agradecimientos"
+    },
+    {
+      "name": "Josefa Gatica",
+      "role": {
+        "es": "Colaboración en el levantamiento",
+        "en": "Survey collaboration",
+        "pt": "Colaboração na coleta"
+      },
+      "source": "Informe, agradecimientos"
+    },
+    {
+      "name": "Francesca Rocco",
+      "role": {
+        "es": "Colaboración en el levantamiento",
+        "en": "Survey collaboration",
+        "pt": "Colaboração na coleta"
+      },
+      "source": "Informe, agradecimientos"
+    },
+    {
+      "name": "Martín Labbé",
+      "role": {
+        "es": "Colaboración en el levantamiento",
+        "en": "Survey collaboration",
+        "pt": "Colaboração na coleta"
+      },
+      "source": "Informe, agradecimientos"
+    },
+    {
+      "name": "Karla Medina",
+      "role": {
+        "es": "Colaboración reportada por el investigador",
+        "en": "Collaboration reported by project author",
+        "pt": "Colaboração informada pelo autor"
+      },
+      "source": "Relato complementario del autor; no figura en agradecimientos del informe"
+    }
+  ],
+  "faculty": [
+    {
+      "name": "María Teresa Rojas Fabris",
+      "role": {
+        "es": "Decana de la Facultad de Educación",
+        "en": "Dean, Faculty of Education",
+        "pt": "Decana da Faculdade de Educação"
+      },
+      "link": "https://www.uahurtado.cl/extension/noticias-universitarias/maria-teresa-rojas-nueva-decana-fed-me-gustaria-que-lideremos-la-pregunta-sobre-que-significa-formar/"
+    },
+    {
+      "name": "Javiera Figueroa Miralles",
+      "role": {
+        "es": "Directora de Docencia de la Facultad, según correspondencia aportada",
+        "en": "Director of Teaching, as described in correspondence",
+        "pt": "Diretora de Docência, conforme correspondência"
+      },
+      "link": "https://educacion.uahurtado.cl/"
+    },
+    {
+      "name": "Salomé Villa Larenas",
+      "role": {
+        "es": "Coordinación de Pedagogía en Inglés durante el levantamiento",
+        "en": "English Education liaison during collection",
+        "pt": "Coordenação da Pedagogia em Inglês durante a coleta"
+      },
+      "link": "https://educacion.uahurtado.cl/"
+    },
+    {
+      "name": "Diego Bersano",
+      "role": {
+        "es": "Coordinación académica mencionada en correspondencia",
+        "en": "Academic coordination in correspondence",
+        "pt": "Coordenação acadêmica citada na correspondência"
+      },
+      "link": "https://educacion.uahurtado.cl/"
+    }
+  ],
+  "commission": {
+    "name": {
+      "es": "Comisión de Inteligencia Artificial para la Formación en Pedagogías",
+      "en": "AI Commission for Teacher Education",
+      "pt": "Comissão de IA para Formação Docente"
+    },
+    "content": {
+      "es": "El acta de junio de 2026 propone una línea de ciudadanía digital crítica, pensamiento computacional y producción de IA orientada a la enseñanza. Incluye género, inclusión, pobreza, ética y resguardo de niños y niñas como preocupaciones transversales. La encuesta aparece como insumo solicitado; no se ha documentado que sus resultados se hayan convertido ya en política aprobada.",
+      "en": "The June 2026 meeting minutes propose critical digital citizenship, computational thinking and AI for teaching, alongside gender, inclusion, poverty, ethics and child protection. The survey is an identified input, not evidence of an adopted policy.",
+      "pt": "A ata de junho de 2026 propõe cidadania digital crítica, pensamento computacional e IA para o ensino, com gênero, inclusão, pobreza, ética e proteção infantil como eixos transversais. A pesquisa é insumo previsto, não prova de política aprovada."
+    },
+    "stages": [
+      {
+        "es": "Ciudadanía digital crítica",
+        "en": "Critical digital citizenship",
+        "pt": "Cidadania digital crítica"
+      },
+      {
+        "es": "Pensamiento computacional",
+        "en": "Computational thinking",
+        "pt": "Pensamento computacional"
+      },
+      {
+        "es": "IA para enseñanza y aprendizaje",
+        "en": "AI for teaching and learning",
+        "pt": "IA para ensino e aprendizagem"
+      }
+    ],
+    "caveat": {
+      "es": "La invitación y el acta evidencian participación en un proceso de trabajo, pero no acreditan por sí solas que la Facultad haya adoptado las recomendaciones del informe.",
+      "en": "Invitation and meeting notes document engagement, not formal adoption of the report's recommendations.",
+      "pt": "Convites e atas documentam participação, não adoção formal das recomendações."
+    }
+  },
+  "suggestions": [
+    {
+      "es": "Alfabetización crítica en IA desde el primer año",
+      "en": "Critical AI literacy from year one",
+      "pt": "Alfabetização crítica em IA desde o primeiro ano"
+    },
+    {
+      "es": "Criterios compartidos de transparencia y verificación",
+      "en": "Shared standards for transparency and verification",
+      "pt": "Critérios de transparência e verificação"
+    },
+    {
+      "es": "Autorregulación de la atención y bienestar digital",
+      "en": "Attention regulation and digital wellbeing",
+      "pt": "Autorregulação da atenção e bem-estar digital"
+    },
+    {
+      "es": "Preservar la tutoría y el vínculo pedagógico humano",
+      "en": "Preserve human mentoring and teaching relationships",
+      "pt": "Preservar tutoria e vínculo humano"
+    },
+    {
+      "es": "Continuar mediciones y seguimiento de cohortes",
+      "en": "Further research and longitudinal follow-up",
+      "pt": "Acompanhamento e novas pesquisas"
+    }
+  ],
+  "limitations": {
+    "es": "El muestreo no probabilístico y transversal impide generalizar estadísticamente a todas las pedagogías o establecer causalidad. La muestra es desigual (por ejemplo, Matemática n=11 y Biología n=7), existen medidas autorreportadas y los tamaños válidos varían por indicador. Las escalas presentan consistencia interna, pero ello no prueba por sí solo validez de constructo.",
+    "en": "Convenience sampling and a cross-sectional design prevent population-level inference or causation. The programs differ greatly in sample size (Mathematics n=11; Biology n=7); much information is self-reported and valid denominators vary. Internal consistency does not alone demonstrate construct validity.",
+    "pt": "A amostragem por conveniência e desenho transversal impedem inferência populacional e causalidade. Cursos têm tamanhos desiguais (Matemática n=11; Biologia n=7), várias respostas são autorrelatadas e denominadores variam. Consistência interna não prova validade de construto."
+  },
+  "sourceNote": {
+    "es": "Fuente empírica: informe «Mediación digital e inteligencia artificial en la formación inicial docente» (septiembre 2026), entregado por el investigador. Reconstrucción visual de cifras del texto; no se publica la base original ni los correos privados.",
+    "en": "Empirical source: September 2026 UAH teacher education report provided by the researcher. Figures are editorial reconstructions from the report; private survey data and email records are not published.",
+    "pt": "Fonte empírica: relatório de setembro de 2026 fornecido pelo pesquisador. Os gráficos são reconstruções editoriais, sem publicar dados individuais ou e-mails."
+  },
+  "links": [
+    {
+      "label": {
+        "es": "Facultad de Educación UAH",
+        "en": "UAH Faculty of Education",
+        "pt": "Faculdade de Educação UAH"
+      },
+      "url": "https://educacion.uahurtado.cl/facultad/"
+    },
+    {
+      "label": {
+        "es": "Perfil y agenda de la decana (UAH)",
+        "en": "Dean's profile and agenda (UAH)",
+        "pt": "Perfil da decana (UAH)"
+      },
+      "url": "https://www.uahurtado.cl/extension/noticias-universitarias/maria-teresa-rojas-nueva-decana-fed-me-gustaria-que-lideremos-la-pregunta-sobre-que-significa-formar/"
+    },
+    {
+      "label": {
+        "es": "La docencia y el juicio crítico (UAH)",
+        "en": "Teaching and critical judgement (UAH)",
+        "pt": "Docência e pensamento crítico (UAH)"
+      },
+      "url": "https://www.uahurtado.cl/extension/opinion/maria-teresa-rojas-decana-de-educacion/"
+    },
+    {
+      "label": {
+        "es": "Universidad Alberto Hurtado",
+        "en": "Universidad Alberto Hurtado",
+        "pt": "Universidad Alberto Hurtado"
+      },
+      "url": "https://www.uahurtado.cl/"
+    }
+  ],
+  "photo": {
+    "src": null,
+    "caption": {
+      "es": "Reunión de trabajo de la comisión de IA para la formación de pedagogías. Fotografía pendiente de incorporación y confirmación de autorización de las personas retratadas.",
+      "en": "AI commission working meeting. Photo pending upload and consent checks.",
+      "pt": "Reunião da comissão de IA. Foto pendente e sujeita à verificação de consentimento."
+    }
+  },
+  "origin": "Informe_v8(5).docx + correos y acta proporcionados en conversación; consulta de páginas institucionales UAH"
+}
