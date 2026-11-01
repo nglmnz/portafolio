@@ -41,14 +41,14 @@
       "pt": "Minha participação"
     },
     "statement": {
-      "es": "Colaborador externo en mediación y comunicación pública de investigación durante 2025–2026, incluyendo actividades vinculadas con Hilvanar en UPLA.",
-      "en": "External collaborator in research mediation and public communication during 2025–2026, including work associated with Hilvanar at UPLA.",
-      "pt": "Colaborador externo em mediação e comunicação pública de pesquisa durante 2025–2026, incluindo atividades vinculadas a Hilvanar na UPLA."
+      "es": "Entre 2025 y 2026 colaboré externamente con la mediación y comunicación pública de la investigación FONDECYT Regular N.º 1220508. Durante una actividad asociada a la exposición Hilvanar en la UPLA, realicé la mediación con el público y expliqué el apartado de metodologías del proyecto de investigación.",
+      "en": "From 2025 to 2026 I collaborated externally on public-facing mediation and communication for FONDECYT Regular research project No. 1220508. During an activity linked to the Hilvanar exhibition at UPLA, I facilitated the public mediation and explained the research project's methodologies.",
+      "pt": "Entre 2025 e 2026 colaborei externamente na mediação e comunicação pública do projeto de pesquisa FONDECYT Regular N.º 1220508. Durante uma atividade vinculada à exposição Hilvanar na UPLA, fiz a mediação com o público e expliquei as metodologias do projeto."
     },
     "scope": {
-      "es": "El alcance concreto de las tareas individuales (producción, registro, edición, coordinación o diseño) se documentará cuando incorporemos los materiales del encuentro. Por ahora no se adjudican autorías sobre obras, metodologías de campo, curaduría ni publicaciones de terceros.",
-      "en": "Specific responsibilities (production, documentation, editing, coordination or design) will be detailed once materials from the event are incorporated. No authorship of artwork, fieldwork methods, curation or third-party publications is claimed here.",
-      "pt": "As responsabilidades individuais (produção, registro, edição, coordenação ou design) serão detalhadas com os materiais do encontro. Não se atribui autoria de obras, metodologias de campo, curadoria ou publicações de terceiros."
+      "es": "Mi intervención consistió en acercar al público las metodologías de la investigación y facilitar la conversación durante la actividad documentada fotográficamente. La dirección científica, el diseño de las metodologías, la autoría de las obras y la curaduría corresponden a quienes participaron en esas funciones dentro del equipo.",
+      "en": "My contribution was to explain the project's research methodologies and facilitate dialogue with the public during the photographed activity. Scientific leadership, methodological design, artworks and exhibition curation belong to their respective research and creative teams.",
+      "pt": "Minha contribuição foi explicar ao público as metodologias da pesquisa e facilitar o diálogo durante a atividade registrada. Direção científica, desenho metodológico, obras e curadoria pertencem às pessoas responsáveis no projeto."
     },
     "pillars": [
       {
@@ -87,7 +87,22 @@
           "pt": "Organizar registros de trabalho coletivo com créditos, contexto e cuidado ético."
         }
       }
-    ]
+    ],
+    "photographicTitle": {
+      "es": "Mi mediación: explicar cómo se produjo el conocimiento",
+      "en": "My mediation: explaining how knowledge was produced",
+      "pt": "Minha mediação: explicar como o conhecimento foi produzido"
+    },
+    "photographicText": {
+      "es": "En la actividad pública de Hilvanar asumí la mediación y presenté el apartado metodológico del FONDECYT 1220508. Mi tarea fue traducir un proceso de investigación complejo en una conversación accesible: qué se investigó, qué caminos metodológicos se siguieron y por qué importan la participación, el contexto y los cuidados éticos.",
+      "en": "At the Hilvanar public activity, I facilitated the conversation and presented the methodological approach of FONDECYT 1220508. The aim was to make the research process accessible: what was studied, how the methods worked and why participation, context and ethical care matter.",
+      "pt": "Na atividade pública de Hilvanar fiz a mediação e apresentei as abordagens metodológicas do FONDECYT 1220508. Meu papel foi tornar o processo de pesquisa compreensível: o que foi investigado, quais métodos foram utilizados e por que participação, contexto e cuidados éticos importam."
+    },
+    "photoNote": {
+      "es": "Registros de la mediación realizados durante la actividad. Las fotografías fueron facilitadas para este portafolio; la autoría fotográfica específica está pendiente de identificación.",
+      "en": "Photographs documenting the mediation activity, supplied for this portfolio. Individual photographer credits are still pending.",
+      "pt": "Registros da mediação feitos durante a atividade, fornecidos para este portfólio. Créditos dos fotógrafos ainda pendentes."
+    }
   },
   "method": {
     "eyebrow": {
@@ -517,14 +532,24 @@
   "gallery": {
     "manifest": "assets/galeria.json",
     "placeholder": {
-      "es": "El archivo visual se completará con fotografías del encuentro y material autorizado de la exposición. Por respeto a los testimonios y las obras, no se publicarán imágenes de participantes ni materiales sensibles sin verificar su uso.",
-      "en": "The visual archive will be completed using event photographs and authorized exhibition material. Sensitive research material and participant images will not be republished without verifying permissions.",
-      "pt": "O arquivo visual será ampliado com fotos do encontro e material autorizado. Imagens de participantes e materiais sensíveis não serão republicados sem verificar autorizações."
+      "es": "Un archivo visual del encuentro: desde la presentación en el auditorio hasta el recorrido por la exposición y las actividades de mediación. Las imágenes con testimonios personales se mantienen fuera de la publicación hasta revisar los permisos de reproducción.",
+      "en": "A visual archive of the event, from the auditorium presentation to exhibition visits and public mediation. Images showing personal testimony remain unpublished pending a rights and consent review.",
+      "pt": "Um arquivo visual do evento, desde o auditório até a exposição e as atividades de mediação. Imagens com testemunhos pessoais continuam fora da publicação até revisão das autorizações."
     },
     "credit": {
-      "es": "Archivo fotográfico por incorporar · no se han añadido fotografías de terceras personas",
-      "en": "Photographic archive pending · no third-party photos added",
-      "pt": "Arquivo fotográfico pendente · nenhuma foto de terceiros adicionada"
+      "es": "Archivo fotográfico facilitado por Ángel Muñoz; crédito de autoría pendiente de identificación",
+      "en": "Photo archive supplied by Ángel Muñoz; photographer credits pending",
+      "pt": "Arquivo fotográfico fornecido por Ángel Muñoz; autoria das fotos a confirmar"
+    },
+    "intro": {
+      "es": "Explora las distintas etapas de la actividad. Los registros del auditorio, la mediación y el recorrido se organizan por momentos, no por el nombre de las personas retratadas.",
+      "en": "Browse moments of the event. Auditorium, mediation and exhibition photographs are grouped by activity rather than by the identity of people pictured.",
+      "pt": "Explore momentos do evento. As fotos do auditório, da mediação e da exposição são agrupadas por atividade, não pela identidade das pessoas retratadas."
+    },
+    "warning": {
+      "es": "Los primeros planos de testimonios escritos, mensajes personales y tableros de investigación no se muestran aquí: requieren revisión ética y autorización específica antes de una reproducción pública.",
+      "en": "Close-ups of written testimony, personal messages and research boards are not displayed: they require ethical review and specific permission before public reproduction.",
+      "pt": "Os primeiros planos de depoimentos, mensagens pessoais e painéis de pesquisa não são exibidos: exigem revisão ética e autorização específica."
     }
   }
 }
