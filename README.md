@@ -125,3 +125,26 @@ Esta revisión sustituye la presentación centrada exclusivamente en la rúbrica
 **Evidencia existente:** web Quarto, piloto R Shiny, explorador interactivo del vector con siete operaciones, selector de seis dimensiones, ejemplos de revisión y modelos conceptuales. **Pendientes de implementar y evaluar:** diagnóstico basado en estudiantes reales, vector longitudinal calibrado, banco curricular conectado a motor adaptativo, selección de actividades por evidencia y paneles docentes. El perfil mostrado es ficticio y no mide resultados educativos.
 
 El caso se sirve en los idiomas ES, EN y PT mediante `assets/sustancia-datos.json` y `assets/casos.js`. Todas las traducciones del portafolio son síntesis editoriales de los textos fuente; la disponibilidad de páginas en otros idiomas dentro del proyecto original depende de ese repositorio.
+
+
+## Actualización editorial CESI + investigación aplicada en Pedagogías UAH — noviembre de 2026
+
+### CESI: portada separada de la fotografía
+
+Se eligió la **opción B**: primero se lee el texto de presentación del proyecto, luego, al desplazarse, aparece una sección fotográfica independiente con la imagen de la escultura. La fotografía no compite con el título inicial y la sección incluye selector de imágenes, crédito y una transición de aparición respetuosa con las preferencias de movimiento reducido. Se actualizó `cesi/index.html` sin eliminar contenidos ni el vínculo al sitio original UAH. Todos los textos añadidos tienen ES/EN/PT.
+
+### Caso: Mediación digital e IA en la formación inicial docente
+
+Ruta: [`/pedagogias/`](https://nglmnz.github.io/portafolio/pedagogias/).
+
+- **Fuente principal:** `Informe_v8(5).docx`, proporcionado por el investigador; septiembre de 2026; 190 cuestionarios válidos, seis carreras, 49 preguntas, aplicación presencial entre junio y septiembre.
+- **Origen del encargo:** conexión con el seminario de grado, solicitud de ampliación de la decanatura y apoyo logístico de la Facultad. Incluye dos extractos breves de correos compartidos por el investigador; los originales no se publican.
+- **Comisión IA:** se distingue la propuesta del acta de junio (tres momentos formativos, ética e inclusión) del informe entregado en septiembre. La documentación no acredita la adopción formal de política institucional.
+- **Proceso técnico:** facsímil impreso, ingreso codificado con R Shiny, base Google Sheets, visor de consistencia, limpieza y armonización Android/iOS, cinco escalas con alfa crudo y ordinal y redacción del informe.
+- **Resultados:** explorador de cinco bloques con porcentajes por ítem; media de pantalla 6,23 horas/día; herramientas IA; diferencias muestrales entre carreras; líneas sugeridas para formación docente.
+- **Visualización:** figuras reconstruidas con HTML/CSS desde los datos publicados en el texto del informe, con etiquetas y porcentajes que no dependen solamente del color. Identidad azul marino, blanco y turquesa inspirada en el informe; vínculo al sitio UAH y su Facultad de Educación. No se presentan como reproducciones literales de figuras originales.
+- **Procedencia y límites:** muestreo no probabilístico, datos parcialmente autorreportados, estudio transversal, denominadores variables; no inferir causalidad o prevalencia poblacional. El conjunto de 190 es diferente de los 276 del seminario y no deben sumarse.
+- **Equipo:** nombres acreditados en el informe separados de Karla Medina, cuya colaboración fue mencionada directamente por el autor y no figura en los agradecimientos del documento.
+- **Foto de reunión:** para integrar la fotografía pendiente, subir una imagen con autorización a `pedagogias/assets/comision-ia.webp`. La página la muestra automáticamente si está disponible, conservando el marcador si no lo está.
+
+Archivos: `assets/pedagogias-datos.json` (datos), `assets/pedagogias.js` (interactividad y traducciones ES/EN/PT), `assets/pedagogias.css` (estilos), `pedagogias/index.html` (entrada), `pedagogias/assets/README.md` (guía visual).
