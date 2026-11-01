@@ -192,3 +192,18 @@ body[data-case="alas"] .xp-art-center{display:grid}
 @media(max-width:700px){body[data-case="alas"] .xp-hero-in{grid-template-columns:1fr;gap:10px;padding-block:65px 70px}body[data-case="alas"] .xp-hero-visual{width:min(420px,100%);max-height:365px;min-height:320px;aspect-ratio:1;margin:auto}}
 @media(max-width:470px){.xp-alas-essay{grid-template-columns:1fr}.xp-alas-essay-photo,.xp-alas-essay-photo.featured{grid-column:auto;min-height:245px}}
 @media(prefers-reduced-motion:reduce){.xp-alas-essay-photo img{transition:none}.xp-alas-essay-photo:hover img{transform:none}}
+
+
+/* ALAS 2026 · YouTube Shorts published interview (loaded only by deliberate playback). */
+.xp-interview-live{display:grid;grid-template-columns:minmax(245px,.68fr) minmax(0,1fr);gap:clamp(18px,4vw,43px);align-items:center;margin:30px 0;background:linear-gradient(140deg,#0d2a3e,#143b4a);padding:clamp(16px,3vw,29px);border-radius:16px;border:1px solid #448590;color:#ecfcfa}
+.xp-video-stage{position:relative;aspect-ratio:9/16;max-height:560px;max-width:360px;width:100%;margin:auto;background:radial-gradient(circle at 66% 18%,#2b827e,transparent 58%),linear-gradient(135deg,#0b293e,#14263e);border:1px solid #417984;border-radius:13px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;box-shadow:0 20px 48px #0718217a}
+.xp-video-stage:before{content:"";position:absolute;inset:17% 18%;border:15px solid #77c7ba66;border-radius:47% 53% 39% 61%;transform:rotate(33deg);pointer-events:none}
+.xp-video-mark{position:relative;z-index:1;color:#c4f6e6;font-size:11px;letter-spacing:.15em;font-weight:900;text-align:center;padding:0 12px}
+.xp-video-play{position:relative;z-index:1;display:flex;align-items:center;gap:11px;border:1px solid #98ded4;background:#bbefe1;color:#113b46;padding:11px 17px;border-radius:99px;font-size:13px;font-weight:870;cursor:pointer;box-shadow:0 10px 29px #04182058}
+.xp-video-play:hover{background:#e2fff1}.xp-video-play-icon{display:grid;place-items:center;border-radius:50%;background:#207879;color:#fff;width:30px;height:30px;font-size:13px}
+.xp-video-iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0;background:#051e2a;z-index:2}
+.xp-interview-meta .xp-kicker{color:#a3e9d1}.xp-interview-meta h3{font-size:clamp(1.55rem,2.8vw,2.6rem);color:#fff;margin:12px 0 15px}.xp-video-status{color:#9be8cf;font-size:13px;font-weight:820}
+.xp-video-privacy{font-size:13px;color:#dcebe8;line-height:1.7;max-width:590px}.xp-interview-meta .xp-source{color:#baf1e0}
+.xp-video-note{color:#c0d7d5;font-size:11px;line-height:1.6;margin-top:20px}
+@media(max-width:690px){.xp-interview-live{grid-template-columns:1fr;gap:23px}.xp-video-stage{max-width:310px;max-height:none;width:min(100%,310px)}.xp-interview-meta h3{font-size:1.8rem}}
+@media(prefers-reduced-motion:reduce){.xp-video-stage:before{transform:none}}
