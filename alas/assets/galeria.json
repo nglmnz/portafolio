@@ -1,27 +1,752 @@
 {
-  "version": 1,
+  "version": 2,
   "case": "alas",
-  "description": "Archivo fotográfico pendiente. Subir únicamente material del autor o autorizado y registrar créditos.",
-  "images": [],
-  "expectedDir": "alas/assets/",
-  "schema": {
-    "src": "nombre-de-foto.webp",
-    "category": "congreso|entrevista|uah|cultura",
-    "caption": {
-      "es": "Pie verificable",
-      "en": "Verified caption",
-      "pt": "Legenda verificável"
+  "description": "Clasificación inicial de fotografías por nombres de archivo. Pie de foto específico pendiente de revisión.",
+  "hero": [
+    {
+      "src": "HEAD PORTADA.JPG"
     },
-    "alt": {
-      "es": "Descripción accesible",
-      "en": "Accessible alt text",
-      "pt": "Descrição acessível"
+    {
+      "src": "portada-angel-solo.JPG"
     },
-    "credit": "Autor/a de la fotografía",
-    "permission": "Autorización para publicación documentada",
-    "source": "Archivo del evento",
-    "date": "2026-07-DD o fecha documentada",
-    "sensitive": false
+    {
+      "src": "alas flyer oficial.jpg"
+    }
+  ],
+  "groups": [
+    {
+      "id": "all",
+      "name": {
+        "es": "Todas",
+        "en": "All",
+        "pt": "Todas"
+      }
+    },
+    {
+      "id": "delegacion",
+      "name": {
+        "es": "Delegación UAH y encuentros",
+        "en": "UAH delegation and encounters",
+        "pt": "Delegação UAH e encontros"
+      }
+    },
+    {
+      "id": "serie",
+      "name": {
+        "es": "Serie documental sin clasificar",
+        "en": "Unclassified documentary series",
+        "pt": "Série documental sem classificação"
+      }
+    },
+    {
+      "id": "ponencias",
+      "name": {
+        "es": "Sesiones y ponencias",
+        "en": "Sessions and presentations",
+        "pt": "Sessões e apresentações"
+      }
+    },
+    {
+      "id": "identidad",
+      "name": {
+        "es": "Gráfica y materiales",
+        "en": "Graphics and materials",
+        "pt": "Gráfica e materiais"
+      }
+    },
+    {
+      "id": "portada",
+      "name": {
+        "es": "Portada y corresponsalía",
+        "en": "Cover and correspondence",
+        "pt": "Capa e correspondência"
+      }
+    },
+    {
+      "id": "entorno",
+      "name": {
+        "es": "Vida del congreso",
+        "en": "Congress life",
+        "pt": "Vida do congresso"
+      }
+    }
+  ],
+  "images": [
+    {
+      "src": "20260806_0130.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0130.jpg",
+        "en": "ALAS 2026 archive · 20260806_0130.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0130.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0130.jpg",
+        "en": "Congress photo file 20260806_0130.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0130.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 1
+    },
+    {
+      "src": "20260806_0132.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0132.jpg",
+        "en": "ALAS 2026 archive · 20260806_0132.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0132.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0132.jpg",
+        "en": "Congress photo file 20260806_0132.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0132.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 2
+    },
+    {
+      "src": "20260806_0136.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0136.jpg",
+        "en": "ALAS 2026 archive · 20260806_0136.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0136.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0136.jpg",
+        "en": "Congress photo file 20260806_0136.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0136.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 3
+    },
+    {
+      "src": "20260806_0139.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0139.jpg",
+        "en": "ALAS 2026 archive · 20260806_0139.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0139.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0139.jpg",
+        "en": "Congress photo file 20260806_0139.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0139.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 4
+    },
+    {
+      "src": "20260806_0146.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0146.jpg",
+        "en": "ALAS 2026 archive · 20260806_0146.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0146.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0146.jpg",
+        "en": "Congress photo file 20260806_0146.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0146.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 5
+    },
+    {
+      "src": "20260806_0150.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0150.jpg",
+        "en": "ALAS 2026 archive · 20260806_0150.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0150.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0150.jpg",
+        "en": "Congress photo file 20260806_0150.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0150.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 6
+    },
+    {
+      "src": "20260806_0152.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0152.jpg",
+        "en": "ALAS 2026 archive · 20260806_0152.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0152.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0152.jpg",
+        "en": "Congress photo file 20260806_0152.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0152.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 7
+    },
+    {
+      "src": "20260806_0157.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0157.jpg",
+        "en": "ALAS 2026 archive · 20260806_0157.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0157.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0157.jpg",
+        "en": "Congress photo file 20260806_0157.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0157.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 8
+    },
+    {
+      "src": "20260806_0163.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0163.jpg",
+        "en": "ALAS 2026 archive · 20260806_0163.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0163.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0163.jpg",
+        "en": "Congress photo file 20260806_0163.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0163.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 9
+    },
+    {
+      "src": "20260806_0164.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0164.jpg",
+        "en": "ALAS 2026 archive · 20260806_0164.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0164.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0164.jpg",
+        "en": "Congress photo file 20260806_0164.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0164.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 10
+    },
+    {
+      "src": "20260806_0211.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0211.jpg",
+        "en": "ALAS 2026 archive · 20260806_0211.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0211.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0211.jpg",
+        "en": "Congress photo file 20260806_0211.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0211.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 11
+    },
+    {
+      "src": "20260806_0214_01.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0214_01.jpg",
+        "en": "ALAS 2026 archive · 20260806_0214_01.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0214_01.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0214_01.jpg",
+        "en": "Congress photo file 20260806_0214_01.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0214_01.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 12
+    },
+    {
+      "src": "20260806_0216_01.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0216_01.jpg",
+        "en": "ALAS 2026 archive · 20260806_0216_01.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0216_01.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0216_01.jpg",
+        "en": "Congress photo file 20260806_0216_01.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0216_01.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 13
+    },
+    {
+      "src": "20260806_0223.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0223.jpg",
+        "en": "ALAS 2026 archive · 20260806_0223.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0223.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0223.jpg",
+        "en": "Congress photo file 20260806_0223.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0223.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 14
+    },
+    {
+      "src": "20260806_0242.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0242.jpg",
+        "en": "ALAS 2026 archive · 20260806_0242.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0242.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0242.jpg",
+        "en": "Congress photo file 20260806_0242.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0242.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 15
+    },
+    {
+      "src": "20260806_0263.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0263.jpg",
+        "en": "ALAS 2026 archive · 20260806_0263.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0263.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0263.jpg",
+        "en": "Congress photo file 20260806_0263.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0263.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 16
+    },
+    {
+      "src": "20260806_0277.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0277.jpg",
+        "en": "ALAS 2026 archive · 20260806_0277.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0277.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0277.jpg",
+        "en": "Congress photo file 20260806_0277.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0277.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 17
+    },
+    {
+      "src": "20260806_0278.jpg",
+      "category": "serie",
+      "caption": {
+        "es": "Archivo ALAS 2026 · 20260806_0278.jpg",
+        "en": "ALAS 2026 archive · 20260806_0278.jpg",
+        "pt": "Arquivo ALAS 2026 · 20260806_0278.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo 20260806_0278.jpg",
+        "en": "Congress photo file 20260806_0278.jpg",
+        "pt": "Registro do congresso, arquivo 20260806_0278.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 18
+    },
+    {
+      "src": "DSC_0004.JPG",
+      "category": "entorno",
+      "caption": {
+        "es": "Archivo ALAS 2026 · DSC_0004.JPG",
+        "en": "ALAS 2026 archive · DSC_0004.JPG",
+        "pt": "Arquivo ALAS 2026 · DSC_0004.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo DSC_0004.JPG",
+        "en": "Congress photo file DSC_0004.JPG",
+        "pt": "Registro do congresso, arquivo DSC_0004.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 19
+    },
+    {
+      "src": "HEAD PORTADA.JPG",
+      "category": "portada",
+      "caption": {
+        "es": "Archivo ALAS 2026 · HEAD PORTADA.JPG",
+        "en": "ALAS 2026 archive · HEAD PORTADA.JPG",
+        "pt": "Arquivo ALAS 2026 · HEAD PORTADA.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo HEAD PORTADA.JPG",
+        "en": "Congress photo file HEAD PORTADA.JPG",
+        "pt": "Registro do congresso, arquivo HEAD PORTADA.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 20
+    },
+    {
+      "src": "alas flyer oficial.jpg",
+      "category": "identidad",
+      "caption": {
+        "es": "Archivo ALAS 2026 · alas flyer oficial.jpg",
+        "en": "ALAS 2026 archive · alas flyer oficial.jpg",
+        "pt": "Arquivo ALAS 2026 · alas flyer oficial.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo alas flyer oficial.jpg",
+        "en": "Congress photo file alas flyer oficial.jpg",
+        "pt": "Registro do congresso, arquivo alas flyer oficial.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 21
+    },
+    {
+      "src": "asistentes-ponencia.JPG",
+      "category": "ponencias",
+      "caption": {
+        "es": "Archivo ALAS 2026 · asistentes-ponencia.JPG",
+        "en": "ALAS 2026 archive · asistentes-ponencia.JPG",
+        "pt": "Arquivo ALAS 2026 · asistentes-ponencia.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo asistentes-ponencia.JPG",
+        "en": "Congress photo file asistentes-ponencia.JPG",
+        "pt": "Registro do congresso, arquivo asistentes-ponencia.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 22
+    },
+    {
+      "src": "equipo-uah-ucm-kathya-araujo.JPG",
+      "category": "delegacion",
+      "caption": {
+        "es": "Archivo ALAS 2026 · equipo-uah-ucm-kathya-araujo.JPG",
+        "en": "ALAS 2026 archive · equipo-uah-ucm-kathya-araujo.JPG",
+        "pt": "Arquivo ALAS 2026 · equipo-uah-ucm-kathya-araujo.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo equipo-uah-ucm-kathya-araujo.JPG",
+        "en": "Congress photo file equipo-uah-ucm-kathya-araujo.JPG",
+        "pt": "Registro do congresso, arquivo equipo-uah-ucm-kathya-araujo.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 23
+    },
+    {
+      "src": "foto-gabrielamardones.JPG",
+      "category": "delegacion",
+      "caption": {
+        "es": "Archivo ALAS 2026 · foto-gabrielamardones.JPG",
+        "en": "ALAS 2026 archive · foto-gabrielamardones.JPG",
+        "pt": "Arquivo ALAS 2026 · foto-gabrielamardones.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo foto-gabrielamardones.JPG",
+        "en": "Congress photo file foto-gabrielamardones.JPG",
+        "pt": "Registro do congresso, arquivo foto-gabrielamardones.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 24
+    },
+    {
+      "src": "foto-gabrielamardones2.JPG",
+      "category": "delegacion",
+      "caption": {
+        "es": "Archivo ALAS 2026 · foto-gabrielamardones2.JPG",
+        "en": "ALAS 2026 archive · foto-gabrielamardones2.JPG",
+        "pt": "Arquivo ALAS 2026 · foto-gabrielamardones2.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo foto-gabrielamardones2.JPG",
+        "en": "Congress photo file foto-gabrielamardones2.JPG",
+        "pt": "Registro do congresso, arquivo foto-gabrielamardones2.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 25
+    },
+    {
+      "src": "foto-gabrielamardones3.JPG",
+      "category": "delegacion",
+      "caption": {
+        "es": "Archivo ALAS 2026 · foto-gabrielamardones3.JPG",
+        "en": "ALAS 2026 archive · foto-gabrielamardones3.JPG",
+        "pt": "Arquivo ALAS 2026 · foto-gabrielamardones3.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo foto-gabrielamardones3.JPG",
+        "en": "Congress photo file foto-gabrielamardones3.JPG",
+        "pt": "Registro do congresso, arquivo foto-gabrielamardones3.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 26
+    },
+    {
+      "src": "foto-gabrielamardones4.JPG",
+      "category": "delegacion",
+      "caption": {
+        "es": "Archivo ALAS 2026 · foto-gabrielamardones4.JPG",
+        "en": "ALAS 2026 archive · foto-gabrielamardones4.JPG",
+        "pt": "Arquivo ALAS 2026 · foto-gabrielamardones4.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo foto-gabrielamardones4.JPG",
+        "en": "Congress photo file foto-gabrielamardones4.JPG",
+        "pt": "Registro do congresso, arquivo foto-gabrielamardones4.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 27
+    },
+    {
+      "src": "foto-gabrielamardones6.JPG",
+      "category": "delegacion",
+      "caption": {
+        "es": "Archivo ALAS 2026 · foto-gabrielamardones6.JPG",
+        "en": "ALAS 2026 archive · foto-gabrielamardones6.JPG",
+        "pt": "Arquivo ALAS 2026 · foto-gabrielamardones6.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo foto-gabrielamardones6.JPG",
+        "en": "Congress photo file foto-gabrielamardones6.JPG",
+        "pt": "Registro do congresso, arquivo foto-gabrielamardones6.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 28
+    },
+    {
+      "src": "gabriela-mardonesyequipo de ponentes.JPG",
+      "category": "delegacion",
+      "caption": {
+        "es": "Archivo ALAS 2026 · gabriela-mardonesyequipo de ponentes.JPG",
+        "en": "ALAS 2026 archive · gabriela-mardonesyequipo de ponentes.JPG",
+        "pt": "Arquivo ALAS 2026 · gabriela-mardonesyequipo de ponentes.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo gabriela-mardonesyequipo de ponentes.JPG",
+        "en": "Congress photo file gabriela-mardonesyequipo de ponentes.JPG",
+        "pt": "Registro do congresso, arquivo gabriela-mardonesyequipo de ponentes.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 29
+    },
+    {
+      "src": "monitoras-alas.JPG",
+      "category": "entorno",
+      "caption": {
+        "es": "Archivo ALAS 2026 · monitoras-alas.JPG",
+        "en": "ALAS 2026 archive · monitoras-alas.JPG",
+        "pt": "Arquivo ALAS 2026 · monitoras-alas.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo monitoras-alas.JPG",
+        "en": "Congress photo file monitoras-alas.JPG",
+        "pt": "Registro do congresso, arquivo monitoras-alas.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 30
+    },
+    {
+      "src": "panel con geoffrey player.JPG",
+      "category": "ponencias",
+      "caption": {
+        "es": "Archivo ALAS 2026 · panel con geoffrey player.JPG",
+        "en": "ALAS 2026 archive · panel con geoffrey player.JPG",
+        "pt": "Arquivo ALAS 2026 · panel con geoffrey player.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo panel con geoffrey player.JPG",
+        "en": "Congress photo file panel con geoffrey player.JPG",
+        "pt": "Registro do congresso, arquivo panel con geoffrey player.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 31
+    },
+    {
+      "src": "portada-angel-solo.JPG",
+      "category": "portada",
+      "caption": {
+        "es": "Archivo ALAS 2026 · portada-angel-solo.JPG",
+        "en": "ALAS 2026 archive · portada-angel-solo.JPG",
+        "pt": "Arquivo ALAS 2026 · portada-angel-solo.JPG"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo portada-angel-solo.JPG",
+        "en": "Congress photo file portada-angel-solo.JPG",
+        "pt": "Registro do congresso, arquivo portada-angel-solo.JPG"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 32
+    },
+    {
+      "src": "totebag_promocional.jpg",
+      "category": "identidad",
+      "caption": {
+        "es": "Archivo ALAS 2026 · totebag_promocional.jpg",
+        "en": "ALAS 2026 archive · totebag_promocional.jpg",
+        "pt": "Arquivo ALAS 2026 · totebag_promocional.jpg"
+      },
+      "alt": {
+        "es": "Registro del congreso, archivo totebag_promocional.jpg",
+        "en": "Congress photo file totebag_promocional.jpg",
+        "pt": "Registro do congresso, arquivo totebag_promocional.jpg"
+      },
+      "credit": "Archivo facilitado por Ángel Muñoz · autoría fotográfica pendiente",
+      "permission": "Aportado para su presentación en el portafolio; autorizaciones de terceros por verificar",
+      "sensitive": false,
+      "visibility": "public_event",
+      "date": "ALAS 2026 · fecha de captura sin identificar",
+      "order": 33
+    }
+  ],
+  "interview": {
+    "subject": "Breno Bringel",
+    "status": "pending-edit",
+    "url": null,
+    "description": {
+      "es": "Entrevista en edición: sincronización de audio externo y video pendiente.",
+      "en": "Interview editing: video and separate audio sync pending.",
+      "pt": "Entrevista em edição: sincronização de áudio externo e vídeo pendente."
+    }
   },
-  "note": "No publicar testimonios, imágenes de terceros o materiales sensibles sin verificar permisos y contexto; no atribuir declaraciones sin registros."
+  "notes": [
+    "Los títulos son etiquetas provisionales derivadas de archivos, no identificaciones de las personas visibles.",
+    "El prefijo 20260806 se conserva como identificador, no como fecha de captura.",
+    "Fotografías de alta resolución: usar carga diferida y paginación.",
+    "Créditos y autorizaciones de terceros pendientes de cotejo."
+  ]
 }
