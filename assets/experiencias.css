@@ -111,3 +111,10 @@ body[data-case="cine-disidencias"] .xp-poster-visual{aspect-ratio:auto;max-heigh
 .xp-supporter-panel figcaption{padding:10px 13px;background:#f7eef3;font-size:11px;color:#604759}
 @media(max-width:900px){body[data-case="cine-disidencias"] .xp-hero-in{grid-template-columns:minmax(0,1fr) minmax(260px,.8fr)}}
 @media(max-width:700px){body[data-case="cine-disidencias"] .xp-hero-in{grid-template-columns:1fr;gap:28px;padding:60px 0 73px}body[data-case="cine-disidencias"] .xp-poster-visual{max-width:430px}.xp-organizers{grid-template-columns:1fr}}
+
+/* Distinguish the two university organizers in the archival photo sequence. */
+.xp-photo-group{grid-column:1/-1;font-size:clamp(1.15rem,2vw,1.5rem);letter-spacing:-.035em;color:var(--xp-text);padding:17px 0 10px;margin:9px 0 0;border-bottom:1px solid var(--xp-line)}
+.xp-photo-group:first-child{margin-top:0}
+body[data-case="cine-disidencias"] .xp-photo{border-color:#d7bdc8;box-shadow:0 7px 22px rgba(56,31,47,.045)}
+body[data-case="cine-disidencias"] .xp-photo img{height:245px;object-fit:cover}
+body[data-case="cine-disidencias"] .xp-photo figcaption{font-size:12px;line-height:1.5}
