@@ -5,19 +5,19 @@
     "pt": "Sustancia"
   },
   "tagline": {
-    "es": "Interpretar no es repetir un resultado.",
-    "en": "Interpreting is more than repeating a result.",
-    "pt": "Interpretar não é repetir um resultado."
+    "es": "Interpretar no es repetir un resultado; es construir criterio.",
+    "en": "Statistical reasoning means developing judgement, not just reporting results.",
+    "pt": "Raciocinar estatisticamente é construir critérios, não apenas repetir resultados."
   },
   "lead": {
-    "es": "Laboratorio web de interpretación estadística. El estudiante produce una respuesta escrita; la retroalimentación propone mirar las cifras, el contexto y los límites antes de dar por terminada una explicación.",
-    "en": "A web-based lab for statistical interpretation. Learners write their own answers; feedback asks them to examine numbers, contexts and limitations before drawing conclusions.",
-    "pt": "Laboratório web de interpretação estatística. O estudante escreve sua resposta; o feedback o convida a examinar números, contexto e limites antes de concluir."
+    "es": "Sustancia es un laboratorio de aprendizaje estadístico: un entorno para desarrollar conceptos, operaciones, interpretación crítica y capacidad de revisión. Su arquitectura incorporativa sitúa el trabajo intelectual en el estudiante, con IA orientada a devolver preguntas, no respuestas terminadas.",
+    "en": "Sustancia is a statistical learning laboratory designed to develop conceptual understanding, operations, critical interpretation and revision skills. Its incorporative architecture keeps intellectual work with the learner; AI guides through questions rather than ready-made answers.",
+    "pt": "Sustancia é um laboratório de aprendizagem estatística que integra conceitos, operações, interpretação crítica e revisão. Sua arquitetura incorporativa mantém o trabalho intelectual com o estudante; a IA orienta com perguntas, não com respostas prontas."
   },
   "project": {
-    "es": "Proyecto de investigación y desarrollo · 2026 · R Shiny + Quarto",
-    "en": "Research and development project · 2026 · R Shiny + Quarto",
-    "pt": "Projeto de pesquisa e desenvolvimento · 2026 · R Shiny + Quarto"
+    "es": "Investigación y desarrollo · Modelo pedagógico interactivo + piloto Shiny · 2026",
+    "en": "Research and development · Interactive pedagogical model + Shiny pilot · 2026",
+    "pt": "Pesquisa e desenvolvimento · Modelo pedagógico interativo + piloto Shiny · 2026"
   },
   "basis": {
     "es": "El punto de partida proviene de la investigación sobre habitus tecnológico con 276 estudiantes de primer año y de una pregunta sociológica: ¿cómo usar IA sin sustituir el trabajo intelectual necesario para aprender? El ejemplo inicial del prototipo utiliza datos y situaciones derivados de ese estudio; el horizonte pedagógico abarca otras disciplinas.",
@@ -146,97 +146,1054 @@
     {
       "kind": "now",
       "title": {
-        "es": "Web Quarto y documentación",
-        "en": "Quarto website and documentation",
-        "pt": "Site Quarto e documentação"
+        "es": "Sitio Quarto y fundamentos",
+        "en": "Quarto website and theoretical framework",
+        "pt": "Site Quarto e fundamentação"
       },
       "text": {
-        "es": "Fundamentación, modelo pedagógico, ejemplos y recorrido publicados.",
-        "en": "Rationale, pedagogical model, examples and walkthrough published.",
-        "pt": "Fundamentação, modelo pedagógico, exemplos e percurso publicados."
+        "es": "Contiene la formulación de la arquitectura incorporativa, contrastes N1–N4 y documentación de fundamentos sociológicos, epistemológicos y pedagógicos.",
+        "en": "Contains the incorporative architecture, N1–N4 comparisons, and sociological, epistemic and pedagogical foundations.",
+        "pt": "Contém a arquitetura incorporativa, comparações N1–N4 e fundamentos sociológicos, epistemológicos e pedagógicos."
       }
     },
     {
       "kind": "now",
       "title": {
-        "es": "Piloto R Shiny",
-        "en": "R Shiny prototype",
-        "pt": "Protótipo R Shiny"
+        "es": "Explorador interactivo del vector de maestría",
+        "en": "Interactive mastery-vector explorer",
+        "pt": "Explorador interativo do vetor de domínio"
       },
       "text": {
-        "es": "Actividades de interpretación y una evaluación formativa inicial. El acceso depende del alojamiento.",
-        "en": "Interpretation exercises and early formative evaluation. Availability depends on hosting.",
-        "pt": "Atividades de interpretação e avaliação formativa inicial. Acesso sujeito à hospedagem."
+        "es": "Demostración existente con dos perfiles y momentos hipotéticos; radar de siete operaciones y explorador de seis dimensiones. Todos los valores son simulados.",
+        "en": "Existing demonstration with two hypothetical profiles and time points; radar with seven operations and exploration of six dimensions. All values are simulated.",
+        "pt": "Demonstração existente com dois perfis e momentos hipotéticos; radar de sete operações e explorador de seis dimensões. Todos os valores são simulados."
       }
     },
     {
       "kind": "now",
       "title": {
-        "es": "Marco N1–N4",
-        "en": "N1–N4 framework",
-        "pt": "Modelo N1–N4"
+        "es": "Simulaciones pedagógicas y piloto Shiny",
+        "en": "Pedagogical simulations and Shiny pilot",
+        "pt": "Simulações pedagógicas e piloto Shiny"
       },
       "text": {
-        "es": "Niveles interpretativos y ejemplos documentados, pendientes de validación formal.",
-        "en": "Documented interpretive levels and examples, awaiting formal validation.",
-        "pt": "Níveis interpretativos e exemplos documentados, pendentes de validação formal."
+        "es": "Cuatro contextos ilustrativos con cinco pasos de revisión y un piloto de respuesta escrita con retroalimentación formativa inicial.",
+        "en": "Four illustrative contexts with five revision stages, plus a written-response prototype with early formative feedback.",
+        "pt": "Quatro contextos ilustrativos com cinco etapas de revisão e um protótipo de respostas escritas com feedback formativo inicial."
       }
     },
     {
       "kind": "next",
       "title": {
-        "es": "Diagnóstico inicial y vector de maestría",
-        "en": "Entry diagnostic and mastery vector",
-        "pt": "Diagnóstico inicial e vetor de domínio"
+        "es": "Diagnóstico y vector operativo longitudinal",
+        "en": "Diagnostic and operational longitudinal mastery estimation",
+        "pt": "Diagnóstico e vetor operacional longitudinal"
       },
       "text": {
-        "es": "Diseño multidimensional por conceptos, operaciones, errores y trayectoria.",
-        "en": "Multidimensional design across concepts, operations, errors and learning progression.",
-        "pt": "Desenho multidimensional por conceitos, operações, erros e trajetória."
+        "es": "Convertir el modelo demostrado en estimaciones sustentadas por respuestas reales, distinguiendo dominio, evidencia e información desconocida.",
+        "en": "Convert the demonstrated model into estimates supported by real responses, keeping mastery, available evidence and unknown information distinct.",
+        "pt": "Transformar o modelo demonstrado em estimativas apoiadas em respostas reais, distinguindo domínio, evidência e informações desconhecidas."
       }
     },
     {
       "kind": "next",
       "title": {
-        "es": "Selección adaptativa y revisión sistemática",
-        "en": "Adaptive selection and systematic revision",
-        "pt": "Seleção adaptativa e revisão sistemática"
+        "es": "Selección adaptativa y conversaciones recursivas",
+        "en": "Adaptive selection and recursive conversations",
+        "pt": "Seleção adaptativa e conversas recursivas"
       },
       "text": {
-        "es": "Motor que ajustaría tareas a la evidencia acumulada de aprendizaje.",
-        "en": "Engine intended to adapt tasks to accumulated learning evidence.",
-        "pt": "Motor que deverá adaptar tarefas às evidências de aprendizagem."
+        "es": "Vincular mapa curricular, prerrequisitos, errores y progreso con selección supervisada de desafíos y revisión iterativa de las respuestas.",
+        "en": "Connect curriculum, prerequisites, errors and progress with supervised activity selection and iterative response revision.",
+        "pt": "Conectar currículo, pré-requisitos, erros e progresso à seleção supervisionada de tarefas e revisão iterativa de respostas."
       }
     },
     {
       "kind": "next",
       "title": {
-        "es": "Banco curricular y paneles institucionales",
-        "en": "Curricular bank and institutional dashboards",
-        "pt": "Banco curricular e painéis institucionais"
+        "es": "Banco curricular, seguimiento y validación",
+        "en": "Curricular bank, monitoring and evaluation",
+        "pt": "Banco curricular, acompanhamento e validação"
       },
       "text": {
-        "es": "Agentes de apoyo, recuperación de ejercicios autorizados y seguimiento docente.",
-        "en": "Support agents, retrieval of authorized exercises and faculty monitoring.",
-        "pt": "Agentes de apoio, recuperação de exercícios autorizados e acompanhamento docente."
+        "es": "Materiales incorporados por el equipo, aprobación docente, paneles por rol y evaluación del sistema y sus efectos educativos antes del despliegue.",
+        "en": "Team-curated material, teacher approval, role-specific dashboards and evaluation of the system and its educational effects before deployment.",
+        "pt": "Materiais selecionados pela equipe, aprovação docente, painéis por função e avaliação do sistema e de seus efeitos educativos antes de implantação."
       }
     }
   ],
   "boundary": {
-    "es": "Sustancia es investigación y desarrollo, no un sistema pedagógico adaptativo validado. El vector de maestría, la recursividad de los diálogos y la selección de tareas necesitan construcción y evaluación. Los ejemplos demostrativos no son datos de un ensayo de eficacia. El piloto no debe recibir información personal o académica sensible.",
-    "en": "Sustancia is an R&D project, not a validated adaptive learning system. Mastery profiling, recursive conversations and task selection still require implementation and evaluation. Illustrative examples are not effectiveness-trial data. Do not enter sensitive personal or academic data into the experimental prototype.",
-    "pt": "O Sustancia é um projeto de pesquisa e desenvolvimento, não um sistema adaptativo validado. Perfil de domínio, diálogos recursivos e seleção de tarefas precisam de implementação e avaliação. Exemplos ilustrativos não são dados de teste de eficácia. Não insira dados pessoais ou acadêmicos sensíveis no protótipo."
+    "es": "La web ya implementa un explorador interactivo del vector de maestría y ejemplos didácticos funcionales, pero los perfiles son simulados, no mediciones reales ni porcentajes de dominio calibrados. El diagnóstico individual, la actualización longitudinal automática, el banco de actividades adaptativo y los paneles institucionales siguen en diseño y requieren validación. El piloto Shiny no debe recibir información académica o personal sensible.",
+    "en": "The website already includes an interactive mastery-vector explorer and working illustrative activities, but the profiles are simulations—not real measurements or calibrated mastery percentages. Individual diagnosis, automatic longitudinal updating, adaptive activity selection and institutional dashboards are still in development and require validation. Do not enter sensitive data in the Shiny pilot.",
+    "pt": "O site já oferece um explorador interativo do vetor de domínio e atividades ilustrativas funcionais, mas os perfis são simulados — não medições reais nem percentuais calibrados. Diagnóstico individual, atualização longitudinal, seleção adaptativa e painéis institucionais seguem em desenvolvimento e exigem validação. Não insira dados sensíveis no piloto Shiny."
   },
   "urls": {
     "site": "https://nglmnz.github.io/sustancia/",
     "pilot": "https://nglmnz.github.io/sustancia/piloto.html",
     "model": "https://nglmnz.github.io/sustancia/pedagogia.html",
     "how": "https://nglmnz.github.io/sustancia/como-funciona.html",
-    "code": "https://github.com/nglmnz/sustancia"
+    "code": "https://github.com/nglmnz/sustancia",
+    "university": "https://nglmnz.github.io/sustancia/universidades.html",
+    "foundation": "https://nglmnz.github.io/sustancia/fundamentacion.html",
+    "team": "https://nglmnz.github.io/sustancia/equipo.html"
   },
   "relationship": {
     "es": "La investigación mostró la importancia de no confundir sofisticación digital con autonomía en todos los ámbitos. Sustancia reformula esa inquietud como una pregunta pedagógica acotada: ¿puede una herramienta con IA favorecer interpretaciones propias en estadística, en vez de realizarlas automáticamente por la persona? Esa eficacia todavía debe probarse.",
     "en": "The research highlighted the importance of not equating digital sophistication with autonomy in every domain. Sustancia reframes that concern as a focused educational question: can an AI-supported tool encourage students' own statistical interpretations instead of automatically producing them? Its effectiveness has yet to be tested.",
     "pt": "A pesquisa apontou a importância de não confundir sofisticação digital com autonomia em todas as dimensões. O Sustancia transforma essa preocupação em uma pergunta pedagógica específica: uma ferramenta apoiada por IA pode favorecer interpretações próprias em estatística, em vez de produzi-las automaticamente? A eficácia ainda precisa ser testada."
+  },
+  "architecture": {
+    "title": {
+      "es": "Arquitectura incorporativa frente a delegación",
+      "en": "Incorporative architecture versus delegation",
+      "pt": "Arquitetura incorporativa versus delegação"
+    },
+    "intro": {
+      "es": "Para el proyecto, interpretar es un capital cultural incorporado: requiere inversión personal de tiempo, atención y ejercicio. La interfaz puede fomentar esa acumulación o convertir el trabajo cognitivo en una tarea realizada por la IA.",
+      "en": "Interpretive competence is treated as embodied cultural capital: it requires personal time, attention and practice. Interface design can sustain that learning or shift the cognitive work to AI.",
+      "pt": "A competência interpretativa é tratada como capital cultural incorporado: exige tempo, atenção e prática pessoal. O design pode sustentar essa aprendizagem ou deslocar o trabalho cognitivo para a IA."
+    },
+    "delegate": {
+      "es": "Arquitectura delegativa: la IA produce el texto o la interpretación; el estudiante recibe un resultado que puede limitarse a aceptar.",
+      "en": "Delegative architecture: AI produces the text or interpretation; the student may simply accept the output.",
+      "pt": "Arquitetura delegativa: a IA produz o texto ou a interpretação; o estudante pode apenas aceitar o resultado."
+    },
+    "incorporate": {
+      "es": "Arquitectura incorporativa: el estudiante produce primero. La IA evalúa según rúbricas, identifica problemas y devuelve preguntas que permitan revisar la interpretación.",
+      "en": "Incorporative architecture: the student produces the first answer. AI evaluates against rubrics, identifies issues and returns questions that support revision.",
+      "pt": "Arquitetura incorporativa: o estudante produz primeiro. A IA avalia com rubricas, identifica dificuldades e devolve perguntas para revisar a interpretação."
+    },
+    "implication": {
+      "es": "La diferencia no consiste en usar o prohibir IA, sino en quién realiza el trabajo intelectual fundamental.",
+      "en": "The distinction is not whether AI is used, but who performs the core intellectual work.",
+      "pt": "A diferença não é usar ou proibir IA, mas quem realiza o trabalho intelectual essencial."
+    },
+    "source": "fundamentacion.qmd · «Dos arquitecturas de uso»"
+  },
+  "vector": {
+    "title": {
+      "es": "Un vector de maestría, no una calificación única",
+      "en": "A mastery vector, not a single score",
+      "pt": "Um vetor de domínio, não uma nota única"
+    },
+    "intro": {
+      "es": "Una persona puede calcular una media, pero no interpretarla; otra puede interpretar bien un patrón, pero necesitar refuerzo en el procedimiento. El modelo combina seis dimensiones relacionadas y distingue dominio estimado, evidencia observada e información todavía desconocida.",
+      "en": "Someone may calculate a mean correctly but struggle to interpret it; someone else may interpret a distribution but need procedural support. The model brings together six related dimensions and distinguishes estimated mastery, available evidence and unknowns.",
+      "pt": "Uma pessoa pode calcular a média corretamente sem saber interpretá-la; outra pode interpretar uma distribuição, mas necessitar de reforço procedimental. O modelo reúne seis dimensões e distingue domínio estimado, evidência e informações desconhecidas."
+    },
+    "axes": [
+      {
+        "id": "conceptos",
+        "title": {
+          "es": "Conceptos estadísticos",
+          "en": "Statistical concepts",
+          "pt": "Conceitos estatísticos"
+        },
+        "desc": {
+          "es": "Variables, medidas, distribuciones, muestreo y probabilidad: lo que se comprende.",
+          "en": "Variables, measures, distributions, sampling and probability: what is understood.",
+          "pt": "Variáveis, medidas, distribuições, amostragem e probabilidade: o que se compreende."
+        },
+        "example": {
+          "es": "Distinguir media y mediana cuando existen valores extremos.",
+          "en": "Distinguish mean and median when outliers are present.",
+          "pt": "Distinguir média e mediana diante de valores extremos."
+        },
+        "evidence": {
+          "es": "Respuestas vinculadas a cada concepto; no observado no significa bajo dominio.",
+          "en": "Responses linked to each concept; unobserved is not low mastery.",
+          "pt": "Respostas por conceito; não observado não significa baixo domínio."
+        }
+      },
+      {
+        "id": "operaciones",
+        "title": {
+          "es": "Operaciones",
+          "en": "Operations",
+          "pt": "Operações"
+        },
+        "desc": {
+          "es": "Reconocer, describir, calcular, comparar, interpretar, contextualizar, criticar y transferir.",
+          "en": "Recognize, describe, calculate, compare, interpret, contextualize, critique and transfer.",
+          "pt": "Reconhecer, descrever, calcular, comparar, interpretar, contextualizar, criticar e transferir."
+        },
+        "example": {
+          "es": "Dos personas calculan bien una proporción, pero solo una sabe explicarla en un contexto de salud.",
+          "en": "Two learners compute a proportion correctly but only one explains it in a health context.",
+          "pt": "Duas pessoas calculam uma proporção corretamente, mas só uma consegue explicá-la num contexto de saúde."
+        },
+        "evidence": {
+          "es": "Procedimientos, argumentos y decisiones observados en diferentes tareas.",
+          "en": "Observed procedures, explanations and decisions across tasks.",
+          "pt": "Procedimentos, argumentos e decisões observados em tarefas diferentes."
+        }
+      },
+      {
+        "id": "profundidad",
+        "title": {
+          "es": "Profundidad N1–N4",
+          "en": "Interpretive depth N1–N4",
+          "pt": "Profundidade N1–N4"
+        },
+        "desc": {
+          "es": "Desde leer correctamente el dato hasta cuestionar supuestos, decisiones y límites.",
+          "en": "From technical reading to examining assumptions, decisions and limitations.",
+          "pt": "Da leitura técnica ao exame de pressupostos, decisões e limites."
+        },
+        "example": {
+          "es": "N1 identifica un porcentaje; N3 explica qué significa para el fenómeno.",
+          "en": "N1 identifies a percentage; N3 explains its meaning for the phenomenon.",
+          "pt": "N1 identifica uma porcentagem; N3 explica seu significado no fenômeno."
+        },
+        "evidence": {
+          "es": "Rúbricas por actividad; los niveles no sustituyen el resto del vector.",
+          "en": "Task-specific rubrics; these levels do not replace the rest of the vector.",
+          "pt": "Rubricas por atividade; esses níveis não substituem o restante do vetor."
+        }
+      },
+      {
+        "id": "errores",
+        "title": {
+          "es": "Errores recurrentes",
+          "en": "Recurring errors",
+          "pt": "Erros recorrentes"
+        },
+        "desc": {
+          "es": "La equivocación funciona como señal para aprender, no como etiqueta permanente.",
+          "en": "Mistakes guide learning, not permanent labels.",
+          "pt": "Erros orientam a aprendizagem, não são rótulos permanentes."
+        },
+        "example": {
+          "es": "Confundir asociación con causalidad o frecuencias con proporciones.",
+          "en": "Confuse association with causation or counts with proportions.",
+          "pt": "Confundir associação com causalidade ou frequências com proporções."
+        },
+        "evidence": {
+          "es": "Registro contextual de errores, persistencia y correcciones.",
+          "en": "Contextual evidence of mistakes, recurrence and corrections.",
+          "pt": "Registros de erros, persistência e correções contextualizadas."
+        }
+      },
+      {
+        "id": "requisitos",
+        "title": {
+          "es": "Prerrequisitos",
+          "en": "Prerequisites",
+          "pt": "Pré-requisitos"
+        },
+        "desc": {
+          "es": "Conocimientos previos que hacen posible enfrentar nuevas actividades.",
+          "en": "Prior understanding needed for more complex tasks.",
+          "pt": "Conhecimentos prévios necessários para tarefas mais complexas."
+        },
+        "example": {
+          "es": "Antes de comparar porcentajes hay que entender los denominadores.",
+          "en": "Understanding denominators is necessary before comparing percentages.",
+          "pt": "É preciso compreender denominadores antes de comparar porcentagens."
+        },
+        "evidence": {
+          "es": "Mapa curricular y trabajo previo validado por docentes.",
+          "en": "Curriculum map and teacher-reviewed prior work.",
+          "pt": "Mapa curricular e trabalho anterior revisado por docentes."
+        }
+      },
+      {
+        "id": "trayectoria",
+        "title": {
+          "es": "Trayectoria y revisión",
+          "en": "Trajectory and revision",
+          "pt": "Trajetória e revisão"
+        },
+        "desc": {
+          "es": "Lo que cambia entre producir una respuesta, recibir una pregunta y revisarla.",
+          "en": "What changes between producing, questioning and revising an answer.",
+          "pt": "O que muda entre produzir, questionar e revisar uma resposta."
+        },
+        "example": {
+          "es": "Corregir un supuesto omitido sin recibir una respuesta lista.",
+          "en": "Reconsider an omitted assumption without being given a full answer.",
+          "pt": "Revisar um pressuposto omitido sem receber a resposta pronta."
+        },
+        "evidence": {
+          "es": "Secuencias de intentos, no inferencias sobre rasgos psicológicos.",
+          "en": "Sequences of responses, not inference of psychological traits.",
+          "pt": "Sequências de tentativas, não inferências sobre traços psicológicos."
+        }
+      }
+    ],
+    "operations": [
+      {
+        "es": "Reconocer",
+        "en": "Recognize",
+        "pt": "Reconhecer"
+      },
+      {
+        "es": "Describir",
+        "en": "Describe",
+        "pt": "Descrever"
+      },
+      {
+        "es": "Calcular",
+        "en": "Calculate",
+        "pt": "Calcular"
+      },
+      {
+        "es": "Comparar",
+        "en": "Compare",
+        "pt": "Comparar"
+      },
+      {
+        "es": "Interpretar",
+        "en": "Interpret",
+        "pt": "Interpretar"
+      },
+      {
+        "es": "Contextualizar",
+        "en": "Contextualize",
+        "pt": "Contextualizar"
+      },
+      {
+        "es": "Criticar",
+        "en": "Critique",
+        "pt": "Criticar"
+      },
+      {
+        "es": "Transferir",
+        "en": "Transfer",
+        "pt": "Transferir"
+      }
+    ],
+    "operationExplain": [
+      {
+        "es": "Identificar variables y unidades de análisis.",
+        "en": "Identify variables and units of analysis.",
+        "pt": "Identificar variáveis e unidades de análise."
+      },
+      {
+        "es": "Caracterizar distribuciones y patrones.",
+        "en": "Describe distributions and patterns.",
+        "pt": "Caracterizar distribuições e padrões."
+      },
+      {
+        "es": "Obtener medidas con métodos pertinentes.",
+        "en": "Calculate suitable measures.",
+        "pt": "Calcular medidas adequadas."
+      },
+      {
+        "es": "Contrastar grupos, medidas e indicadores.",
+        "en": "Compare groups, measures and indicators.",
+        "pt": "Comparar grupos, medidas e indicadores."
+      },
+      {
+        "es": "Explicar el significado de un resultado.",
+        "en": "Explain the meaning of a result.",
+        "pt": "Explicar o significado de um resultado."
+      },
+      {
+        "es": "Relacionar cifras y fenómenos concretos.",
+        "en": "Relate results to real phenomena.",
+        "pt": "Relacionar números e fenômenos concretos."
+      },
+      {
+        "es": "Examinar supuestos, límites y alternativas.",
+        "en": "Examine assumptions, limits and alternatives.",
+        "pt": "Examinar pressupostos, limites e alternativas."
+      },
+      {
+        "es": "Utilizar una idea en un contexto nuevo.",
+        "en": "Apply an insight in a new context.",
+        "pt": "Aplicar uma ideia num contexto novo."
+      }
+    ],
+    "profiles": {
+      "labels": [
+        {
+          "es": "Reconocer",
+          "en": "Recognize",
+          "pt": "Reconhecer"
+        },
+        {
+          "es": "Calcular",
+          "en": "Calculate",
+          "pt": "Calcular"
+        },
+        {
+          "es": "Comparar",
+          "en": "Compare",
+          "pt": "Comparar"
+        },
+        {
+          "es": "Interpretar",
+          "en": "Interpret",
+          "pt": "Interpretar"
+        },
+        {
+          "es": "Contextualizar",
+          "en": "Contextualize",
+          "pt": "Contextualizar"
+        },
+        {
+          "es": "Criticar",
+          "en": "Critique",
+          "pt": "Criticar"
+        },
+        {
+          "es": "Transferir",
+          "en": "Transfer",
+          "pt": "Transferir"
+        }
+      ],
+      "a": {
+        "name": {
+          "es": "Perfil A · cálculo sólido",
+          "en": "Profile A · strong computation",
+          "pt": "Perfil A · cálculo sólido"
+        },
+        "desc": {
+          "es": "Destaca en los procedimientos; la siguiente actividad podría exigir interpretación situada y transferencia.",
+          "en": "Strong on procedures; the next task could target situated interpretation and transfer.",
+          "pt": "Destaca nos procedimentos; a próxima tarefa pode exigir interpretação contextual e transferência."
+        },
+        "t0": [
+          88,
+          91,
+          67,
+          58,
+          39,
+          33,
+          24
+        ],
+        "t2": [
+          90,
+          91,
+          74,
+          71,
+          64,
+          52,
+          48
+        ]
+      },
+      "b": {
+        "name": {
+          "es": "Perfil B · interpretación sólida",
+          "en": "Profile B · strong interpretation",
+          "pt": "Perfil B · interpretação sólida"
+        },
+        "desc": {
+          "es": "Destaca en razonamiento situado; la siguiente actividad podría reforzar cálculo y comprobación técnica.",
+          "en": "Strong on contextual reasoning; the next task could strengthen calculations and technical checks.",
+          "pt": "Destaca no raciocínio contextual; a próxima tarefa pode reforçar cálculo e verificação técnica."
+        },
+        "t0": [
+          72,
+          43,
+          65,
+          79,
+          82,
+          74,
+          69
+        ],
+        "t2": [
+          78,
+          53,
+          71,
+          81,
+          83,
+          77,
+          72
+        ]
+      }
+    },
+    "warning": {
+      "es": "Dos perfiles y dos momentos hipotéticos extraídos del simulador del sitio original. Los valores son enteramente ficticios, no mediciones ni porcentajes calibrados de maestría. El radar presenta siete operaciones; el marco conceptual identifica ocho familias porque también incluye «Describir».",
+      "en": "Two simulated profiles and two hypothetical moments taken from the original website's interactive demonstration. Values are fictional, not measurements or calibrated mastery percentages. The radar shows seven operations while the conceptual framework identifies eight, including 'Describe'.",
+      "pt": "Dois perfis e momentos hipotéticos extraídos da demonstração original. Os valores são fictícios, não medições ou percentuais calibrados. O radar exibe sete operações, enquanto o referencial conceitual inclui oito famílias, com «Descrever»."
+    },
+    "source": "pedagogia.qmd; assets/sustancia-interactions.js"
+  },
+  "journey": [
+    {
+      "n": 1,
+      "title": {
+        "es": "Diagnóstico inicial",
+        "en": "Entry diagnostic",
+        "pt": "Diagnóstico inicial"
+      },
+      "text": {
+        "es": "Actividades breves exploran conocimientos y razonamientos previos.",
+        "en": "Brief tasks explore prior concepts and reasoning.",
+        "pt": "Atividades breves exploram conhecimentos prévios."
+      }
+    },
+    {
+      "n": 2,
+      "title": {
+        "es": "Primer perfil de maestría",
+        "en": "Initial mastery profile",
+        "pt": "Primeiro perfil de domínio"
+      },
+      "text": {
+        "es": "Se estima el punto de partida; no evaluado permanece desconocido.",
+        "en": "Estimate the starting point; unobserved remains unknown.",
+        "pt": "Estima-se o ponto de partida; o não observado permanece desconhecido."
+      }
+    },
+    {
+      "n": 3,
+      "title": {
+        "es": "Desafío del juego",
+        "en": "Learning challenge",
+        "pt": "Desafio do jogo"
+      },
+      "text": {
+        "es": "El sistema plantea un ejercicio curricular pertinente.",
+        "en": "The system offers a relevant curriculum-based task.",
+        "pt": "O sistema propõe um exercício curricular pertinente."
+      }
+    },
+    {
+      "n": 4,
+      "title": {
+        "es": "Producción propia",
+        "en": "Personal response",
+        "pt": "Produção própria"
+      },
+      "text": {
+        "es": "El estudiante interpreta, calcula o argumenta con sus palabras.",
+        "en": "The learner interprets, calculates or explains.",
+        "pt": "O estudante interpreta, calcula ou argumenta."
+      }
+    },
+    {
+      "n": 5,
+      "title": {
+        "es": "Fricción y conversación epistemológica",
+        "en": "Guided epistemic dialogue",
+        "pt": "Fricção e conversa epistemológica"
+      },
+      "text": {
+        "es": "Preguntas permiten contrastar evidencias y detectar supuestos.",
+        "en": "Questions challenge evidence and assumptions.",
+        "pt": "Perguntas promovem o contraste de evidências e pressupostos."
+      }
+    },
+    {
+      "n": 6,
+      "title": {
+        "es": "Revisión y nueva evidencia",
+        "en": "Revision and new evidence",
+        "pt": "Revisão e nova evidência"
+      },
+      "text": {
+        "es": "La respuesta revisada revela qué cambió y qué falta practicar.",
+        "en": "Revisions reveal what changed and what needs practice.",
+        "pt": "A resposta revista revela mudanças e necessidades."
+      }
+    },
+    {
+      "n": 7,
+      "title": {
+        "es": "Próximo desafío adaptativo",
+        "en": "Next adaptive challenge",
+        "pt": "Próximo desafio adaptativo"
+      },
+      "text": {
+        "es": "El perfil debería orientar refuerzo, profundización o transferencia.",
+        "en": "The profile should guide practice, deepening or transfer.",
+        "pt": "O perfil deverá orientar reforço, aprofundamento ou transferência."
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "ingresos",
+      "title": {
+        "es": "Ingresos · media y mediana",
+        "en": "Income · mean and median",
+        "pt": "Renda · média e mediana"
+      },
+      "stages": [
+        {
+          "es": "En una comuna la media de ingresos supera ampliamente la mediana. ¿Qué significa?",
+          "en": "Mean income is much higher than median income in a municipality. What could that mean?",
+          "pt": "Numa comuna a renda média supera muito a mediana. O que significa?"
+        },
+        {
+          "es": "«La mayoría gana el ingreso promedio».",
+          "en": "“Most people earn the average income.”",
+          "pt": "«A maioria recebe a renda média»."
+        },
+        {
+          "es": "¿Podrían unos pocos ingresos muy altos elevar la media?",
+          "en": "Could a few unusually high incomes pull up the mean?",
+          "pt": "Poucas rendas muito altas poderiam elevar a média?"
+        },
+        {
+          "es": "La media puede verse influida por valores extremos; la mediana describe otra referencia central.",
+          "en": "A few outliers may increase the mean; the median describes another central reference.",
+          "pt": "Valores extremos podem elevar a média; a mediana descreve outra referência central."
+        },
+        {
+          "es": "Interpretación de medidas, detección de extremos y revisión de una sobregeneralización.",
+          "en": "Interpreting measures, noticing outliers and correcting overgeneralization.",
+          "pt": "Interpretação das medidas, identificação de extremos e correção de generalização."
+        }
+      ]
+    },
+    {
+      "id": "salud",
+      "title": {
+        "es": "Salud · frecuencias y denominadores",
+        "en": "Health · counts and denominators",
+        "pt": "Saúde · frequências e denominadores"
+      },
+      "stages": [
+        {
+          "es": "Centro A: 20 de 80 personas con síntomas; B: 20 de 200. ¿Las proporciones son iguales?",
+          "en": "Centre A: 20 of 80 patients; B: 20 of 200. Are proportions equal?",
+          "pt": "Centro A: 20 de 80 pacientes; B: 20 de 200. As proporções são iguais?"
+        },
+        {
+          "es": "«Sí, en ambos casos son 20».",
+          "en": "“Yes, both have 20.”",
+          "pt": "«Sim, ambos têm 20»."
+        },
+        {
+          "es": "¿Cuál es el denominador de cada centro?",
+          "en": "What is the denominator in each centre?",
+          "pt": "Qual é o denominador em cada centro?"
+        },
+        {
+          "es": "A: 25 %; B: 10 %. Misma frecuencia absoluta, proporciones distintas.",
+          "en": "A: 25%; B: 10%. Same count, different proportions.",
+          "pt": "A: 25%; B: 10%. Mesma frequência absoluta, proporções diferentes."
+        },
+        {
+          "es": "Interpretación de proporciones y comparación con bases diferentes.",
+          "en": "Understanding proportions and comparisons with different denominators.",
+          "pt": "Interpretação de proporções e comparação de denominadores."
+        }
+      ]
+    },
+    {
+      "id": "encuestas",
+      "title": {
+        "es": "Encuestas · muestreo e inferencia",
+        "en": "Surveys · sampling and inference",
+        "pt": "Pesquisas · amostragem e inferência"
+      },
+      "stages": [
+        {
+          "es": "Una encuesta voluntaria a 120 estudiantes dice representar a toda la juventud chilena. ¿Es válido?",
+          "en": "A voluntary survey of 120 students claims to represent all Chilean youth. Is that valid?",
+          "pt": "Uma pesquisa voluntária com 120 estudantes afirma representar toda a juventude chilena. É válido?"
+        },
+        {
+          "es": "«Sí, 120 participantes son suficientes».",
+          "en": "“Yes, 120 participants are enough.”",
+          "pt": "«Sim, 120 participantes são suficientes»."
+        },
+        {
+          "es": "¿Cómo se eligieron las personas y quiénes pudieron responder?",
+          "en": "How were respondents selected? Who was eligible?",
+          "pt": "Como foram selecionados os participantes? Quem podia responder?"
+        },
+        {
+          "es": "No podemos generalizar sin estudiar el muestreo y los sesgos.",
+          "en": "We cannot generalize without examining sampling and bias.",
+          "pt": "Não podemos generalizar sem analisar amostragem e vieses."
+        },
+        {
+          "es": "Comprensión de población/muestra, representatividad y límites de inferencia.",
+          "en": "Population, sample, representativeness and inference limits.",
+          "pt": "População, amostra, representatividade e limites de inferência."
+        }
+      ]
+    },
+    {
+      "id": "ingenieria",
+      "title": {
+        "es": "Ingeniería · dispersión",
+        "en": "Engineering · variability",
+        "pt": "Engenharia · dispersão"
+      },
+      "stages": [
+        {
+          "es": "Dos líneas producen piezas con media de 10 cm, pero una varía mucho más. ¿Son equivalentes?",
+          "en": "Two manufacturing lines have a 10 cm mean but different ranges. Are they equivalent?",
+          "pt": "Duas linhas produzem peças com média de 10 cm, mas dispersões diferentes. São equivalentes?"
+        },
+        {
+          "es": "«Sí, ambas promedian 10 cm».",
+          "en": "“Yes, both average 10 cm.”",
+          "pt": "«Sim, ambas têm média de 10 cm»."
+        },
+        {
+          "es": "¿Qué sucede con la dispersión y las tolerancias de producción?",
+          "en": "What about variability and production tolerances?",
+          "pt": "E quanto à dispersão e tolerâncias de produção?"
+        },
+        {
+          "es": "La misma media no demuestra igual consistencia: la segunda puede exceder tolerancias.",
+          "en": "Equal means do not guarantee equal consistency; one line may exceed tolerances.",
+          "pt": "Mesmas médias não garantem consistência igual; uma linha pode exceder tolerâncias."
+        },
+        {
+          "es": "Comparar distribuciones e interpretar la variabilidad en contexto.",
+          "en": "Compare distributions and interpret variation in context.",
+          "pt": "Comparar distribuições e interpretar variabilidade em contexto."
+        }
+      ]
+    }
+  ],
+  "stageNames": [
+    {
+      "es": "Desafío",
+      "en": "Challenge",
+      "pt": "Desafio"
+    },
+    {
+      "es": "Producción",
+      "en": "Response",
+      "pt": "Produção"
+    },
+    {
+      "es": "Fricción",
+      "en": "Guiding feedback",
+      "pt": "Fricção"
+    },
+    {
+      "es": "Revisión",
+      "en": "Revision",
+      "pt": "Revisão"
+    },
+    {
+      "es": "Evidencia",
+      "en": "Evidence",
+      "pt": "Evidência"
+    }
+  ],
+  "epistemic": [
+    {
+      "title": {
+        "es": "Fuente y problema",
+        "en": "Source and problem",
+        "pt": "Fonte e problema"
+      },
+      "question": {
+        "es": "¿Qué afirma la fuente?",
+        "en": "What does the source claim?",
+        "pt": "O que afirma a fonte?"
+      }
+    },
+    {
+      "title": {
+        "es": "Posición",
+        "en": "Position",
+        "pt": "Posição"
+      },
+      "question": {
+        "es": "¿Qué interpretación defiendes?",
+        "en": "What interpretation do you defend?",
+        "pt": "Que interpretação você defende?"
+      }
+    },
+    {
+      "title": {
+        "es": "Contraste",
+        "en": "Challenge",
+        "pt": "Contraste"
+      },
+      "question": {
+        "es": "¿Qué evidencia cambiaría tu idea?",
+        "en": "What evidence would change your view?",
+        "pt": "Que evidência mudaria sua posição?"
+      }
+    },
+    {
+      "title": {
+        "es": "Transferencia",
+        "en": "Transfer",
+        "pt": "Transferência"
+      },
+      "question": {
+        "es": "¿La idea se sostiene en otro contexto?",
+        "en": "Does this hold in another context?",
+        "pt": "A ideia se sustenta em outro contexto?"
+      }
+    },
+    {
+      "title": {
+        "es": "Aplicación y revisión",
+        "en": "Application and revision",
+        "pt": "Aplicação e revisão"
+      },
+      "question": {
+        "es": "¿Cómo reescribirías el argumento?",
+        "en": "How would you revise your argument?",
+        "pt": "Como reescreveria o argumento?"
+      }
+    }
+  ],
+  "curriculum": {
+    "title": {
+      "es": "Del currículo al ejercicio",
+      "en": "From curriculum to exercises",
+      "pt": "Do currículo ao exercício"
+    },
+    "intro": {
+      "es": "La propuesta parte de objetivos y fuentes de un curso, no de ejercicios arbitrarios inventados por IA. El equipo humano incorpora, revisa y aprueba materiales antes de que los agentes los recuperen y adapten a la trayectoria.",
+      "en": "The proposal starts from course objectives and reviewed materials, not AI-invented random exercises. Humans curate and approve material before agents retrieve and adapt tasks to the learner's path.",
+      "pt": "A proposta parte de objetivos e materiais curriculares revisados, não de tarefas aleatórias inventadas por IA. Equipes humanas aprovam os materiais antes da recuperação e adaptação por agentes."
+    },
+    "modules": [
+      {
+        "es": "Conceptos básicos",
+        "en": "Basic concepts",
+        "pt": "Conceitos básicos"
+      },
+      {
+        "es": "Variables categóricas",
+        "en": "Categorical variables",
+        "pt": "Variáveis categóricas"
+      },
+      {
+        "es": "Variables cuantitativas",
+        "en": "Quantitative variables",
+        "pt": "Variáveis quantitativas"
+      },
+      {
+        "es": "Curva normal",
+        "en": "Normal distribution",
+        "pt": "Distribuição normal"
+      },
+      {
+        "es": "Inferencia básica",
+        "en": "Introductory inference",
+        "pt": "Inferência básica"
+      }
+    ],
+    "actors": [
+      {
+        "who": {
+          "es": "Equipo docente",
+          "en": "Teaching team",
+          "pt": "Equipe docente"
+        },
+        "role": {
+          "es": "Define currículo, valida ejercicios y aprueba criterios de progreso.",
+          "en": "Defines curriculum, validates tasks and approves progression rules.",
+          "pt": "Define currículo, valida exercícios e aprova critérios de progressão."
+        }
+      },
+      {
+        "who": {
+          "es": "Agentes de apoyo",
+          "en": "Support agents",
+          "pt": "Agentes de apoio"
+        },
+        "role": {
+          "es": "Recuperan material autorizado y apoyan la evaluación basada en rúbricas.",
+          "en": "Retrieve authorized material and assist with rubric-based evaluation.",
+          "pt": "Recuperam material autorizado e apoiam avaliações com rubricas."
+        }
+      },
+      {
+        "who": {
+          "es": "Motor pedagógico",
+          "en": "Pedagogical engine",
+          "pt": "Motor pedagógico"
+        },
+        "role": {
+          "es": "Seleccionaría actividades según evidencias y prerrequisitos explícitos.",
+          "en": "Would select activities using evidence and explicit prerequisites.",
+          "pt": "Selecionaria atividades com base em evidências e pré-requisitos explícitos."
+        }
+      },
+      {
+        "who": {
+          "es": "Estudiante",
+          "en": "Learner",
+          "pt": "Estudante"
+        },
+        "role": {
+          "es": "Produce, cuestiona, revisa y transfiere sus propias interpretaciones.",
+          "en": "Produces, challenges, revises and transfers their own interpretations.",
+          "pt": "Produz, questiona, revisa e transfere suas próprias interpretações."
+        }
+      }
+    ],
+    "people": [
+      {
+        "who": {
+          "es": "Estudiantes",
+          "en": "Students",
+          "pt": "Estudantes"
+        },
+        "value": {
+          "es": "Un perfil de fortalezas, dificultades y avances por habilidades.",
+          "en": "A profile of strengths, challenges and progress across skills.",
+          "pt": "Um perfil de pontos fortes, dificuldades e progresso por habilidades."
+        }
+      },
+      {
+        "who": {
+          "es": "Docentes",
+          "en": "Teachers",
+          "pt": "Docentes"
+        },
+        "value": {
+          "es": "Información pertinente sobre patrones de error y progreso para acompañar su curso.",
+          "en": "Relevant patterns of errors and progress to guide a course.",
+          "pt": "Padrões relevantes de erros e progresso para acompanhar a turma."
+        }
+      },
+      {
+        "who": {
+          "es": "Instituciones",
+          "en": "Institutions",
+          "pt": "Instituições"
+        },
+        "value": {
+          "es": "Indicadores agregados y oportunidades para investigación educativa.",
+          "en": "Aggregated indicators and opportunities for educational research.",
+          "pt": "Indicadores agregados e oportunidades para pesquisa educacional."
+        }
+      }
+    ]
+  },
+  "theory": [
+    {
+      "author": "Pierre Bourdieu",
+      "concept": {
+        "es": "Capital cultural incorporado",
+        "en": "Embodied cultural capital",
+        "pt": "Capital cultural incorporado"
+      },
+      "impact": {
+        "es": "La comprensión se adquiere mediante esfuerzo personal; no se incorpora delegándola.",
+        "en": "Understanding requires personal practice and cannot be embodied through outsourcing.",
+        "pt": "A compreensão exige prática pessoal e não se incorpora por delegação."
+      },
+      "source": "fundamentacion.qmd"
+    },
+    {
+      "author": "Gilbert Simondon",
+      "concept": {
+        "es": "Comprender los objetos técnicos",
+        "en": "Understanding technical objects",
+        "pt": "Compreender os objetos técnicos"
+      },
+      "impact": {
+        "es": "La lectura crítica examina el funcionamiento de técnicas y algoritmos, no solo sus resultados.",
+        "en": "Critical reading examines techniques and algorithms, not only outputs.",
+        "pt": "A leitura crítica examina técnicas e algoritmos, não apenas resultados."
+      },
+      "source": "fundamentacion.qmd"
+    },
+    {
+      "author": "Curcio · Shaughnessy · Garfield y Ben-Zvi",
+      "concept": {
+        "es": "Educación y razonamiento estadístico",
+        "en": "Statistics education and reasoning",
+        "pt": "Educação e raciocínio estatístico"
+      },
+      "impact": {
+        "es": "Inspiración de las rúbricas de comprensión y niveles interpretativos; la escala específica requiere validación.",
+        "en": "Inspiration for comprehension rubrics and interpretive depth; Sustancia's specific operationalization needs validation.",
+        "pt": "Inspiração para rubricas de compreensão e profundidade interpretativa; a operacionalização específica requer validação."
+      },
+      "source": "pedagogia.qmd"
+    }
+  ],
+  "siteSections": [
+    {
+      "path": "fundamentacion.html",
+      "title": {
+        "es": "Fundamentación sociológica y epistemológica",
+        "en": "Sociological and epistemological foundation",
+        "pt": "Fundamentação sociológica e epistemológica"
+      }
+    },
+    {
+      "path": "pedagogia.html",
+      "title": {
+        "es": "Modelo pedagógico y vector interactivo",
+        "en": "Pedagogical model and interactive mastery vector",
+        "pt": "Modelo pedagógico e vetor interativo"
+      }
+    },
+    {
+      "path": "como-funciona.html",
+      "title": {
+        "es": "Recorrido adaptativo del estudiante",
+        "en": "Adaptive learner journey",
+        "pt": "Percurso adaptativo do estudante"
+      }
+    },
+    {
+      "path": "universidades.html",
+      "title": {
+        "es": "Universidades y aplicación curricular",
+        "en": "Universities and curricular applications",
+        "pt": "Universidades e aplicação curricular"
+      }
+    },
+    {
+      "path": "equipo.html",
+      "title": {
+        "es": "Proyecto, equipo e investigación",
+        "en": "Project, team and research",
+        "pt": "Projeto, equipe e pesquisa"
+      }
+    },
+    {
+      "path": "piloto.html",
+      "title": {
+        "es": "Prototipo R Shiny",
+        "en": "R Shiny prototype",
+        "pt": "Protótipo R Shiny"
+      }
+    }
+  ],
+  "projectTeam": [
+    {
+      "name": "Ángel Muñoz",
+      "note": {
+        "es": "Sociología UAH · diseño pedagógico, desarrollo inicial y corpus empírico.",
+        "en": "UAH Sociology · educational design, initial development and empirical corpus.",
+        "pt": "Sociologia UAH · design pedagógico, desenvolvimento inicial e corpus empírico."
+      }
+    },
+    {
+      "name": "Tamara Gómez",
+      "note": {
+        "es": "Sociología UAH · función específica por confirmar.",
+        "en": "UAH Sociology · specific role yet to be confirmed.",
+        "pt": "Sociologia UAH · função específica a confirmar."
+      }
+    },
+    {
+      "name": "Nicolás Williams",
+      "note": {
+        "es": "Sociología UC · función específica por confirmar.",
+        "en": "UC Sociology · specific role yet to be confirmed.",
+        "pt": "Sociologia UC · função específica a confirmar."
+      }
+    },
+    {
+      "name": "Nicolás Ayarza",
+      "note": {
+        "es": "Ingeniería Informática Duoc UC · función específica por confirmar.",
+        "en": "Duoc UC Computer Engineering · specific role yet to be confirmed.",
+        "pt": "Engenharia Informática Duoc UC · função específica a confirmar."
+      }
+    }
+  ],
+  "sourceRepo": "https://github.com/nglmnz/sustancia",
+  "sourceNote": {
+    "es": "Reelaboración editorial a partir de las páginas del sitio actual y assets/sustancia-interactions.js. La demostración representa posibilidades de aprendizaje, no resultados medidos en personas reales.",
+    "en": "Editorial synthesis of current project pages and assets/sustancia-interactions.js. Interactive examples represent possible learning pathways, not observed outcomes.",
+    "pt": "Síntese editorial das páginas atuais e assets/sustancia-interactions.js. Os exemplos representam percursos possíveis, não resultados medidos em pessoas."
   }
 }
