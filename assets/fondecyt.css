@@ -177,3 +177,18 @@ p{margin:0 0 16px}
 @media(max-width:750px){.hero-inner{grid-template-columns:1fr;min-height:0;padding:65px 0 83px;gap:32px}.hero h1{font-size:clamp(3rem,11vw,5.1rem)}.hero-photo-stage{height:clamp(300px,54vw,520px)}.hero-photo-showcase{max-width:680px}.mediator-photos{grid-template-columns:1fr 1fr;gap:10px}.mediator-photo.main{grid-column:1 / -1;height:350px;min-height:0}.mediator-photo:not(.main){min-height:260px}.walk-photo-grid{grid-template-columns:1fr 1fr}.walk-photo:last-child{grid-column:1 / -1}.walk-photo img{height:230px}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.photo-card.wide{grid-column:span 2}.photo-card .gallery-photo-open{height:250px}}
 @media(max-width:460px){.hero-photo-stage{height:280px}.hero-photo-bottom{min-height:94px}.hero-photo-caption{font-size:11px}.mediator-photos{grid-template-columns:1fr}.mediator-photo.main{grid-column:auto;height:350px}.mediator-photo:not(.main){min-height:320px}.walk-photo-grid,.photo-grid{grid-template-columns:1fr}.walk-photo:last-child,.photo-card.wide{grid-column:auto}.walk-photo img{height:255px}.photo-card.wide .gallery-photo-open,.photo-card .gallery-photo-open{height:280px}}
 @media(prefers-reduced-motion:reduce){.hero-photo-slide,.photo-card .gallery-photo-open img{transition:none!important}}
+
+
+/* Chile → Spain: documented international research circulation, distinct from grant provenance */
+.international-panel{display:grid;grid-template-columns:1fr;gap:22px;margin:27px 0 0}
+.international-route{display:grid;grid-template-columns:1fr 65px 1fr;gap:17px;align-items:stretch}
+.country-point{border:1px solid #cbb6c0;border-radius:12px;padding:28px;background:linear-gradient(145deg,#fffaf4,#f2e5e7);min-height:177px}
+.country-tag{color:#93506d;letter-spacing:.15em;font-weight:860;font-size:11px}
+.country-point h3{font:600 clamp(1.8rem,3.2vw,2.6rem)/1.1 Georgia,serif;margin:10px 0}
+.country-point p{font-size:13px;color:#66535f;margin:0;line-height:1.6}
+.country-connector{display:grid;place-items:center;font-size:42px;font-weight:300;color:#ab5571}
+.international-detail{border-left:4px solid #9e5873;background:#eee1e3;padding:24px 28px;border-radius:5px}
+.international-detail>p{color:#5a4756;line-height:1.75;max-width:980px}
+.international-disclaimer{font-size:12px!important;color:#685963!important}
+.international-links{display:flex;flex-wrap:wrap;gap:22px;margin-top:18px}
+@media(max-width:650px){.international-route{grid-template-columns:1fr;gap:7px}.country-connector{font-size:27px;transform:rotate(90deg)}.country-point{min-height:0}.international-detail{padding:20px}}
