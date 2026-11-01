@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "description": "Archivo visual Hilvanar · FONDECYT 1220508. Manifest en espera de fotografías autorizadas y créditos verificados.",
+  "images": [],
+  "schema": {
+    "src": "images/archivo.webp",
+    "category": "apertura|exposicion|mediacion|equipo|prensa",
+    "alt": {
+      "es": "Descripción accesible",
+      "en": "Accessible description",
+      "pt": "Descrição acessível"
+    },
+    "caption": {
+      "es": "Descripción contextual",
+      "en": "Context caption",
+      "pt": "Legenda contextual"
+    },
+    "credit": "Persona autora de la fotografía",
+    "permission": "Autorización documentada para publicación en portafolio personal",
+    "date": "AAAA-MM-DD o sin identificar",
+    "sensitive": false
+  },
+  "notes": [
+    "Las imágenes de entrevistas, mapas corporales, testimonios, relatos o fotografías realizadas por participantes de la investigación pueden tener restricciones éticas adicionales.",
+    "No asumir autorización de reproducción por aparecer en fuentes públicas o exposiciones abiertas.",
+    "Para añadir fotos, cargar los archivos a fondecyt/assets/images/ y después actualizar este manifest."
+  ]
+}
