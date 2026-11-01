@@ -119,3 +119,82 @@ body[data-case="tesis"] .hero h1{text-shadow:0 3px 22px rgba(2,14,19,.44)}
 @media(max-width:750px){.motion-live-tag{font-size:9px}.thesis-motion-stage{height:clamp(300px,68vw,500px)}.motion-status{flex-direction:column;gap:6px}.motion-instruction{text-align:left}.motion-controls{align-items:start}.motion-stage-top,.motion-stage-bottom{padding:17px}}
 @media(max-width:480px){.thesis-motion-stage{height:clamp(280px,92vw,410px)}.motion-controls{gap:11px}.motion-speed{padding:9px 12px}.motion-play{min-width:135px}.motion-arrow{min-width:39px;padding:9px 12px}.motion-stage-top{padding:12px}.motion-stage-bottom{padding:13px}.motion-live-tag{font-size:8px}.motion-stage-progress{letter-spacing:2px}.motion-timeline{padding:12px}}
 @media(prefers-reduced-motion:reduce){.thesis-motion-stage *{animation:none!important;transition:none!important}}
+
+
+/* Sustancia portfolio case: compound reasoning, incorporative architecture, mastery-vector simulator */
+body[data-case="sustancia"]{--accent:#aebdff;--line:#41557f;--panel:#182642;--muted:#c1cce2}
+body[data-case="sustancia"] .hero{background:linear-gradient(90deg,rgba(10,19,48,.97),rgba(12,23,57,.86) 55%,rgba(10,19,48,.35)),url("https://nglmnz.github.io/sustancia/assets/portada%20sustancia.png") center/cover no-repeat}
+.sus-tab{display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid #50638d;background:#1d2c4b;color:#cbd5ea;border-radius:9px;padding:11px 16px;font-size:12px;font-weight:800;cursor:pointer;min-height:43px;line-height:1.35}
+.sus-tab[aria-pressed="true"]{background:#aebdff;color:#132041;border-color:#aebdff}
+.sus-tab:hover{border-color:#b3c6ff}
+.sus-mode-switch,.sus-choice{display:flex;gap:9px;flex-wrap:wrap}
+.sus-mode-switch{margin:26px 0 13px}
+.sus-flow{display:grid;grid-template-columns:1fr 48px 1fr;gap:13px;align-items:center;border:1px solid #5a73a8;background:linear-gradient(125deg,#253963,#142544);padding:28px;border-radius:14px}
+.sus-flow-node{border:1px solid #778dba;background:#e9efff;color:#101f43;padding:20px;border-radius:9px;display:flex;flex-direction:column;gap:9px;min-height:116px;align-items:center;text-align:center;justify-content:center}
+.sus-flow-node small{font-size:10px;font-weight:840;letter-spacing:.14em;color:#354b7e}
+.sus-flow-node strong{font-size:clamp(15px,2vw,19px);line-height:1.27}
+.sus-flow-arrow{text-align:center;font-size:36px;font-weight:750;color:#aebdff}
+.sus-flow[data-mode="delegative"]{border-color:#cd8b7b;background:linear-gradient(125deg,#57313b,#2d263a)}
+.sus-flow[data-mode="delegative"] .sus-flow-arrow{color:#ffbdac}
+.sus-flow-description{margin-top:17px!important;font-size:15px!important;line-height:1.7!important}
+.sus-axes{display:grid;grid-template-columns:minmax(205px,.82fr) minmax(0,1.45fr);gap:18px;margin:26px 0 13px}
+.sus-axes-buttons{display:flex;flex-direction:column;gap:7px}
+.sus-axis-button{border:1px solid #415782;background:#1d2d4d;color:#d8e3fa;border-radius:8px;padding:13px 14px;text-align:left;cursor:pointer;font-weight:720;font-size:13px;line-height:1.4}
+.sus-axis-button[aria-pressed="true"]{background:#aebdff;color:#101d3e;border-color:#aebdff}
+.sus-axis-button:hover{border-color:#c5d5ff}
+.sus-axis-detail{border:1px solid #58709e;background:linear-gradient(140deg,#203658,#182942);border-radius:12px;padding:27px;min-height:350px}
+.sus-axis-detail h3{font-size:clamp(22px,2.8vw,30px)}
+.sus-axis-detail>p{font-size:15px!important}
+.sus-axis-example{padding:15px 0;border-top:1px solid #4a5f7b;margin-top:13px}
+.sus-axis-example strong{font-size:10px;letter-spacing:.12em;color:#b9caff}
+.sus-axis-example p{font-size:13px!important;line-height:1.6;margin:7px 0 0}
+.sus-operation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:23px 0}
+.sus-operation-card{background:#1e304e;border:1px solid #49608b;padding:19px;border-radius:10px;min-height:168px;min-width:0}
+.sus-operation-index{font-size:12px;font-weight:850;letter-spacing:.1em;color:#adc0ff}
+.sus-operation-card h3{font-size:18px;margin:11px 0}.sus-operation-card p{font-size:13px!important;line-height:1.5;margin:0!important}
+.sus-mastery{border:1px solid #5f72a5;background:linear-gradient(140deg,#202f51,#172745);border-radius:14px;padding:clamp(17px,3vw,32px);margin:24px 0}
+.sus-master-selectors{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.sus-mastery-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,1fr);gap:26px;align-items:center;margin-top:21px}
+.sus-radar-pane{display:flex;align-items:center;justify-content:center;min-width:0}
+.sus-radar{width:100%;max-width:570px;height:auto;display:block;overflow:visible}
+.sus-master-detail h3{font-size:22px;margin:0 0 11px}
+.sus-master-copy{font-size:13px!important;line-height:1.65}
+.sus-minibars{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.sus-minibar{display:grid;grid-template-columns:minmax(95px,1fr) minmax(75px,1.7fr) 55px;gap:11px;align-items:center}
+.sus-minibar>span{font-size:12px;line-height:1.25}
+.sus-minibar>b{font-size:11px;text-align:right;color:#e7efff}
+.sus-bar-track{height:9px;border-radius:99px;background:#3b4a72;overflow:hidden}
+.sus-bar-fill{display:block;height:100%;background:#b5c7ff;border-radius:inherit;transition:width .2s}
+.sus-journey{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0 20px}
+.sus-journey-step{display:grid;grid-template-columns:40px 1fr;grid-template-rows:auto 1fr;gap:0 12px;background:#1a2b46;border:1px solid #415982;border-radius:10px;padding:21px}
+.sus-step-num{grid-row:span 2;font-size:23px;font-weight:760;color:#b2c3ff;line-height:1.2}
+.sus-journey-step h3{font-size:17px;margin:2px 0 8px}
+.sus-journey-step p{font-size:13px!important;margin:0!important;line-height:1.6}
+.sus-sim-shell{border:1px solid #5a73a5;border-radius:12px;background:#1b2c4a;padding:22px;margin:24px 0}
+.sus-sim-shell .tabs{margin:0 0 15px}
+.sus-stage-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-bottom:18px}
+.sus-stage-tabs .sus-tab{padding:11px 7px}
+.sus-sim-panel{background:linear-gradient(130deg,#233b64,#172b47);border:1px solid #5f77a6;border-radius:9px;padding:25px;min-height:250px;display:flex;flex-direction:column;align-items:flex-start}
+.sus-sim-panel h3{font-size:clamp(20px,2.7vw,28px)}
+.sus-sim-text{font-size:17px!important;line-height:1.55!important;color:#e1ebff!important;margin-top:5px!important;max-width:830px!important}
+.sus-sim-panel .action{margin-top:auto}
+.sus-epistemic{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}
+.sus-epistemic-card{background:#1f304e;border:1px solid #4a6495;border-radius:9px;padding:22px}
+.sus-epistemic-card h3{font-size:18px;margin:11px 0 7px}
+.sus-epistemic-card p{font-size:13px!important;margin:0!important}
+.sus-curriculum-tags{display:flex;flex-wrap:wrap;gap:8px;margin:23px 0}
+.sus-curriculum-tags span{padding:10px 13px;border:1px solid #6576ac;color:#d9e2ff;background:#1e3056;border-radius:7px;font-size:12px;font-weight:740}
+.sus-actors,.sus-theory-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:21px 0}
+.sus-actors .panel h3,.sus-theory-grid .panel h3{font-size:18px}
+.sus-actors .panel p,.sus-theory-grid .panel p{font-size:13px!important;line-height:1.55}
+.sus-team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:23px 0}
+.sus-team-grid .panel{padding:19px}
+.sus-team-grid .panel h3{font-size:17px}
+.sus-team-grid .panel p{font-size:12px!important;line-height:1.6}
+.sus-source-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:21px 0}
+.sus-source-link{display:flex;align-items:center;min-height:89px;padding:16px;text-decoration:none;border:1px solid #50658f;background:#1c2c4b;border-radius:9px;font-size:14px;font-weight:770;line-height:1.4}
+.sus-source-link:hover{border-color:#aebdff;background:#263b66}
+@media(max-width:950px){.sus-operation-grid{grid-template-columns:repeat(2,1fr)}.sus-mastery-layout{grid-template-columns:1fr}.sus-radar{max-width:520px}.sus-team-grid{grid-template-columns:repeat(2,1fr)}.sus-source-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.sus-axes{grid-template-columns:1fr}.sus-axes-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.sus-axis-button{font-size:11px}.sus-axis-detail{min-height:0}.sus-flow{grid-template-columns:1fr;padding:18px}.sus-flow-arrow{transform:rotate(90deg);font-size:25px}.sus-journey{grid-template-columns:1fr}.sus-stage-tabs{grid-template-columns:repeat(2,1fr)}.sus-epistemic{grid-template-columns:1fr}.sus-operation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sus-team-grid{grid-template-columns:1fr 1fr}.sus-master-selectors{align-items:flex-start}.sus-minibar{grid-template-columns:minmax(75px,1fr) minmax(65px,1.3fr) 50px;gap:6px}}
+@media(max-width:440px){.sus-operation-grid,.sus-actors,.sus-theory-grid,.sus-team-grid,.sus-source-grid{grid-template-columns:1fr}.sus-axes-buttons{grid-template-columns:1fr}.sus-axes .sus-axis-button{font-size:12px}.sus-choice{flex-direction:column;width:100%}.sus-choice .sus-tab{width:100%}.sus-sim-shell{padding:12px}.sus-sim-panel{padding:16px}.sus-master-selectors{width:100%}.sus-mastery{padding:13px}.sus-radar{max-width:100%}.sus-journey-step{padding:15px}}
+@media(prefers-reduced-motion:reduce){.sus-bar-fill{transition:none}}
