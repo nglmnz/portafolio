@@ -186,3 +186,29 @@ Referencia: https://webs.uab.cat/geografia-genere/es/2026/06/16/seminario-sobre-
 - **Idiomas:** español, inglés y portugués. Visualización abstracta de red urbana, sin fingir coordenadas ni puntos muestrales reales.
 
 Fuentes originales: https://www.cedeus.cl/blog/2024/08/23/conoce-los-trabajos-de-tesistas-y-investigadores-postdoctorales-de-cedeus/ ; https://redeus.org/el-rol-de-los-espacios-colectivos-en-la-cohesion-social-urbana-aproximacion-multiescalar-en-el-gran-santiago/ ; https://www.cedeus.cl/pobreza-de-transporte-una-brecha-pendiente-que-chile-debe-disminuir/ .
+
+## Correspondencia ALAS 2026 y cine UAH (2022 y 2025)
+
+Se publicaron dos nuevas experiencias, cada una con página propia, diseño adaptable e idiomas ES/EN/PT. Ambas tienen galerías vacías preparadas para cargar fotografías posteriores mediante manifiestos JSON con descripciones, autorías y permisos.
+
+### `/alas/` — corresponsal institucional en Río de Janeiro
+
+- Contexto: XXXV Congreso Latinoamericano de Sociología, 26–31 de julio de 2026, sedes UFRJ y UNIRIO, tema «Entre la policrisis y las alternativas: horizontes de la sociología crítica latinoamericana». Se documentan 27 grupos de trabajo y la conmemoración de 75 años de ALAS, según CLACSO y fuentes oficiales.
+- Labor personal **informada directamente por el autor**: cobertura de la delegación del Departamento de Sociología UAH mediante entrevistas, fotografía, contenidos audiovisuales y escritos.
+- Personas de la delegación UAH según el autor: Nicolás Fleet, Gabriela Mardones, Alexis Cortés, Kenneth Fowler y Juan Pablo Rodríguez. Los perfiles públicos acreditan formación/cargos institucionales; **no se fabrican títulos de ponencias o citas de entrevistas**.
+- La noticia del Instituto de Sociología UC es una fuente de contexto, correspondiente a **otra delegación académica**, y no una confirmación de las ponencias UAH. Enlaces a Instagram, LinkedIn y blog de Modonesi se conservan con grados de verificación indicados.
+- Archivos: `alas/index.html`, `alas/README.md`, `alas/assets/galeria.json`, `assets/alas-datos.json`.
+- Fotografías pendientes: subir a `alas/assets/`, luego agregar registros y créditos al manifiesto.
+
+### `/cine-disidencias/` — proyecciones, conversación y mediación cultural
+
+- Jornada 2022: proyección de *Naomi Campbel* (2013, Camila José Donoso y Nicolás Videla), encuentro con Paula Dinamarca y alrededor de 50 asistentes (según relato del organizador).
+- Jornada 2025: proyección de *Las criaturas que se derriten bajo el sol* (cortometraje de **2022** de Diego Céspedes), conversación con Paula Dinamarca y colaboración de Fundación Poderes, Sindicato Amanda Jofré y Quijote Films, según relato del organizador.
+- **Premios correctamente diferenciados:** *La misteriosa mirada del flamenco* (largometraje de 2025 de Diego Céspedes, con Paula Dinamarca en el elenco) ganó el Premio Un Certain Regard de Cannes 2025; no fue un premio individual a la actriz, ni al cortometraje exhibido en la UAH.
+- Se mantienen la fecha exacta de las jornadas UAH, autorías de fotografías y evidencia de participación de organizaciones como detalles a completar. No se inventan entrevistas ni citas.
+- Archivos: `cine-disidencias/index.html`, `cine-disidencias/README.md`, `cine-disidencias/assets/galeria.json`, `assets/cine-disidencias-datos.json`.
+- Fotografías pendientes: subir a `cine-disidencias/assets/` y actualizar el manifiesto por año, película y actividad.
+
+**Interfaz compartida:** `assets/experiencias.js` y `assets/experiencias.css`. La portada del portafolio enlaza ambos casos en la sección de trayectoria.
+
+Fuentes principales: https://www.clacso.org/xxxv-congreso-latinoamericano-de-sociologia/ ; https://sociologia.uc.cl/noticias/alas-2026/ ; https://www.retinalatina.org/peliculas/naomi-campbel/ ; https://www.semainedelacritique.com/en/edition/2022/movie/las-criaturas-que-se-derriten-bajo-el-sol ; https://www.festival-cannes.com/en/f/la-misteriosa-mirada-del-flamenco/ .
