@@ -200,14 +200,15 @@ Se publicaron dos nuevas experiencias, cada una con página propia, diseño adap
 - Archivos: `alas/index.html`, `alas/README.md`, `alas/assets/galeria.json`, `assets/alas-datos.json`.
 - Fotografías pendientes: subir a `alas/assets/`, luego agregar registros y créditos al manifiesto.
 
-### `/cine-disidencias/` — proyecciones, conversación y mediación cultural
+### `/cine-disidencias/` — dos actividades organizadas desde espacios distintos
 
-- Jornada 2022: proyección de *Naomi Campbel* (2013, Camila José Donoso y Nicolás Videla), encuentro con Paula Dinamarca y alrededor de 50 asistentes (según relato del organizador).
-- Jornada 2025: proyección de *Las criaturas que se derriten bajo el sol* (cortometraje de **2022** de Diego Céspedes), conversación con Paula Dinamarca y colaboración de Fundación Poderes, Sindicato Amanda Jofré y Quijote Films, según relato del organizador.
-- **Premios correctamente diferenciados:** *La misteriosa mirada del flamenco* (largometraje de 2025 de Diego Céspedes, con Paula Dinamarca en el elenco) ganó el Premio Un Certain Regard de Cannes 2025; no fue un premio individual a la actriz, ni al cortometraje exhibido en la UAH.
-- Se mantienen la fecha exacta de las jornadas UAH, autorías de fotografías y evidencia de participación de organizaciones como detalles a completar. No se inventan entrevistas ni citas.
-- Archivos: `cine-disidencias/index.html`, `cine-disidencias/README.md`, `cine-disidencias/assets/galeria.json`, `assets/cine-disidencias-datos.json`.
-- Fotografías pendientes: subir a `cine-disidencias/assets/` y actualizar el manifiesto por año, película y actividad.
+- **Mesa de Disidencias UAH (2022):** encuentro con la actriz Paula Dinamarca y proyección de *Naomi Campbel* para comprender la realidad trans. Unas 50 personas asistentes según el organizador.
+- **Centro de Estudiantes de Sociología UAH (2025):** organización durante la vicepresidencia de Ángel Muñoz; proyección de *Las criaturas que se derriten bajo el sol* y conversatorio sobre **experiencias de parentalidad transgénero**. Participan Paula Dinamarca, Sindicato Amanda Jofré y Fundación Poderes; apoyo de Quijote Films según el organizador. Cineclub UAH figura en el material gráfico de la jornada.
+- **Flyer y fecha:** `cine-disidencias/assets/Flyer2025.jpg`, usado como hero sin recortar, acredita **2 de julio de 2025, 15:00, sala L13, Cienfuegos 46**. `Flyer2025-2.jpg` conserva los logos colaboradores.
+- **Premio correctamente atribuido:** *La misteriosa mirada del flamenco* (largometraje de 2025 de Diego Céspedes) obtuvo el Premio Un Certain Regard de Cannes 2025; no fue un premio individual a Paula Dinamarca ni al cortometraje proyectado.
+- **Interfaz:** eliminada la franja de métricas `2022 / 50 / 2025 / 2`. La información relevante permanece en sus apartados históricos, separados por organización y tema.
+- **Archivo visual:** nueve fotografías integradas y agrupadas por año (siete de 2022 y dos de 2025). Autoría fotográfica y permisos adicionales por cotejar; no se identifica a personas a partir de las fotos.
+- **Archivos:** `cine-disidencias/index.html`, `cine-disidencias/README.md`, `cine-disidencias/assets/galeria.json`, `assets/cine-disidencias-datos.json`.
 
 **Interfaz compartida:** `assets/experiencias.js` y `assets/experiencias.css`. La portada del portafolio enlaza ambos casos en la sección de trayectoria.
 
