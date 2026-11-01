@@ -54,14 +54,22 @@ add(role,tasks,p(tr(data.role.evidence),"xp-footnote"));
 const people=part("participantes","03 / UAH",ui("people"),language==="es"?"Personas cuya participación cubrí, según mi registro del encuentro. Los perfiles enlazados acreditan su trayectoria y rol institucional, pero no sustituyen un programa individual de ponencias.":language==="en"?"Participants reported from my coverage. Profiles verify roles, not session-by-session presentations.":"Participantes informados a partir da cobertura. Os perfis comprovam trajetórias, não títulos de apresentações.");
 const grid=n("div","xp-person-grid");
 data.team.forEach(x=>{const c=n("article","xp-person"),top=n("div","xp-person-top");add(top,n("span","xp-dot","●"),h(x.name,3));add(c,top,p(tr(x.who),"xp-person-role"),p(tr(x.area),"xp-person-area"));if(x.link)add(c,link(ui("more"),x.link,"xp-source"));add(grid,c)});add(people,grid);
-const themes=part("debates","04 / "+ui("themesK"),ui("themes"),language==="es"?"Una selección editorial de los ejes públicos del congreso, no una lista de las ponencias de la delegación UAH.":language==="en"?"Editorial overview of congress themes, not a list of individual UAH presentations.":"Síntese editorial dos temas do congresso, não das falas da UAH.");
+const story=part("cronica","04 / REPORTAJE UAH",tr(data.reportage.title),tr(data.reportage.intro));
+const features=n("div","xp-reportage-grid");
+data.reportage.articles.forEach((item,j)=>{
+ const card=n("article","xp-reportage-card");
+ add(card,n("span","xp-reportage-index",String(j+1).padStart(2,"0")+" · "+item.date),n("span","xp-reportage-name",item.name),h(tr(item.title),3),p(tr(item.question),"xp-reportage-question"),p(tr(item.summary),"xp-reportage-summary"),p(tr(item.sourceNote),"xp-reportage-note"));
+ add(features,card);
+});
+add(story,features,p(tr(data.reportage.credit),"xp-reportage-credit"),p(tr(data.reportage.disclaimer),"xp-footnote"));
+const themes=part("debates","05 / "+ui("themesK"),ui("themes"),language==="es"?"Una selección editorial de los ejes públicos del congreso, no una lista de las ponencias de la delegación UAH.":language==="en"?"Editorial overview of congress themes, not a list of individual UAH presentations.":"Síntese editorial dos temas do congresso, não das falas da UAH.");
 const tab=n("div","xp-theme-tabs"),body=n("article","xp-theme-panel");
 data.themes.forEach((x,j)=>add(tab,button("0"+(j+1)+" · "+tr(x.title),()=>{selected=j;drawTheme()},"xp-tab",j===selected)));
 function drawTheme(){tab.querySelectorAll("button").forEach((x,j)=>x.setAttribute("aria-pressed",String(selected===j)));const x=data.themes[selected];body.replaceChildren(n("span","xp-panel-count",String(selected+1).padStart(2,"0")+" / 05"),h(tr(x.title),3),p(tr(x.desc)))}
 add(themes,tab,body);drawTheme();
-const timeline=part("cronologia","05 / 26–31.07.2026",language==="es"?"Seis días de debates y cobertura":language==="en"?"Six days of congress coverage":"Seis dias de debates e cobertura");
+const timeline=part("cronologia","06 / 26–31.07.2026",language==="es"?"Seis días de debates y cobertura":language==="en"?"Six days of congress coverage":"Seis dias de debates e cobertura");
 for(const x of data.timeline){const c=n("article","xp-timeline");add(c,n("span","xp-date",x.date),h(tr(x.label),3),p(tr(x.text)));add(timeline,c)}
-const pub=part("prensa","06 / "+ui("archive"),ui("archive"),language==="es"?"El congreso también fue narrado desde otras universidades, organizaciones y redes. La cobertura de Sociología UC corresponde a su propia delegación.":language==="en"?"Additional perspectives from organizations and universities. UC's story covers a separate delegation.":"Outras leituras de organizações e universidades. A notícia da UC é sobre sua própria delegação.");
+const pub=part("prensa","07 / "+ui("archive"),ui("archive"),language==="es"?"El congreso también fue narrado desde otras universidades, organizaciones y redes. La cobertura de Sociología UC corresponde a su propia delegación.":language==="en"?"Additional perspectives from organizations and universities. UC's story covers a separate delegation.":"Outras leituras de organizações e universidades. A notícia da UC é sobre sua própria delegação.");
 sourceCards(pub,data.otherCoverage);
 }
 function renderCinema(){
@@ -140,9 +148,9 @@ loadMore.hidden=list.length<=photoLimit;
 }
 add(base,filters,tally,grid,loadMore,dialog,p(ui("pendingCredits"),"xp-footnote"));
 draw();
-const media=part("entrevista","09 / "+ui("what"),ui("interviewTitle"),ui("interviewDesc"));
+const media=part("entrevista","09 / "+ui("what"),tr(data.reportage?.bringel?.title)||ui("interviewTitle"),tr(data.reportage?.bringel?.body)||ui("interviewDesc"));
 const block=n("div","xp-interview-pending"),mark=n("div","xp-interview-icon");mark.setAttribute("aria-hidden","true");mark.textContent="▶";
-add(block,mark,n("div","xp-interview-content",ui("interviewState")));add(media,block);
+add(block,mark,n("div","xp-interview-content",tr(data.reportage?.bringel?.status)||ui("interviewState")));add(media,block);
 }
 function gallery(){
 if(kind==="alas"){galleryAlas();return}
