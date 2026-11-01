@@ -1,0 +1,242 @@
+{
+  "title": {
+    "es": "Sustancia",
+    "en": "Sustancia",
+    "pt": "Sustancia"
+  },
+  "tagline": {
+    "es": "Interpretar no es repetir un resultado.",
+    "en": "Interpreting is more than repeating a result.",
+    "pt": "Interpretar não é repetir um resultado."
+  },
+  "lead": {
+    "es": "Laboratorio web de interpretación estadística. El estudiante produce una respuesta escrita; la retroalimentación propone mirar las cifras, el contexto y los límites antes de dar por terminada una explicación.",
+    "en": "A web-based lab for statistical interpretation. Learners write their own answers; feedback asks them to examine numbers, contexts and limitations before drawing conclusions.",
+    "pt": "Laboratório web de interpretação estatística. O estudante escreve sua resposta; o feedback o convida a examinar números, contexto e limites antes de concluir."
+  },
+  "project": {
+    "es": "Proyecto de investigación y desarrollo · 2026 · R Shiny + Quarto",
+    "en": "Research and development project · 2026 · R Shiny + Quarto",
+    "pt": "Projeto de pesquisa e desenvolvimento · 2026 · R Shiny + Quarto"
+  },
+  "basis": {
+    "es": "El punto de partida proviene de la investigación sobre habitus tecnológico con 276 estudiantes de primer año y de una pregunta sociológica: ¿cómo usar IA sin sustituir el trabajo intelectual necesario para aprender? El ejemplo inicial del prototipo utiliza datos y situaciones derivados de ese estudio; el horizonte pedagógico abarca otras disciplinas.",
+    "en": "The starting point is a study of technological habitus involving 276 first-year students, together with a sociological question: how can AI be used without replacing the intellectual effort learning requires? The first prototype draws on examples from that study, while its pedagogical scope spans other disciplines.",
+    "pt": "O ponto de partida é uma pesquisa sobre habitus tecnológico com 276 estudantes do primeiro ano e uma questão sociológica: como usar IA sem substituir o trabalho intelectual necessário para aprender? O primeiro protótipo utiliza exemplos dessa pesquisa, mas sua proposta se estende a outras disciplinas."
+  },
+  "idea": {
+    "es": "La IA no debe resolver el ejercicio en lugar del estudiante. La arquitectura propuesta prioriza producción propia → rúbrica de interpretación → preguntas orientadoras → revisión → nueva evidencia. La autonomía no se enseña delegándola.",
+    "en": "AI should not solve the exercise for the student. The proposed architecture prioritizes personal response → interpretation rubric → guiding questions → revision → new evidence. Autonomy cannot be taught by outsourcing it.",
+    "pt": "A IA não deve resolver o exercício no lugar do estudante. A arquitetura proposta prioriza resposta própria → rubrica de interpretação → perguntas orientadoras → revisão → nova evidência. Não se ensina autonomia delegando-a."
+  },
+  "level": [
+    {
+      "n": "N1",
+      "name": {
+        "es": "Lectura técnica",
+        "en": "Technical reading",
+        "pt": "Leitura técnica"
+      },
+      "prompt": {
+        "es": "¿Qué muestran la tabla, la cifra y el valor p?",
+        "en": "What do the table, numbers and p-value show?",
+        "pt": "O que mostram a tabela, os números e o valor-p?"
+      },
+      "example": {
+        "es": "«Hay dos asociaciones estadísticamente significativas».",
+        "en": "“There are two statistically significant associations.”",
+        "pt": "“Há duas associações estatisticamente significativas.”"
+      }
+    },
+    {
+      "n": "N2",
+      "name": {
+        "es": "Interpretación estadística",
+        "en": "Statistical interpretation",
+        "pt": "Interpretação estatística"
+      },
+      "prompt": {
+        "es": "¿Cuál es la dirección, magnitud y límite de la asociación?",
+        "en": "What are the direction, magnitude and limits of the association?",
+        "pt": "Qual é a direção, magnitude e o limite da associação?"
+      },
+      "example": {
+        "es": "«Una variable se asocia con mayor puntuación de deterioro en este modelo».",
+        "en": "“One variable is associated with a higher distress score in this model.”",
+        "pt": "“Uma variável se associa a maior pontuação de mal-estar neste modelo.”"
+      }
+    },
+    {
+      "n": "N3",
+      "name": {
+        "es": "Interpretación sustantiva",
+        "en": "Substantive interpretation",
+        "pt": "Interpretação substantiva"
+      },
+      "prompt": {
+        "es": "¿Qué significa para el fenómeno y su contexto?",
+        "en": "What does this mean for the phenomenon and context?",
+        "pt": "O que isso significa para o fenômeno e o contexto?"
+      },
+      "example": {
+        "es": "«El patrón compulsivo distingue mejor el malestar que la duración de uso».",
+        "en": "“Compulsive use distinguishes distress better than duration alone.”",
+        "pt": "“O uso compulsivo diferencia melhor o mal-estar do que a duração sozinha.”"
+      }
+    },
+    {
+      "n": "N4",
+      "name": {
+        "es": "Lectura crítica y reflexiva",
+        "en": "Critical and reflective reasoning",
+        "pt": "Leitura crítica e reflexiva"
+      },
+      "prompt": {
+        "es": "¿Qué supuestos y límites impiden atribuir causalidad?",
+        "en": "What assumptions and limits prevent causal claims?",
+        "pt": "Quais pressupostos e limites impedem atribuir causalidade?"
+      },
+      "example": {
+        "es": "«No es posible afirmar qué ocurrió primero; se necesitaría un seguimiento longitudinal».",
+        "en": "“We cannot know what came first; longitudinal follow-up would be needed.”",
+        "pt": "“Não podemos saber o que ocorreu primeiro; seria necessário acompanhamento longitudinal.”"
+      }
+    }
+  ],
+  "exampleTable": {
+    "es": "Ejemplo ilustrativo del sitio Sustancia · No es la regresión real del seminario",
+    "en": "Illustrative example from Sustancia · Not the actual thesis regression",
+    "pt": "Exemplo ilustrativo do Sustancia · Não é a regressão real da tese"
+  },
+  "compare": [
+    {
+      "es": "«El uso compulsivo es significativo; el tiempo de pantalla no». Es una lectura correcta de la significación, pero no desarrolla el fenómeno.",
+      "en": "“Compulsive use is significant; screen time is not.” This correctly reads statistical significance but does not explain the phenomenon.",
+      "pt": "“O uso compulsivo é significativo; o tempo de tela não.” Está correto, mas não explica o fenômeno."
+    },
+    {
+      "es": "«No basta limitar las horas: conviene comprender las prácticas compulsivas. Este modelo solo muestra asociaciones y no identifica un efecto causal».",
+      "en": "“Limiting hours alone is insufficient: compulsive patterns deserve attention. This model shows association, not causation.”",
+      "pt": "“Não basta limitar as horas: é preciso compreender práticas compulsivas. Este modelo mostra associações, não causalidade.”"
+    }
+  ],
+  "workflow": [
+    {
+      "es": "Desafío y producción personal",
+      "en": "Challenge and personal response",
+      "pt": "Desafio e resposta própria"
+    },
+    {
+      "es": "Evaluación formativa con rúbrica",
+      "en": "Formative rubric-based feedback",
+      "pt": "Feedback formativo baseado em rubrica"
+    },
+    {
+      "es": "Preguntas para revisar el razonamiento",
+      "en": "Questions guiding reasoning revision",
+      "pt": "Perguntas para revisar o raciocínio"
+    },
+    {
+      "es": "Nueva respuesta como evidencia de aprendizaje",
+      "en": "Revised response as evidence of learning",
+      "pt": "Resposta revista como evidência de aprendizagem"
+    }
+  ],
+  "status": [
+    {
+      "kind": "now",
+      "title": {
+        "es": "Web Quarto y documentación",
+        "en": "Quarto website and documentation",
+        "pt": "Site Quarto e documentação"
+      },
+      "text": {
+        "es": "Fundamentación, modelo pedagógico, ejemplos y recorrido publicados.",
+        "en": "Rationale, pedagogical model, examples and walkthrough published.",
+        "pt": "Fundamentação, modelo pedagógico, exemplos e percurso publicados."
+      }
+    },
+    {
+      "kind": "now",
+      "title": {
+        "es": "Piloto R Shiny",
+        "en": "R Shiny prototype",
+        "pt": "Protótipo R Shiny"
+      },
+      "text": {
+        "es": "Actividades de interpretación y una evaluación formativa inicial. El acceso depende del alojamiento.",
+        "en": "Interpretation exercises and early formative evaluation. Availability depends on hosting.",
+        "pt": "Atividades de interpretação e avaliação formativa inicial. Acesso sujeito à hospedagem."
+      }
+    },
+    {
+      "kind": "now",
+      "title": {
+        "es": "Marco N1–N4",
+        "en": "N1–N4 framework",
+        "pt": "Modelo N1–N4"
+      },
+      "text": {
+        "es": "Niveles interpretativos y ejemplos documentados, pendientes de validación formal.",
+        "en": "Documented interpretive levels and examples, awaiting formal validation.",
+        "pt": "Níveis interpretativos e exemplos documentados, pendentes de validação formal."
+      }
+    },
+    {
+      "kind": "next",
+      "title": {
+        "es": "Diagnóstico inicial y vector de maestría",
+        "en": "Entry diagnostic and mastery vector",
+        "pt": "Diagnóstico inicial e vetor de domínio"
+      },
+      "text": {
+        "es": "Diseño multidimensional por conceptos, operaciones, errores y trayectoria.",
+        "en": "Multidimensional design across concepts, operations, errors and learning progression.",
+        "pt": "Desenho multidimensional por conceitos, operações, erros e trajetória."
+      }
+    },
+    {
+      "kind": "next",
+      "title": {
+        "es": "Selección adaptativa y revisión sistemática",
+        "en": "Adaptive selection and systematic revision",
+        "pt": "Seleção adaptativa e revisão sistemática"
+      },
+      "text": {
+        "es": "Motor que ajustaría tareas a la evidencia acumulada de aprendizaje.",
+        "en": "Engine intended to adapt tasks to accumulated learning evidence.",
+        "pt": "Motor que deverá adaptar tarefas às evidências de aprendizagem."
+      }
+    },
+    {
+      "kind": "next",
+      "title": {
+        "es": "Banco curricular y paneles institucionales",
+        "en": "Curricular bank and institutional dashboards",
+        "pt": "Banco curricular e painéis institucionais"
+      },
+      "text": {
+        "es": "Agentes de apoyo, recuperación de ejercicios autorizados y seguimiento docente.",
+        "en": "Support agents, retrieval of authorized exercises and faculty monitoring.",
+        "pt": "Agentes de apoio, recuperação de exercícios autorizados e acompanhamento docente."
+      }
+    }
+  ],
+  "boundary": {
+    "es": "Sustancia es investigación y desarrollo, no un sistema pedagógico adaptativo validado. El vector de maestría, la recursividad de los diálogos y la selección de tareas necesitan construcción y evaluación. Los ejemplos demostrativos no son datos de un ensayo de eficacia. El piloto no debe recibir información personal o académica sensible.",
+    "en": "Sustancia is an R&D project, not a validated adaptive learning system. Mastery profiling, recursive conversations and task selection still require implementation and evaluation. Illustrative examples are not effectiveness-trial data. Do not enter sensitive personal or academic data into the experimental prototype.",
+    "pt": "O Sustancia é um projeto de pesquisa e desenvolvimento, não um sistema adaptativo validado. Perfil de domínio, diálogos recursivos e seleção de tarefas precisam de implementação e avaliação. Exemplos ilustrativos não são dados de teste de eficácia. Não insira dados pessoais ou acadêmicos sensíveis no protótipo."
+  },
+  "urls": {
+    "site": "https://nglmnz.github.io/sustancia/",
+    "pilot": "https://nglmnz.github.io/sustancia/piloto.html",
+    "model": "https://nglmnz.github.io/sustancia/pedagogia.html",
+    "how": "https://nglmnz.github.io/sustancia/como-funciona.html",
+    "code": "https://github.com/nglmnz/sustancia"
+  },
+  "relationship": {
+    "es": "La investigación mostró la importancia de no confundir sofisticación digital con autonomía en todos los ámbitos. Sustancia reformula esa inquietud como una pregunta pedagógica acotada: ¿puede una herramienta con IA favorecer interpretaciones propias en estadística, en vez de realizarlas automáticamente por la persona? Esa eficacia todavía debe probarse.",
+    "en": "The research highlighted the importance of not equating digital sophistication with autonomy in every domain. Sustancia reframes that concern as a focused educational question: can an AI-supported tool encourage students' own statistical interpretations instead of automatically producing them? Its effectiveness has yet to be tested.",
+    "pt": "A pesquisa apontou a importância de não confundir sofisticação digital com autonomia em todas as dimensões. O Sustancia transforma essa preocupação em uma pergunta pedagógica específica: uma ferramenta apoiada por IA pode favorecer interpretações próprias em estatística, em vez de produzi-las automaticamente? A eficácia ainda precisa ser testada."
+  }
+}
