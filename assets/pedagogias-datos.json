@@ -962,11 +962,21 @@
     }
   ],
   "photo": {
-    "src": null,
+    "src": "assets/comision-ia.webp",
     "caption": {
-      "es": "Reunión de trabajo de la comisión de IA para la formación de pedagogías. Fotografía pendiente de incorporación y confirmación de autorización de las personas retratadas.",
-      "en": "AI commission working meeting. Photo pending upload and consent checks.",
-      "pt": "Reunião da comissão de IA. Foto pendente e sujeita à verificação de consentimento."
+      "es": "Registro de una reunión de trabajo de la comisión de IA para la formación de pedagogías. Imagen facilitada por el autor del proyecto.",
+      "en": "Record of a working meeting of the AI commission for teacher education. Image supplied by the project author.",
+      "pt": "Registro de reunião de trabalho da comissão de IA para formação docente. Imagem fornecida pelo autor do projeto."
+    },
+    "credit": {
+      "es": "Archivo del proyecto · fotografía facilitada por Ángel Muñoz (autoría fotográfica no identificada)",
+      "en": "Project archive · photograph supplied by Ángel Muñoz (photographer not identified)",
+      "pt": "Arquivo do projeto · fotografia fornecida por Ángel Muñoz (autoria fotográfica não identificada)"
+    },
+    "context": {
+      "es": "Fotografía ilustrativa del proceso. No se atribuyen identidades individuales a las personas visibles ni se presenta como registro de una fecha específica.",
+      "en": "Documentary image of the process. No identities are inferred for pictured individuals and no particular meeting date is asserted.",
+      "pt": "Imagem documental do processo. Não se inferem identidades de pessoas retratadas nem se atribui uma data específica."
     }
   },
   "origin": "Informe_v8(5).docx + correos y acta proporcionados en conversación; consulta de páginas institucionales UAH",
