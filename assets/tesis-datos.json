@@ -1,0 +1,446 @@
+{
+  "title": {
+    "es": "Habitus tecnológico y conexión cuerpo-mente",
+    "en": "Technological habitus and the mind–body connection",
+    "pt": "Habitus tecnológico e conexão corpo-mente"
+  },
+  "subtitle": {
+    "es": "Fundamentos teórico-empíricos para la medición de efectos de bienestar digital en estudiantes universitarios.",
+    "en": "Theoretical and empirical foundations for studying digital wellbeing among university students.",
+    "pt": "Fundamentos teórico-empíricos para estudar bem-estar digital entre estudantes universitários."
+  },
+  "overline": {
+    "es": "INVESTIGACIÓN DE GRADO · SOCIOLOGÍA UAH · 2026",
+    "en": "DEGREE RESEARCH · SOCIOLOGY UAH · 2026",
+    "pt": "PESQUISA DE GRADUAÇÃO · SOCIOLOGIA UAH · 2026"
+  },
+  "lead": {
+    "es": "El problema no es solo cuántas horas pasamos frente a una pantalla: es qué tipo de relación incorporamos con los dispositivos, las redes y la inteligencia artificial.",
+    "en": "The question is not only how long people use screens, but what kind of relationship they develop with devices, platforms and generative AI.",
+    "pt": "A questão não é apenas quantas horas passamos diante das telas, mas que tipo de relação incorporamos com dispositivos, redes e inteligência artificial."
+  },
+  "intro": {
+    "es": "La digitalización reconfigura las condiciones de aprendizaje, identidad y sociabilidad. El estudio sitúa el bienestar digital dentro de una economía de atención que combina oportunidades de acceso, automatización de tareas y posibles formas de dependencia. En vez de suponer que todo uso intensivo es perjudicial, explora configuraciones de disposiciones y prácticas.",
+    "en": "Digital technologies reshape learning, identity and social relations. This study places digital wellbeing within an attention economy combining access opportunities, task automation and potential dependency. Rather than assuming every high-usage pattern is harmful, it investigates configurations of dispositions and practices.",
+    "pt": "A digitalização transforma as condições de aprendizagem, identidade e sociabilidade. A pesquisa situa o bem-estar digital em uma economia da atenção que combina acesso, automação de tarefas e possíveis formas de dependência. Em vez de supor que todo uso intenso é prejudicial, examina configurações de disposições e práticas."
+  },
+  "problem": {
+    "es": "¿Qué características adopta el habitus tecnológico en estudiantes universitarios de primer año y en qué medida el uso compulsivo, la externalización cognitiva hacia la IA y el tiempo de pantalla se asocian con indicadores de deterioro de salud mental? El género y la vulnerabilidad socioeconómica fueron examinados como dimensiones relevantes, sin afirmar causalidad.",
+    "en": "How does technological habitus take shape among first-year university students, and to what extent are compulsive use, cognitive outsourcing to AI and screen time associated with indicators of worsening mental health? Gender and socioeconomic vulnerability were examined as relevant dimensions, without causal claims.",
+    "pt": "Quais características assume o habitus tecnológico de universitários do primeiro ano e como uso compulsivo, delegação cognitiva à IA e tempo de tela se associam a indicadores de piora da saúde mental? Gênero e vulnerabilidade socioeconômica foram examinados sem atribuição causal."
+  },
+  "method": [
+    {
+      "metric": "293",
+      "es": "cuestionarios recogidos",
+      "en": "questionnaires collected",
+      "pt": "questionários coletados"
+    },
+    {
+      "metric": "276",
+      "es": "cuestionarios válidos",
+      "en": "valid questionnaires",
+      "pt": "questionários válidos"
+    },
+    {
+      "metric": "50",
+      "es": "preguntas en instrumento",
+      "en": "questions in instrument",
+      "pt": "perguntas no instrumento"
+    },
+    {
+      "metric": "5",
+      "es": "carreras universitarias",
+      "en": "university degree programs",
+      "pt": "cursos universitários"
+    }
+  ],
+  "methodBody": {
+    "es": "Diseño transversal, no experimental y cuantitativo. Muestreo no probabilístico por conveniencia, aplicado presencialmente en clases de Periodismo, Ingeniería Comercial, Ingeniería Civil Plan Común, Pedagogía en Inglés y Pedagogía en Educación Parvularia. Cuestionario impreso de aproximadamente 20 minutos, digitalizado mediante una aplicación creada en R Shiny con Google Sheets. Procesamiento en RStudio, construcción de índices, alfa de Cronbach, análisis descriptivo, k-means (k=3), Kruskal–Wallis y regresión lineal múltiple.",
+    "en": "Cross-sectional, non-experimental quantitative design with non-probability convenience sampling. In-class surveys across Journalism, Business Engineering, Common Civil Engineering, English Education and Early Childhood Education. Approximately 20-minute printed questionnaire, digitized through a custom R Shiny application linked to Google Sheets. RStudio data cleaning, index construction, Cronbach's alpha, descriptive analysis, k-means (k=3), Kruskal–Wallis and multiple linear regression.",
+    "pt": "Desenho quantitativo transversal e não experimental, com amostragem por conveniência. Questionários presenciais em Jornalismo, Engenharia Comercial, Engenharia Civil (ciclo comum), Pedagogia em Inglês e Educação Infantil. Instrumento impresso de aproximadamente 20 minutos, digitado em aplicativo R Shiny conectado ao Google Sheets. Processamento em RStudio, índices, alfa de Cronbach, análise descritiva, k-means (k=3), Kruskal–Wallis e regressão linear múltipla."
+  },
+  "methodFoot": {
+    "es": "Las observaciones son anónimas. El diseño no permite inferir causalidad ni estimar proporciones para toda la población universitaria.",
+    "en": "Responses are anonymous. This design cannot establish causality or population-wide rates.",
+    "pt": "As respostas são anônimas. O desenho não permite estabelecer causalidade nem estimar taxas populacionais."
+  },
+  "framework": [
+    {
+      "author": "Pierre Bourdieu",
+      "book": "El sentido práctico",
+      "p": "11–12",
+      "es": "Habitus como disposiciones incorporadas: la revisión mecánica de dispositivos puede volverse práctica prerreflexiva.",
+      "en": "Habitus as embodied dispositions: checking devices can become a pre-reflective practice.",
+      "pt": "Habitus como disposições incorporadas: verificar dispositivos pode tornar-se prática pré-reflexiva."
+    },
+    {
+      "author": "Shoshana Zuboff",
+      "book": "La era del capitalismo de la vigilancia",
+      "p": "10–11",
+      "es": "Economías de acción: datos y estímulos orientan anticipación y modulación de comportamientos.",
+      "en": "Behavioral economies: data and feedback shape prediction and behavior modulation.",
+      "pt": "Economias de ação: dados e estímulos orientam a previsão e a modulação de comportamentos."
+    },
+    {
+      "author": "Jonathan Haidt",
+      "book": "The Anxious Generation",
+      "p": "7, 25–26",
+      "es": "Socialización digital temprana y desplazamiento de prácticas presenciales durante la adolescencia.",
+      "en": "Early digital socialization and the displacement of face-to-face developmental activities.",
+      "pt": "Socialização digital precoce e deslocamento das experiências presenciais na adolescência."
+    },
+    {
+      "author": "Yanis Varoufakis",
+      "book": "Technofeudalism",
+      "p": "10–11",
+      "es": "Crítica de las relaciones de poder en plataformas tecnológicas y acumulación de valor.",
+      "en": "A critique of platform power and the accumulation of digital economic value.",
+      "pt": "Crítica das relações de poder das plataformas e da acumulação de valor digital."
+    }
+  ],
+  "profiles": [
+    {
+      "percent": 26.1,
+      "id": "A",
+      "hours": "6,69",
+      "malestar": "14,62",
+      "name": {
+        "es": "Saturado-delegativo",
+        "en": "Saturated–delegative",
+        "pt": "Saturado-delegativo"
+      },
+      "text": {
+        "es": "Alta dependencia algorítmica, externalización cognitiva elevada y menor agencia epistémica relativa.",
+        "en": "High algorithmic dependency, substantial cognitive outsourcing and the lowest relative epistemic agency.",
+        "pt": "Alta dependência algorítmica, maior delegação cognitiva e menor agência epistêmica relativa."
+      }
+    },
+    {
+      "percent": 30.6,
+      "id": "B",
+      "hours": "8,22",
+      "malestar": "14,00",
+      "name": {
+        "es": "Hiperconectado-crítico",
+        "en": "Hyperconnected–critical",
+        "pt": "Hiperconectado-crítico"
+      },
+      "text": {
+        "es": "Mayor tiempo de pantalla, vigilancia crítica más alta y menor externalización; el malestar sigue elevado.",
+        "en": "Highest screen time, strongest critical scrutiny and lowest outsourcing; distress nevertheless remains high.",
+        "pt": "Maior tempo de tela, vigilância crítica mais alta e menor delegação; o mal-estar permanece elevado."
+      }
+    },
+    {
+      "percent": 43.3,
+      "id": "C",
+      "hours": "",
+      "malestar": "",
+      "name": {
+        "es": "Moderado-regulado",
+        "en": "Moderate–regulated",
+        "pt": "Moderado-regulado"
+      },
+      "text": {
+        "es": "Perfil mayoritario: valores más bajos en casi todas las dimensiones y menor deterioro observado.",
+        "en": "Largest group: lower values across most dimensions and the lowest observed distress.",
+        "pt": "Grupo majoritário: valores mais baixos em quase todas as dimensões e menor mal-estar observado."
+      }
+    }
+  ],
+  "results": [
+    {
+      "id": "delegacion",
+      "rows": [
+        {
+          "value": 55.6,
+          "label": {
+            "es": "Resume textos con IA",
+            "en": "Summarizes texts using AI",
+            "pt": "Resume textos com IA"
+          }
+        },
+        {
+          "value": 33.6,
+          "label": {
+            "es": "Delega planificación, redacción y revisión",
+            "en": "Delegates planning, drafting and revision",
+            "pt": "Delega planejamento, escrita e revisão"
+          }
+        },
+        {
+          "value": 17.7,
+          "label": {
+            "es": "Acepta información sin corroborarla",
+            "en": "Accepts information without checking",
+            "pt": "Aceita informação sem verificar"
+          }
+        }
+      ]
+    },
+    {
+      "id": "agencia",
+      "rows": [
+        {
+          "value": 69.7,
+          "label": {
+            "es": "Detecta errores de la IA",
+            "en": "Detects AI errors",
+            "pt": "Detecta erros da IA"
+          }
+        },
+        {
+          "value": 64.6,
+          "label": {
+            "es": "Verifica citas en fuentes originales",
+            "en": "Checks citations against original sources",
+            "pt": "Verifica citações nas fontes originais"
+          }
+        },
+        {
+          "value": 56.3,
+          "label": {
+            "es": "Reescribe con estilo propio",
+            "en": "Rewrites in their own voice",
+            "pt": "Reescreve com estilo próprio"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dependencia",
+      "rows": [
+        {
+          "value": 71.8,
+          "label": {
+            "es": "Navega más tiempo del planeado",
+            "en": "Scrolls longer than intended",
+            "pt": "Navega além do tempo planejado"
+          }
+        },
+        {
+          "value": 50.5,
+          "label": {
+            "es": "Percibe afectación del rendimiento",
+            "en": "Reports academic performance being affected",
+            "pt": "Relata prejuízo no desempenho acadêmico"
+          }
+        },
+        {
+          "value": 45.8,
+          "label": {
+            "es": "Revisa mecánicamente el dispositivo",
+            "en": "Mechanically checks their device",
+            "pt": "Verifica o dispositivo mecanicamente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bienestar",
+      "rows": [
+        {
+          "value": 58.1,
+          "label": {
+            "es": "Cansancio físico asociado a pantallas",
+            "en": "Physical tiredness linked to screens",
+            "pt": "Cansaço físico associado às telas"
+          }
+        },
+        {
+          "value": 65.7,
+          "label": {
+            "es": "Usaría herramientas de bienestar digital",
+            "en": "Would use digital wellbeing tools",
+            "pt": "Usaria ferramentas de bem-estar digital"
+          }
+        },
+        {
+          "value": 64.3,
+          "label": {
+            "es": "Rechaza que IA sustituya a docentes",
+            "en": "Rejects AI replacing teachers",
+            "pt": "Rejeita IA substituindo docentes"
+          }
+        }
+      ]
+    }
+  ],
+  "modelRows": [
+    {
+      "factor": {
+        "es": "Uso compulsivo (IDA)",
+        "en": "Compulsive device use (IDA)",
+        "pt": "Uso compulsivo (IDA)"
+      },
+      "b": "1,07",
+      "p": "< .001",
+      "sig": true
+    },
+    {
+      "factor": {
+        "es": "Género (mujer)",
+        "en": "Gender (woman)",
+        "pt": "Gênero (mulher)"
+      },
+      "b": "1,76",
+      "p": "< .001",
+      "sig": true
+    },
+    {
+      "factor": {
+        "es": "Tiempo de pantalla",
+        "en": "Screen time",
+        "pt": "Tempo de tela"
+      },
+      "b": "—",
+      "p": "n. s.",
+      "sig": false
+    },
+    {
+      "factor": {
+        "es": "Externalización cognitiva",
+        "en": "Cognitive outsourcing",
+        "pt": "Delegação cognitiva"
+      },
+      "b": "—",
+      "p": "n. s.",
+      "sig": false
+    },
+    {
+      "factor": {
+        "es": "Vulnerabilidad socioeconómica",
+        "en": "Socioeconomic vulnerability",
+        "pt": "Vulnerabilidade socioeconômica"
+      },
+      "b": "—",
+      "p": "n. s.",
+      "sig": false
+    },
+    {
+      "factor": {
+        "es": "Capital cultural parental",
+        "en": "Parental cultural capital",
+        "pt": "Capital cultural parental"
+      },
+      "b": "—",
+      "p": "n. s.",
+      "sig": false
+    }
+  ],
+  "modelStats": {
+    "r2": ".198",
+    "p": "< .001",
+    "kruskal": "χ²=61,71; gl=2"
+  },
+  "discussion": [
+    {
+      "es": "La tipología cuestiona la equivalencia entre exposición y daño: el perfil de mayor tiempo de pantalla no es el que concentra mayor deterioro. El patrón compulsivo parece distinguir mejor los grados de malestar que las horas conectadas.",
+      "en": "The profiles challenge any simple equation between exposure and harm: the highest-screen-time group is not the group with the highest distress. Compulsive use better distinguishes reported distress than hours online.",
+      "pt": "A tipologia questiona a equivalência entre exposição e dano: o grupo com maior tempo de tela não registra o maior mal-estar. O padrão compulsivo diferencia melhor os níveis de sofrimento do que as horas conectadas."
+    },
+    {
+      "es": "La agencia epistémica es frecuente y coexiste con comportamientos delegativos. Saber identificar errores de la IA no es, en esta muestra, garantía de menor malestar cuando también hay dependencia compulsiva del dispositivo.",
+      "en": "Epistemic agency is common and coexists with delegation. Recognizing AI errors is not, in this sample, a guarantee of lower distress when compulsive device use is also present.",
+      "pt": "A agência epistêmica é frequente e convive com delegação. Identificar erros de IA não garante menor mal-estar nesta amostra quando também existe uso compulsivo."
+    },
+    {
+      "es": "El género femenino presentó una asociación significativa con el índice de deterioro, mientras que la vulnerabilidad y el capital cultural parental no la presentaron en este modelo. Ello no demuestra que el origen social sea irrelevante ni identifica mecanismos causales.",
+      "en": "Female gender was significantly associated with the distress index, whereas socioeconomic vulnerability and parental cultural capital were not in this model. This does not prove social background is irrelevant or identify causal mechanisms.",
+      "pt": "O gênero feminino apresentou associação significativa com o índice de mal-estar, enquanto vulnerabilidade e capital cultural parental não apresentaram, neste modelo. Isso não prova irrelevância da origem social nem identifica mecanismos causais."
+    }
+  ],
+  "conclusions": [
+    {
+      "es": "Los perfiles tecnológicos son configuraciones de disposiciones, no una escala de «más o menos pantallas».",
+      "en": "Technological profiles are configurations of dispositions, not a simple more-or-less screen scale.",
+      "pt": "Perfis tecnológicos são configurações de disposições, não uma escala de mais ou menos tela."
+    },
+    {
+      "es": "Las asociaciones sugieren estudiar la compulsividad antes que usar el tiempo de pantalla como indicador suficiente.",
+      "en": "Associations point to compulsivity as a better research focus than screen time alone.",
+      "pt": "As associações sugerem investigar a compulsividade, e não apenas o tempo de tela."
+    },
+    {
+      "es": "La aceptación de apoyos digitales convive con el rechazo a sustituir vínculos docentes: complemento, no reemplazo.",
+      "en": "Openness to digital tools coexists with rejection of replacing teachers: complement, not substitute.",
+      "pt": "Aceitação de ferramentas digitais convive com rejeição à substituição de docentes: complemento, não substituto."
+    },
+    {
+      "es": "Se requiere investigación longitudinal y evaluación de intervenciones para probar mecanismos, estabilidad y eficacia.",
+      "en": "Longitudinal research and intervention evaluation are needed to test mechanisms, profile stability and efficacy.",
+      "pt": "Pesquisas longitudinais e avaliações de intervenções são necessárias para testar mecanismos, estabilidade e eficácia."
+    }
+  ],
+  "limitations": {
+    "es": "Muestra no probabilística por conveniencia en una única universidad; medición transversal; resultados correlacionales y exploratorios; estimaciones dependientes de la construcción de índices. El IDA presenta alfa de Cronbach = 0,659 (por debajo de 0,70), por lo que sus estimaciones requieren especial cautela. Algunas tablas del documento muestran N válidos por ítem que no concuerdan plenamente con el N general y deben revisarse antes de una publicación científica definitiva.",
+    "en": "Non-probability convenience sample from one university; cross-sectional measurement; correlational and exploratory results; estimates depend on index construction. IDA reliability is Cronbach's alpha = 0.659 (below 0.70), requiring special caution. Some item-level valid counts in the original tables do not fully reconcile with the overall sample and require review before formal scientific publication.",
+    "pt": "Amostra por conveniência em uma universidade; desenho transversal; resultados correlacionais e exploratórios; estimativas dependentes da construção de índices. O IDA apresenta alfa de Cronbach = 0,659 (abaixo de 0,70), exigindo cautela. Algumas contagens válidas por item não coincidem totalmente com o N geral, devendo ser revisadas antes de publicação científica definitiva."
+  },
+  "books": [
+    {
+      "author": "Pierre Bourdieu",
+      "title": "El sentido práctico",
+      "year": "2007",
+      "isbn": "9789871220847",
+      "url": "https://www.flacso.edu.ec/biblio/shared/biblio_view.php?bibid=107301&tab=opac",
+      "purpose": {
+        "es": "Disposiciones y prácticas incorporadas",
+        "en": "Embodied dispositions and practices",
+        "pt": "Disposições e práticas incorporadas"
+      }
+    },
+    {
+      "author": "Shoshana Zuboff",
+      "title": "La era del capitalismo de la vigilancia",
+      "year": "2020",
+      "isbn": "9788449336935",
+      "url": "https://openlibrary.org/books/OL32186458M/La_era_del_capitalismo_de_la_vigilancia",
+      "purpose": {
+        "es": "Economías de acción y captura de comportamiento",
+        "en": "Behavioral economies and data extraction",
+        "pt": "Economias de ação e extração de comportamento"
+      }
+    },
+    {
+      "author": "Jonathan Haidt",
+      "title": "La generación ansiosa",
+      "year": "2024",
+      "isbn": "9788423437290",
+      "url": "https://www.casadellibro.com/libro-la-generacion-ansiosa/9788423437290/15922072",
+      "purpose": {
+        "es": "Infancia mediada por el teléfono y socialización digital",
+        "en": "Phone-based childhood and digital socialization",
+        "pt": "Infância mediada por celulares e socialização digital"
+      }
+    },
+    {
+      "author": "Yanis Varoufakis",
+      "title": "Tecnofeudalismo",
+      "year": "2023/2024",
+      "isbn": "9788423436750",
+      "url": "https://www.casadellibro.com/libro-tecnofeudalismo/9788423436750/14434238",
+      "purpose": {
+        "es": "Poder económico y plataformas digitales",
+        "en": "Economic power and digital platforms",
+        "pt": "Poder econômico e plataformas digitais"
+      }
+    }
+  ],
+  "sourcePages": {
+    "intro": "3–6",
+    "question": "5–6",
+    "framework": "7–13",
+    "method": "14–15",
+    "results": "16–30",
+    "model": "30–31",
+    "discussion": "31–33",
+    "conclusions": "34–36"
+  },
+  "connection": {
+    "es": "El seminario fundamentó un interés por proteger la autonomía de los estudiantes ante interfaces que pueden favorecer la delegación del esfuerzo cognitivo. Sustancia recoge esa inquietud en otro campo concreto —la enseñanza de estadística— y ensaya una arquitectura en la que el estudiante interpreta antes de recibir retroalimentación. No se afirma que la investigación haya validado Sustancia ni que sea una intervención de salud mental.",
+    "en": "The thesis motivated an interest in protecting students' autonomy against interfaces that may encourage outsourcing cognitive effort. Sustancia extends this concern to a specific domain —statistics education— by testing a design where learners interpret before receiving feedback. The thesis did not validate Sustancia, nor is Sustancia a mental-health intervention.",
+    "pt": "O seminário motivou a preocupação com a autonomia de estudantes diante de interfaces que favorecem a delegação do esforço cognitivo. O Sustancia leva essa questão ao ensino de estatística, propondo que o estudante interprete antes de receber feedback. A pesquisa não validou o Sustancia, que também não é uma intervenção de saúde mental."
+  }
+}
