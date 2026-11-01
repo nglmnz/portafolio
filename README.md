@@ -2,6 +2,19 @@
 
 Portafolio independiente de **Vitrina**, orientado a oportunidades de prácticas, investigación aplicada, análisis de datos, sostenibilidad e innovación en Bilbao/Euskadi.
 
+## CESI 2025 · Identidad y archivo institucional (actualización 2026-11-01)
+
+La página `cesi/index.html` adopta la paleta extraída de la identidad original CESI: verde turquesa `#00C892`, menta clara `#99D7C9`, tinta oscura y blanco. Incluye:
+
+- **19 biografías** breves ES/EN/PT en `cesi/assets/artistas.json`, con referencias y nivel de verificación para evitar atribuciones inventadas. Los perfiles se muestran en las tarjetas del lineup.
+- **Misión, visión y 11 valores guía**, **10 componentes de la estructura organizativa** (dirección, comisiones y comité asesor) y **cuatro unidades patrocinadoras**, con enlaces oficiales, a partir del Informe CESI 2025, pp. 10–16.
+- **Red interactiva de 57 instituciones**, transcrita del gráfico aportado `pdf_circular.pdf` y guardada en `cesi/assets/instituciones.json`. El radial animado permite identificar los nodos y se acompaña de un listado filtrable y buscador accesible.
+- **Patrocinio no es afiliación de asistentes.** Los 57 nombres describen procedencia/representación institucional según el gráfico de la organización, sin suponer convenios, aportes o patrocinios.
+- **Enlace directo al sitio original**: https://csociales.uahurtado.cl/cesi2025/.
+- Animaciones de muy bajo impacto visual y compatibilidad con `prefers-reduced-motion`; los nombres siguen disponibles en texto, para evitar depender del color.
+
+Las biografías marcadas como basadas en datos de la organización requieren comprobación documental adicional antes de ampliar sus afirmaciones. Los vínculos de algunos artistas son enlaces proporcionados que pueden cambiar con el tiempo.
+
 ## Publicación
 
 - Repositorio: https://github.com/nglmnz/portafolio
