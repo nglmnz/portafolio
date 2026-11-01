@@ -1,11 +1,14 @@
 (function(){
 "use strict";
 const valid=["es","en","pt"];let lang=new URLSearchParams(location.search).get("lang")||"es";if(!valid.includes(lang))lang="es";
-const root=document.getElementById("fondecyt-app");let data=null,gallery=null,threadIndex=0,mediaFilter="all";
+const root=document.getElementById("fondecyt-app");let data=null,gallery=null,threadIndex=0,mediaFilter="all",photoCategory="all",photoLimit=12,cleanupHero=null;
 const locale={
 es:{back:"Portafolio",research:"Proyecto de investigación",role:"Participación personal",approach:"Contexto y enfoque",methods:"Cómo una investigación se convierte en exposición",threads:"Cuatro hilos para recorrer la muestra",chronology:"Del trabajo de campo a la circulación pública",team:"Créditos y responsabilidades",media:"Documentación, prensa y material audiovisual",visual:"Archivo visual del encuentro",ethic:"Una nota sobre ética y autoría",goSite:"Conocer el proyecto",read:"Ver fuente original",full:"Explorar exposición",sources:"Fuentes verificadas y materiales complementarios",thesis:"Volver al portafolio",photo:"Fotografías por incorporar",noPhoto:"El registro fotográfico se añadirá en una segunda etapa, con créditos y autorización de uso.",other:"Material compartido, por cotejar",sourceCats:{all:"Todos",research:"Investigación",exhibition:"Exposición",press:"Prensa",audiovisual:"Audiovisual",international:"Proyección internacional",social:"Redes",other:"Otros"},verified:"Información cotejada",pending:"Material aportado · pendiente de cotejo",index:"Ejes de la exposición",prev:"Anterior",next:"Siguiente",source:"Leer publicación original",attribution:"Responsabilidades documentadas",photoSource:"Archivo de imágenes",photoCredit:"Créditos por documentar",researchContext:"FONDECYT Regular N.º 1220508",ourWork:"Colaboración externa",discover:"Descubrir los cuatro hilos",sourceWarning:"Los enlaces no verificados se conservan como recursos facilitados, sin atribuirles un contenido o autoría específicos.",workScope:"Mi participación",projectScope:"El proyecto colectivo",metaNotice:"Este portafolio es una presentación profesional independiente. No sustituye el sitio oficial del proyecto ni constituye una publicación institucional de la UPLA o ANID.",privacy:"Los materiales sensibles de participantes y sobrevivientes requieren autorización y revisión ética antes de exhibirse.",photosAvailable:"Fotografías incorporadas",photoCaption:"Abrir fotografía",sourceText:"Consulta la publicación original para obtener detalles, créditos y contexto.",credits:"Equipo e instituciones",exhibit:"Exposición pública",international:"Difusión internacional"},
 en:{back:"Portfolio",research:"Research project",role:"Individual contribution",approach:"Context and approach",methods:"From research to an exhibition",threads:"Four threads through the exhibition",chronology:"From research to public circulation",team:"Credits and responsibilities",media:"Reporting, press and audiovisual material",visual:"Event's visual archive",ethic:"A note on ethics and authorship",goSite:"Visit the research project",read:"Open original source",full:"Explore exhibition",sources:"Verified reporting and supplementary material",thesis:"Back to portfolio",photo:"Photographs forthcoming",noPhoto:"Photographs will be added later with verified credits and usage permissions.",other:"Shared material, awaiting review",sourceCats:{all:"All",research:"Research",exhibition:"Exhibition",press:"Press",audiovisual:"Audiovisual",international:"International",social:"Social",other:"Other"},verified:"Source verified",pending:"Submitted link · content not independently checked",index:"Exhibition themes",prev:"Previous",next:"Next",source:"Original publication",attribution:"Documented responsibilities",photoSource:"Photo archive",photoCredit:"Credits pending",researchContext:"FONDECYT Regular 1220508",ourWork:"External collaboration",discover:"Explore four threads",sourceWarning:"Unverified links are retained as submitted resources without claims about specific content or authorship.",workScope:"My contribution",projectScope:"Collective project",metaNotice:"This is an independent professional portfolio, not an official UPLA or ANID publication.",privacy:"Sensitive material from research participants and survivors requires authorization and ethical review before publication.",photosAvailable:"Photos added",photoCaption:"View photograph",sourceText:"See the original publication for full credits and context.",credits:"Team and institutions",exhibit:"Public exhibition",international:"International dissemination"},
 pt:{back:"Portfólio",research:"Projeto de pesquisa",role:"Participação individual",approach:"Contexto e abordagem",methods:"Da pesquisa à exposição",threads:"Quatro fios para percorrer a exposição",chronology:"Da pesquisa à circulação pública",team:"Créditos e responsabilidades",media:"Documentação, imprensa e audiovisual",visual:"Arquivo visual do encontro",ethic:"Nota sobre ética e autoria",goSite:"Conhecer o projeto",read:"Abrir fonte original",full:"Explorar exposição",sources:"Fontes verificadas e material complementar",thesis:"Voltar ao portfólio",photo:"Fotografias a acrescentar",noPhoto:"As fotografias serão acrescentadas com créditos e permissões de uso.",other:"Material compartilhado, pendente de análise",sourceCats:{all:"Todos",research:"Pesquisa",exhibition:"Exposição",press:"Imprensa",audiovisual:"Audiovisual",international:"Internacional",social:"Redes",other:"Outros"},verified:"Fonte verificada",pending:"Link compartilhado · conteúdo não verificado",index:"Eixos da exposição",prev:"Anterior",next:"Próximo",source:"Publicação original",attribution:"Responsabilidades documentadas",photoSource:"Arquivo de imagens",photoCredit:"Créditos pendentes",researchContext:"FONDECYT Regular N.º 1220508",ourWork:"Colaboração externa",discover:"Descobrir os quatro fios",sourceWarning:"Links não verificados são mantidos como recursos fornecidos, sem inferir conteúdo ou autoria.",workScope:"Minha participação",projectScope:"Projeto coletivo",metaNotice:"Este portfólio independente não substitui o site oficial do projeto e não é publicação institucional da UPLA ou ANID.",privacy:"Materiais sensíveis de participantes e sobreviventes exigem autorização e revisão ética antes de publicar.",photosAvailable:"Fotos incorporadas",photoCaption:"Abrir fotografia",sourceText:"Confira a publicação original para créditos e contexto.",credits:"Equipe e instituições",exhibit:"Exposição pública",international:"Divulgação internacional"}};
+Object.assign(locale.es,{"fundLabel":"INVESTIGACIÓN FONDECYT REGULAR N.º 1220508","heroGroup":"Fotografías de Hilvanar en el auditorio UPLA","heroPrev":"Imagen anterior","heroNext":"Imagen siguiente","heroPlay":"Reproducir imágenes","heroPause":"Pausar imágenes","myMed":"Mi participación en la mediación","pathPhoto":"Del auditorio a la exposición","pathIntro":"El encuentro continuó fuera del auditorio: un recorrido colectivo por la exposición y actividades de diálogo y memoria.","visualGroup":"Recorrido fotográfico"});
+Object.assign(locale.en,{"fundLabel":"FONDECYT REGULAR RESEARCH PROJECT NO. 1220508","heroGroup":"Hilvanar auditorium photography at UPLA","heroPrev":"Previous image","heroNext":"Next image","heroPlay":"Play slides","heroPause":"Pause slides","myMed":"My public mediation","pathPhoto":"From the auditorium to the exhibition","pathIntro":"The event continued beyond the auditorium through an exhibition walk and public conversations.","visualGroup":"Photo journey"});
+Object.assign(locale.pt,{"fundLabel":"PROJETO DE PESQUISA FONDECYT REGULAR N.º 1220508","heroGroup":"Fotos de Hilvanar no auditório UPLA","heroPrev":"Imagem anterior","heroNext":"Próxima imagem","heroPlay":"Reproduzir imagens","heroPause":"Pausar imagens","myMed":"Minha mediação pública","pathPhoto":"Do auditório à exposição","pathIntro":"O evento continuou além do auditório com um percurso pela exposição e conversas com o público.","visualGroup":"Percurso fotográfico"});
 const i=k=>locale[lang][k]??locale.es[k]??k;
 const tr=v=>typeof v==="string"?v:v?.[lang]??v?.es??"";
 const node=(tag,cl,txt)=>{let n=document.createElement(tag);if(cl)n.className=cl;if(txt!==undefined&&txt!==null)n.textContent=String(txt);return n};
@@ -15,7 +18,10 @@ const para=(s,cl="")=>node("p",cl,s);
 const a=(s,href,cl="")=>{let el=node("a",cl,s);el.href=href;if(/^https?:\/\//.test(href)){el.target="_blank";el.rel="noopener noreferrer"}return el};
 const b=(s,click,cl="",on=false)=>{let el=node("button",cl,s);el.type="button";el.setAttribute("aria-pressed",String(on));el.addEventListener("click",click);return el};
 const section=(id,kicker,title,lead)=>{let x=node("section","case-section");x.id=id;let body=node("div","case-shell");append(body,node("span","kicker",kicker),h(title));if(lead)append(body,para(lead,"section-intro"));append(x,body);root.appendChild(x);return body};
+const publicPhotos=()=>Array.isArray(gallery?.images)?gallery.images.filter(x=>x.visibility==="public_event"&&!x.sensitive&&typeof x.src==="string"):[];
+const photoUrl=x=>"assets/"+encodeURIComponent(typeof x==="string"?x:x.src);
 function render(){
+if(cleanupHero){cleanupHero();cleanupHero=null}
 document.documentElement.lang=lang;document.title="Hilvanar · FONDECYT 1220508 · Ángel Muñoz";root.replaceChildren();
 const nav=node("header","topbar"),bar=node("div","case-shell bar-inner"),right=node("nav","bar-links");
 right.setAttribute("aria-label","Portfolio navigation");
@@ -23,14 +29,38 @@ append(right,a(i("back"),"../?lang="+lang),a(i("goSite"),"https://violenciasyres
 const langs=node("div","langs");
 ["es","en","pt"].forEach(l=>append(langs,b(l.toUpperCase(),()=>{lang=l;history.replaceState(null,"",location.pathname+"?lang="+lang+location.hash);render()}, "",lang===l)));
 append(right,langs);append(bar,a("ÁNGEL / MUÑOZ","../?lang="+lang,"brand"),right);append(nav,bar);root.appendChild(nav);
-const hero=node("section","hero"),heroShell=node("div","case-shell hero-inner"),copy=node("div","hero-copy"),orn=node("div","hero-art");
-orn.setAttribute("aria-hidden","true");
-for(let j=0;j<4;j++)append(orn,node("span","thread-line line-"+j));
-append(orn,node("span","thread-knot"));
-append(copy,node("span","kicker",i("research")+" · 2022–2026"),h(tr(data.headline),1),para(tr(data.intro),"hero-lead"),para(tr(data.subtitle),"hero-role"));
-const actions=node("div","hero-actions");
-append(actions,a(i("discover"),"#hilos","action primary"),a(i("goSite"),"https://violenciasyresistencias.cl/","action"));
-append(copy,actions);append(heroShell,copy,orn);append(hero,heroShell);root.append(hero);
+const hero=node("section","hero"),heroShell=node("div","case-shell hero-inner"),copy=node("div","hero-copy");
+append(copy,node("span","kicker",i("fundLabel")+" · UPLA · 2026"),h(tr(data.headline),1),para(tr(data.intro),"hero-lead"),para(tr(data.subtitle),"hero-role"));
+const actions=node("div","hero-actions");append(actions,a(i("discover"),"#hilos","action primary"),a(i("goSite"),"https://violenciasyresistencias.cl/","action"));append(copy,actions);
+const showcase=node("div","hero-photo-showcase");showcase.setAttribute("role","group");showcase.setAttribute("aria-label",i("heroGroup"));
+const stage=node("div","hero-photo-stage"),labelbox=node("div","hero-photo-bottom"),buttons=node("div","hero-photo-controls");
+const heroPhotos=Array.isArray(gallery?.hero)?gallery.hero:[],photoInfo=gallery?.images||[];
+const slideEls=heroPhotos.map((file,j)=>{const x=node("div","hero-photo-slide"+(j===0?" is-current":""));x.setAttribute("aria-hidden",String(j!==0));const img=node("img");img.src=photoUrl(file.src);img.alt=tr(photoInfo.find(p=>p.src===file.src)?.alt)||i("heroGroup");img.loading=j?"lazy":"eager";img.decoding="async";if(!j)img.setAttribute("fetchpriority","high");append(x,img);append(stage,x);return x;});
+const labelText=node("div","hero-photo-caption"),count=node("span","hero-photo-counter");
+append(labelbox,labelText,count);
+let heroIndex=0,heroPlaying=false,heroVisible=false,manualPause=false,timer=null,obs=null,dead=false;
+const reduced=typeof window.matchMedia==="function"&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const prev=b("←",()=>jump(heroIndex-1),"hero-photo-button"),play=b("▶",()=>{if(heroPlaying){manualPause=true;stop()}else{manualPause=false;start()}}, "hero-photo-button"),next=b("→",()=>jump(heroIndex+1),"hero-photo-button");
+prev.setAttribute("aria-label",i("heroPrev"));next.setAttribute("aria-label",i("heroNext"));
+const dots=node("div","hero-photo-dots"),dotEls=heroPhotos.map((x,j)=>{const button=b(String(j+1).padStart(2,"0"),()=>jump(j),"hero-photo-dot",j===0);append(dots,button);return button});
+append(buttons,prev,play,next,dots);append(showcase,stage,labelbox,buttons);append(heroShell,copy,showcase);append(hero,heroShell);root.append(hero);
+function paint(){
+ slideEls.forEach((x,j)=>{x.classList.toggle("is-current",j===heroIndex);x.setAttribute("aria-hidden",String(j!==heroIndex))});
+ dotEls.forEach((x,j)=>x.setAttribute("aria-pressed",String(j===heroIndex)));
+ labelText.textContent=heroPhotos[heroIndex]?tr(heroPhotos[heroIndex].caption):i("heroGroup");
+ count.textContent=String(heroIndex+1).padStart(2,"0")+" / "+String(heroPhotos.length).padStart(2,"0");
+ play.textContent=heroPlaying?"Ⅱ":"▶";play.setAttribute("aria-label",i(heroPlaying?"heroPause":"heroPlay"));
+}
+function stop(){if(timer!==null){clearTimeout(timer);timer=null}heroPlaying=false;paint()}
+function tick(){if(timer!==null)clearTimeout(timer);if(heroPlaying&&!dead&&!document.hidden&&heroVisible&&heroPhotos.length>1)timer=setTimeout(()=>{heroIndex=(heroIndex+1)%heroPhotos.length;paint();tick()},5400)}
+function start(){if(dead||document.hidden||heroPhotos.length<2)return;heroVisible=true;heroPlaying=true;paint();tick()}
+function jump(n){heroIndex=(n+heroPhotos.length)%heroPhotos.length;paint();if(heroPlaying)tick()}
+const visible=()=>{if(document.hidden)stop();else if(heroVisible&&!manualPause&&!reduced)start()};
+document.addEventListener("visibilitychange",visible);
+if("IntersectionObserver" in window){obs=new IntersectionObserver(entries=>{heroVisible=entries.some(e=>e.isIntersecting);if(heroVisible&&!reduced&&!manualPause)start();else stop()},{threshold:.2});obs.observe(showcase)}
+else{heroVisible=true;if(!reduced)start()}
+if(reduced)manualPause=true;paint();
+cleanupHero=()=>{dead=true;if(timer!==null)clearTimeout(timer);document.removeEventListener("visibilitychange",visible);obs?.disconnect()};
 const stats=node("div","case-shell keyfacts");
 [[data.meta.project,"ANID · 2022–2026"],["15.04 — 15.05",i("exhibit")+" · 2026"],["4",i("index")],["12.06",i("international")+" · UAB 2026"]].forEach(([num,lab])=>{let c=node("div","fact");append(c,node("strong","",num),node("span","",lab));append(stats,c)});
 root.append(stats);
@@ -41,6 +71,16 @@ append(collective,node("span","kicker",i("projectScope")),h(i("researchContext")
 let my=node("article","scope-card my-card");
 append(my,node("span","kicker",i("workScope")),h(tr(data.role.title),3),para(tr(data.role.statement)),para(tr(data.role.scope),"scope-caveat"));
 append(scope,collective,my);append(project,scope);
+const me=publicPhotos().filter(x=>x.featured);
+if(me.length){
+ const feature=node("section","mediator-feature");feature.id="mi-mediacion";
+ const shell=node("div","case-shell"),intro=node("div","mediator-text");
+ append(intro,node("span","kicker",i("myMed")+" · FONDECYT 1220508"),h(tr(data.role.photographicTitle),2),para(tr(data.role.photographicText),"mediator-lead"),para(tr(data.role.photoNote),"mediator-note"));
+ const photos=node("div","mediator-photos");
+ me.slice(0,3).forEach((item,j)=>{const figure=node("figure","mediator-photo"+(j===0?" main":"")),img=node("img");img.src=photoUrl(item);img.alt=tr(item.alt);img.loading="lazy";img.decoding="async";append(figure,img,node("figcaption","",tr(item.caption)));append(photos,figure)});
+ append(shell,intro,photos);append(feature,shell);root.append(feature);
+}
+
 const question=section("metodo","02 / "+i("methods"),i("methods"),tr(data.method.response));
 const heroQuestion=node("blockquote","big-question",tr(data.method.question));
 append(question,heroQuestion);
@@ -55,6 +95,15 @@ const timeline=section("cronologia","04 / "+i("chronology"),i("chronology"));
 const axis=node("div","timeline");
 data.timeline.forEach((x,k)=>{let row=node("article","moment"),time=node("div","moment-date",x.date),body=node("div","moment-body");append(body,h(tr(x.label),3),para(tr(x.detail)));if(x.url)append(body,a(i("source")+" ↗",x.url,"source-link"));append(row,time,body);append(axis,row)});
 append(timeline,axis);
+const storyImgs=[publicPhotos().find(x=>x.category==="recorrido"),publicPhotos().find(x=>x.src==="exhibicion-entrada.webp"),publicPhotos().find(x=>x.category==="actividades")].filter(Boolean);
+if(storyImgs.length){
+ const walking=node("section","walk-photo-essay"),inner=node("div","case-shell");
+ append(inner,node("span","kicker",i("visualGroup")),h(i("pathPhoto"),2),para(i("pathIntro"),"section-intro"));
+ const flow=node("div","walk-photo-grid");
+ storyImgs.forEach((item,j)=>{const fig=node("figure","walk-photo"+(j===1?" tall":"")),img=node("img");img.src=photoUrl(item);img.alt=tr(item.alt);img.loading="lazy";append(fig,img,node("figcaption","",tr(item.caption)));append(flow,fig)});
+ append(inner,flow);append(walking,inner);root.append(walking);
+}
+
 const credits=section("equipo","05 / "+i("credits"),i("team"),lang==="es"?"Se conserva la autoría y responsabilidad de la investigación, la curaduría y las funciones de colaboración.":lang==="en"?"Research, curation and collaboration roles are carefully distinguished.":"São diferenciadas as responsabilidades pela pesquisa, pela curadoria e pela colaboração.");
 let creditGrid=node("div","credit-grid");
 data.credits.forEach(p=>{let x=node("article","credit-card");append(x,h(p.name,3),para(tr(p.role)));if(p.link)append(x,a(i("read")+" ↗",p.link,"source-link"));append(creditGrid,x)});
