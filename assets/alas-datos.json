@@ -523,14 +523,44 @@
         "pt": "Entrevista com pesquisador do IESP-UERJ e integrante da organização"
       },
       "body": {
-        "es": "La nota que preparé recoge su reflexión sobre formatos de diálogo más abiertos, la necesidad de elaborar categorías propias ante la policrisis latinoamericana y el lugar del territorio en disputas por agua, tierra, minerales, cuerpos y conocimientos. El video original y una pista de audio cercana están pendientes de sincronización. Las frases textuales se cotejarán con esa grabación antes de publicarse como citas verificadas.",
-        "en": "My draft discusses his views on open debate formats, Latin American approaches to polycrisis and territory as a focus of conflicts over water, land, minerals, bodies and knowledge. The interview video and close microphone track still require synchronization; direct quotations will be checked against the recording.",
-        "pt": "A reportagem aborda formatos de diálogo abertos, abordagens latino-americanas da policrise e a centralidade do território em disputas por água, terra, minerais, corpos e saberes. As gravações de vídeo e áudio ainda precisam ser sincronizadas; citações diretas aguardam conferência."
+        "es": "La nota periodística que preparé recoge su reflexión sobre la policrisis latinoamericana, los formatos de diálogo y el giro ecoterritorial. He publicado un video breve de esta entrevista en YouTube Shorts, enlazado aquí para consultar el registro audiovisual. Las interpretaciones del reportaje se distinguen de las citas textuales, que no se reproducen sin cotejo con la grabación.",
+        "en": "My original report discusses Latin American polycrisis, new dialogue formats and the ecoterritorial turn. A short video from the interview is now published on YouTube Shorts and linked here as audiovisual documentation. The report's interpretation is not represented as an independently checked verbatim transcript.",
+        "pt": "Minha reportagem aborda a policrise latino-americana, os formatos de diálogo e o giro ecoterritorial. Um vídeo curto da entrevista está publicado no YouTube Shorts e acessível aqui. As interpretações da reportagem não são apresentadas como transcrição literal conferida."
       },
       "status": {
-        "es": "Grabación original sin editar; no se presenta como video publicado",
-        "en": "Original recording not yet edited or published",
-        "pt": "Gravação original ainda não editada nem publicada"
+        "es": "Video disponible · entrevista publicada en YouTube Shorts",
+        "en": "Video available · interview published on YouTube Shorts",
+        "pt": "Vídeo disponível · entrevista publicada no YouTube Shorts"
+      },
+      "video": {
+        "id": "yuRdUqAh87I",
+        "url": "https://www.youtube.com/shorts/yuRdUqAh87I",
+        "embed": "https://www.youtube-nocookie.com/embed/yuRdUqAh87I",
+        "title": {
+          "es": "Breno Bringel · entrevista en ALAS 2026",
+          "en": "Breno Bringel · ALAS 2026 interview",
+          "pt": "Breno Bringel · entrevista na ALAS 2026"
+        },
+        "button": {
+          "es": "Reproducir entrevista",
+          "en": "Play interview",
+          "pt": "Reproduzir entrevista"
+        },
+        "privacy": {
+          "es": "Al reproducir, el video se cargará desde YouTube (Google), un proveedor externo.",
+          "en": "Playing this video loads a YouTube (Google) embed from an external provider.",
+          "pt": "Ao reproduzir, um vídeo do YouTube (Google) será carregado como serviço externo."
+        },
+        "external": {
+          "es": "Abrir directamente en YouTube ↗",
+          "en": "Open directly on YouTube ↗",
+          "pt": "Abrir diretamente no YouTube ↗"
+        },
+        "note": {
+          "es": "Enlace facilitado por el corresponsal. Se presenta como video publicado, no como transcripción completa ni como verificación independiente de su contenido.",
+          "en": "Video link supplied by the correspondent; it is not treated as a full transcript or independently verified interview content.",
+          "pt": "Link fornecido pelo correspondente; não se apresenta como transcrição completa nem verificação independente do conteúdo."
+        }
       }
     },
     "disclaimer": {
