@@ -1,11 +1,14 @@
 (()=>{"use strict";
 const app=document.getElementById("case-app"),kind=document.body.dataset.case;
 let language=new URLSearchParams(location.search).get("lang")||"es";if(!["es","en","pt"].includes(language))language="es";
-let data=null,album=null,selected=0,filter="all";
+let data=null,album=null,selected=0,filter="all",photoLimit=9;
 const UI={
 es:{back:"Portafolio",orig:"Fuente original",about:"Contexto",role:"Mi contribución",people:"Participantes UAH documentados por el corresponsal",themes:"Debates que marcaron el congreso",archive:"Materiales de referencia",photos:"Archivo fotográfico",sources:"Fuentes públicas",limitations:"Alcances y fuentes",more:"Consultar fuente ↗",themesK:"AGENDA SOCIOLÓGICA",what:"Labor de cobertura",photoEmpty:"Las fotografías y entrevistas se incorporarán cuando se suban los archivos originales, con créditos verificados.",fileHelp:"Carpeta preparada para fotografías",galleryAll:"Todas",cases:"Explorar otros proyectos",film:"Películas y conversaciones",timeline:"Una historia cinematográfica que llega a la universidad",collabs:"Actriz, organizaciones y productora",discussion:"Preguntas que abrió la actividad",moment:"Jornada",filmDetail:"Película proyectada",dialogue:"Encuentro con la comunidad",release:"Hitos de cine y reconocimiento",number:"Asistentes (según organizador)",year2022:"Jornada 2022",year2025:"Jornada 2025",link:"Ver ficha ↗",play:"Material audiovisual",view:"Ver fotografía"},
 en:{back:"Portfolio",orig:"Original source",about:"Context",role:"My contribution",people:"UAH participants reported by correspondent",themes:"Ideas shaping the congress",archive:"Reference materials",photos:"Photographic archive",sources:"Public sources",limitations:"Evidence and limitations",more:"Open source ↗",themesK:"SOCIOLOGICAL AGENDA",what:"Correspondence and communication",photoEmpty:"Photographs and interviews will be included once originals and credits are provided.",fileHelp:"Ready for photo uploads",galleryAll:"All",cases:"Other projects",film:"Film and conversation",timeline:"A film journey into the university",collabs:"Actress, organizations and producer",discussion:"Questions opened by the event",moment:"Event",filmDetail:"Screened film",dialogue:"Community conversation",release:"Film and recognition milestones",number:"Attendees (organizer-reported)",year2022:"2022 event",year2025:"2025 event",link:"Film details ↗",play:"Audiovisual resources",view:"View photo"},
 pt:{back:"Portfólio",orig:"Fonte original",about:"Contexto",role:"Minha contribuição",people:"Participantes UAH informados pelo correspondente",themes:"Debates centrais do congresso",archive:"Material de referência",photos:"Arquivo fotográfico",sources:"Fontes públicas",limitations:"Fontes e limites",more:"Abrir fonte ↗",themesK:"AGENDA SOCIOLÓGICA",what:"Cobertura científica",photoEmpty:"Fotos e entrevistas serão incluídas após o envio dos originais e créditos.",fileHelp:"Pasta pronta para fotos",galleryAll:"Todas",cases:"Outros projetos",film:"Cinema e conversa",timeline:"Uma trajetória cinematográfica até a universidade",collabs:"Atriz, entidades e produtora",discussion:"Perguntas abertas pelo encontro",moment:"Encontro",filmDetail:"Filme exibido",dialogue:"Conversa com a comunidade",release:"Cinema e reconhecimentos",number:"Participantes (segundo organizador)",year2022:"Encontro 2022",year2025:"Encontro 2025",link:"Ficha do filme ↗",play:"Material audiovisual",view:"Ver foto"}};
+Object.assign(UI.es,{"archivePhoto":"Una crónica en imágenes","viewFile":"Ampliar fotografía","showMore":"Ver más fotografías","photosAll":"Todas las fotografías","albumIntro":"Primera selección de los registros realizados durante la cobertura del XXXV Congreso ALAS. Las categorías se han construido a partir de los nombres de archivo y pueden precisarse al revisar cada imagen.","pendingCredits":"Crédito fotográfico y descripciones específicas por revisar con el archivo original.","interviewTitle":"Entrevista a Breno Bringel","interviewState":"Grabación realizada · edición de audio pendiente","interviewDesc":"Además de la cobertura de Sociología UAH, registré una entrevista en video con Breno Bringel. Para publicarla, primero hay que sincronizar el audio grabado cerca de su voz con el video de cámara y editar el resultado. Todavía no se ha publicado una pieza audiovisual.","archiveCount":"fotografías del archivo","close":"Cerrar imagen","previousPhoto":"Anterior","nextPhoto":"Siguiente","groupDescription":"Explorar el archivo por cobertura y temática","coverNote":"Registro fotográfico del Congreso ALAS · Río de Janeiro, 2026"});
+Object.assign(UI.en,{"archivePhoto":"A visual field report","viewFile":"Enlarge photo","showMore":"Show more photographs","photosAll":"All photographs","albumIntro":"A first selection of photographs from the 35th ALAS Congress. Categories reflect filename metadata and can be refined after visual review.","pendingCredits":"Individual photo credits and detailed captions are still being verified.","interviewTitle":"Interview with Breno Bringel","interviewState":"Interview recorded · audio editing pending","interviewDesc":"Beyond covering UAH Sociology, I recorded a video interview with Breno Bringel. The close microphone recording must be synchronized with the camera video before editing and publication. No finished video has been posted yet.","archiveCount":"photos in the archive","close":"Close image","previousPhoto":"Previous","nextPhoto":"Next","groupDescription":"Browse by reportage and theme","coverNote":"Photographic record of ALAS Congress · Rio de Janeiro, 2026"});
+Object.assign(UI.pt,{"archivePhoto":"Uma reportagem visual","viewFile":"Ampliar foto","showMore":"Mostrar mais fotografias","photosAll":"Todas as fotografias","albumIntro":"Uma primeira seleção dos registros do 35º Congresso ALAS. As categorias seguem os nomes dos arquivos e podem ser refinadas após revisão visual.","pendingCredits":"Créditos e legendas específicas pendentes de verificação.","interviewTitle":"Entrevista com Breno Bringel","interviewState":"Entrevista gravada · edição de áudio pendente","interviewDesc":"Além de acompanhar a Sociologia UAH, gravei uma entrevista em vídeo com Breno Bringel. É necessário sincronizar o áudio próximo da voz com a câmera antes da edição e publicação. Ainda não há vídeo final publicado.","archiveCount":"fotografias do arquivo","close":"Fechar imagem","previousPhoto":"Anterior","nextPhoto":"Próxima","groupDescription":"Explorar o arquivo por cobertura e tema","coverNote":"Registro fotográfico do Congresso ALAS · Rio de Janeiro, 2026"});
 const ui=k=>UI[language][k]||k, tr=x=>typeof x==="string"?x:x?.[language]??x?.es??"";
 const n=(tag,cl,txt)=>{const a=document.createElement(tag);if(cl)a.className=cl;if(txt!==undefined)a.textContent=String(txt);return a};
 const add=(p,...children)=>{children.forEach(c=>{if(c)p.appendChild(c)});return p};
@@ -24,7 +27,12 @@ if(kind==="alas")art.setAttribute("aria-hidden","true");
 add(copy,n("span","xp-kicker",tr(data.hero.kicker)),h(tr(data.hero.title),1),p(tr(kind==="alas"?data.hero.subtitle:data.hero.subtitle),"xp-hero-lede"));
 if(kind==="alas"){
 add(copy,p(data.meta.tagline,"xp-theme-sentence"),p(data.meta.dates+" · "+data.meta.city,"xp-hero-meta"));
-add(art,n("div","xp-wave wave-a"),n("div","xp-wave wave-b"),n("div","xp-wave wave-c"),n("div","xp-wave wave-d"),n("strong","xp-art-center","ALAS / 75"));
+art.className+=" xp-alas-visual";art.removeAttribute("aria-hidden");
+const picture=n("figure","xp-alas-cover");
+const pic=n("img");pic.src="assets/"+encodeURIComponent(album?.hero?.[0]?.src||"HEAD PORTADA.JPG");pic.alt=ui("coverNote");pic.decoding="async";pic.loading="eager";pic.setAttribute("fetchpriority","high");
+const overlay=n("figcaption","xp-alas-cover-credit",ui("coverNote"));
+add(picture,pic,overlay);add(art,picture);
+const seal=n("img","xp-alas-flyer");seal.src="assets/"+encodeURIComponent("alas flyer oficial.jpg");seal.alt=language==="es"?"Afiche oficial del XXXV Congreso ALAS, 26–31 julio 2026":language==="en"?"Official poster of the 35th ALAS Congress, 26–31 July 2026":"Cartaz oficial do 35º Congresso ALAS, 26–31 de julho de 2026";seal.loading="lazy";add(art,seal);
 }else{
 add(copy,p("UAH · 2022 → 2025","xp-hero-meta"));
 art.className+=" xp-poster-visual";
@@ -92,7 +100,52 @@ const sources=part("prensa","07 / "+ui("archive"),ui("sources"),language==="es"?
 sourceCards(sources,data.sources);
 }
 function sourceCards(parent,items){const grid=n("div","xp-source-grid");items.forEach(x=>{const c=n("article","xp-reference");add(c,n("span","xp-reference-status",x.status==="verified"?(language==="es"?"Fuente cotejada":"Source checked"):(language==="es"?"Contexto · verificar":"Context · check")),h(tr(x.title||x.label),3),p(tr(x.description)),link(ui("more"),x.url,"xp-source"));add(grid,c)});add(parent,grid)}
+function galleryAlas(){
+const base=part("galeria","08 / "+ui("photos"),ui("archivePhoto"),ui("albumIntro"));
+const all=Array.isArray(album?.images)?album.images.filter(x=>x.visibility==="public_event"&&!x.sensitive):[];
+if(!all.length){add(base,p(ui("photoEmpty")));return}
+const ids=["portada","delegacion","ponencias","entorno","serie","identidad"];
+const order=Object.fromEntries(ids.map((id,index)=>[id,index]));
+all.sort((x,y)=>(order[x.category]??99)-(order[y.category]??99)||x.src.localeCompare(y.src));
+const filters=n("div","xp-alas-filters");filters.setAttribute("role","group");filters.setAttribute("aria-label",ui("groupDescription"));
+const groups=album?.groups||[],groupButtons=groups.map(group=>{
+const btn=button(tr(group.name),()=>{filter=group.id;photoLimit=9;draw()},"xp-alas-filter",filter===group.id);add(filters,btn);return btn;
+});
+const tally=n("p","xp-alas-tally"),grid=n("div","xp-photo-grid"),loadMore=button(ui("showMore")+" ↓",()=>{photoLimit+=9;draw()},"xp-alas-more");
+const dialog=n("dialog","xp-alas-dialog"),detail=n("div","xp-alas-dialog-in"),close=button("×",()=>dialog.close(),"xp-alas-dialog-close");
+close.setAttribute("aria-label",ui("close"));
+const previous=button("←",()=>turn(-1),"xp-alas-dialog-nav"),next=button("→",()=>turn(1),"xp-alas-dialog-nav");
+previous.setAttribute("aria-label",ui("previousPhoto"));next.setAttribute("aria-label",ui("nextPhoto"));
+const nav=n("div","xp-alas-dialog-nav-bar"),image=n("img","xp-alas-dialog-image"),caption=n("p","xp-alas-dialog-caption");
+add(nav,previous,next,close);add(detail,nav,image,caption);add(dialog,detail);
+let currently=[],index=0;
+function turn(direction){
+if(!currently.length)return;
+index=(index+direction+currently.length)%currently.length;
+const x=currently[index];image.src="assets/"+encodeURIComponent(x.src);image.alt=tr(x.alt);caption.textContent=tr(x.caption)+" · "+x.credit;
+}
+function open(x,list){currently=list;index=list.indexOf(x);turn(0);if(typeof dialog.showModal==="function")dialog.showModal()}
+function draw(){
+groupButtons.forEach((x,j)=>x.setAttribute("aria-pressed",String(groups[j].id===filter)));
+const list=all.filter(x=>filter==="all"||x.category===filter);
+grid.replaceChildren();
+list.slice(0,photoLimit).forEach(x=>{
+const photo=n("figure","xp-photo xp-alas-photo"),trigger=button("",()=>open(x,list),"xp-photo-trigger");
+trigger.setAttribute("aria-label",ui("viewFile")+": "+tr(x.caption));
+const img=n("img");img.src="assets/"+encodeURIComponent(x.src);img.alt=tr(x.alt);img.decoding="async";img.loading="lazy";add(trigger,img);
+const details=n("figcaption");add(details,p(tr(x.caption)),n("small","",x.credit));add(photo,trigger,details);add(grid,photo);
+});
+tally.textContent=list.length+" "+ui("archiveCount");
+loadMore.hidden=list.length<=photoLimit;
+}
+add(base,filters,tally,grid,loadMore,dialog,p(ui("pendingCredits"),"xp-footnote"));
+draw();
+const media=part("entrevista","09 / "+ui("what"),ui("interviewTitle"),ui("interviewDesc"));
+const block=n("div","xp-interview-pending"),mark=n("div","xp-interview-icon");mark.setAttribute("aria-hidden","true");mark.textContent="▶";
+add(block,mark,n("div","xp-interview-content",ui("interviewState")));add(media,block);
+}
 function gallery(){
+if(kind==="alas"){galleryAlas();return}
 const main=part("galeria","08 / "+ui("photos"),ui("photos"),tr(data.gallery.note||data.gallery.placeholder));
 const photos=Array.isArray(album?.images)?album.images.filter(x=>x.sensitive!==true&&typeof x.permission==="string"&&/(autoriz|consent|permission granted|licensed|licencia)/i.test(x.permission)):[];
 if(!photos.length){const empty=n("div","xp-gallery-empty");add(empty,n("div","xp-gallery-mark","◎"),h(ui("photoEmpty"),3),p(ui("fileHelp")+": "+kind+"/assets/", "xp-path"));add(main,empty);return}
@@ -109,7 +162,7 @@ photos.forEach(x=>{
 add(main,grid);
 }
 function end(){
-const c=part("fuentes","09 / "+ui("limitations"),ui("limitations"),tr(data.boundary||data.limitation));
+const c=part("fuentes",(kind==="alas"?"10":"09")+" / "+ui("limitations"),ui("limitations"),tr(data.boundary||data.limitation));
 add(c,p(language==="es"?"Se diferencian el testimonio del organizador y las fuentes públicas consultadas. Los materiales futuros se incorporarán con permisos y créditos.":language==="en"?"The organizer's account and independently checked public sources are kept distinct. Future media will require credits and permissions.":"O relato do organizador e as fontes públicas são diferenciados. Os materiais futuros terão créditos e autorizações.","xp-footnote"));
 const foot=n("footer","xp-footer"),bar=n("div","xp-shell");add(bar,link("← "+ui("back"),"../?lang="+language),link("CEDEUS","../cedeus/?lang="+language),link("CESI","../cesi/?lang="+language));add(foot,bar);app.appendChild(foot)
 }
