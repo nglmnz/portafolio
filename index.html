@@ -159,6 +159,7 @@
 @media print{.exp{background:#fff!important;border-color:#bbb}.exp h3,.exp p,.exp time{color:#111!important}.impact-media,.exp-media{display:none}}
 .impact .case-link::after,.exp .case-link::after{content:none}
 </style>
+<link rel="stylesheet" href="assets/privacy.css">
 </head>
 <body>
   <a href="#main" class="skip" style="position:absolute;left:-999px;top:auto" onfocus="this.style.left='12px'" onblur="this.style.left='-999px'">Saltar al contenido / Skip to content</a>
@@ -227,5 +228,8 @@ Object.assign(I.pt,{"previewsustancia":"R / SHINY · DOMÍNIO","previewvitrina":
     function drawLang(){document.documentElement.lang=language;document.querySelectorAll('[data-i18n]').forEach(el=>{const v=I[language][el.dataset.i18n];if(v!==undefined)el.textContent=v});document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===language)));document.querySelectorAll('[data-preserve-lang]').forEach(a=>{let u=new URL(a.getAttribute('href').split('?')[0],location.href);u.searchParams.set('lang',language);a.href=u.toString()});document.title=(language==='es'?'Ángel Muñoz — Investigación, datos e innovación':language==='en'?'Ángel Muñoz — Research, data and innovation':'Ángel Muñoz — Pesquisa, dados e inovação');drawSector()}
     document.querySelectorAll('[data-sector]').forEach(btn=>btn.addEventListener('click',()=>{sector=btn.dataset.sector;drawSector()}));document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{language=b.dataset.lang;history.replaceState(null,'',location.pathname+'?lang='+language+location.hash);drawLang()}));document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{activeFilter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelectorAll('.project[data-type]').forEach(x=>x.hidden=activeFilter!=='all'&&!x.dataset.type.split(' ').includes(activeFilter))}));drawLang();
   </script>
+<div class="portfolio-privacy-footer"><a href="privacidad/">Privacidad y analítica / Privacy &amp; analytics / Privacidade</a></div>
+<script src="assets/analytics-config.js" defer></script>
+<script src="assets/analytics.js" defer></script>
 </body>
 </html>
