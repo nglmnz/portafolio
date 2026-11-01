@@ -1,0 +1,413 @@
+{
+  "id": "alas",
+  "type": "institutional-correspondence",
+  "meta": {
+    "year": "2026",
+    "dates": "26–31 julio 2026",
+    "city": "Río de Janeiro · Brasil",
+    "title": "XXXV Congreso Latinoamericano de Sociología",
+    "organization": "Asociación Latinoamericana de Sociología (ALAS)",
+    "tagline": "Entre la policrisis y las alternativas: horizontes de la sociología crítica latinoamericana",
+    "host": "UFRJ y UNIRIO · Campus Praia Vermelha",
+    "institution": "Departamento de Sociología · Universidad Alberto Hurtado"
+  },
+  "hero": {
+    "kicker": {
+      "es": "CORRESPONDENCIA INSTITUCIONAL · RÍO DE JANEIRO 2026",
+      "en": "INSTITUTIONAL CORRESPONDENCE · RIO DE JANEIRO 2026",
+      "pt": "CORRESPONDÊNCIA INSTITUCIONAL · RIO DE JANEIRO 2026"
+    },
+    "title": {
+      "es": "Contar la sociología mientras ocurre.",
+      "en": "Reporting sociology as it happens.",
+      "pt": "Contar a sociologia enquanto acontece."
+    },
+    "subtitle": {
+      "es": "Una cobertura de la participación del Departamento de Sociología UAH en el XXXV Congreso ALAS, con entrevistas, fotografía y contenidos para comunicación científica.",
+      "en": "Coverage of the UAH Department of Sociology's presence at the 35th ALAS Congress through interviews, photography and institutional science communication.",
+      "pt": "Cobertura da participação do Departamento de Sociologia UAH no 35º Congresso ALAS, com entrevistas, fotografias e comunicação científica."
+    }
+  },
+  "about": {
+    "title": {
+      "es": "Un congreso para pensar la región en tiempos de policrisis",
+      "en": "A congress to rethink the region amid polycrisis",
+      "pt": "Um congresso para pensar a região em tempos de policrise"
+    },
+    "body": {
+      "es": "Entre el 26 y el 31 de julio de 2026, Río de Janeiro reunió a la sociología latinoamericana alrededor de crisis interdependientes: democráticas, climáticas, económicas, sociales y geopolíticas. En el 75.º aniversario de ALAS, el programa articuló 27 grupos de trabajo, mesas redondas, diálogos magistrales, foros, actividades culturales y encuentros entre generaciones de investigadores.",
+      "en": "From 26–31 July 2026, sociologists gathered in Rio de Janeiro to discuss intersecting democratic, climate, economic, social and geopolitical crises. Marking ALAS's 75th anniversary, the event offered 27 working groups, roundtables, keynote dialogues, forums, cultural events and intergenerational exchange.",
+      "pt": "De 26 a 31 de julho de 2026, o Rio recebeu a sociologia latino-americana para debater crises democráticas, climáticas, econômicas, sociais e geopolíticas. No 75.º aniversário da ALAS, o programa reuniu 27 grupos de trabalho, mesas, diálogos, fóruns, atividades culturais e intercâmbio entre gerações."
+    },
+    "source": "https://www.clacso.org/xxxv-congreso-latinoamericano-de-sociologia/"
+  },
+  "role": {
+    "title": {
+      "es": "Mi trabajo como corresponsal",
+      "en": "My work as a correspondent",
+      "pt": "Meu trabalho como correspondente"
+    },
+    "statement": {
+      "es": "Viajé a Río de Janeiro para cubrir la participación del Departamento de Sociología de la Universidad Alberto Hurtado en ALAS 2026. Realicé entrevistas y registros fotográficos y preparé contenidos audiovisuales y escritos para comunicación científica institucional.",
+      "en": "I traveled to Rio de Janeiro to cover the UAH Sociology Department's participation in ALAS 2026. I conducted interviews and photography and produced written and audiovisual materials for institutional science communication.",
+      "pt": "Viajei ao Rio de Janeiro para cobrir a participação do Departamento de Sociologia UAH na ALAS 2026. Realizei entrevistas e registros fotográficos e preparei conteúdos escritos e audiovisuais para comunicação científica institucional."
+    },
+    "evidence": {
+      "es": "Participación y funciones relatadas por el autor. Las piezas finales y créditos de publicación se incorporarán cuando se aporten sus archivos y enlaces; no se inventan citas, preguntas ni declaraciones atribuidas a las personas entrevistadas.",
+      "en": "Role and activities are author-reported. Published pieces and credits will be added when files and links are provided; no interview quotes or statements are invented.",
+      "pt": "Funções informadas pelo autor. As matérias e créditos serão acrescentados quando os arquivos e links forem fornecidos; nenhuma declaração é inventada."
+    },
+    "tasks": [
+      {
+        "key": "interviews",
+        "name": {
+          "es": "Entrevistas",
+          "en": "Interviews",
+          "pt": "Entrevistas"
+        },
+        "desc": {
+          "es": "Conversaciones con participantes de la delegación UAH sobre sus investigaciones, presentaciones y debates.",
+          "en": "Conversations with UAH participants about research and debate.",
+          "pt": "Conversas com participantes da UAH sobre pesquisas e debates."
+        }
+      },
+      {
+        "key": "photography",
+        "name": {
+          "es": "Registro fotográfico",
+          "en": "Photographic coverage",
+          "pt": "Registro fotográfico"
+        },
+        "desc": {
+          "es": "Documentación de jornadas, exposiciones académicas y encuentros para construir un archivo institucional contextualizado.",
+          "en": "Documentation of sessions and encounters for a contextualized institutional archive.",
+          "pt": "Documentação de sessões e encontros para um arquivo institucional contextualizado."
+        }
+      },
+      {
+        "key": "audiovisual",
+        "name": {
+          "es": "Contenidos audiovisuales",
+          "en": "Audiovisual content",
+          "pt": "Conteúdo audiovisual"
+        },
+        "desc": {
+          "es": "Material de difusión científica para visibilizar a investigadores y estudiantes en un encuentro regional.",
+          "en": "Scientific communication material highlighting scholars and students.",
+          "pt": "Material de divulgação científica de docentes e estudantes."
+        }
+      },
+      {
+        "key": "writing",
+        "name": {
+          "es": "Textos de divulgación",
+          "en": "Editorial writing",
+          "pt": "Textos de divulgação"
+        },
+        "desc": {
+          "es": "Redacción y organización de información para comunicar la participación UAH a públicos que no asistieron al congreso.",
+          "en": "Editorial communication of UAH participation for audiences beyond the event.",
+          "pt": "Comunicação escrita da participação UAH para públicos além do congresso."
+        }
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Nicolás Fleet Oyarce",
+      "who": {
+        "es": "Decano de la Facultad de Ciencias Sociales UAH (desde enero de 2026)",
+        "en": "Dean of UAH Faculty of Social Sciences (since January 2026)",
+        "pt": "Decano da Faculdade de Ciências Sociais UAH (desde janeiro de 2026)"
+      },
+      "area": {
+        "es": "Sociología política, Estado y educación superior",
+        "en": "Political sociology, state and higher education",
+        "pt": "Sociologia política, Estado e educação superior"
+      },
+      "link": "https://csociales.uahurtado.cl/personas/nicolas-fleet/",
+      "profileVerified": true,
+      "participation": "user-reported"
+    },
+    {
+      "name": "Gabriela Mardones",
+      "who": {
+        "es": "Tesista de pregrado en Sociología UAH (según el autor)",
+        "en": "UAH undergraduate Sociology thesis student (author-reported)",
+        "pt": "Estudante de graduação em Sociologia UAH (segundo o autor)"
+      },
+      "area": {
+        "es": "Tema de ponencia no identificado en las fuentes revisadas",
+        "en": "Paper topic not independently identified",
+        "pt": "Tema da apresentação não identificado nas fontes"
+      },
+      "link": null,
+      "profileVerified": false,
+      "participation": "user-reported"
+    },
+    {
+      "name": "Alexis Cortés",
+      "who": {
+        "es": "Académico UAH · director de Doctorado en Sociología",
+        "en": "UAH faculty · Sociology PhD program director",
+        "pt": "Docente UAH · diretor do Doutorado em Sociologia"
+      },
+      "area": {
+        "es": "Pensamiento latinoamericano y movimientos sociales",
+        "en": "Latin American thought and social movements",
+        "pt": "Pensamento latino-americano e movimentos sociais"
+      },
+      "link": "https://csociales.uahurtado.cl/personas/alexis-cortes/",
+      "profileVerified": true,
+      "participation": "user-reported"
+    },
+    {
+      "name": "Kenneth Fowler",
+      "who": {
+        "es": "Estudiante del Doctorado en Sociología UAH (condición documentada en 2026)",
+        "en": "UAH Sociology doctoral student (documented in 2026)",
+        "pt": "Doutorando em Sociologia UAH (documentado em 2026)"
+      },
+      "area": {
+        "es": "Investigación doctoral sobre conocimientos y movimientos sociales; ponencia en ALAS pendiente de identificación",
+        "en": "Doctoral work on knowledge and social movements; ALAS presentation details unconfirmed",
+        "pt": "Pesquisa doutoral sobre conhecimento e movimentos sociais; apresentação na ALAS não verificada"
+      },
+      "link": "https://doctoradosociologia.uahurtado.cl/noticias/estudiantes-de-la-cohorte-2025-rinden-con-exito-sus-examenes-tematicos/",
+      "profileVerified": true,
+      "participation": "user-reported"
+    },
+    {
+      "name": "Juan Pablo Rodríguez",
+      "who": {
+        "es": "Director del Departamento de Sociología UAH",
+        "en": "Head of UAH Sociology Department",
+        "pt": "Diretor do Departamento de Sociologia UAH"
+      },
+      "area": {
+        "es": "Teoría social, política y movimientos sociales",
+        "en": "Social theory, politics and social movements",
+        "pt": "Teoria social, política e movimentos sociais"
+      },
+      "link": "https://csociales.uahurtado.cl/personas/juan-pablo-rodriguez/",
+      "profileVerified": true,
+      "participation": "user-reported"
+    }
+  ],
+  "themes": [
+    {
+      "title": {
+        "es": "Democracias y autoritarismos",
+        "en": "Democracy and authoritarianism",
+        "pt": "Democracias e autoritarismos"
+      },
+      "desc": {
+        "es": "Replantear el papel de la sociología crítica ante tensiones democráticas y transformaciones de las instituciones.",
+        "en": "Critical sociology in times of democratic stress and institutional change.",
+        "pt": "Sociologia crítica diante de tensões democráticas e mudanças institucionais."
+      }
+    },
+    {
+      "title": {
+        "es": "Ecologías políticas",
+        "en": "Political ecology",
+        "pt": "Ecologias políticas"
+      },
+      "desc": {
+        "es": "Debates sobre crisis ecológica, transición energética, desigualdades territoriales y justicia ecosocial.",
+        "en": "Ecological crisis, energy transitions and territorial inequalities.",
+        "pt": "Crises ecológicas, transições energéticas e desigualdades territoriais."
+      }
+    },
+    {
+      "title": {
+        "es": "Digitalización e IA",
+        "en": "Digitalisation and AI",
+        "pt": "Digitalização e IA"
+      },
+      "desc": {
+        "es": "Cambios en la vida social, el trabajo y la investigación ante las transformaciones tecnológicas.",
+        "en": "Technological change in work, social life and research.",
+        "pt": "Mudanças tecnológicas no trabalho, na vida social e na pesquisa."
+      }
+    },
+    {
+      "title": {
+        "es": "Género, cuerpos y desigualdad",
+        "en": "Gender, bodies and inequality",
+        "pt": "Gênero, corpos e desigualdade"
+      },
+      "desc": {
+        "es": "Perspectivas feministas e interseccionales para comprender exclusiones, luchas y dinámicas de la región.",
+        "en": "Feminist and intersectional views on inequality and struggle.",
+        "pt": "Perspectivas feministas e interseccionais sobre desigualdades e lutas."
+      }
+    },
+    {
+      "title": {
+        "es": "Sociología pública latinoamericana",
+        "en": "Public sociology in Latin America",
+        "pt": "Sociologia pública latino-americana"
+      },
+      "desc": {
+        "es": "El lugar de las ciencias sociales en la conversación política, las universidades y los movimientos sociales.",
+        "en": "Social sciences in public discourse, universities and social movements.",
+        "pt": "As ciências sociais no debate público, nas universidades e nos movimentos sociais."
+      }
+    }
+  ],
+  "otherCoverage": [
+    {
+      "title": {
+        "es": "CLACSO · 75 años de ALAS y debates sobre policrisis",
+        "en": "CLACSO · ALAS 75th anniversary and polycrisis",
+        "pt": "CLACSO · 75 anos da ALAS e policrise"
+      },
+      "description": {
+        "es": "Convocatoria general, estructura temática y actividades regionales.",
+        "en": "Congress framing, structure and regional events.",
+        "pt": "Contexto, estrutura e atividades do congresso."
+      },
+      "url": "https://www.clacso.org/xxxv-congreso-latinoamericano-de-sociologia/",
+      "status": "verified"
+    },
+    {
+      "title": {
+        "es": "Instituto de Sociología UC · cobertura de su delegación",
+        "en": "UC Sociology Institute · its delegation coverage",
+        "pt": "Instituto de Sociologia UC · cobertura própria"
+      },
+      "description": {
+        "es": "Ejemplo de una cobertura académica independiente de la UAH: Pamela Ayala, Daniella Leal, María Soledad Herrera y Claudia Giacoman.",
+        "en": "Independent account of UC scholars, not evidence for UAH delegation.",
+        "pt": "Cobertura de docentes da UC, não prova da delegação UAH."
+      },
+      "url": "https://sociologia.uc.cl/noticias/alas-2026/",
+      "status": "verified"
+    },
+    {
+      "title": {
+        "es": "Massimo Modonesi · anuncio de diálogo magistral",
+        "en": "Massimo Modonesi · keynote dialogue",
+        "pt": "Massimo Modonesi · diálogo magistral"
+      },
+      "description": {
+        "es": "Publicación personal sobre un diálogo magistral; la página específica no pudo consultarse íntegramente.",
+        "en": "Personal post about a keynote dialogue; full article not accessible.",
+        "pt": "Publicação pessoal sobre diálogo magistral; texto integral indisponível."
+      },
+      "url": "https://massimomodonesi.net/2026/07/22/alas-2026-rio-de-janiero-dialogo-magistral/",
+      "status": "partial"
+    },
+    {
+      "title": {
+        "es": "Programa oficial ALAS 2026",
+        "en": "Official ALAS program",
+        "pt": "Programa oficial ALAS 2026"
+      },
+      "description": {
+        "es": "Sedes, grupos de trabajo, sesiones y actividades culturales en el campus Praia Vermelha.",
+        "en": "Venues, working groups, sessions and cultural program.",
+        "pt": "Sedes, grupos, sessões e programa cultural."
+      },
+      "url": "https://www.alas2026.sinteseeventos.com.br/informativo/view?ID_INFORMATIVO=87&TIPO=7",
+      "status": "verified"
+    },
+    {
+      "title": {
+        "es": "Instagram · publicación compartida 1",
+        "en": "Instagram · shared post 1",
+        "pt": "Instagram · publicação 1"
+      },
+      "description": {
+        "es": "Enlace facilitado para contrastar durante la edición de fotografías; no se ha comprobado su contenido.",
+        "en": "Shared link; content remains unverified.",
+        "pt": "Link fornecido; conteúdo não verificado."
+      },
+      "url": "https://www.instagram.com/p/DbT0z-1geuD/",
+      "status": "unverified"
+    },
+    {
+      "title": {
+        "es": "Instagram · publicación compartida 2",
+        "en": "Instagram · shared post 2",
+        "pt": "Instagram · publicação 2"
+      },
+      "description": {
+        "es": "Enlace aportado pendiente de revisión, no prueba de participación UAH.",
+        "en": "Link awaiting verification; not evidence of UAH participation.",
+        "pt": "Link pendente de verificação; não comprova participação UAH."
+      },
+      "url": "https://www.instagram.com/p/DboR0V_IIfl/",
+      "status": "unverified"
+    },
+    {
+      "title": {
+        "es": "LinkedIn · registro aportado",
+        "en": "LinkedIn · shared post",
+        "pt": "LinkedIn · publicação"
+      },
+      "description": {
+        "es": "Publicación profesional aportada sin verificación detallada del contenido.",
+        "en": "Submitted professional post with contents unverified.",
+        "pt": "Post profissional sem verificação detalhada."
+      },
+      "url": "https://es.linkedin.com/posts/victoriaminio_inici%C3%B3-el-xxxv-congresso-latino-americano-activity-7487749347263172608-6jeV",
+      "status": "unverified"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "26.07.2026",
+      "label": {
+        "es": "Apertura del XXXV Congreso",
+        "en": "Opening of the XXXV Congress",
+        "pt": "Abertura do XXXV Congresso"
+      },
+      "text": {
+        "es": "Inicio del programa en Río de Janeiro bajo la idea de policrisis y alternativas.",
+        "en": "Conference opens in Rio with a focus on polycrisis and alternatives.",
+        "pt": "Abertura do congresso no Rio sob o tema policrise e alternativas."
+      }
+    },
+    {
+      "date": "26–31.07",
+      "label": {
+        "es": "Cobertura UAH y debates",
+        "en": "UAH coverage and academic exchange",
+        "pt": "Cobertura UAH e debates"
+      },
+      "text": {
+        "es": "Entrevistas, registros y seguimiento de la participación según el trabajo de corresponsal relatado.",
+        "en": "Reported interviews, documentation and coverage of the UAH delegation.",
+        "pt": "Entrevistas, registros e cobertura da delegação UAH, segundo o autor."
+      }
+    },
+    {
+      "date": "31.07.2026",
+      "label": {
+        "es": "Clausura y conversación regional",
+        "en": "Closing and regional exchange",
+        "pt": "Encerramento e diálogo regional"
+      },
+      "text": {
+        "es": "Cierre del congreso tras seis jornadas académicas y culturales.",
+        "en": "Closing of six days of scholarly and cultural activities.",
+        "pt": "Fim de seis dias de atividades acadêmicas e culturais."
+      }
+    }
+  ],
+  "gallery": {
+    "manifest": "alas/assets/galeria.json",
+    "note": {
+      "es": "El archivo fotográfico se incorporará cuando estén subidas las imágenes del congreso, con créditos y contexto. No hay fotografías todavía en esta página.",
+      "en": "The photo archive will be added once congress photographs are uploaded and credited. No photographs are published here yet.",
+      "pt": "O arquivo de fotos será integrado após o envio das imagens e créditos. Não há fotografias nesta página."
+    }
+  },
+  "boundary": {
+    "es": "La presencia de estas cinco personas y mi función de cobertura proceden de mi registro directo del viaje. Los perfiles profesionales provienen de páginas institucionales UAH; no se asignan títulos de ponencias ni citas de entrevistas sin fuentes adicionales. La noticia de Sociología UC describe a otra delegación, no a la UAH.",
+    "en": "Attendance and correspondent role are based on my first-hand account. UAH profiles verify institutional roles, not specific conference presentation titles. UC coverage refers to a different delegation.",
+    "pt": "A presença das cinco pessoas e meu papel vêm do relato direto. Perfis UAH comprovam funções, não títulos de palestras. A cobertura da UC corresponde a outra delegação."
+  }
+}
