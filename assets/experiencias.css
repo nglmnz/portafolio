@@ -88,3 +88,26 @@ body[data-case="cine-disidencias"] .xp-hero-visual{border-radius:13px;background
 @media(max-width:700px){.xp-shell{width:calc(100% - 34px)}.xp-hero-in{grid-template-columns:1fr;min-height:0;padding:66px 0 85px}.xp-hero-visual{max-height:350px;max-width:470px;width:100%;margin:0 auto}.xp-hero h1{font-size:clamp(3rem,11vw,5.2rem)}.xp-facts{grid-template-columns:repeat(2,1fr)}.xp-fact:nth-child(2){border-right:0}.xp-fact:nth-child(-n+2){border-bottom:1px solid var(--xp-line)}.xp-section{padding:50px 0}.xp-film-panel{grid-template-columns:1fr}.xp-film-timeline{grid-template-columns:repeat(2,1fr)}.xp-theme-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.xp-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.xp-nav-in{flex-direction:column;align-items:flex-start;gap:7px;padding:11px 0}.xp-navlinks{gap:13px}.xp-hero h1{font-size:2.8rem}.xp-hero-visual{max-height:300px}.xp-fact{padding:16px}.xp-fact strong{font-size:1.9rem}.xp-person-grid,.xp-partners,.xp-source-grid,.xp-task-grid,.xp-question-grid,.xp-film-timeline,.xp-theme-tabs,.xp-photo-grid{grid-template-columns:1fr}.xp-timeline{grid-template-columns:1fr;gap:9px}.xp-theme-panel{padding:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* UAH screenings: original July 2025 flyer rather than decorative imaginary film frames.
+   Keep the full image uncropped; event organizers are explicitly year-scoped. */
+body[data-case="cine-disidencias"] .xp-hero-in{grid-template-columns:minmax(0,1.18fr) minmax(290px,.77fr);gap:clamp(25px,4vw,60px);padding-block:66px 79px;min-height:0}
+body[data-case="cine-disidencias"] .xp-poster-visual{aspect-ratio:auto;max-height:none;width:100%;max-width:440px;overflow:visible;justify-self:center;border:0;border-radius:0;background:transparent;box-shadow:none}
+.xp-hero-poster{margin:0;border:1px solid #ad7996;border-radius:10px;overflow:hidden;background:#18283f;box-shadow:0 25px 65px rgba(8,8,16,.44),12px 12px 0 rgba(226,139,169,.14)}
+.xp-hero-flyer{display:block;width:100%;height:auto;aspect-ratio:410 / 512;object-fit:contain}
+.xp-hero-poster-caption{font-size:11px;line-height:1.55;padding:13px 17px;background:#302038;color:#edd7e0;text-align:left}
+.xp-organizers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:27px 0 3px}
+.xp-organizer-card{background:var(--xp-card);border:1px solid var(--xp-line);border-top:4px solid var(--xp-accent);padding:26px;border-radius:10px}
+.xp-organizer-card:nth-child(2){background:#f5e5ec;border-top-color:#9b4d72}
+.xp-organizer-year{display:block;font-size:12px;color:var(--xp-accent);letter-spacing:.1em;font-weight:870;margin-bottom:14px}
+.xp-organizer-card h3{font-size:clamp(1.15rem,2.1vw,1.55rem)}
+.xp-organizer-card p{font-size:13px;line-height:1.7;color:var(--xp-dim)}
+.xp-organizer-focus{font-weight:770;border-left:3px solid #bb7897;padding-left:13px;margin-top:12px}
+.xp-organizer-tag{display:inline-block;border-radius:6px;border:1px solid #d3a9bb;padding:7px 10px;background:#f5e8ee;color:#824365;font-size:11px;font-weight:810;line-height:1.45;margin-bottom:16px}
+.xp-verified-venue{font-size:12px!important;background:#f2e0e9;border-left:3px solid var(--xp-accent);padding:10px 13px;color:#6a344d!important;font-weight:820}
+.xp-supporter-panel{margin:22px 0 0;background:#14254b;border:1px solid #c9abc2;border-radius:10px;overflow:hidden}
+.xp-supporter-panel img{display:block;width:100%;max-width:410px;height:auto;margin:auto;object-fit:contain}
+.xp-supporter-panel figcaption{padding:10px 13px;background:#f7eef3;font-size:11px;color:#604759}
+@media(max-width:900px){body[data-case="cine-disidencias"] .xp-hero-in{grid-template-columns:minmax(0,1fr) minmax(260px,.8fr)}}
+@media(max-width:700px){body[data-case="cine-disidencias"] .xp-hero-in{grid-template-columns:1fr;gap:28px;padding:60px 0 73px}body[data-case="cine-disidencias"] .xp-poster-visual{max-width:430px}.xp-organizers{grid-template-columns:1fr}}
