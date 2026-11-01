@@ -39,7 +39,7 @@ El JSON `assets/alas-datos.json` incluye `reportage`, su atribución, las tres f
 
 Se confirmaron **33 imágenes** en `alas/assets/` (incluidos el afiche oficial y la imagen de portada) y se integraron al manifiesto `alas/assets/galeria.json`. La página pública presenta:
 
-- Hero editorial con `HEAD PORTADA.JPG`, y el afiche oficial `alas flyer oficial.jpg` como material complementario.
+- Hero editorial restaurado con líneas multicolor abstractas. Las fotografías ya no forman parte del encabezado: se distribuyen en una secuencia editorial interna y en la galería. Los archivos `HEAD PORTADA.JPG` y `alas flyer oficial.jpg` se conservan en el archivo fotográfico.
 - Galería filtrable en seis categorías: **delegación y encuentros UAH** (7), **serie documental pendiente de descripción individual** (18), **sesiones y ponencias** (2), **gráfica y materiales** (2), **portada y corresponsalía** (2) y **vida del congreso** (2).
 - Carga inicial de nueve fotografías, botón «Ver más», imágenes diferidas (`loading=lazy`) y visualización ampliada.
 - Descripción y texto alternativo provisional en ES/EN/PT. Las etiquetas proceden de los nombres de archivo, **no identificaciones de personas por su imagen**.
@@ -63,3 +63,7 @@ No se han subido ni sincronizado los dos originales de la entrevista.
 
 
 Código: `assets/experiencias.js` y `assets/experiencias.css` (compartidos con cine); entrada `alas/index.html`.
+
+## Rediseño visual del hero y ubicación del reportaje fotográfico (noviembre 2026)
+
+Se restauró la composición abstracta **ALAS / 75** con cuatro líneas multicolor del hero inicial, con texto e identidad visual independientes del archivo fotográfico. Las fotos se trasladaron a la sección «Del debate académico al encuentro», donde aparecen en una composición editorial de tres fotografías y luego la galería filtrable de 33 archivos, que mantiene carga gradual y fotos ampliables. Los archivos originales no fueron eliminados ni renombrados. La página sigue siendo trilingüe.
