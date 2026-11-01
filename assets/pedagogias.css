@@ -126,3 +126,14 @@ p{margin:0 0 16px}
 @media(max-width:700px){.ped-shell{width:calc(100% - 32px)}.ped-hero{padding:64px 0}.ped-hero-inner{grid-template-columns:1fr;gap:33px}.ped-report-cover{max-width:460px;min-height:410px;box-shadow:10px 12px 0 #226e89}.ped-stats{grid-template-columns:repeat(2,1fr)}.ped-section{padding:49px 0}.ped-two,.ped-careers,.ped-scales-list,.ped-results-explorer,.ped-link-grid{grid-template-columns:1fr}.ped-result-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.ped-commission-card{padding:20px}.ped-suggestion-grid{grid-template-columns:repeat(2,1fr)}.ped-timeline:before{left:33px}.ped-stage{grid-template-columns:67px 1fr;gap:12px}.ped-stage-body{padding:17px}.ped-nav-links{gap:11px}}
 @media(max-width:420px){.ped-nav-inner{flex-direction:column;align-items:flex-start;padding:10px 0;gap:6px}.ped-highlight-grid,.ped-team,.ped-suggestion-grid{grid-template-columns:1fr}.ped-result-tabs{grid-template-columns:1fr}.ped-hero h1{font-size:2.65rem}.ped-report-cover{min-height:365px}.ped-report-cover h3{font-size:23px}.ped-hero-lead{font-size:14px}.ped-chart-head{font-size:12px}.ped-stage-marker small{white-space:normal;text-align:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Editorial documentary evidence: short dean correspondence, not full private emails */
+.ped-evidence-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:32px 0 0}
+.ped-proof{margin:0;padding:27px 25px;border-top:4px solid #2f8092;background:#eff7f7;border-radius:10px}
+.ped-proof p{font:500 clamp(1.07rem,1.7vw,1.27rem)/1.55 Georgia,serif;color:#1d4154}
+.ped-proof cite{display:block;margin-top:18px;font-style:normal;color:#637b85;font-size:11px;font-weight:760;line-height:1.45}
+.ped-photo-placeholder{position:relative;overflow:hidden}
+.ped-meeting-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:3}
+.ped-photo-placeholder.ped-photo-loaded{background:#153d56}
+.ped-photo-placeholder.ped-photo-loaded:after{content:"Comisión IA · registro de reunión";position:absolute;bottom:0;left:0;right:0;background:linear-gradient(0deg,rgba(9,28,43,.96),rgba(9,28,43,.15));color:white;padding:35px 16px 14px;z-index:4;text-align:left;font-size:12px;font-weight:800}
+@media(max-width:700px){.ped-evidence-quotes{grid-template-columns:1fr}}
