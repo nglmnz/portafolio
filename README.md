@@ -166,3 +166,23 @@ Se confirmó la imagen subida por el autor a `pedagogias/assets/comision-ia.webp
 - **Fuentes:** 13 enlaces entre proyecto, UPLA, UPLA TV, Universidades Estatales, UAB y materiales adicionales. Un campo `verified` distingue las fuentes revisadas del material facilitado sin cotejo independiente (ciertos reels, un blog y un video de YouTube).
 - **Galería:** 67 imágenes aportadas a `fondecyt/assets/`, de las cuales 27 se distribuyen por auditorio, mediación personal, recorrido y exposición; otras 40 permanecen no publicadas a la espera de revisión de materiales con testimonios o mensajes personales. Tres fotografías específicas del auditorio integran el hero; hay sección destacada de mediación de metodologías y galería accesible con filtros, paginación y ampliación. El manifiesto `fondecyt/assets/galeria.json` conserva categorías, descripciones trilingües y notas de atribución; permisos de terceros por verificar.
 - **Identidad:** diseño editorial propio basado en hilos abstractos CSS; no copia ni presupone la autoría o derechos sobre fotografías, obras o materiales generados por participantes de investigación.
+
+## FONDECYT Chile–España y CEDEUS · noviembre 2026
+
+### FONDECYT Regular 1220508 · Chile → España
+
+El caso `/fondecyt/` incluye un nuevo bloque de **circulación internacional Chile–España**. La investigación y la exposición Hilvanar se desarrollaron en Chile, y la investigadora principal **Macarena Trujillo Cristoffanini** presentó las metodologías feministas visuales y participativas en la Universitat Autònoma de Barcelona, el **12 de junio de 2026**. La UAB publicó su crónica el 16 de junio. El encabezado se reforzó con una etiqueta Chile → España. El sitio distingue difusión internacional de un convenio de financiamiento binacional, que no se encuentra documentado. Se añadió contexto de la trayectoria académica de la investigadora (doctorado en Barcelona y Senior Fellow CALAS 2025 según su perfil profesional público), además de un enlace CALAS aportado por el usuario cuya página no fue accesible para comprobación directa.
+
+Referencia: https://webs.uab.cat/geografia-genere/es/2026/06/16/seminario-sobre-violencias-de-genero-espacio-y-resistencias-cotidianas-con-macarena-trujillo-cristoffanini/
+
+### CEDEUS / UC · Encuestador en terreno (2024)
+
+- **Nueva ruta:** `/cedeus/`, enlazada desde la experiencia profesional del portafolio.
+- **Investigación específica:** estudio doctoral de Emilio Berríos Álvarez, «Rol de espacios colectivos en la cohesión social urbana: aproximación multiescalar en el Gran Santiago», acreditado por CEDEUS en agosto de 2024.
+- **Participación declarada:** encuestas presenciales, recolección, verificación, control de calidad y preparación de respuestas entre mayo y agosto de 2024. Comunas citadas: Recoleta, Independencia, Las Condes, Providencia, Santiago Centro, Maipú, Estación Central y Ñuñoa. No se inventan recuentos ni resultados del estudio.
+- **Presentación didáctica:** cuatro lentes conceptuales de sociabilidad, pertenencia, escalas y desigualdad, diferenciadas de variables observadas y resultados efectivos.
+- **Contexto de política pública:** se refiere por separado a la presentación en enero de 2026 de **otro** estudio sobre pobreza de transporte, llevado por Ignacio Tiznado-Aitken. Juan Carlos Muñoz, ministro de Transportes en ese momento, participó como comentarista en Santiago. No se atribuyen los resultados ni el estudio de 2026 al encuestador del proyecto 2024, y no se afirma que se haya aprobado política gubernamental como consecuencia directa.
+- **Archivos:** `cedeus/index.html`, `cedeus/README.md`, `assets/cedeus-datos.json`, `assets/cedeus.js`, `assets/cedeus.css`.
+- **Idiomas:** español, inglés y portugués. Visualización abstracta de red urbana, sin fingir coordenadas ni puntos muestrales reales.
+
+Fuentes originales: https://www.cedeus.cl/blog/2024/08/23/conoce-los-trabajos-de-tesistas-y-investigadores-postdoctorales-de-cedeus/ ; https://redeus.org/el-rol-de-los-espacios-colectivos-en-la-cohesion-social-urbana-aproximacion-multiescalar-en-el-gran-santiago/ ; https://www.cedeus.cl/pobreza-de-transporte-una-brecha-pendiente-que-chile-debe-disminuir/ .
