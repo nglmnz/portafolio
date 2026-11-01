@@ -2,11 +2,11 @@
 
 ## Fotografía de la reunión de la comisión IA
 
-Para incorporar la foto del encuentro compartida por el autor, súbela en GitHub con el nombre **`pedagogias/assets/comision-ia.webp`**.
+Archivo presente y verificado en el árbol de GitHub: `pedagogias/assets/comision-ia.webp` (1.780.798 bytes).
 
-La página `pedagogias/index.html` busca automáticamente esa ruta. Si la fotografía existe, reemplaza el marcador visual editorial en la sección «Del trabajo académico a la conversación institucional». Si no existe o no puede cargarse, muestra el marcador con texto informativo sin atribuir una fotografía inexistente.
+Se muestra en la sección «Del trabajo académico a la conversación institucional» mediante una figura con pie de foto y texto alternativo en ES/EN/PT. El archivo fue aportado por el autor de la investigación. No se ha documentado el nombre de quien tomó la fotografía ni la fecha exacta de la toma; por ese motivo no se inventa esa información ni se identifican personas por su apariencia.
 
-**Antes de publicar la fotografía:** comprobar que puede difundirse en un portafolio personal, verificar autorización de personas retratadas y registrar fotógrafo/crédito de imagen en este archivo. Que la reunión sea académica no implica automáticamente que sus participantes hayan consentido su publicación en una web independiente.
+Antes de difundir o redistribuir la foto fuera de este contexto, conviene verificar la autorización de difusión de las personas retratadas. Si se conoce el crédito de fotógrafo, actualizar el campo `photo.credit` en `assets/pedagogias-datos.json`.
 
 ## Identidad institucional
 
@@ -28,6 +28,6 @@ Los correos y el acta proporcionados por el autor sustentan la cronología, pero
 
 ## Confirmación documental pendiente
 
-- Fotografía de la reunión, procedencia, fecha y crédito.
+- Autoría y fecha exacta de la fotografía de la comisión, junto con sus condiciones de autorización para difusión.
 - Acto formal de recepción / presentación del informe a las autoridades, si se desea mostrar su uso efectivo.
 - Permisos para publicar una versión completa del informe o capturas no anonimizadas.
