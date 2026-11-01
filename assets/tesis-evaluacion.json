@@ -93,8 +93,8 @@
       "name": "Cristóbal Bonelli",
       "role": {
         "es": "Profesor informante",
-        "en": "External examiner / reporting professor",
-        "pt": "Professor avaliador"
+        "en": "Reporting professor / second examiner",
+        "pt": "Professor avaliador (informante)"
       },
       "date": "2026-07-21",
       "score": "6,6",
@@ -242,5 +242,10 @@
     "es": "Los hallazgos de la tesis son observacionales y de alcance local. La convergencia temática con fuentes internacionales no debe confundirse con replicación de los resultados.",
     "en": "The thesis findings are observational and local in scope. Thematic overlap with international reports does not constitute replication.",
     "pt": "Os resultados da tese são observacionais e de alcance local. A convergência temática com relatórios internacionais não equivale a replicação."
+  },
+  "titleNote": {
+    "es": "Nota documental: las pautas de evaluación de julio de 2026 registran el título de artículo «La compulsividad, no el tiempo: habitus tecnológico y deterioro de la salud mental en estudiantes universitarios de primer año». La portada del seminario entregado conserva el título «Habitus tecnológico y conexión cuerpo-mente». Esta página usa el título del manuscrito aportado y conserva ambos registros sin interpretarlos como publicaciones distintas.",
+    "en": "Document note: the July 2026 evaluation forms use the article title «La compulsividad, no el tiempo: habitus tecnológico y deterioro de la salud mental en estudiantes universitarios de primer año». The supplied degree seminar uses «Habitus tecnológico y conexión cuerpo-mente» on its cover. Both refer to the submitted research, not to separate published articles.",
+    "pt": "Nota documental: os pareceres de julho de 2026 utilizam o título do artigo «La compulsividad, no el tiempo: habitus tecnológico y deterioro de la salud mental en estudiantes universitarios de primer año». A capa do seminário fornecido utiliza «Habitus tecnológico y conexión cuerpo-mente». Ambos se referem à pesquisa submetida, não a artigos publicados diferentes."
   }
 }
