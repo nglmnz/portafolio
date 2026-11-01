@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "origin": "Referencias aportadas por el organizador de CESI 2025. No todos los enlaces externos permiten una verificación automática de su estado o titularidad.",
+  "artistCount": 19,
+  "updated": "2026-11-01",
+  "artists": [
+    {
+      "name": "Bernardo Oyarzún",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/bernardoyarzun/"
+        },
+        {
+          "type": "galeria",
+          "label": "Galería Patricia Ready",
+          "url": "https://galeriapready.cl/artists/bernardo-oyarzun"
+        },
+        {
+          "type": "institucion",
+          "label": "Bienal de Venecia · Ministerio de las Culturas",
+          "url": "https://www.cultura.gob.cl/bienalvenecia2017/artista/"
+        },
+        {
+          "type": "entrevista",
+          "label": "Palabra Pública · Universidad de Chile",
+          "url": "https://palabrapublica.uchile.cl/bernardo-oyarzun-la-intuicion-tambien-es-una-forma-de-conocimiento/"
+        },
+        {
+          "type": "museo",
+          "label": "MAVI UC",
+          "url": "https://mavi.uc.cl/artistas/bernardo-oyarzun/"
+        },
+        {
+          "type": "video",
+          "label": "CNTV Infantil · Video",
+          "url": "https://cntvinfantil.cl/videos/bernardo-oyarzun/"
+        },
+        {
+          "type": "articulo",
+          "label": "VIST Projects · Perfil",
+          "url": "https://vistprojects.com/lo-indigena-como-universal-la-obra-de-bernardo-oyarzun/"
+        },
+        {
+          "type": "institucion",
+          "label": "Fundación Engel",
+          "url": "https://fundacionengel.cl/Bernardo-Oyarzun"
+        }
+      ]
+    },
+    {
+      "name": "Voluspa Jarpa",
+      "links": [
+        {
+          "type": "sitio",
+          "label": "Sitio de la artista",
+          "url": "https://www.voluspajarpa.com/"
+        },
+        {
+          "type": "instagram",
+          "label": "Instagram · Studio",
+          "url": "https://www.instagram.com/voluspa.jarpa.studio/"
+        },
+        {
+          "type": "galeria",
+          "label": "Galería Patricia Ready",
+          "url": "https://galeriapready.cl/artists/voluspa-jarpa"
+        },
+        {
+          "type": "institucion",
+          "label": "Escuela de Arte UC",
+          "url": "https://escuelaarte.uc.cl/docentes/voluspa-jarpa/"
+        },
+        {
+          "type": "video",
+          "label": "YouTube · Registro",
+          "url": "https://www.youtube.com/watch?v=KgDaZxpnOAo"
+        }
+      ]
+    },
+    {
+      "name": "Gonzalo Tapia",
+      "links": [
+        {
+          "type": "sitio",
+          "label": "Sitio de la artista",
+          "url": "http://www.gonzalotapia.com/"
+        },
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/gonzalotapiado/"
+        },
+        {
+          "type": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://cl.linkedin.com/in/gonzalo-tapia-18327538b"
+        }
+      ]
+    },
+    {
+      "name": "Felipe Olivares",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/horuss_sunshine/"
+        }
+      ]
+    },
+    {
+      "name": "Beatriz Ahumada",
+      "display": "Beatriz Ahumada Molina",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/beakrea_/"
+        }
+      ]
+    },
+    {
+      "name": "Demian Schopf",
+      "links": [
+        {
+          "type": "sitio",
+          "label": "Sitio del artista",
+          "url": "https://demianschopf.com/"
+        },
+        {
+          "type": "articulo",
+          "label": "SciELO Chile · Artículo",
+          "url": "https://www.scielo.cl/scielo.php?pid=S0718-22012024000200075&script=sci_arttext&tlng=es"
+        }
+      ]
+    },
+    {
+      "name": "Hugo Rivera Scott",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/h.riverascott/"
+        },
+        {
+          "type": "perfil",
+          "label": "ArteInformado · Perfil",
+          "url": "https://www.arteinformado.com/guia/f/hugo-rivera-scott-50359"
+        },
+        {
+          "type": "articulo",
+          "label": "Artishock · Exposición MAC",
+          "url": "https://artishockrevista.com/2024/12/20/hugo-rivera-scott-mac/"
+        }
+      ]
+    },
+    {
+      "name": "Eleodoro Calderón",
+      "role": "visual-identity",
+      "links": [
+        {
+          "type": "sitio",
+          "label": "Portfolio · Cargo",
+          "url": "https://cargocollective.com/EleodoroCalderon/Textos"
+        },
+        {
+          "type": "institucion",
+          "label": "Núcleo Digital UDP · Texto",
+          "url": "https://nucleodigitalarte.udp.cl/texto-x-texto/discurso-premio-caracter-2015-eleodoro-calderon/"
+        }
+      ]
+    },
+    {
+      "name": "Emilia Moren",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/emiliamorenn/"
+        },
+        {
+          "type": "institucion",
+          "label": "Universidad de Chile · Liturgias menores",
+          "url": "https://artes.uchile.cl/noticias/229702/liturgias-menores-emilia-moren-transforma-lo-cotidiano-en-ritual"
+        },
+        {
+          "type": "publicacion",
+          "label": "Barbarie · Publicaciones",
+          "url": "https://www.barbarie.lat/textos-y-publicaciones/tags/emilia-moren"
+        },
+        {
+          "type": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://cl.linkedin.com/in/emilia-moren-b2399534a"
+        }
+      ]
+    },
+    {
+      "name": "Ignacio Gatica",
+      "links": [
+        {
+          "type": "sitio",
+          "label": "Sitio del artista",
+          "url": "https://www.ignaciogatica.com/"
+        },
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ignaciogatica/"
+        },
+        {
+          "type": "galeria",
+          "label": "Galería Patricia Ready",
+          "url": "https://galeriapready.cl/artists/ignacio-gatica"
+        },
+        {
+          "type": "articulo",
+          "label": "Artishock · Whitney 2026",
+          "url": "https://artishockrevista.com/2026/08/01/bienal-whitney-2026/"
+        },
+        {
+          "type": "articulo",
+          "label": "Artishock · TANSTAAFL",
+          "url": "https://artishockrevista.com/2019/04/12/ignacio-gatica-tanstaafl-theres-no-such-thing-as-a-free-lunch-2/"
+        }
+      ]
+    },
+    {
+      "name": "Máximo Corvalán-Pincheira",
+      "links": [
+        {
+          "type": "sitio",
+          "label": "Sitio del artista",
+          "url": "https://maximocorvalan-pincheira.com/"
+        },
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/corvalan_pincheira/"
+        },
+        {
+          "type": "articulo",
+          "label": "BioBioChile · Arte y cultura",
+          "url": "https://www.biobiochile.cl/noticias/artes-y-cultura/actualidad-cultural/2026/01/13/maximo-corvalan-pincheira-y-la-balsa-como-dispositivo-de-flujos-perdidos.shtml"
+        }
+      ]
+    },
+    {
+      "name": "Javiera Eugenia Olivares",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/libelulass_/"
+        }
+      ]
+    },
+    {
+      "name": "Antonio Briceño",
+      "links": [
+        {
+          "type": "sitio",
+          "label": "Sitio del artista",
+          "url": "https://www.antoniobriceno.net/"
+        },
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/antoniobricenolinares/"
+        }
+      ]
+    },
+    {
+      "name": "Francisco Tapia",
+      "note": "Formación en Artes Visuales, Universidad de Chile (dato facilitado).",
+      "links": []
+    },
+    {
+      "name": "Felipe Rivas San Martín",
+      "links": [
+        {
+          "type": "sitio",
+          "label": "Sitio del artista",
+          "url": "https://www.feliperivas.com/"
+        },
+        {
+          "type": "institucion",
+          "label": "BAU Barcelona · Profesorado",
+          "url": "https://www.baued.es/profesores/felipe-rivas-san-martin"
+        },
+        {
+          "type": "articulo",
+          "label": "Artishock · Archivo e IA",
+          "url": "https://artishockrevista.com/2025/02/21/felipe-rivas-san-martin-archivo-homosexual-ia/"
+        }
+      ]
+    },
+    {
+      "name": "José Miguel Mardones",
+      "work": "Banco de Talca",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram · Banco de Talca",
+          "url": "https://www.instagram.com/bancodetalca/"
+        },
+        {
+          "type": "perfil",
+          "label": "Arte Laguna · Artista",
+          "url": "https://artelaguna.world/artist/mardones-jose-miguel/"
+        },
+        {
+          "type": "articulo",
+          "label": "BioBioChile · Banco de Talca",
+          "url": "https://www.biobiochile.cl/noticias/artes-y-cultura/actualidad-cultural/2026/05/06/banco-de-talca-reabre-sus-puertas-con-exhibicion-en-fundacion-veta-espacio-creativo.shtml"
+        }
+      ]
+    },
+    {
+      "name": "Matías Valenzuela Bravo",
+      "links": [
+        {
+          "type": "institucion",
+          "label": "Balmaceda Arte Joven · LAB2",
+          "url": "https://www.balmacedartejoven.cl/portada/lab2-la-medida-de-todas-las-cosas/"
+        },
+        {
+          "type": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://cl.linkedin.com/in/matias-valenzuela-bravo-170849335"
+        },
+        {
+          "type": "instagram-post",
+          "label": "Instagram · Publicación",
+          "url": "https://www.instagram.com/p/C-aOyEEOlVv/"
+        }
+      ]
+    },
+    {
+      "name": "Gianfranco Foschino",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram · @gianfoschino",
+          "url": "https://www.instagram.com/gianfoschino/"
+        },
+        {
+          "type": "instagram",
+          "label": "Instagram · @gfoschino",
+          "url": "https://www.instagram.com/gfoschino/"
+        }
+      ]
+    },
+    {
+      "name": "Castro Hueche",
+      "links": [
+        {
+          "type": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/castrohueche/"
+        },
+        {
+          "type": "institucion",
+          "label": "Escuela de Arte UC · Rodrigo Castro Hueche",
+          "url": "https://artes.uc.cl/noticias/rodrigo-castro-hueche-entender-lo-mapuche-desde-su-diversidad/"
+        },
+        {
+          "type": "perfil",
+          "label": "ArteInformado · Rodrigo Castro Hueche",
+          "url": "https://www.arteinformado.com/guia/f/rodrigo-castro-hueche-197690"
+        }
+      ]
+    }
+  ]
+}
