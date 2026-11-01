@@ -109,7 +109,7 @@ La ruta `/tesis/` incorpora dos nuevas secciones cuyos datos están en `assets/t
 
 ### Estado y mapa documental de Sustancia (noviembre 2026)
 
-Esta revisión sustituye la presentación centrada exclusivamente en la rúbrica N1–N4. Se relevaron las **seis áreas actualmente documentadas** de la web de Sustancia, el JavaScript del simulador y el código del prototipo accesible por enlace:
+Esta revisión sustituye la presentación centrada exclusivamente en la rúbrica N1–N4. Se relevaron las **siete páginas actualmente documentadas** de la web de Sustancia, el JavaScript del simulador y el código del prototipo accesible por enlace:
 
 | Página de origen | Qué incorpora ahora el portafolio |
 |---|---|
