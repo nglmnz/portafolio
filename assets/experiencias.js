@@ -97,7 +97,15 @@ const main=part("galeria","08 / "+ui("photos"),ui("photos"),tr(data.gallery.note
 const photos=Array.isArray(album?.images)?album.images.filter(x=>x.sensitive!==true&&typeof x.permission==="string"&&/(autoriz|consent|permission granted|licensed|licencia)/i.test(x.permission)):[];
 if(!photos.length){const empty=n("div","xp-gallery-empty");add(empty,n("div","xp-gallery-mark","◎"),h(ui("photoEmpty"),3),p(ui("fileHelp")+": "+kind+"/assets/", "xp-path"));add(main,empty);return}
 const grid=n("div","xp-photo-grid");
-photos.forEach(x=>{const card=n("figure","xp-photo"),img=n("img");img.src="assets/"+encodeURIComponent(x.src);img.alt=tr(x.alt);img.loading="lazy";const cap=n("figcaption");add(cap,p(tr(x.caption)),n("small","",x.credit||""));add(card,img,cap);add(grid,card)});
+let photoYear=null;
+photos.forEach(x=>{
+ if(kind==="cine-disidencias"&&x.year!==photoYear){
+  photoYear=x.year;
+  add(grid,n("h3","xp-photo-group",x.year==="2022"?(language==="es"?"2022 · Mesa de Disidencias":language==="en"?"2022 · Mesa de Disidencias":"2022 · Mesa de Disidencias"):(language==="es"?"2025 · Centro de Estudiantes de Sociología":language==="en"?"2025 · Sociology Student Centre":"2025 · Centro de Estudantes de Sociologia")));
+ }
+ const card=n("figure","xp-photo"),img=n("img");img.src="assets/"+encodeURIComponent(x.src);img.alt=tr(x.alt);img.loading="lazy";img.decoding="async";
+ const cap=n("figcaption");add(cap,p(tr(x.caption)),n("small","",x.credit||""));add(card,img,cap);add(grid,card);
+});
 add(main,grid);
 }
 function end(){
