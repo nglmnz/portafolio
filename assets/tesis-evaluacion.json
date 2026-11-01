@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "origin": "Evaluaciones UAH aportadas por el autor (Claudio Ramos 15-07-2026; Cristóbal Bonelli 21-07-2026) y fuentes públicas institucionales consultadas 2026-11-01.",
+  "title": {
+    "es": "Revisión académica: voces, trayectorias y preguntas abiertas",
+    "en": "Academic review: people, expertise and open questions",
+    "pt": "Avaliação acadêmica: pessoas, trajetórias e questões em aberto"
+  },
+  "intro": {
+    "es": "El seminario recibió dos evaluaciones formales. Sus valoraciones reconocen el rigor conceptual y metodológico, pero también identifican problemas que orientan una agenda de investigación posterior. Se distinguen los comentarios de la comisión de las fuentes públicas sobre la trayectoria de cada académico.",
+    "en": "The degree seminar received two formal assessments. The reviewers acknowledge its conceptual and methodological strengths, while also identifying questions that shape further research. Their comments are clearly distinguished from external information about their careers.",
+    "pt": "O seminário recebeu duas avaliações formais. Os pareceres reconhecem a consistência conceitual e metodológica e apontam questões para aprofundamento. Os comentários são diferenciados das fontes públicas sobre suas trajetórias."
+  },
+  "reviewers": [
+    {
+      "id": "ramos",
+      "name": "Claudio Ramos Zincke",
+      "role": {
+        "es": "Profesor guía del seminario",
+        "en": "Degree seminar supervisor",
+        "pt": "Professor orientador"
+      },
+      "date": "2026-07-15",
+      "score": "7,0",
+      "profile": "https://investigacion.uahurtado.cl/personas/claudio-ramos/",
+      "photo": {
+        "src": "https://portaluchile.uchile.cl/.imaging/default/dam/imagenes/Uchile/Imagenes-DEMRE/noticias-365-directora-lanzamiento-libro-admision.jpg/jcr%3Acontent.jpg",
+        "source": "https://uchile.cl/noticias/210023/directora-del-demre-participo-en-lanzamiento-de-libro-sobre-admision",
+        "credit": "Universidad de Chile · fotografía de actividad académica de presentación de libro; Ramos a la derecha",
+        "note": {
+          "es": "Fotografía de actividad académica, no retrato individual.",
+          "en": "Photograph from an academic event, not an individual portrait.",
+          "pt": "Fotografia de evento acadêmico, não retrato individual."
+        }
+      },
+      "bio": {
+        "es": "Sociólogo y profesor titular de la Universidad Alberto Hurtado, doctor en Sociología por la University of Texas at Austin. Su investigación aborda producción del conocimiento sociológico, ciencia y sociedad, evaluación educacional y dispositivos sociotécnicos.",
+        "en": "Sociologist and full professor at Universidad Alberto Hurtado, with a PhD in Sociology from the University of Texas at Austin. His work explores sociological knowledge, science and society, educational assessment and sociotechnical devices.",
+        "pt": "Sociólogo e professor titular da Universidad Alberto Hurtado, doutor em Sociologia pela University of Texas at Austin. Pesquisa produção do conhecimento sociológico, ciência e sociedade, avaliação educacional e dispositivos sociotécnicos."
+      },
+      "quote": {
+        "es": "«Es un excelente trabajo fruto de una investigación bien pensada conceptualmente».",
+        "en": "“An excellent study grounded in careful conceptual research.” [translated excerpt]",
+        "pt": "«Um excelente trabalho fruto de uma pesquisa conceitualmente bem pensada.» [trecho traduzido]"
+      },
+      "strength": {
+        "es": "Destacó el diseño, la operacionalización y la articulación de evidencia con teoría. La pauta asigna 7,0 al artículo y 7,0 como promedio ponderado del profesor guía.",
+        "en": "Praised research design, operationalization and integration of evidence with theory. The assessment assigns 7.0 to the article and 7.0 as the supervisor's weighted mark.",
+        "pt": "Destacou o desenho, a operacionalização e a articulação entre evidência e teoria. A pauta atribui 7,0 ao artigo e 7,0 à média ponderada do orientador."
+      },
+      "caveat": {
+        "es": "Recomendó comprobar estadísticamente si la agencia epistémica tendría una asociación protectora, precisar la interpretación del capital cultural y evitar generalizaciones fuera de la muestra.",
+        "en": "Recommended testing whether epistemic agency has a protective association, refining how parental cultural capital is interpreted and avoiding generalization beyond the sample.",
+        "pt": "Recomendou testar a possível associação protetora da agência epistêmica, refinar a interpretação do capital cultural familiar e evitar generalizações além da amostra."
+      },
+      "links": [
+        {
+          "label": {
+            "es": "Perfil académico · UAH",
+            "en": "Academic profile · UAH",
+            "pt": "Perfil acadêmico · UAH"
+          },
+          "url": "https://investigacion.uahurtado.cl/personas/claudio-ramos/"
+        },
+        {
+          "label": {
+            "es": "Libro · Ediciones UAH",
+            "en": "Book · UAH Press",
+            "pt": "Livro · Editora UAH"
+          },
+          "url": "https://ediciones.uahurtado.cl/producto/relatos-sociologicos-y-sociedad/"
+        },
+        {
+          "label": {
+            "es": "Alexis Cortés analiza su obra · Estudios Públicos",
+            "en": "Alexis Cortés reviews his work · Estudios Públicos",
+            "pt": "Alexis Cortés analisa sua obra · Estudios Públicos"
+          },
+          "url": "https://estudiospublicos.cl/index.php/cep/article/view/2569"
+        },
+        {
+          "label": {
+            "es": "Su respuesta al simposio · Estudios Públicos",
+            "en": "His response to the symposium · Estudios Públicos",
+            "pt": "Sua resposta ao simpósio · Estudios Públicos"
+          },
+          "url": "https://estudiospublicos.cl/index.php/cep/issue/view/181"
+        }
+      ]
+    },
+    {
+      "id": "bonelli",
+      "name": "Cristóbal Bonelli",
+      "role": {
+        "es": "Profesor informante",
+        "en": "External examiner / reporting professor",
+        "pt": "Professor avaliador"
+      },
+      "date": "2026-07-21",
+      "score": "6,6",
+      "profile": "https://csociales.uahurtado.cl/personas/cristobal-bonelli/",
+      "photo": null,
+      "bio": {
+        "es": "Antropólogo social y psicólogo clínico, doctor en Antropología Social por la Universidad de Edimburgo. Profesor asociado UAH y director del Centro de Estudios en Ciencia, Tecnología y Sociedad; dirigió Worlds of Lithium, financiado por el European Research Council.",
+        "en": "Social anthropologist and clinical psychologist, with a PhD in Social Anthropology from the University of Edinburgh. UAH associate professor and director of its Science, Technology and Society research centre; he led the ERC-funded Worlds of Lithium project.",
+        "pt": "Antropólogo social e psicólogo clínico, doutor em Antropologia Social pela Universidade de Edimburgo. Professor associado da UAH e diretor do Centro de Estudos em Ciência, Tecnologia e Sociedade; liderou o projeto Worlds of Lithium, financiado pelo ERC."
+      },
+      "quote": {
+        "es": "«Una combinación poco frecuente en un seminario de licenciatura».",
+        "en": "“An unusual combination for an undergraduate degree seminar.” [translated excerpt]",
+        "pt": "«Uma combinação pouco frequente em um seminário de graduação.» [trecho traduzido]"
+      },
+      "strength": {
+        "es": "Valoró la pertinencia sociológica, la reflexión teórica y las herramientas cuantitativas. La pauta de profesor informante asigna 6,6 sobre 7,0.",
+        "en": "Praised the sociological relevance, theoretical thinking and quantitative methods. His examiner's assessment gives 6.6 out of 7.0.",
+        "pt": "Valorizou a pertinência sociológica, a reflexão teórica e os métodos quantitativos. Sua avaliação atribui 6,6 de 7,0."
+      },
+      "caveat": {
+        "es": "Propuso profundizar la operacionalización del habitus, moderar las afirmaciones causales y desarrollar el vínculo entre cansancio corporal, género y prácticas tecnológicas.",
+        "en": "Recommended strengthening the operationalization of habitus, moderating causal claims, and developing links between bodily fatigue, gender and technological practices.",
+        "pt": "Recomendou aprofundar a operacionalização do habitus, moderar afirmações causais e desenvolver as relações entre cansaço corporal, gênero e práticas tecnológicas."
+      },
+      "links": [
+        {
+          "label": {
+            "es": "Perfil académico · UAH",
+            "en": "Academic profile · UAH",
+            "pt": "Perfil acadêmico · UAH"
+          },
+          "url": "https://csociales.uahurtado.cl/personas/cristobal-bonelli/"
+        },
+        {
+          "label": {
+            "es": "Worlds of Lithium · ERC",
+            "en": "Worlds of Lithium · ERC",
+            "pt": "Worlds of Lithium · ERC"
+          },
+          "url": "https://worldsoflithium.eu/team/cristobal-bonelli/"
+        },
+        {
+          "label": {
+            "es": "Publicaciones · ORCID",
+            "en": "Publications · ORCID",
+            "pt": "Publicações · ORCID"
+          },
+          "url": "https://orcid.org/0000-0001-8109-0789"
+        }
+      ]
+    }
+  ],
+  "scoreNote": {
+    "es": "Las notas 7,0 y 6,6 pertenecen a dos pautas distintas. Su promedio aritmético simple es 6,8; no constituye por sí solo una certificación de la calificación final oficial del seminario. Las pautas no se publican aquí íntegramente.",
+    "en": "Marks 7.0 and 6.6 come from separate evaluations. Their simple arithmetic mean is 6.8; it is not, by itself, a certificate of the seminar's official final mark. The complete reports are not posted here.",
+    "pt": "As notas 7,0 e 6,6 pertencem a duas avaliações distintas. Sua média aritmética simples é 6,8; isso não constitui, por si só, certificado da nota final oficial do seminário. Os pareceres completos não são publicados aqui."
+  },
+  "source": {
+    "es": "Pautas de evaluación UAH fechadas 15 y 21 de julio de 2026, facilitadas por el autor del seminario.",
+    "en": "UAH assessments dated 15 and 21 July 2026, provided by the seminar author.",
+    "pt": "Pareceres da UAH datados de 15 e 21 de julho de 2026, fornecidos pelo autor do seminário."
+  },
+  "contextTitle": {
+    "es": "¿Por qué investigar ahora la relación entre tecnología y bienestar?",
+    "en": "Why study technology and wellbeing now?",
+    "pt": "Por que pesquisar a relação entre tecnologia e bem-estar agora?"
+  },
+  "contextIntro": {
+    "es": "Cuatro informes ofrecen una perspectiva internacional que amplía y también matiza el problema. Son fuentes de contexto —no validaciones externas de los resultados UAH—, con edades, territorios y diseños distintos.",
+    "en": "Four reports offer broader international context and nuance. They do not independently validate the UAH findings; their populations, contexts and designs differ.",
+    "pt": "Quatro relatórios ampliam e matizam o contexto internacional. Não validam os resultados da UAH; suas populações, territórios e desenhos são diferentes."
+  },
+  "context": [
+    {
+      "id": "who",
+      "name": "OMS / WHO Europe",
+      "year": "2024",
+      "stat": "7 % → 11 %",
+      "url": "https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health",
+      "title": {
+        "es": "Uso problemático de redes sociales entre adolescentes",
+        "en": "Problematic social-media use among adolescents",
+        "pt": "Uso problemático de redes sociais entre adolescentes"
+      },
+      "description": {
+        "es": "En su estudio HBSC, la OMS identificó un aumento del 7 % (2018) al 11 % (2022) en señales de uso problemático de redes sociales en adolescentes de 11, 13 y 15 años. Es otro universo de estudio; contextualiza la discusión, no se compara directamente con estudiantes UAH.",
+        "en": "WHO HBSC reports an increase from 7% (2018) to 11% (2022) in problematic social-media use among adolescents aged 11, 13 and 15. This is a different population and is not directly comparable with UAH students.",
+        "pt": "O HBSC da OMS registra aumento de 7% (2018) para 11% (2022) em sinais de uso problemático de redes sociais entre adolescentes de 11, 13 e 15 anos. Não é diretamente comparável à amostra UAH."
+      }
+    },
+    {
+      "id": "unicef",
+      "name": "UNICEF Innocenti",
+      "year": "2025",
+      "stat": "Uso ≠ efecto",
+      "url": "https://www.unicef.org/innocenti/reports/childhood-digital-world",
+      "title": {
+        "es": "La infancia en un mundo digital",
+        "en": "Childhood in a Digital World",
+        "pt": "A infância em um mundo digital"
+      },
+      "description": {
+        "es": "El informe distingue tiempo, tipo de uso, contenidos, experiencias y desigualdades; advierte que las tecnologías pueden generar beneficios o perjuicios dependiendo de las condiciones.",
+        "en": "The report distinguishes duration, types of use, content, experiences and inequality, highlighting that technologies may help or harm depending on circumstances.",
+        "pt": "O relatório diferencia tempo, modalidades de uso, conteúdos, experiências e desigualdades, observando que as tecnologias podem ajudar ou prejudicar conforme as condições."
+      }
+    },
+    {
+      "id": "unesco",
+      "name": "UNESCO · GEM",
+      "year": "2023",
+      "stat": "Tecnología con propósito",
+      "url": "https://www.unesco.org/es/articles/informe-de-seguimiento-de-la-educacion-en-el-mundo-2023-tecnologia-en-la-educacion-una-herramienta",
+      "title": {
+        "es": "Tecnología en educación: ¿en los términos de quién?",
+        "en": "Technology in education: a tool on whose terms?",
+        "pt": "Tecnologia na educação: uma ferramenta nos termos de quem?"
+      },
+      "description": {
+        "es": "UNESCO llama a evaluar pertinencia, equidad, escalabilidad y sostenibilidad y a utilizar herramientas que acompañen, en lugar de sustituir, la interacción educativa humana.",
+        "en": "UNESCO calls for examining relevance, equity, scale and sustainability, and for tools that support rather than replace human-led teaching.",
+        "pt": "A UNESCO propõe avaliar pertinência, equidade, escala e sustentabilidade, com ferramentas que apoiem, em vez de substituir, a interação educativa humana."
+      }
+    },
+    {
+      "id": "oecd",
+      "name": "OCDE / OECD",
+      "year": "2025",
+      "stat": "Agencia y aprendizaje",
+      "url": "https://www.oecd.org/en/publications/education-policy-outlook-2025_c3f402ba-en.html",
+      "title": {
+        "es": "Aprender durante la transformación digital",
+        "en": "Lifelong learning through digital transformation",
+        "pt": "Aprendizagem em meio à transformação digital"
+      },
+      "description": {
+        "es": "El informe sitúa la agencia del aprendiz y su capacidad de aplicar conocimiento en el centro de las políticas educativas de un mundo digitalizado.",
+        "en": "The report focuses on learner agency and the ability to find, acquire and apply knowledge amid digital transformation.",
+        "pt": "O relatório coloca a agência de quem aprende e a capacidade de identificar, adquirir e aplicar conhecimento no centro das políticas educacionais."
+      }
+    }
+  ],
+  "editorialNote": {
+    "es": "Los hallazgos de la tesis son observacionales y de alcance local. La convergencia temática con fuentes internacionales no debe confundirse con replicación de los resultados.",
+    "en": "The thesis findings are observational and local in scope. Thematic overlap with international reports does not constitute replication.",
+    "pt": "Os resultados da tese são observacionais e de alcance local. A convergência temática com relatórios internacionais não equivale a replicação."
+  }
+}
