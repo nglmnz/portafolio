@@ -107,6 +107,17 @@ if(storyImgs.length){
  append(inner,flow);append(walking,inner);root.append(walking);
 }
 
+const international=section("chile-espana","05 / "+tr(data.international.eyebrow),tr(data.international.title),tr(data.international.description));
+const cross=node("div","international-panel"),route=node("div","international-route");
+const chile=node("article","country-point"),spanish=node("article","country-point");
+append(chile,node("span","country-tag","CHILE"),h("Valparaíso",3),para(lang==="es"?"Proyecto ANID / FONDECYT 1220508 · Universidad de Playa Ancha":lang==="en"?"ANID / FONDECYT 1220508 · Universidad de Playa Ancha":"Projeto ANID / FONDECYT 1220508 · Universidad de Playa Ancha"));
+append(spanish,node("span","country-tag","ESPAÑA"),h("Barcelona",3),para(tr(data.international.host)+" · "+data.international.date));
+append(route,chile,node("div","country-connector","→"),spanish);
+const detail=node("div","international-detail");
+append(detail,para(tr(data.international.methodological)),para(tr(data.international.distinction),"international-disclaimer"));
+const dest=node("div","international-links");
+append(dest,a(lang==="es"?"Leer crónica UAB ↗":lang==="en"?"Read UAB account ↗":"Ler notícia UAB ↗",data.international.link,"source-link"),a(lang==="es"?"Perfil de Macarena Trujillo · CALAS ↗":lang==="en"?"Macarena Trujillo · CALAS profile ↗":"Perfil de Macarena Trujillo · CALAS ↗",data.international.calasLink,"source-link"));
+append(detail,dest);append(cross,route,detail);append(international,cross);
 const credits=section("equipo","05 / "+i("credits"),i("team"),lang==="es"?"Se conserva la autoría y responsabilidad de la investigación, la curaduría y las funciones de colaboración.":lang==="en"?"Research, curation and collaboration roles are carefully distinguished.":"São diferenciadas as responsabilidades pela pesquisa, pela curadoria e pela colaboração.");
 let creditGrid=node("div","credit-grid");
 data.credits.forEach(p=>{let x=node("article","credit-card");append(x,h(p.name,3),para(tr(p.role)));if(p.link)append(x,a(i("read")+" ↗",p.link,"source-link"));append(creditGrid,x)});
