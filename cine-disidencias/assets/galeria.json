@@ -1,8 +1,189 @@
 {
-  "version": 1,
+  "version": 2,
   "case": "cine-disidencias",
-  "description": "Archivo fotográfico pendiente. Subir únicamente material del autor o autorizado y registrar créditos.",
-  "images": [],
+  "description": "Registros de jornadas de cine y conversación en la Universidad Alberto Hurtado, con procedencia y organización separadas por año.",
+  "images": [
+    {
+      "src": "actividad_2022_001JPG.webp",
+      "category": "2022",
+      "date": "2022 (día no confirmado)",
+      "alt": {
+        "es": "Registro de personas exponiendo y conversando en una actividad de la Mesa de Disidencias UAH en una sala de clases.",
+        "en": "Wide view of a UAH Mesa de Disidencias discussion in a classroom.",
+        "pt": "Registro de uma conversa da Mesa de Disidencias UAH em sala de aula."
+      },
+      "caption": {
+        "es": "Mesa de Disidencias UAH · encuentro sobre realidades trans y proyección de Naomi Campbel",
+        "en": "UAH Mesa de Disidencias · discussion of trans realities and Naomi Campbel screening",
+        "pt": "Mesa de Disidencias UAH · conversa sobre realidades trans e sessão de Naomi Campbel"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y asistentes por verificar",
+      "sensitive": false,
+      "year": "2022",
+      "order": 1
+    },
+    {
+      "src": "actividad_2022_002JPG.webp",
+      "category": "2022",
+      "date": "2022 (día no confirmado)",
+      "alt": {
+        "es": "Registro de personas exponiendo y conversando en una actividad de la Mesa de Disidencias UAH en una sala de clases.",
+        "en": "Wide view of a UAH Mesa de Disidencias discussion in a classroom.",
+        "pt": "Registro de uma conversa da Mesa de Disidencias UAH em sala de aula."
+      },
+      "caption": {
+        "es": "Mesa de Disidencias UAH · encuentro sobre realidades trans y proyección de Naomi Campbel",
+        "en": "UAH Mesa de Disidencias · discussion of trans realities and Naomi Campbel screening",
+        "pt": "Mesa de Disidencias UAH · conversa sobre realidades trans e sessão de Naomi Campbel"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y asistentes por verificar",
+      "sensitive": false,
+      "year": "2022",
+      "order": 2
+    },
+    {
+      "src": "actividad_2022_003JPG.webp",
+      "category": "2022",
+      "date": "2022 (día no confirmado)",
+      "alt": {
+        "es": "Registro de personas exponiendo y conversando en una actividad de la Mesa de Disidencias UAH en una sala de clases.",
+        "en": "Wide view of a UAH Mesa de Disidencias discussion in a classroom.",
+        "pt": "Registro de uma conversa da Mesa de Disidencias UAH em sala de aula."
+      },
+      "caption": {
+        "es": "Mesa de Disidencias UAH · encuentro sobre realidades trans y proyección de Naomi Campbel",
+        "en": "UAH Mesa de Disidencias · discussion of trans realities and Naomi Campbel screening",
+        "pt": "Mesa de Disidencias UAH · conversa sobre realidades trans e sessão de Naomi Campbel"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y asistentes por verificar",
+      "sensitive": false,
+      "year": "2022",
+      "order": 3
+    },
+    {
+      "src": "actividad_2022_004JPG.webp",
+      "category": "2022",
+      "date": "2022 (día no confirmado)",
+      "alt": {
+        "es": "Registro de personas exponiendo y conversando en una actividad de la Mesa de Disidencias UAH en una sala de clases.",
+        "en": "Wide view of a UAH Mesa de Disidencias discussion in a classroom.",
+        "pt": "Registro de uma conversa da Mesa de Disidencias UAH em sala de aula."
+      },
+      "caption": {
+        "es": "Mesa de Disidencias UAH · encuentro sobre realidades trans y proyección de Naomi Campbel",
+        "en": "UAH Mesa de Disidencias · discussion of trans realities and Naomi Campbel screening",
+        "pt": "Mesa de Disidencias UAH · conversa sobre realidades trans e sessão de Naomi Campbel"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y asistentes por verificar",
+      "sensitive": false,
+      "year": "2022",
+      "order": 4
+    },
+    {
+      "src": "actividad_2022_005JPG.webp",
+      "category": "2022",
+      "date": "2022 (día no confirmado)",
+      "alt": {
+        "es": "Registro de personas exponiendo y conversando en una actividad de la Mesa de Disidencias UAH en una sala de clases.",
+        "en": "Wide view of a UAH Mesa de Disidencias discussion in a classroom.",
+        "pt": "Registro de uma conversa da Mesa de Disidencias UAH em sala de aula."
+      },
+      "caption": {
+        "es": "Mesa de Disidencias UAH · encuentro sobre realidades trans y proyección de Naomi Campbel",
+        "en": "UAH Mesa de Disidencias · discussion of trans realities and Naomi Campbel screening",
+        "pt": "Mesa de Disidencias UAH · conversa sobre realidades trans e sessão de Naomi Campbel"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y asistentes por verificar",
+      "sensitive": false,
+      "year": "2022",
+      "order": 5
+    },
+    {
+      "src": "actividad_2022_006JPEG.webp",
+      "category": "2022",
+      "date": "2022 (día no confirmado)",
+      "alt": {
+        "es": "Registro de personas exponiendo y conversando en una actividad de la Mesa de Disidencias UAH en una sala de clases.",
+        "en": "Wide view of a UAH Mesa de Disidencias discussion in a classroom.",
+        "pt": "Registro de uma conversa da Mesa de Disidencias UAH em sala de aula."
+      },
+      "caption": {
+        "es": "Mesa de Disidencias UAH · encuentro sobre realidades trans y proyección de Naomi Campbel",
+        "en": "UAH Mesa de Disidencias · discussion of trans realities and Naomi Campbel screening",
+        "pt": "Mesa de Disidencias UAH · conversa sobre realidades trans e sessão de Naomi Campbel"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y asistentes por verificar",
+      "sensitive": false,
+      "year": "2022",
+      "order": 6
+    },
+    {
+      "src": "actividad_2022_007JPEG.webp",
+      "category": "2022",
+      "date": "2022 (día no confirmado)",
+      "alt": {
+        "es": "Registro de personas exponiendo y conversando en una actividad de la Mesa de Disidencias UAH en una sala de clases.",
+        "en": "Wide view of a UAH Mesa de Disidencias discussion in a classroom.",
+        "pt": "Registro de uma conversa da Mesa de Disidencias UAH em sala de aula."
+      },
+      "caption": {
+        "es": "Mesa de Disidencias UAH · encuentro sobre realidades trans y proyección de Naomi Campbel",
+        "en": "UAH Mesa de Disidencias · discussion of trans realities and Naomi Campbel screening",
+        "pt": "Mesa de Disidencias UAH · conversa sobre realidades trans e sessão de Naomi Campbel"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y asistentes por verificar",
+      "sensitive": false,
+      "year": "2022",
+      "order": 7
+    },
+    {
+      "src": "actividad_2025_panelistas-2.webp",
+      "category": "2025",
+      "date": "2025-07-02",
+      "alt": {
+        "es": "Fotografía de un panel de conversación durante una actividad sobre parentalidades transgénero en la UAH.",
+        "en": "Photo of a panel discussion during a UAH event about transgender parenthood.",
+        "pt": "Foto de um painel de conversa durante atividade sobre parentalidades trans na UAH."
+      },
+      "caption": {
+        "es": "Centro de Estudiantes de Sociología UAH · conversatorio sobre parentalidades transgénero, 2 de julio de 2025",
+        "en": "UAH Sociology Student Centre · transgender parenthood discussion, 2 July 2025",
+        "pt": "Centro de Estudantes de Sociologia UAH · debate sobre parentalidades trans, 2 de julho de 2025"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y participantes por verificar",
+      "sensitive": false,
+      "year": "2025",
+      "order": 1
+    },
+    {
+      "src": "actividad_2025_panelistas.webp",
+      "category": "2025",
+      "date": "2025-07-02",
+      "alt": {
+        "es": "Fotografía de un panel de conversación durante una actividad sobre parentalidades transgénero en la UAH.",
+        "en": "Photo of a panel discussion during a UAH event about transgender parenthood.",
+        "pt": "Foto de um painel de conversa durante atividade sobre parentalidades trans na UAH."
+      },
+      "caption": {
+        "es": "Centro de Estudiantes de Sociología UAH · conversatorio sobre parentalidades transgénero, 2 de julio de 2025",
+        "en": "UAH Sociology Student Centre · transgender parenthood discussion, 2 July 2025",
+        "pt": "Centro de Estudantes de Sociologia UAH · debate sobre parentalidades trans, 2 de julho de 2025"
+      },
+      "credit": "Archivo de la actividad proporcionado por Ángel Muñoz · autoría fotográfica pendiente de identificar",
+      "permission": "Fotografías aportadas por el organizador para integrar su portafolio; autorización de fotógrafos y participantes por verificar",
+      "sensitive": false,
+      "year": "2025",
+      "order": 2
+    }
+  ],
   "expectedDir": "cine-disidencias/assets/",
   "schema": {
     "src": "nombre-de-foto.webp",
@@ -23,5 +204,13 @@
     "date": "2026-07-DD o fecha documentada",
     "sensitive": false
   },
-  "note": "No publicar testimonios, imágenes de terceros o materiales sensibles sin verificar permisos y contexto; no atribuir declaraciones sin registros."
+  "note": "No publicar testimonios, imágenes de terceros o materiales sensibles sin verificar permisos y contexto; no atribuir declaraciones sin registros.",
+  "hero": "Flyer2025.jpg",
+  "supporters": "Flyer2025-2.jpg",
+  "notes": [
+    "El flyer original de 2025 incluye la fecha 02.07.25, horario 15:00, sala L13, Cienfuegos 46 y personas/organizaciones invitadas.",
+    "La jornada de 2022 fue de Mesa de Disidencias UAH; la de 2025 se articuló desde CCEE de Sociología durante la vicepresidencia del organizador.",
+    "La persona que subió las imágenes solicitó incorporarlas al portafolio; créditos fotográficos y autorizaciones adicionales aún pendientes de comprobación.",
+    "No identificar a participantes individuales únicamente por apariencia."
+  ]
 }
