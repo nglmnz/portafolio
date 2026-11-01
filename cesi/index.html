@@ -409,9 +409,125 @@ document.querySelectorAll('[data-order]').forEach(btn=>btn.addEventListener('cli
  document.querySelectorAll('[data-order]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
  updateArtists();
 }));
+
+/* Artist link atlas. Resources are plain external links: no Instagram embeds or trackers. */
+const artistReferenceIndex=new Map();
+let artistReferencesReady=false;
+const resourceWords={
+ es:{open:"Explorar enlaces",missing:"Enlaces por documentar",generic:"Recurso",site:"Sitio",instagram:"Instagram",gallery:"Galería",profile:"Perfil",article:"Artículo",institution:"Institución",video:"Video",linkedin:"LinkedIn"},
+ en:{open:"Explore links",missing:"Links to be documented",generic:"Resource",site:"Website",instagram:"Instagram",gallery:"Gallery",profile:"Profile",article:"Article",institution:"Institution",video:"Video",linkedin:"LinkedIn"},
+ pt:{open:"Explorar links",missing:"Links a documentar",generic:"Recurso",site:"Site",instagram:"Instagram",gallery:"Galeria",profile:"Perfil",article:"Artigo",institution:"Instituição",video:"Vídeo",linkedin:"LinkedIn"}
+};
+const resourceKind={sitio:"site",instagram:"instagram",galeria:"gallery",perfil:"profile",articulo:"article",publicacion:"article",institucion:"institution",museo:"institution",entrevista:"article",video:"video",linkedin:"linkedin","instagram-post":"instagram"};
+function isSafeArtistUrl(url){try{const u=new URL(url);return u.protocol==="https:"||u.protocol==="http:"}catch(e){return false}}
+function renderArtistResources(){
+ if(!artistReferencesReady)return;
+ const words=resourceWords[lang]||resourceWords.es;
+ for(const item of artistItems){
+  const slot=item.querySelector(".artist-resource-host");
+  if(!slot)continue;
+  const open=slot.querySelector("details")?.open||false;
+  slot.replaceChildren();
+  const data=artistReferenceIndex.get(item.dataset.artistName);
+  const resources=(data?.links||[]).filter(x=>isSafeArtistUrl(x.url));
+  if(!resources.length){
+   const empty=document.createElement("span");empty.className="missing-links";empty.textContent=words.missing;slot.appendChild(empty);continue;
+  }
+  const details=document.createElement("details");
+  details.open=open;
+  const summary=document.createElement("summary");summary.textContent=words.open+" · "+resources.length;
+  const nav=document.createElement("nav");nav.className="artist-resource-links";nav.setAttribute("aria-label",data.name);
+  for(const link of resources){
+   const a=document.createElement("a");a.href=link.url;a.target="_blank";a.rel="noopener noreferrer";
+   const type=words[resourceKind[link.type]||"generic"];
+   let label=link.label||type;
+   if(label==="Sitio del artista"||label==="Sitio de la artista")label=type;
+   if(label==="Instagram")label=type;
+   a.textContent=label+" ↗";
+   nav.appendChild(a);
+  }
+  details.append(summary,nav);slot.appendChild(details);
+ }
+}
+fetch("assets/artistas.json").then(r=>r.ok?r.json():null).then(data=>{
+ if(!data||!Array.isArray(data.artists))return;
+ for(const record of data.artists){if(record&&typeof record.name==="string")artistReferenceIndex.set(record.name,record)}
+ artistReferencesReady=true;renderArtistResources();
+}).catch(()=>{});
+
+/* Decorative silent loops: viewport-based playback, manual control and motion/data preferences */
+const ambientScenes=[...document.querySelectorAll(".ambient-film")];
+const reducedMotion=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches||false;
+const saveData=Boolean(navigator.connection?.saveData);
+const preventAutomaticMotion=reducedMotion||saveData;
+const ambientWords={
+ es:{play:"Activar movimiento",pause:"Pausar movimiento"},
+ en:{play:"Play motion",pause:"Pause motion"},
+ pt:{play:"Ativar movimento",pause:"Pausar movimento"}
+};
+function updateAmbientButton(scene){
+ const button=scene.querySelector(".ambient-toggle");
+ const video=scene.querySelector(".ambient-video");
+ if(!button||!video)return;
+ const active=!video.paused&&!video.ended;
+ const word=ambientWords[lang]||ambientWords.es;
+ button.textContent=(active?"Ⅱ ":"▶ ")+(active?word.pause:word.play);
+ button.setAttribute("aria-label",active?word.pause:word.play);
+ button.setAttribute("aria-pressed",String(active));
+}
+function syncAmbientButtons(){ambientScenes.forEach(updateAmbientButton)}
+function tryPlayAmbient(scene){
+ const video=scene.querySelector(".ambient-video");
+ if(!video)return;
+ video.muted=true;
+ const attempt=video.play();
+ if(attempt&&typeof attempt.then==="function")attempt.then(()=>updateAmbientButton(scene)).catch(()=>updateAmbientButton(scene));
+ else updateAmbientButton(scene);
+}
+function pauseAmbient(scene){
+ const video=scene.querySelector(".ambient-video");if(video)video.pause();
+ updateAmbientButton(scene);
+}
+ambientScenes.forEach(scene=>{
+ const video=scene.querySelector(".ambient-video");const button=scene.querySelector(".ambient-toggle");
+ if(!video||!button)return;
+ video.muted=true;
+ scene.dataset.userPaused="false";
+ scene.dataset.inView="false";
+ button.addEventListener("click",()=>{
+  if(video.paused){
+   scene.dataset.userPaused="false";
+   tryPlayAmbient(scene);
+  }else{
+   scene.dataset.userPaused="true";
+   pauseAmbient(scene);
+  }
+ });
+ video.addEventListener("play",()=>updateAmbientButton(scene));
+ video.addEventListener("pause",()=>updateAmbientButton(scene));
+ updateAmbientButton(scene);
+});
+if("IntersectionObserver" in window){
+ const observer=new IntersectionObserver(entries=>{
+  for(const entry of entries){
+   const scene=entry.target;
+   scene.dataset.inView=String(entry.isIntersecting);
+   if(entry.isIntersecting&&!document.hidden&&!preventAutomaticMotion&&scene.dataset.userPaused!=="true")tryPlayAmbient(scene);
+   else pauseAmbient(scene);
+  }
+ },{threshold:0.22});
+ ambientScenes.forEach(scene=>observer.observe(scene));
+}
+document.addEventListener("visibilitychange",()=>{
+ ambientScenes.forEach(scene=>{
+  if(document.hidden)pauseAmbient(scene);
+  else if(scene.dataset.inView==="true"&&!preventAutomaticMotion&&scene.dataset.userPaused!=="true")tryPlayAmbient(scene);
+ });
+});
+
 const origDraw=draw;
 draw=function(){
- origDraw();renderFeatured();
+ origDraw();renderFeatured();renderArtistResources();syncAmbientButtons();
  const placeholder={es:'Buscar artista…',en:'Search artists…',pt:'Buscar artistas…'};
  artistSearch.placeholder=placeholder[lang];
  artistSearch.setAttribute('aria-label',placeholder[lang]);
