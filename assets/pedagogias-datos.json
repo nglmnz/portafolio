@@ -432,7 +432,41 @@
       },
       "alpha": 0.819,
       "ordinal": 0.855,
-      "items": 7
+      "items": 7,
+      "eyebrow": {
+        "es": "¿Qué hacemos con el esfuerzo intelectual?",
+        "en": "Who does the intellectual work?",
+        "pt": "Quem realiza o trabalho intelectual?"
+      },
+      "plain": {
+        "es": "Explora cuándo la IA funciona como apoyo para avanzar en una tarea y cuándo el estudiante deja en sus manos partes sustantivas del trabajo académico.",
+        "en": "Explores when AI is a supporting tool and when substantial parts of the academic task are transferred to it.",
+        "pt": "Examina quando a IA apoia uma tarefa e quando partes centrais do trabalho são transferidas para ela."
+      },
+      "everyday": {
+        "es": "Un estudiante puede pedir un resumen para orientarse; otra cosa es entregar a la IA la planificación, redacción y revisión completas. El estudio distingue estas situaciones en lugar de llamarlas a todas «dependencia».",
+        "en": "Asking AI for a summary is different from delegating an entire assignment. The study distinguishes these situations rather than labeling them all as dependence.",
+        "pt": "Pedir um resumo é diferente de delegar integralmente um trabalho. A pesquisa diferencia essas situações, sem chamá-las todas de dependência."
+      },
+      "evidence": {
+        "value": 55.6,
+        "label": {
+          "es": "declara resumir textos densos con IA frecuentemente",
+          "en": "frequently uses AI to summarize dense texts",
+          "pt": "usa frequentemente IA para resumir textos densos"
+        },
+        "extra": {
+          "es": "La delegación completa de planificación, redacción y revisión se reporta en un 32,8 %; aceptar respuestas sin comprobarlas, en un 13,2 %. Son comportamientos distintos.",
+          "en": "Complete drafting and revision is delegated by 32.8%; 13.2% report accepting AI answers without checking. These are different behaviors.",
+          "pt": "32,8 % delegam planejamento, redação e revisão completos; 13,2 % aceitam informação sem checar. São comportamentos distintos."
+        },
+        "source": "Informe: resultados, «Delegación y deuda cognitiva», p. 21 impresa."
+      },
+      "implications": {
+        "es": "Para formar docentes, importa enseñar a decidir qué tareas pueden recibir asistencia tecnológica sin dejar de comprender, argumentar y responder por el resultado.",
+        "en": "Future teachers need criteria for choosing when technology can help without relinquishing understanding, reasoning and responsibility.",
+        "pt": "Futuros professores precisam aprender a escolher quando a tecnologia pode ajudar sem abandonar compreensão, argumentação e responsabilidade."
+      }
     },
     {
       "name": {
@@ -442,7 +476,41 @@
       },
       "alpha": 0.725,
       "ordinal": 0.774,
-      "items": 6
+      "items": 6,
+      "eyebrow": {
+        "es": "¿Quién comprueba lo que dice la IA?",
+        "en": "Who checks an AI answer?",
+        "pt": "Quem verifica as respostas da IA?"
+      },
+      "plain": {
+        "es": "Reúne prácticas de evaluación, verificación y reelaboración: detectar errores, contrastar fuentes, examinar la veracidad y reescribir con criterio propio.",
+        "en": "Brings together verification, evaluation and revision: detecting errors, checking sources, judging accuracy and rewriting independently.",
+        "pt": "Reúne avaliação, verificação e reelaboração: detectar erros, checar fontes, julgar a veracidade e reescrever com autonomia."
+      },
+      "everyday": {
+        "es": "Que una respuesta suene convincente no basta: alguien con agencia epistémica se pregunta de dónde salió, si es cierta y si puede defenderla con sus propias palabras.",
+        "en": "A plausible-sounding answer is not enough: epistemic agency involves checking where it comes from, whether it holds and whether one can defend it.",
+        "pt": "Uma resposta convincente não basta: agência epistêmica envolve verificar sua origem, veracidade e capacidade de explicá-la."
+      },
+      "evidence": {
+        "value": 71.4,
+        "label": {
+          "es": "declara detectar errores o alucinaciones en textos de IA",
+          "en": "reports detecting errors or hallucinations in AI texts",
+          "pt": "relata identificar erros ou alucinações em textos de IA"
+        },
+        "extra": {
+          "es": "El 70,9 % busca fuentes originales de citas y el 72,7 % reflexiona sobre la originalidad. Estas prácticas pueden coexistir con la delegación de tareas.",
+          "en": "70.9% check original citation sources and 72.7% consider originality. These practices can coexist with task delegation.",
+          "pt": "70,9 % verificam fontes originais e 72,7 % consideram originalidade. Tais práticas podem coexistir com delegação."
+        },
+        "source": "Informe: resultados, «Agencia epistémica y vigilancia crítica», p. 22 impresa."
+      },
+      "implications": {
+        "es": "Estas habilidades ofrecen una base para una alfabetización crítica en IA: futuros profesores deberán evaluar tanto sus propios materiales como los que usan sus estudiantes.",
+        "en": "These skills support critical AI literacy: future teachers need to assess both their own materials and those used by students.",
+        "pt": "Essas habilidades sustentam uma alfabetização crítica em IA: futuros docentes avaliarão materiais próprios e dos estudantes."
+      }
     },
     {
       "name": {
@@ -452,7 +520,41 @@
       },
       "alpha": 0.802,
       "ordinal": 0.837,
-      "items": 8
+      "items": 8,
+      "eyebrow": {
+        "es": "¿Podemos interrumpir una actividad digital?",
+        "en": "Can we stop a digital activity?",
+        "pt": "Conseguimos interromper uma atividade digital?"
+      },
+      "plain": {
+        "es": "Examina dificultades para regular el uso del teléfono y las redes sociales: navegación prolongada, revisión automática, interferencia académica y temor a perderse algo (FOMO).",
+        "en": "Looks at difficulties in regulating phone and social-media use: prolonged browsing, habitual checking, study interference and fear of missing out (FOMO).",
+        "pt": "Examina dificuldades para regular celular e redes: navegação prolongada, checagem automática, interferência acadêmica e medo de ficar de fora (FOMO)."
+      },
+      "everyday": {
+        "es": "Entrar a una red «solo por un momento» y quedarse mucho más tiempo del previsto refleja una dificultad de autorregulación; no significa necesariamente sentir miedo consciente a desconectarse.",
+        "en": "Opening a social app briefly but staying far longer than planned reflects a self-regulation difficulty, not necessarily a conscious fear of missing out.",
+        "pt": "Abrir uma rede «por um momento» e ficar mais tempo que o previsto indica uma dificuldade de autorregulação, não necessariamente medo de desconexão."
+      },
+      "evidence": {
+        "value": 68.8,
+        "label": {
+          "es": "se queda en redes más tiempo de lo previsto",
+          "en": "stays on social media longer than intended",
+          "pt": "fica nas redes além do tempo previsto"
+        },
+        "extra": {
+          "es": "El FOMO explícito alcanza un 26,3 %. El informe distingue la dificultad cotidiana para detenerse del temor declarado a quedar desconectado.",
+          "en": "Explicit FOMO reaches 26.3%. The report distinguishes everyday difficulty disengaging from fear of disconnection.",
+          "pt": "FOMO explícito chega a 26,3 %. O relatório diferencia dificuldade cotidiana de interromper o uso e medo de desconexão."
+        },
+        "source": "Informe: resultados y discusión, pp. 23 y 30 impresas."
+      },
+      "implications": {
+        "es": "En educación, la cuestión no se agota en contar horas de pantalla: también importa recuperar el foco, sostener la atención y gestionar interrupciones.",
+        "en": "For educators, screen hours alone are not enough: refocusing, sustained attention and managing interruptions also matter.",
+        "pt": "Na educação, contar horas de tela não basta: é preciso recuperar o foco, sustentar a atenção e gerir interrupções."
+      }
     },
     {
       "name": {
@@ -462,7 +564,41 @@
       },
       "alpha": 0.843,
       "ordinal": 0.868,
-      "items": 11
+      "items": 11,
+      "eyebrow": {
+        "es": "¿En qué condiciones estamos aprendiendo?",
+        "en": "Under what conditions are we learning?",
+        "pt": "Em quais condições estamos aprendendo?"
+      },
+      "plain": {
+        "es": "Relaciona experiencias de cansancio y malestar con exigencias de adaptación al primer año universitario: sueño, organización del estudio, fatiga y dificultades con el lenguaje académico.",
+        "en": "Brings together fatigue and distress with the demands of first-year university adjustment: sleep, study organization and academic language.",
+        "pt": "Reúne cansaço, mal-estar e exigências de adaptação universitária: sono, organização do estudo e linguagem acadêmica."
+      },
+      "everyday": {
+        "es": "Una persona puede sentirse agotada tras usar pantallas y, al mismo tiempo, tener dificultades para organizar tareas o comprender textos universitarios. El cuestionario recoge esas experiencias sin reducirlas a una única causa.",
+        "en": "A student may experience screen-related fatigue while also struggling to organize work or understand academic texts. The survey records these experiences without assigning them a single cause.",
+        "pt": "Uma pessoa pode sentir cansaço associado às telas e, ao mesmo tempo, ter dificuldade para organizar estudos ou compreender textos. O questionário não atribui uma causa única."
+      },
+      "evidence": {
+        "value": 59,
+        "label": {
+          "es": "reporta cansancio físico asociado al uso de pantallas",
+          "en": "reports physical fatigue associated with screens",
+          "pt": "relata cansaço físico associado às telas"
+        },
+        "extra": {
+          "es": "Un 52,7 % refiere irritabilidad o ansiedad recientes y un 49,2 % dificultades para mantener su cronograma de estudio. Son autorreportes, no diagnósticos clínicos.",
+          "en": "52.7% report recent irritability or anxiety; 49.2% have difficulties maintaining a study schedule. These are self-reports, not clinical diagnoses.",
+          "pt": "52,7 % relatam irritabilidade ou ansiedade recentes; 49,2 % dificuldades de organização. São autorrelatos, não diagnósticos clínicos."
+        },
+        "source": "Informe: resultados y discusión, pp. 23–24 y 31 impresas."
+      },
+      "implications": {
+        "es": "Sugiere mirar el bienestar como parte de las condiciones del aprendizaje, incluyendo descanso, autorregulación y acompañamiento académico. El diseño transversal no permite afirmar que las pantallas causen estos malestares.",
+        "en": "It suggests seeing wellbeing as part of learning conditions—rest, self-regulation and academic support. The cross-sectional design cannot establish that screens cause these experiences.",
+        "pt": "Sugere entender bem-estar como condição de aprendizagem, incluindo descanso e acompanhamento. O desenho transversal não permite atribuir causalidade às telas."
+      }
     },
     {
       "name": {
@@ -472,7 +608,41 @@
       },
       "alpha": 0.727,
       "ordinal": 0.784,
-      "items": 6
+      "items": 6,
+      "eyebrow": {
+        "es": "¿Apoyo tecnológico o reemplazo humano?",
+        "en": "Technology as support or substitute?",
+        "pt": "Tecnologia como apoio ou substituição?"
+      },
+      "plain": {
+        "es": "Indaga la disposición a usar herramientas de apoyo al bienestar y la autorregulación, compartir datos con finalidades específicas y valorar su utilidad. No mide un entusiasmo incondicional por toda tecnología.",
+        "en": "Examines willingness to use digital wellbeing and self-regulation tools, share data for stated purposes and judge their usefulness. It is not a blanket measure of enthusiasm for technology.",
+        "pt": "Examina disposição para usar tecnologias de apoio e autorregulação, compartilhar dados para fins específicos e avaliar utilidade; não mede entusiasmo irrestrito."
+      },
+      "everyday": {
+        "es": "Una persona puede aceptar una aplicación que le ayude a reconocer el cansancio y, aun así, rechazar que una IA sustituya a su profesor o mentor. No son actitudes contradictorias.",
+        "en": "Someone may welcome a wellbeing app while rejecting the replacement of a teacher or mentor by AI. Those positions are not contradictory.",
+        "pt": "Uma pessoa pode aceitar um aplicativo de bem-estar e rejeitar que a IA substitua seu professor. Não são posições contraditórias."
+      },
+      "evidence": {
+        "value": 63.6,
+        "label": {
+          "es": "declara intención de usar herramientas de bienestar digital",
+          "en": "intends to use digital wellbeing tools",
+          "pt": "pretende usar ferramentas de bem-estar digital"
+        },
+        "extra": {
+          "es": "El 67,9 % aceptaría compartir datos con fines de apoyo. Por separado, el 79,5 % rechaza sustituir la relación con docentes o mentores: este último ítem se analizó fuera de la escala.",
+          "en": "67.9% would share data for support. Separately, 79.5% reject replacing teachers or mentors; this item was explicitly excluded from the scale.",
+          "pt": "67,9 % compartilhariam dados para apoio. Separadamente, 79,5 % rejeitam substituir docentes ou mentores; esse item ficou fora da escala."
+        },
+        "source": "Informe: resultados pp. 26–27 y nota metodológica p. 17–18 impresas."
+      },
+      "implications": {
+        "es": "Para diseñar herramientas institucionales, el límite es importante: la tecnología puede complementar cuidados, aprendizaje y seguimiento, pero debe conservarse el juicio y la responsabilidad humana.",
+        "en": "For institutional design, the distinction matters: technology may support care and learning while human judgement and responsibility remain central.",
+        "pt": "Para políticas institucionais, a distinção importa: tecnologia pode complementar cuidados e aprendizagem sem substituir julgamento e responsabilidade humana."
+      }
     }
   ],
   "process": [
@@ -799,5 +969,25 @@
       "pt": "Reunião da comissão de IA. Foto pendente e sujeita à verificação de consentimento."
     }
   },
-  "origin": "Informe_v8(5).docx + correos y acta proporcionados en conversación; consulta de páginas institucionales UAH"
+  "origin": "Informe_v8(5).docx + correos y acta proporcionados en conversación; consulta de páginas institucionales UAH",
+  "scalesIntro": {
+    "es": "Para comprender un fenómeno complejo no basta con una sola pregunta. Agrupamos respuestas relacionadas en cinco ejes de lectura: dos describen cómo se utiliza la IA, otros dos muestran aspectos de atención y experiencia digital, y el quinto aborda la disposición a recibir apoyo tecnológico. Cada eje reúne experiencias distintas; ninguno equivale a una etiqueta o diagnóstico de una persona.",
+    "en": "A complex phenomenon cannot be captured by one question. Related answers were grouped into five reading lenses: two on AI use, two on attention and digital experiences, and one on digital support. Each lens covers multiple experiences, not a diagnostic label for individuals.",
+    "pt": "Um fenômeno complexo não se mede com uma pergunta. Respostas relacionadas foram agrupadas em cinco eixos: dois sobre uso de IA, dois sobre atenção e experiências digitais e um sobre apoio tecnológico. Nenhum constitui diagnóstico individual."
+  },
+  "scalesMeaning": {
+    "es": "Una escala combina varias preguntas acerca de una misma dimensión. Los porcentajes destacados a continuación pertenecen a preguntas individuales, no son «porcentajes de dependencia» ni puntuaciones globales de una escala.",
+    "en": "A scale groups questions about a shared dimension. The percentages shown below correspond to individual questions, not overall 'dependence rates' or scale scores.",
+    "pt": "Uma escala reúne perguntas sobre uma dimensão. Os percentuais apresentados correspondem a itens individuais; não são taxas gerais de dependência nem pontuações da escala."
+  },
+  "scalesTechnical": {
+    "es": "¿Y los coeficientes alfa? Son una revisión estadística de qué tan coherentemente responden entre sí las preguntas de cada conjunto. Se muestran el alfa convencional y el ordinal, más apropiado para respuestas ordenadas. Sus valores respaldan una consistencia interna razonable, pero no certifican la validez del constructo ni que exista una única dimensión.",
+    "en": "What do the alpha coefficients mean? They check how consistently the questions in each group behave together. Both raw and ordinal alpha are displayed; ordinal alpha better suits ordered responses. They speak to internal consistency, not definitive construct validity or unidimensionality.",
+    "pt": "O que significam os coeficientes alfa? Indicam a consistência entre itens de um grupo. São apresentados alfa bruto e ordinal, mais adequado a respostas ordenadas. Não comprovam validade de construto nem unidimensionalidade."
+  },
+  "scalesConnection": {
+    "es": "La idea central no es clasificar a los futuros profesores como «dependientes» o «autónomos». Es reconocer cómo pueden coexistir la delegación y la vigilancia crítica, o la apertura a herramientas digitales y la defensa del acompañamiento humano. Esto orienta preguntas de formación, no diagnósticos individuales.",
+    "en": "The aim is not to label future teachers as 'dependent' or 'autonomous'. Delegation may coexist with critical verification, while digital openness may coexist with a preference for human support. These patterns guide educational questions, not individual diagnoses.",
+    "pt": "A ideia não é rotular futuros docentes como dependentes ou autônomos. Delegação e verificação crítica podem coexistir, assim como abertura tecnológica e defesa do apoio humano. Isso orienta questões formativas, não diagnósticos."
+  }
 }
