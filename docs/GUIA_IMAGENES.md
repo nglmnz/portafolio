@@ -1,56 +1,66 @@
-# Guía para incorporar fotografías al portafolio — CESI 2025
+# CESI 2025 — Guía de curaduría y mantenimiento multimedia
 
-## 1. Estructura
-- `cesi/assets/hero/`: **identidad visual principal**. Archivo preferido `hero-eleodoro-calderon.webp`.
-- `cesi/assets/branding/`: carteles, gráfica del evento y programa.
-- `cesi/assets/programacion/`: conferencias, paneles y ponencias.
-- `cesi/assets/exhibicion/`: inauguración, obras y recorridos.
-- `cesi/assets/congreso/`: público, acreditación y espacios.
-- `cesi/assets/talleres/`: taller de corrupción y taller del INE.
-- `cesi/assets/equipo/`: organización, voluntariado y colaboraciones.
-- `assets/perfil/`: fotografías generales del portafolio profesional.
+**Estado (1 de noviembre de 2026):** los archivos se incorporaron a `cesi/assets/`. La página `cesi/index.html` muestra fotografías, prensa, afiches y dos videos mediante un catálogo de datos, sin desplazar ni duplicar archivos originales.
 
-## 2. Cómo subir
-En GitHub abre la carpeta, pulsa **Add file → Upload files**, arrastra fotos y confirma **Commit changes**. Sugerencia: primero entre 10 y 20 fotos seleccionadas y optimizadas.
-Usa nombres descriptivos, en minúscula, sin espacios ni tildes; p. ej. `cesi/assets/arte/exhibicion-apertura-01.webp` (usa la carpeta real `exhibicion`).
-**No subas fotografías sin permiso, especialmente retratos, ni materiales sujetos a derechos ajenos sin autorización.**
+## Dónde está cada cosa
 
-## 3. Optimización
-- Hero: anchura preferida 1800–2200 píxeles, WebP de calidad 78–85, generalmente menos de 600 KB.
-- Galería: 1200–1600 píxeles, WebP, generalmente menos de 350 KB por imagen.
-- Fotografía vertical: conserva orientación, preferiblemente 3:4.
-- Evita imágenes borrosas y duplicadas.
+- **Archivos originales:** `cesi/assets/` (tal como los subiste, incluidos nombres con espacios y mayúsculas).
+- **Catálogo de imágenes y descripciones:** `cesi/assets/fotos.json`.
+- **Página pública prevista:** https://nglmnz.github.io/portafolio/cesi/
+- **Vista del sitio en GitHub:** https://github.com/nglmnz/portafolio/blob/main/cesi/index.html
 
-## 4. Cómo se conectan con la página
-En `cesi/assets/fotos.json`, agrega una entrada por fotografía en el arreglo `photos`. La web ya está preparada para leer ese archivo.
+El catálogo mantiene una organización lógica por categorías: `hero` (portada), `branding` (identidad), `programacion` (actividades y paneles), `exhibicion` (muestra artística), `congreso` (delegaciones), `equipo` y `prensa`. No es necesario mover los archivos físicos a las subcarpetas ya creadas: los enlaces actuales dependen de su ubicación original.
+
+## Montaje actual
+
+1. **Hero:** `Imagen principal tortuga con logos.webp` (imagen principal), con `hero-main.webp` como variante elegible desde la propia portada.
+2. **Origen del proyecto:** afiche general, programación de una jornada y tote bag.
+3. **Programa:** charla de Esteban Torres, panel de memoria y DD. HH., panel de género y ponencia.
+4. **Arte:** imágenes de la exhibición, Eleodoro Calderón y mediación de obra; lineup de 19 artistas.
+5. **Video del arte:** `exhibicion_video_felisan.mp4` y `video_exhibicion_tortuga_eleodoro.mp4`, ambos con carga bajo demanda (`preload="none"`).
+6. **Evaluación y equipos:** retrato final, equipo directivo y comitiva de la UAI.
+7. **Cobertura externa:** capturas de prensa de UAH, UC y Valparaíso; botones a las fuentes externas.
+8. **Galería:** fotografías filtrables con ampliación, créditos provisionales, botones para ver más e idiomas ES/EN/PT.
+
+Se seleccionaron **42 fotografías o piezas gráficas** para el catálogo. Los nombres alternativos con idéntico SHA se conservaron en el repositorio, pero se omitieron de la galería para no repetir contenidos. No se inventaron títulos de obras, autores de fotografías ni identidades de asistentes.
+
+## Cómo incorporar o corregir una imagen
+
+1. Sube el archivo a `cesi/assets/` desde GitHub (**Add file → Upload files**).
+2. Abre `cesi/assets/fotos.json` y pulsa el lápiz de edición.
+3. Agrega un objeto al arreglo `photos`. Usa **ruta relativa URL-encoded** cuando existan espacios: `assets/Mi%20foto.webp`.
+4. Mantén las tres versiones de `alt` y `caption`, una categoría válida, `credit`, `permission` y `source_file` con el nombre exacto.
+5. Guarda el cambio (**Commit changes**). La galería se actualiza al recargar; si quieres destacar esa foto en el recorrido editorial, hay que añadirla a la selección `renderFeatured()` de la página.
 
 Ejemplo:
 ```json
 {
-  "src": "assets/exhibicion/exhibicion-apertura-01.webp",
+  "src": "assets/exhibicion_nueva.webp",
   "category": "exhibicion",
   "alt": {
-    "es": "Asistentes recorren la exposición CESI 2025",
-    "en": "Visitors at the CESI 2025 exhibition",
-    "pt": "Visitantes na exposição CESI 2025"
+    "es": "Vista de la exhibición CESI 2025",
+    "en": "View of the CESI 2025 exhibition",
+    "pt": "Vista da exposição CESI 2025"
   },
   "caption": {
-    "es": "Inauguración de la exposición, 30 de julio de 2025",
-    "en": "Exhibition opening, 30 July 2025",
-    "pt": "Abertura da exposição, 30 de julho de 2025"
+    "es": "Exhibición artística CESI 2025",
+    "en": "CESI 2025 art exhibition",
+    "pt": "Exposição artística CESI 2025"
   },
   "credit": "Nombre de la persona fotógrafa",
-  "permission": "Publicación autorizada"
+  "permission": "Uso autorizado",
+  "source_file": "exhibicion_nueva.webp"
 }
 ```
-Categorías válidas: `hero`, `branding`, `programacion`, `exhibicion`, `congreso`, `talleres`, `equipo`.
 
-## 5. Identidad visual de la portada
-La imagen de la escultura **Agua, Tierra y Aire** de **Eleodoro Calderón** será el fondo del hero **cuando esté cargada con su crédito y permiso**. La web utilizará la foto marcada con `category: "hero"`. Sin imagen, conserva un fondo editorial elegante, sin links rotos.
+## Derechos y créditos
 
-## 6. Curaduría
-Elige: 1 imagen hero, 2–3 de la exposición, 2 de ponencias/paneles, 2 de talleres, 2 generales, 1 del equipo y 1 de identidad gráfica. La galería muestra filtros, descripciones y ampliación interactiva. Cada cambio de idioma mantiene pies de foto cuando estén registrados en los tres idiomas.
+Las imágenes se recibieron para presentarlas en el portafolio, pero **su mera subida a GitHub no demuestra que estén resueltos los derechos de fotografía, retrato o reproducción de obras**. Por ahora el catálogo advierte «Autoría fotográfica por confirmar». Revisa créditos y consentimientos antes de difundir ampliamente. El contenido de archivos con títulos ambiguos se trató con descripciones conservadoras.
 
-## 7. Enlaces y QR
-Nuevo sitio: https://nglmnz.github.io/portafolio/ — tras configurar Settings → Pages → Deploy from a branch, main, /(root).
-No elimines el sitio anterior `vitrina-piloto/perfil/` antes de colocar una redirección y validar la URL nueva.
+## Videos y rendimiento
+
+Los dos MP4 originales pesan aproximadamente **3,0 MB y 4,1 MB**. Se pueden mostrar en el sitio porque ya están disponibles en el repo. Su reproducción usa controles nativos y no precarga el archivo completo. Si posteriormente subes grabaciones mayores, preferiremos un alojamiento audiovisual externo y un reproductor incrustado.
+
+## Publicación
+
+Confirma en GitHub **Settings → Pages → Deploy from branch → main → /(root)**, y revisa la web desde teléfono y escritorio. Mientras la publicación no esté verificada, conserva el portafolio anterior en `vitrina-piloto/perfil/` para no romper los QR distribuidos.
