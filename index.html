@@ -33,6 +33,99 @@
 @media(max-width:900px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(220px,.55fr);gap:23px}.hero-aside{display:block}.profile-photo{aspect-ratio:385/512}}
 @media(max-width:720px){.hero-layout{grid-template-columns:1fr}.hero-aside{display:block;max-width:380px;width:100%;margin:8px auto 0}.profile-photo{aspect-ratio:385/512}}
 @media print{.profile-photo figcaption{position:static;background:transparent;color:#111}}
+
+/* 2026 PROJECT ATLAS · project-specific identity, not generic repeated tiles.
+   Full-card semantic anchors coexist with genuine secondary links. */
+.project-grid{gap:19px;align-items:stretch}
+.project{
+ --card-bg:#1d3037;--card-accent:#b8e8cd;--card-soft:#eef9f5;--card-line:rgba(184,232,205,.27);
+ background:var(--card-bg);color:var(--card-soft);border:1px solid var(--card-line);
+ box-shadow:0 5px 14px rgba(4,16,21,.08);position:relative;overflow:hidden;
+ border-radius:15px;padding:0 0 21px;min-height:415px;order:var(--card-order,20);
+ transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease;
+}
+.project .num{display:block;font-size:10px;color:var(--card-accent);letter-spacing:.13em;line-height:1.4;margin:21px 21px 12px;font-weight:850}
+.project h3{margin:19px 22px 12px;font-size:clamp(20px,2.1vw,24px);color:#fff;line-height:1.16}
+.project p{font-size:13px;line-height:1.67;color:#d6e5e7;margin:0 22px 18px;flex:1}
+.project .tags{margin:0 22px 17px;gap:6px}
+.project .tags span{border-color:var(--card-line);color:#f1f8f8;background:rgba(255,255,255,.05);border-radius:99px;font-size:10px;padding:5px 10px;font-weight:700}
+.project .link-arrow{margin:0 22px;display:flex;align-items:center;justify-content:space-between;color:var(--card-accent);font-size:13px;letter-spacing:.015em;font-weight:860;border-top:1px solid var(--card-line);padding-top:13px;width:calc(100% - 44px);position:relative}
+.project.is-explorable .link-arrow::after{content:"↗";display:inline-grid;place-items:center;font-size:19px;min-width:32px;height:32px;border:1px solid var(--card-line);border-radius:50%;transition:transform .24s ease,background .24s ease}
+.project.is-explorable{cursor:pointer}
+.project.is-explorable:hover,.project.is-explorable:focus-within{
+ transform:translateY(-6px);box-shadow:0 21px 46px rgba(1,13,17,.26);border-color:var(--card-accent)
+}
+.project.is-explorable:hover .link-arrow::after,.project.is-explorable:focus-within .link-arrow::after{transform:translate(3px,-3px);background:rgba(255,255,255,.12)}
+.project-hitbox{position:absolute;z-index:2;inset:0;border-radius:15px;cursor:pointer}
+.project-hitbox:focus-visible{outline:3px solid var(--card-accent);outline-offset:-5px}
+.project .project-secondary{position:relative;z-index:3;align-self:flex-start;margin:9px 22px 0;font-size:11px;color:#fff;line-height:1.5;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--card-accent)}
+.project .project-secondary:hover{color:var(--card-accent)}
+.project.is-static{border-style:dashed;opacity:.87}
+.project.is-static .link-arrow{color:#bfcfd5}
+.noncase-label{font-size:11px;font-weight:750;color:#d9e9e6;margin:0 22px;display:block}
+.project-media{position:relative;width:100%;height:171px;overflow:hidden;isolation:isolate;background:linear-gradient(140deg,#142733,#295962);border-top:1px solid var(--card-line);border-bottom:1px solid var(--card-line);flex:0 0 171px}
+.project-media>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .42s ease,filter .42s ease}
+.project:hover .project-media>img,.project:focus-within .project-media>img{transform:scale(1.045)}
+.project-media::after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(7,19,24,.68));pointer-events:none;z-index:1}
+.project-media-label{position:absolute;bottom:12px;left:15px;right:15px;z-index:2;font-size:10px;line-height:1.4;letter-spacing:.11em;font-weight:900;color:#fff;text-shadow:0 1px 5px rgba(0,0,0,.5)}
+.project--sustancia{--card-bg:#142e37;--card-accent:#a9efd4;--card-line:#316774}
+.project--tesis{--card-bg:#262223;--card-accent:#f2c484;--card-line:#695b4e}
+.project--pedagogias{--card-bg:#342733;--card-accent:#edb6bb;--card-line:#79536b}
+.project--cesi{--card-bg:#183b3f;--card-accent:#f5bd8a;--card-line:#447575}
+.project--fondecyt{--card-bg:#3d283c;--card-accent:#f1b3d1;--card-line:#77516c}
+.project--alas{--card-bg:#152b43;--card-accent:#8be8db;--card-line:#386b83}
+.project--vitrina{--card-bg:#213531;--card-accent:#b2eccb;--card-line:#547468}
+.project--trama{--card-bg:#243a32;--card-accent:#d1e7a0;--card-line:#57745e}
+.project--cine{--card-bg:#38283a;--card-accent:#f4c1d4;--card-line:#78506c}
+.project--cedeus{--card-bg:#173847;--card-accent:#9de6e0;--card-line:#417b83}
+.project--demografia{--card-bg:#25313f;--card-accent:#a8d4eb;--card-line:#51687d}
+.project--ministerio{--card-bg:#293837;--card-accent:#d7e5b8;--card-line:#5e7770}
+/* App-like mastery preview — abstract, no fabricated screenshot */
+.project-media--sustancia{background:radial-gradient(circle at 86% 6%,#226a69,#112837 70%);padding:15px 18px}
+.media-app-name{display:flex;align-items:center;justify-content:space-between;font-weight:900;letter-spacing:.16em;font-size:15px;color:#d5fff0}
+.media-pill{font-size:9px;border:1px solid #7cd3b8;border-radius:15px;padding:4px 8px;letter-spacing:0}
+.media-mastery{display:grid;grid-template-columns:repeat(6,1fr);align-items:end;height:71px;gap:9px;margin-top:12px}
+.media-mastery i{height:var(--level);border-radius:3px 3px 0 0;background:linear-gradient(#bbefc3,#44bdac);opacity:.9}
+.media-mini-note{display:block;margin-top:6px;font:700 10px/1.3 ui-monospace,monospace;color:#b5e7da}
+.project:hover .media-mastery i{filter:brightness(1.18)}
+/* Vitrina browser prototype */
+.project-media--vitrina{background:linear-gradient(135deg,#204b46,#1e343a);padding:12px 20px 0}
+.media-browser{height:164px;background:#f0f4ed;border-radius:8px 8px 0 0;box-shadow:0 6px 20px #0017;padding:9px 12px;transform:rotate(-2deg);color:#213b38}
+.media-browser-top{display:block;font-size:8px;color:#d59b91}.media-browser-top b{float:right;color:#234d45;letter-spacing:.12em}
+.media-browser-title{display:block;width:55%;height:12px;background:#1f5450;border-radius:2px;margin:12px 0 8px}
+.media-browser-par{display:block;width:86%;height:5px;background:#adc6c1;border-radius:8px;margin:7px 0}.media-browser-par.short{width:58%}
+.media-browser-cards{display:flex;gap:6px;margin-top:11px}.media-browser-cards i{background:#bedbd2;border:1px solid #9ac8bf;height:48px;flex:1;border-radius:3px}
+.project-media--trama{background:#2a433b;background-image:linear-gradient(30deg,transparent 48%,#d2d9aa22 49%,#d2d9aa22 51%,transparent 52%),linear-gradient(150deg,transparent 48%,#d2d9aa26 49%,#d2d9aa26 51%,transparent 52%);background-size:47px 47px}
+.media-eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:270px;margin:15px auto;color:#d4ebb2;font:500 34px/1 Georgia,serif;text-align:center}.media-eco-grid i{font-style:normal;padding:9px;border:1px solid #a0ca9a44;border-radius:50%}
+.project-media--demografia{background:linear-gradient(140deg,#21354b,#3c566d);padding:24px 23px}
+.media-chart-bars{height:120px;border-left:1px solid #a9cbd9;border-bottom:1px solid #a9cbd9;display:flex;align-items:end;gap:9px;padding:0 9px}
+.media-chart-bars i{height:var(--v);background:linear-gradient(#b0dfdb,#588aaa);border-radius:4px 4px 0 0;flex:1}
+.project-media--ministerio{background:linear-gradient(135deg,#273e38,#4d6658)}
+.media-dataset{margin:18px auto;padding:13px;width:78%;height:138px;border-radius:6px;background:#f2eee6;transform:rotate(-3deg);box-shadow:8px 9px #0a201f44;color:#36524d}
+.media-dataset b{display:block;font:850 11px ui-monospace,monospace;margin:0 0 8px}.media-dataset span{display:block;letter-spacing:.11em;margin-top:5px;white-space:nowrap;overflow:hidden}
+.project-media--tesis img{object-position:center 48%;filter:saturate(.9)}
+.project-media--pedagogias img{object-position:center 35%}
+.project-media--fondecyt img{object-position:center 45%}
+.project-media--cine img{object-fit:contain;background:#1a2a4b}
+.project-media--alas{background:radial-gradient(circle at 66% 37%,#1e6773,#152b43 65%);overflow:hidden}
+.media-alas-lines{position:absolute;inset:0;pointer-events:none}
+.media-alas-lines i{position:absolute;top:12%;left:17%;width:66%;height:75%;border:12px solid #4ebebc;border-radius:46% 62% 50% 40%;transform:rotate(23deg);opacity:.82}
+.media-alas-lines i:nth-child(2){border-color:#9fcba9;transform:rotate(73deg) scale(.78)}
+.media-alas-lines i:nth-child(3){border-color:#f0bc7a;transform:rotate(-42deg) scale(.58)}
+.media-alas-lines i:nth-child(4){border-color:#a08ddb;transform:rotate(114deg) scale(.37)}
+.media-alas-poster{position:absolute!important;right:13px;bottom:13px;width:64px!important;height:94px!important;object-fit:contain!important;border:2px solid #e1f1f3;border-radius:3px;box-shadow:0 6px 19px #0019;z-index:2}
+.project-media--cedeus{background:linear-gradient(135deg,#123444,#257c7c)}
+.media-city-grid{position:absolute;inset:-22%;background-image:linear-gradient(30deg,transparent 48%,#b0ddd54a 49%,#b0ddd54a 51%,transparent 52%),linear-gradient(120deg,transparent 48%,#b0ddd54a 49%,#b0ddd54a 51%,transparent 52%);background-size:35px 35px;transform:rotate(13deg)}
+.media-city-dot{position:absolute;width:12px;height:12px;border-radius:50%;border:3px solid #fff0ca;background:#e7ad62;box-shadow:0 0 0 6px #c0e0d12b}
+.media-city-dot.d1{top:22%;left:23%}.media-city-dot.d2{top:44%;left:63%}.media-city-dot.d3{top:72%;left:39%}.media-city-dot.d4{top:23%;left:77%}
+.media-city-name{position:absolute;left:17px;top:27%;font:900 23px/1.3 system-ui,sans-serif;letter-spacing:.16em;color:#ecfff9b3}
+/* More legible links and cards on mobile / keyboard */
+@media(max-width:900px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.project-grid{grid-template-columns:1fr;gap:15px}.project{min-height:0}.project-media{height:178px;flex-basis:178px}.project h3{font-size:24px}.project .link-arrow{font-size:14px}}
+@media(hover:none){.project.is-explorable:hover{transform:none}.project .link-arrow::after{background:rgba(255,255,255,.08)}}
+@media(prefers-reduced-motion:reduce){.project,.project-media>img,.project .link-arrow::after{transition:none!important;transform:none!important}}
+@media print{.project{background:#fff!important;color:#111!important;border-color:#aaa;break-inside:avoid}.project h3,.project p,.project .num,.project .tags span{color:#111!important}.project-media{display:none}}
+
 </style>
 </head>
 <body>
