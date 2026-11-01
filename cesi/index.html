@@ -99,6 +99,32 @@
 @media(max-width:650px){.cesi-sponsors-head{flex-direction:column;align-items:start}.official-site-link{max-width:unset}.sponsor-grid,.foundation-grid,.org-cards{grid-template-columns:1fr}.values-list,.network-list{grid-template-columns:repeat(2,1fr)}.network-caption-big{font-size:54px}.network-display{min-height:auto}.network-filters button{font-size:11px;padding:7px 8px}.network-searchbar label,.network-searchbar input{width:100%}}
 @media(max-width:430px){.values-list,.network-list{grid-template-columns:1fr}}
 .institution-ticker{overflow:hidden;position:relative;border-block:1px solid #2d7960;padding:9px 0;margin-top:22px;background:#0c2a20;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}.institution-ticker-track{display:flex;width:max-content;gap:29px;white-space:nowrap;animation:institutionFlow 70s linear infinite}.institution-ticker span{font-size:11px;color:#b4ecda;letter-spacing:.035em;display:inline-flex;align-items:center;gap:9px}.institution-ticker span:before{content:"●";color:#00c892;font-size:7px}.institution-ticker:hover .institution-ticker-track{animation-play-state:paused}@keyframes institutionFlow{to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.institution-ticker-track{animation:none}.institution-ticker{overflow-x:auto}}.network-active-node circle{stroke:#fff!important;stroke-width:3!important}.artist-bio-wrap{margin-top:9px}.artist-card .artist-bio-source{max-width:100%;overflow-wrap:anywhere}
+
+/* CESI: Option B — first editorial narrative, then photographic reveal. */
+.hero,.hero.has-photo{min-height:min(730px,calc(100svh - 70px));background:radial-gradient(ellipse at 79% 20%,rgba(0,200,146,.10),transparent 42%),linear-gradient(130deg,#102c25,#061c18)!important;background-image:none!important;display:flex;align-items:center}
+.hero:before,.hero.has-photo:before{display:none!important}
+.hero .wrap{width:100%;padding-block:0}
+.hero h1{max-width:1000px;text-wrap:balance}
+.cesi-scroll-hint{display:flex;align-items:center;gap:13px;margin-top:40px;color:#92e7c9;font-size:12px;font-weight:750;letter-spacing:.04em}
+.cesi-scroll-hint>span:first-child{display:grid;place-items:center;width:43px;height:43px;border:1px solid #489a7d;border-radius:99px;font-size:25px}
+.cesi-photo-reveal{background:#081d1a;padding:0 0 38px;overflow:clip}
+.cesi-photo-stage{position:relative;min-height:min(800px,95svh);background:#183a30 url("assets/hero-main.webp") center 46%/cover no-repeat;transition:background-image .15s;isolation:isolate}
+.cesi-photo-stage:before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(0deg,rgba(2,19,17,.94) 0%,rgba(2,19,17,.79) 27%,rgba(2,19,17,.08) 75%),linear-gradient(90deg,rgba(1,15,14,.38),transparent 74%)}
+.cesi-photo-overlay{position:relative;z-index:1;min-height:inherit;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(23px,5.1vw,70px) max(24px,calc((100vw - 1120px)/2));pointer-events:none}
+.cesi-photo-topline{display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.15em;font-weight:850;color:#e4faf1}
+.cesi-photo-content{max-width:770px;pointer-events:auto}
+.cesi-photo-eyebrow{font-size:12px;letter-spacing:.14em;color:#a4f6d3;font-weight:850}
+.cesi-photo-content h2{font-size:clamp(2.5rem,5.6vw,5.2rem);letter-spacing:-.07em;max-width:800px;color:white;margin:11px 0 14px;line-height:1.05}
+.cesi-photo-content h2 em{font-style:normal;color:#a6eed2}
+.cesi-photo-content>p{color:#e7f3ef;font-size:clamp(14px,1.8vw,17px);max-width:640px;line-height:1.5}
+.cesi-photo-stage .hero-photo-meta{display:block!important;max-width:740px}
+.cesi-photo-stage .hero-photo-choice{margin-top:14px}
+.cesi-photo-stage .hero-photo-choice button{background:rgba(3,26,23,.85)}
+@media(prefers-reduced-motion:no-preference){
+.cesi-photo-stage.is-reveal-ready .cesi-photo-content{opacity:.55;transform:translateY(25px)}
+.cesi-photo-stage.is-reveal-ready.is-visible .cesi-photo-content{opacity:1;transform:translateY(0);transition:opacity .8s ease,transform .8s ease}
+}
+@media(max-width:650px){.hero,.hero.has-photo{min-height:620px;padding:70px 0 35px}.cesi-photo-stage{min-height:650px;background-position:55% 42%}.cesi-photo-overlay{padding:23px 19px}.cesi-photo-topline{font-size:9px}.cesi-photo-content h2{font-size:clamp(2.25rem,10vw,3.3rem)}.cesi-photo-reveal{padding-bottom:16px}}
 </style></head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="../">ÁNGEL <span>MUÑOZ</span> / <span class="brand-label">PORTAFOLIO</span></a><div class="links"><a href="#gestion">Gestión</a><a href="#red-institucional" data-tr="navNetwork">Red</a><a href="#arte">Arte</a><a href="#fuentes">Cobertura</a><div class="lang-picker" role="group" aria-label="Seleccionar idioma"><button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="pt" aria-pressed="false">PT</button></div><a class="pill" href="../" data-home-link>← Volver al perfil</a></div></div></header>
@@ -109,8 +135,22 @@
 <p class="lead" data-tr="p0">De una idea estudiantil a un congreso nacional: investigación, arte, participación territorial y alianzas entre universidades, instituciones públicas y sociedad civil.</p>
 <p class="role" data-tr="p1"><strong>Mi rol:</strong> Ángel Muñoz Rañiman · Dirección ejecutiva y curaduría general · Conceptualización, dirección estratégica, articulación institucional, programación, producción y evaluación. Proyecto desarrollado colectivamente por equipos estudiantiles e instituciones colaboradoras.</p>
 <div class="buttons"><a class="btn primary" href="#resultados">Ver resultados ↗</a><a class="btn" href="#arte">Explorar exhibición ↗</a><a class="btn cesi-original-link" target="_blank" rel="noopener noreferrer" href="https://csociales.uahurtado.cl/cesi2025/">Sitio original CESI · UAH ↗</a></div>
-<div class="hero-photo-meta" id="hero-credit"><span data-tr="heroArtLabel">Identidad visual · Escultura «Agua, Tierra y Aire» de Eleodoro Calderón</span> · <span data-tr="heroCreditPending">Crédito de imagen por confirmar</span>
-<div class="hero-photo-choice" role="group" aria-label="Elegir imagen de portada"><button type="button" data-hero-index="0" aria-pressed="true" data-tr="heroOpt1">Identidad del CESI</button><button type="button" data-hero-index="1" aria-pressed="false" data-tr="heroOpt2">Vista alternativa</button></div></div></div></section>
+<div class="cesi-scroll-hint" aria-hidden="true"><span>↓</span><span id="cesi-scroll-label">Desliza para descubrir la imagen del encuentro</span></div>
+</div></section>
+<section class="cesi-photo-reveal" id="cesi-visual" aria-label="Archivo fotográfico de CESI 2025">
+ <div class="cesi-photo-stage" id="cesi-photo-stage" role="group" aria-label="Fotografías de la identidad visual del congreso">
+  <div class="cesi-photo-overlay">
+   <div class="cesi-photo-topline"><span>CESI 2025 · IDENTIDAD VISUAL</span><span>30 JUL — 01 AGO</span></div>
+   <div class="cesi-photo-content">
+    <span class="cesi-photo-eyebrow" id="cesi-photo-eyebrow">EL ARTE ENTRA EN ESCENA</span>
+    <h2 id="cesi-photo-title">Una imagen. <em>Muchas preguntas.</em></h2>
+    <p id="cesi-image-note">La escultura «Agua, Tierra y Aire» de Eleodoro Calderón acompañó la identidad de un congreso que reunió investigación y prácticas artísticas.</p>
+    <div class="hero-photo-meta" id="hero-credit"><span data-tr="heroArtLabel">Identidad visual · Escultura «Agua, Tierra y Aire» de Eleodoro Calderón</span> · <span data-tr="heroCreditPending">Crédito de imagen por confirmar</span>
+<div class="hero-photo-choice" role="group" aria-label="Elegir imagen de portada"><button type="button" data-hero-index="0" aria-pressed="true" data-tr="heroOpt1">Identidad del CESI</button><button type="button" data-hero-index="1" aria-pressed="false" data-tr="heroOpt2">Vista alternativa</button></div></div>
+   </div>
+  </div>
+ </div>
+</section>
 <div class="wrap metrics" id="resultados"><div class="metric"><strong>≈700</strong><span>asistentes únicos al conjunto de actividades</span><small data-tr="small0">Estimación del informe de cierre</small></div><div class="metric"><strong>80</strong><span>propuestas aceptadas, de 88 recibidas</span><small data-tr="small1">8 desestimadas · Informe, p. 24</small></div><div class="metric"><strong>19</strong><span>artistas en la exhibición</span><small data-tr="small2">18 nacionales · 1 internacional</small></div><div class="metric"><strong>57+</strong><span>instituciones representadas entre asistentes</span><small data-tr="small3">Informe, p. 35</small></div></div>
 <section class="cesi-sponsors" id="patrocinios"><div class="wrap">
   <div class="cesi-sponsors-head"><div><span class="section-eyebrow" data-tr="spKicker">RESPALDO INSTITUCIONAL · CESI 2025</span><h2 data-tr="spTitle">Cuatro escuelas. Una red que hizo posible el encuentro.</h2><p data-tr="spIntro">El informe identifica el respaldo de estas unidades académicas. Los patrocinios son distintos de las instituciones a las que pertenecían las personas asistentes.</p></div><a class="official-site-link" href="https://csociales.uahurtado.cl/cesi2025/" target="_blank" rel="noopener noreferrer"><span data-tr="spOriginal">Sitio original del congreso · UAH</span> ↗</a></div>
@@ -434,7 +474,7 @@ document.querySelector('#photo-modal .modal-close').addEventListener('click',()=
 let coverImages=[];
 function showHero(index){
  const img=coverImages[index];if(!img)return;
- const hero=document.querySelector('.hero');hero.style.backgroundImage='url("'+img.src+'")';hero.classList.add('has-photo');
+ const stage=document.getElementById('cesi-photo-stage');stage.style.backgroundImage='url("'+encodeURI(img.src)+'")';stage.classList.add('has-photo');
  document.querySelectorAll('[data-hero-index]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.heroIndex)===index)));
  document.getElementById('hero-credit').title=(img.caption?.[lang]||img.caption?.es||'')+' · '+(img.credit||'');
 }
@@ -728,6 +768,7 @@ function renderBiography(item,data,slot){
 const origDraw=draw;
 draw=function(){
  origDraw();renderFeatured();renderArtistResources();syncAmbientButtons();renderOrganization();renderInstitutionTranslations();
+ const introWords={es:['Desliza para descubrir la imagen del encuentro','EL ARTE ENTRA EN ESCENA','Una imagen. Muchas preguntas.','La escultura «Agua, Tierra y Aire» de Eleodoro Calderón acompañó la identidad de un congreso que reunió investigación y prácticas artísticas.'],en:['Scroll to discover the visual story','ART TAKES THE STAGE','One image. Many questions.','Eleodoro Calderón’s sculpture “Water, Earth and Air” shaped the visual identity of a congress connecting research and artistic practices.'],pt:['Deslize para descobrir a imagem do encontro','A ARTE ENTRA EM CENA','Uma imagem. Muitas perguntas.','A escultura “Água, Terra e Ar” de Eleodoro Calderón marcou a identidade visual de um congresso que reuniu pesquisa e práticas artísticas.']}[lang]||[];document.getElementById('cesi-scroll-label').textContent=introWords[0];document.getElementById('cesi-photo-eyebrow').textContent=introWords[1];document.getElementById('cesi-photo-title').textContent=introWords[2];document.getElementById('cesi-image-note').textContent=introWords[3];
  const placeholder={es:'Buscar artista…',en:'Search artists…',pt:'Buscar artistas…'};
  artistSearch.placeholder=placeholder[lang];
  artistSearch.setAttribute('aria-label',placeholder[lang]);
@@ -735,4 +776,5 @@ draw=function(){
 };
 draw();
 
+(function(){const el=document.getElementById('cesi-photo-stage');if(!el||!('IntersectionObserver' in window))return;const obs=new IntersectionObserver(entries=>{for(const e of entries){if(e.isIntersecting){e.target.classList.add('is-visible');obs.disconnect()}}},{threshold:.16});obs.observe(el);requestAnimationFrame(()=>el.classList.add('is-reveal-ready'));})();
 </script></body></html>
