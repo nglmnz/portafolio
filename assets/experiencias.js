@@ -27,7 +27,10 @@ add(copy,p(data.meta.tagline,"xp-theme-sentence"),p(data.meta.dates+" · "+data.
 add(art,n("div","xp-wave wave-a"),n("div","xp-wave wave-b"),n("div","xp-wave wave-c"),n("div","xp-wave wave-d"),n("strong","xp-art-center","ALAS / 75"));
 }else{
 add(copy,p("UAH · 2022 → 2025","xp-hero-meta"));
-add(art,n("div","xp-frame xp-frame1"),n("div","xp-frame xp-frame2"),n("div","xp-frame xp-frame3"),n("span","xp-filmgrain","35 mm / cine · diálogos"));
+art.className+=" xp-poster-visual";
+const poster=n("figure","xp-hero-poster");
+const flyer=n("img","xp-hero-flyer");flyer.src="assets/"+encodeURIComponent(data.hero.flyer.src);flyer.alt=tr(data.hero.flyer.alt);flyer.loading="eager";flyer.decoding="async";flyer.setAttribute("fetchpriority","high");
+add(poster,flyer,n("figcaption","xp-hero-poster-caption",tr(data.hero.flyer.caption)));add(art,poster);
 }
 const acts=n("div","xp-hero-actions");
 add(acts,link(ui("role"),"#rol","xp-cta primary"),link(ui("sources"),"#fuentes","xp-cta"));
@@ -54,16 +57,30 @@ const pub=part("prensa","06 / "+ui("archive"),ui("archive"),language==="es"?"El 
 sourceCards(pub,data.otherCoverage);
 }
 function renderCinema(){
-navFact([["2022",ui("year2022")],["50",ui("number")],["2025",ui("year2025")],["2",language==="es"?"proyecciones y conversaciones":language==="en"?"screenings and dialogues":"exibições e conversas"]]);
+// No decorative numeric strip: the narrative starts directly after the poster.
 const intro=part("contexto","01 / "+ui("about"),language==="es"?"Una universidad como lugar de encuentro":language==="en"?"The university as a meeting place":"A universidade como lugar de encontro",tr(data.intro));
 const role=part("rol","02 / "+ui("role"),tr(data.role.headline),tr(data.role.body));
+const organizing=n("div","xp-organizers");
+data.role.organizations.forEach(x=>{const card=n("article","xp-organizer-card");add(card,n("span","xp-organizer-year",x.id),h(tr(x.organizer),3),p(tr(x.role)),p(tr(x.focus),"xp-organizer-focus"));add(organizing,card)});
+add(role,organizing);
 const events=part("cine","03 / "+ui("film"),ui("film"),language==="es"?"Dos jornadas, dos películas diferentes y un diálogo que continuó a través del tiempo.":language==="en"?"Two events, two different films, and a continuing conversation.":"Dois encontros, dois filmes diferentes e uma conversa que continuou.");
 const toggles=n("div","xp-year-tabs"),panel=n("article","xp-film-panel");
 data.events.forEach((x,j)=>add(toggles,button(x.year+" · "+x.title,()=>{selected=j;drawFilm()},"xp-year",j===selected)));
 function drawFilm(){toggles.querySelectorAll("button").forEach((x,j)=>x.setAttribute("aria-pressed",String(j===selected)));const x=data.events[selected];panel.replaceChildren();
 const tag=n("span","xp-film-year",x.year+" · "+tr(x.label));const film=n("div","xp-film-title");
 add(film,tag,h(x.title,3),p(tr(x.type)+" · "+x.filmYear,"xp-film-meta"),p(tr(x.filmSummary)));
-const context=n("div","xp-film-context");add(context,h(ui("dialogue"),3),p(tr(x.context)),p(tr(x.cinemaMoment),"xp-film-moment"),link(ui("link"),x.source,"xp-source"));if(x.audience)add(context,n("span","xp-attendance",x.audience+" · "+ui("number")));add(panel,film,context)}
+const context=n("div","xp-film-context");
+add(context,n("span","xp-organizer-tag",tr(x.organizer)),h(ui("dialogue"),3));
+if(x.date)add(context,n("p","xp-verified-venue",(language==="es"?"2 de julio de 2025 · 15:00 · Sala L13, Cienfuegos 46":language==="en"?"2 July 2025 · 3:00 pm · Room L13, Cienfuegos 46":"2 de julho de 2025 · 15h · Sala L13, Cienfuegos 46")));
+add(context,p(tr(x.context)),p(tr(x.cinemaMoment),"xp-film-moment"),link(ui("link"),x.source,"xp-source"));
+if(x.audience)add(context,n("span","xp-attendance",x.audience+" · "+ui("number")));
+if(x.id==="2025"){
+const supporters=n("figure","xp-supporter-panel"),logo=n("img");logo.src="assets/"+encodeURIComponent(data.hero.flyer.related);logo.alt=language==="es"?"Logos en flyer: Sindicato Amanda Jofré, Cineclub UAH y Fundación Poderes":language==="en"?"Event poster logos: Sindicato Amanda Jofré, Cineclub UAH and Fundación Poderes":"Logotipos do cartaz: Sindicato Amanda Jofré, Cineclub UAH e Fundación Poderes";
+logo.loading="lazy";
+add(supporters,logo,n("figcaption","",language==="es"?"Logos incluidos en el material original de la jornada (2025)":language==="en"?"Logos featured in the original event materials (2025)":"Logotipos do material original do encontro (2025)"));
+add(context,supporters);
+}
+add(panel,film,context)}
 add(events,toggles,panel);drawFilm();
 const path=part("trayectoria","04 / "+ui("timeline"),ui("timeline"),language==="es"?"Cronología cinematográfica e hitos de las actividades universitarias. El cortometraje estrenado en 2022 fue proyectado en la UAH en 2025.":language==="en"?"Film and university milestones. The 2022 short was screened at UAH in 2025.":"Marcos do cinema e dos encontros. O curta de 2022 foi exibido na UAH em 2025.");
 const axis=n("div","xp-film-timeline");data.cinemaPath.forEach((x,j)=>{const c=n("article","xp-film-milestone"+(x.event?" actual":""));add(c,n("span","xp-milestone-year",x.year),h(tr(x.label),3),p(tr(x.desc)));add(axis,c)});add(path,axis);
