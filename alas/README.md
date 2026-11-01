@@ -16,7 +16,20 @@ Rol declarado: **corresponsal institucional del Departamento de Sociología UAH*
 - Kenneth Fowler, doctorando en Sociología UAH; tema específico de su presentación en ALAS no acreditado.
 - Juan Pablo Rodríguez, director Departamento de Sociología UAH.
 
-Los perfiles institucionales externos documentan cargos y trayectorias, no prueban de manera independiente que dichas personas presentaran ponencias determinadas en ALAS. Las entrevistas no se transcriben hasta recibir grabaciones, autorizaciones y contexto.
+Los perfiles institucionales externos documentan cargos y trayectorias. **La crónica original de Ángel Muñoz preparada para Sociología UAH aporta** los títulos de las ponencias de Juan Pablo Rodríguez, Nicolás Fleet y Gabriela Mardones, así como una síntesis de la conversación con Breno Bringel; se identifican como contenido de un borrador periodístico aportado por el autor y no como verificación independiente del programa académico. Las frases textuales de entrevistas deben cotejarse con grabaciones antes de su reproducción.
+
+## Crónica original del corresponsal · nueva base editorial
+
+Se ha incorporado la nota original de **13 páginas** enviada por el autor: «XXXV Congreso de la Asociación Latino Americana de Sociología (ALAS) 2026: Río de Janeiro fue el epicentro de la sociología latinoamericana y Sociología UAH estuvo presente». Termina con la autoría **«Informó desde Río de Janeiro: Ángel Muñoz»** y referencia de edición al Departamento de Comunicaciones UAH. Que haya sido preparada para comunicaciones no prueba su publicación oficial.
+
+Las síntesis de la página incluyen:
+
+- **Juan Pablo Rodríguez** (29 julio, Sesión 13, Sala 111 UFRJ/ECO): «¿Cooptación o estrategia? Institucionalización de movimientos sociales en Chile (2020–2026)»; discusión sobre movimientos sociales y Estado.
+- **Nicolás Fleet** (31 julio, Sesión 29): «Nuevos profesionalismos y tecnocracias postneoliberales: articulación, conocimiento y capacidad estatal en el gobierno de Boric en Chile».
+- **Gabriela Mardones** (Sesión 33): «Cuando el movimiento feminista no representa: jóvenes electoras de la nueva derecha en las elecciones presidenciales de 2025 en Chile», investigación cualitativa guiada por Alexis Cortés, con **15 entrevistas semiestructuradas a mujeres de 18–28 años** según el borrador. Se evita atribuir generalizabilidad a la muestra.
+- **Breno Bringel:** la nota relata una conversación sobre policrisis, sociología latinoamericana y giro ecoterritorial. La entrevista tiene video y audio externo aún sin sincronizar. **No se han reproducido citas directas en el portafolio hasta cotejarlas con el registro audiovisual**.
+
+El JSON `assets/alas-datos.json` incluye `reportage`, su atribución, las tres fichas y una síntesis de Bringel. Los temas y métodos consignados proceden de **la nota aportada**, no de una revisión independiente de las grabaciones.
 
 ## Fuentes / límites
 
