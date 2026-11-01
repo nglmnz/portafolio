@@ -1,0 +1,128 @@
+
+/* Pedagogías UAH · Independent institutional research case / 2026
+   Palette developed from the supplied report's navy, white, teal; readable labels don't rely on hue. */
+:root{--ped-ink:#152739;--ped-navy:#18395e;--ped-deep:#10243b;--ped-cyan:#24718a;--ped-mint:#7cddd3;--ped-white:#fcfcfa;--ped-paper:#f0f4f5;--ped-line:#d7e1e5;--ped-muted:#566e78}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ped-ink);background:var(--ped-white);font:400 15px/1.72 system-ui,-apple-system,Inter,"Segoe UI",Arial,sans-serif}
+button{font:inherit}a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #0c879e;outline-offset:3px}
+.ped-shell{max-width:1180px;width:calc(100% - 50px);margin:0 auto}
+.ped-nav{position:sticky;top:0;z-index:20;background:rgba(247,250,250,.97);border-bottom:1px solid var(--ped-line);backdrop-filter:blur(12px)}
+.ped-nav-inner{display:flex;justify-content:space-between;align-items:center;gap:15px;min-height:69px}
+.ped-brand{text-decoration:none;white-space:nowrap;font-weight:860;letter-spacing:-.055em;font-size:17px}
+.ped-nav-links{display:flex;align-items:center;gap:22px}
+.ped-nav-links>a{font-size:12px;font-weight:730;text-decoration:none;color:#425968}
+.ped-nav-links>a:hover{text-decoration:underline}
+.ped-languages{display:flex;gap:3px;padding:3px;border-radius:8px;border:1px solid var(--ped-line)}
+.ped-languages button{cursor:pointer;border:0;border-radius:5px;background:transparent;font-size:11px;font-weight:800;padding:6px 10px;color:#516779}
+.ped-languages button[aria-pressed="true"]{background:#18395e;color:white}
+.ped-eyebrow{display:block;color:#27768c;letter-spacing:.15em;font-size:11px;font-weight:850;text-transform:uppercase;margin-bottom:14px}
+h1,h2,h3{line-height:1.12;letter-spacing:-.045em}
+h1{font-size:clamp(2.75rem,5.3vw,5.5rem);margin:0 0 23px;max-width:900px}
+h2{font-size:clamp(1.7rem,3.4vw,3.1rem);margin:0 0 20px}
+h3{font-size:clamp(1.12rem,2vw,1.3rem);margin:0 0 10px}
+p{margin:0 0 16px}
+.ped-hero{background:linear-gradient(122deg,#10304f,#102438 70%);color:#f5fcff;padding:90px 0 93px;overflow:hidden}
+.ped-hero-inner{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.75fr);align-items:center;gap:50px}
+.ped-hero .ped-eyebrow{color:#7ad5c9}
+.ped-hero-sub{font:500 clamp(1.08rem,1.9vw,1.48rem)/1.38 Georgia,serif;max-width:700px;color:#d2e9eb}
+.ped-hero-lead{font-size:15px;color:#c7d9df;max-width:740px}
+.ped-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:25px}
+.ped-action{display:inline-flex;align-items:center;min-height:43px;border:1px solid #7e9da7;border-radius:7px;padding:10px 16px;font-size:12px;font-weight:820;text-decoration:none;color:white}
+.ped-action.primary{background:#8be1d8;border-color:#8be1d8;color:#102b36}
+.ped-action:hover{filter:brightness(1.12)}
+.ped-report-cover{min-height:455px;border:1px solid #d8e4e3;background:#fafbf9;color:#123047;box-shadow:22px 23px 0 #226e89,25px 26px 0 #b8d6d4;padding:34px 27px 24px 36px;position:relative;display:flex;flex-direction:column;justify-content:flex-end}
+.ped-report-cover:before{content:"";width:11px;height:100%;position:absolute;left:0;top:0;background:linear-gradient(#0c1822 85%,#257593 85%)}
+.ped-report-logo{position:absolute;top:32px;left:40px;display:flex;align-items:center;gap:11px;max-width:calc(100% - 60px)}
+.ped-report-logo img{width:53px;height:53px;border-radius:50%;object-fit:cover;background:#111}
+.ped-report-logo span{font-size:10px;font-weight:850;letter-spacing:.07em;line-height:1.3}
+.ped-cover-kicker{font-size:10px;color:#24718a;letter-spacing:.1em;font-weight:820}
+.ped-report-cover h3{font-size:clamp(24px,2.5vw,30px);line-height:1.13;margin:8px 0}
+.ped-report-cover p{font:italic 15px/1.3 Georgia,serif;color:#40616c}
+.ped-cover-byline{font-size:10px;font-weight:850;letter-spacing:.1em;border-top:1px solid #bdc9ca;padding-top:11px;margin-top:20px}
+.ped-stats{position:relative;z-index:2;margin:-42px auto 55px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.ped-stat{background:#fff;border:1px solid var(--ped-line);border-top:4px solid #317b90;box-shadow:0 13px 24px rgba(8,34,49,.06);border-radius:8px;padding:20px 21px}
+.ped-stat strong{display:block;font-size:clamp(1.8rem,3.3vw,2.65rem);font-weight:850;line-height:1.1;letter-spacing:-.065em;color:#184c6c}
+.ped-stat span{color:#506774;font-size:12px;display:block;margin-top:8px;line-height:1.4}
+.ped-section{padding:75px 0;border-top:1px solid var(--ped-line)}
+.ped-section:nth-of-type(even){background:#f1f6f6}
+.ped-lede{max-width:900px;font-size:16px;color:#415968}
+.ped-two{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:26px}
+.ped-two>p{font-size:15px;line-height:1.75;color:#43606c}
+.ped-timeline{position:relative;max-width:990px;margin:28px 0}
+.ped-timeline:before{content:"";position:absolute;top:0;bottom:0;left:63px;width:2px;background:#b6d7d9}
+.ped-stage{display:grid;grid-template-columns:94px 1fr;gap:24px;position:relative;margin-bottom:18px}
+.ped-stage-marker{display:flex;flex-direction:column;align-items:center;gap:7px}
+.ped-step{display:grid;place-items:center;border-radius:50%;width:43px;height:43px;background:#143e5a;color:#fff;font-weight:820;font-size:13px}
+.ped-stage-marker small{font-size:11px;color:#566d79;font-weight:740;white-space:nowrap}
+.ped-stage-body{border:1px solid #cbdbdb;background:#fff;padding:22px 27px;border-radius:9px}
+.ped-stage-body h3{margin:0 0 9px}.ped-stage-body p{font-size:14px;color:#405b68}
+.ped-source{display:block;color:#627784;font-size:11px;line-height:1.5;margin:14px 0 0}
+.ped-method-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:25px 0}
+.ped-tech{background:#152e4c;border-radius:10px;padding:20px;color:#fff}
+.ped-tech strong{display:block;margin-bottom:12px;font-size:17px;color:#a6e9e1}
+.ped-tech p{font-size:12px;margin:0;color:#d1e1e5;line-height:1.5}
+.ped-careers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 35px;padding:24px 0}
+.ped-career-head,.ped-chart-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;line-height:1.4}
+.ped-career-head b,.ped-chart-head strong{white-space:nowrap;color:#143c59;font-weight:860}
+.ped-bar-track{border-radius:50px;background:#dce7e9;height:15px;overflow:hidden;margin-top:11px}
+.ped-bar-fill{height:100%;background:linear-gradient(90deg,#287890,#6fc7c0);border-radius:50px}
+.ped-caution{border-left:3px solid #2b8093;background:#e8f2f3;color:#315669!important;padding:13px 16px;font-size:12px!important;line-height:1.6;margin:22px 0}
+.ped-highlight-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:28px 0 36px}
+.ped-highlight{background:#173b5a;padding:24px 20px;color:#fff;border-radius:10px;border-bottom:4px solid #74c9bf}
+.ped-highlight strong{display:block;color:#a3ebe1;font-size:clamp(1.9rem,3vw,2.5rem);letter-spacing:-.055em;line-height:1.15}
+.ped-highlight p{font-size:12px;margin:10px 0 0;line-height:1.5}
+.ped-results-explorer{display:grid;grid-template-columns:minmax(190px,.7fr) minmax(0,1.9fr);gap:18px}
+.ped-result-tabs{display:flex;flex-direction:column;gap:8px}
+.ped-result-tab{cursor:pointer;border:1px solid #b9d0d5;color:#23495a;background:#fff;text-align:left;border-radius:7px;padding:14px;font-size:12px;font-weight:780;line-height:1.4}
+.ped-result-tab[aria-pressed="true"]{background:#164463;color:#fff;border-color:#164463}
+.ped-result-tab:hover{border-color:#2b8593}
+.ped-result-plot{background:#fff;border:1px solid #cbdade;border-radius:10px;padding:27px}
+.ped-result-plot h3{font-size:23px}
+.ped-chart-lead{color:#516774;font-size:13px;line-height:1.6;margin-bottom:25px}
+.ped-chart-row{margin:0 0 22px}
+.ped-chart-row:last-child{margin-bottom:8px}
+.ped-chart-head{font-size:13px}
+.ped-chart-head span{max-width:80%}
+.ped-chart-row .ped-bar-track{height:13px;margin-top:8px}
+.ped-scales-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:28px 0}
+.ped-scale{background:#fff;border:1px solid #cbdbe0;border-radius:10px;padding:19px 21px}
+.ped-scale h3{font-size:17px;margin:0 0 10px}
+.ped-scale-n{font-size:11px;color:#627887}
+.ped-scale-nums{border-top:1px solid #dae4e7;margin-top:15px;padding-top:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px;font-size:12px}
+.ped-scale-nums strong{color:#11657b}
+.ped-usage-list{max-width:950px;margin:28px 0}
+.ped-commission-card{background:#173c59;color:#fff;padding:29px;border-radius:12px}
+.ped-commission-card .ped-eyebrow{color:#8de8de}
+.ped-commission-card h3{color:#efffff;font-size:22px;margin:8px 0 17px}
+.ped-commission-card p{color:#d6e7eb;font-size:14px}
+.ped-commission-proposal{display:grid;gap:8px;margin:15px 0 23px}
+.ped-commission-step{display:flex;align-items:center;gap:16px;border:1px solid #587b95;background:#204a68;padding:13px;border-radius:7px}
+.ped-commission-step strong{color:#a6efe3}
+.ped-commission-step p{margin:0;color:#fff;font-size:13px}
+.ped-commission-card .ped-caution{background:#2c5365;border-left-color:#8ae4dc;color:#f0fbf8!important}
+.ped-photo-placeholder{min-height:350px;background:radial-gradient(circle at 60% 40%,rgba(57,127,143,.16),transparent 50%),linear-gradient(135deg,#e3eff0,#d6e3e7);border:1px dashed #91b3bd;border-radius:12px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px}
+.ped-photo-icon{font-size:68px;line-height:1;color:#437d8b}
+.ped-photo-placeholder h3{font-size:23px;margin-top:22px}
+.ped-photo-placeholder p{max-width:330px;color:#476b74;font-size:13px}
+.ped-photo-placeholder small{color:#68818a;font-size:11px}
+.ped-team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:22px 0 33px}
+.ped-team-card{background:#fff;border:1px solid #d2e0e3;border-radius:9px;padding:20px}
+.ped-team-card h3{font-size:16px}.ped-team-card p{color:#4a6673;font-size:13px;line-height:1.55;margin-bottom:6px}
+.ped-team-card small{font-size:10px;color:#78909b}.ped-inline-link{font-size:11px;color:#176d80;font-weight:760;text-decoration:none}
+.ped-suggestion-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:27px 0}
+.ped-suggestion{border:1px solid #cbdade;border-radius:10px;padding:22px;background:#fff}
+.ped-suggestion .ped-step{width:35px;height:35px;font-size:11px;margin-bottom:12px}
+.ped-suggestion p{margin:0;font-size:14px;font-weight:650}
+.ped-note{color:#5d7881;font-size:12px}
+.ped-link-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:18px 0}
+.ped-source-link{display:flex;align-items:center;padding:14px 16px;min-height:70px;background:#e7f1f3;border:1px solid #aac7cf;border-radius:7px;text-decoration:none;font-size:13px;font-weight:700;color:#20546a}
+.ped-source-link:hover{background:#d6ebee}
+.ped-footer{background:#112c44;color:#e7f5f6;padding:25px 0}
+.ped-footer .ped-shell{display:flex;flex-wrap:wrap;gap:24px}
+.ped-footer a{font-size:12px;text-decoration:none;font-weight:770}
+@media(max-width:1000px){.ped-hero-inner{grid-template-columns:1fr minmax(245px,.6fr);gap:25px}.ped-report-cover{min-height:420px}.ped-highlight-grid{grid-template-columns:repeat(2,1fr)}.ped-method-grid{grid-template-columns:repeat(2,1fr)}.ped-team{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.ped-shell{width:calc(100% - 32px)}.ped-hero{padding:64px 0}.ped-hero-inner{grid-template-columns:1fr;gap:33px}.ped-report-cover{max-width:460px;min-height:410px;box-shadow:10px 12px 0 #226e89}.ped-stats{grid-template-columns:repeat(2,1fr)}.ped-section{padding:49px 0}.ped-two,.ped-careers,.ped-scales-list,.ped-results-explorer,.ped-link-grid{grid-template-columns:1fr}.ped-result-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.ped-commission-card{padding:20px}.ped-suggestion-grid{grid-template-columns:repeat(2,1fr)}.ped-timeline:before{left:33px}.ped-stage{grid-template-columns:67px 1fr;gap:12px}.ped-stage-body{padding:17px}.ped-nav-links{gap:11px}}
+@media(max-width:420px){.ped-nav-inner{flex-direction:column;align-items:flex-start;padding:10px 0;gap:6px}.ped-highlight-grid,.ped-team,.ped-suggestion-grid{grid-template-columns:1fr}.ped-result-tabs{grid-template-columns:1fr}.ped-hero h1{font-size:2.65rem}.ped-report-cover{min-height:365px}.ped-report-cover h3{font-size:23px}.ped-hero-lead{font-size:14px}.ped-chart-head{font-size:12px}.ped-stage-marker small{white-space:normal;text-align:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
