@@ -1,0 +1,380 @@
+{
+  "id": "cine",
+  "kind": "public-cultural-mediation",
+  "meta": {
+    "years": "2022–2025",
+    "location": "Universidad Alberto Hurtado · Santiago, Chile",
+    "program": "Mesa de Disidencias",
+    "count2022": 50,
+    "externalPartners2025": [
+      "Fundación Poderes",
+      "Sindicato Amanda Jofré",
+      "Quijote Films"
+    ]
+  },
+  "hero": {
+    "kicker": {
+      "es": "CINE · DIVERSIDADES · UNIVERSIDAD",
+      "en": "CINEMA · DIVERSITY · UNIVERSITY",
+      "pt": "CINEMA · DIVERSIDADES · UNIVERSIDADE"
+    },
+    "title": {
+      "es": "Del cine a la conversación colectiva.",
+      "en": "From cinema to collective dialogue.",
+      "pt": "Do cinema à conversa coletiva."
+    },
+    "subtitle": {
+      "es": "Dos encuentros en la Universidad Alberto Hurtado conectaron cine chileno, experiencias trans, creación cultural y diálogo sobre género y diversidades sexogenéricas.",
+      "en": "Two events at Universidad Alberto Hurtado connected Chilean cinema, trans experiences, cultural production and conversation on gender and sexual diversity.",
+      "pt": "Dois encontros na Universidad Alberto Hurtado conectaram cinema chileno, experiências trans, criação cultural e diálogo sobre gênero e diversidade."
+    }
+  },
+  "intro": {
+    "es": "Desde la Mesa de Disidencias impulsamos instancias de proyección y conversación pública con la actriz Paula Dinamarca. Una primera jornada en 2022 con Naomi Campbel reunió a unas 50 personas; en 2025 retomamos el formato con Las criaturas que se derriten bajo el sol, el acompañamiento de organizaciones de diversidad y apoyo de Quijote Films. El hilo conductor fue crear un espacio donde las historias filmadas dialogaran con experiencias, derechos y representación.",
+    "en": "Through the Mesa de Disidencias, we organized screenings and public conversations with actress Paula Dinamarca. A 2022 showing of Naomi Campbel brought approximately 50 attendees; in 2025 we returned with Las criaturas que se derriten bajo el sol, with community organizations and Quijote Films' support. Both events treated film as a meeting point for experience, rights and representation.",
+    "pt": "Na Mesa de Disidencias, organizamos exibições e conversas públicas com a atriz Paula Dinamarca. Em 2022, Naomi Campbel reuniu cerca de 50 pessoas; em 2025 retomamos o formato com Las criaturas que se derriten bajo el sol, entidades comunitárias e apoio da Quijote Films. Os encontros conectaram experiências, direitos e representação."
+  },
+  "role": {
+    "headline": {
+      "es": "Mi participación en la mediación cultural",
+      "en": "My contribution to cultural mediation",
+      "pt": "Minha participação na mediação cultural"
+    },
+    "body": {
+      "es": "Participé en la organización de actividades de la Mesa de Disidencias y en la generación de espacios de diálogo con la actriz y organizaciones invitadas. Los materiales fotográficos y audiovisuales permitirán documentar tareas específicas, carteles, equipos y participantes, sin adjudicar autoría total de un trabajo colectivo.",
+      "en": "I participated in organizing Mesa de Disidencias activities and creating dialogue with the actress and invited organizations. Photos and audiovisual material will later document specific tasks and participants, without claiming sole authorship of collective work.",
+      "pt": "Participei na organização de atividades da Mesa de Disidencias e na criação de diálogo com a atriz e organizações convidadas. Fotos e vídeos permitirão documentar tarefas específicas sem reivindicar autoria exclusiva do trabalho coletivo."
+    }
+  },
+  "events": [
+    {
+      "id": "2022",
+      "year": "2022",
+      "title": "Naomi Campbel",
+      "label": {
+        "es": "Primera jornada · cine y conversación",
+        "en": "First screening and dialogue",
+        "pt": "Primeira exibição e debate"
+      },
+      "filmYear": "2013",
+      "type": {
+        "es": "Largometraje documental / híbrido",
+        "en": "Documentary/hybrid feature film",
+        "pt": "Longa documental/híbrido"
+      },
+      "directors": "Camila José Donoso · Nicolás Videla",
+      "cast": "Paula Dinamarca · Ingrid Mancilla · Josefina Ramírez · Camilo Carmona",
+      "audience": "50",
+      "context": {
+        "es": "Se proyectó Naomi Campbel en la UAH y se realizó un encuentro con Paula Dinamarca para conversar sobre la película y las experiencias de género y diversidad. La cifra de 50 asistentes corresponde al registro facilitado por el organizador.",
+        "en": "Naomi Campbel was screened at UAH with a conversation featuring Paula Dinamarca about the film and gender and diversity. The reported audience of 50 comes from the organizer.",
+        "pt": "Naomi Campbel foi exibido na UAH com uma conversa com Paula Dinamarca sobre cinema, gênero e diversidade. O público de 50 pessoas foi informado pelo organizador."
+      },
+      "filmSummary": {
+        "es": "Yermén, mujer trans que vive en la población La Victoria y trabaja como tarotista, conoce a una inmigrante que busca parecerse a Naomi Campbell. La película combina ficción y documental para reflexionar sobre identidad, deseo, cuerpos y medios de comunicación.",
+        "en": "Yermén, a trans woman and tarot reader from La Victoria, encounters an immigrant hoping to look like Naomi Campbell. The film blends documentary and fiction around identity, bodies and media.",
+        "pt": "Yermén, mulher trans e cartomante de La Victoria, encontra uma imigrante que quer parecer Naomi Campbell. O filme mistura documentário e ficção para pensar identidade, corpos e mídia."
+      },
+      "cinemaMoment": {
+        "es": "Paula Dinamarca había participado en la Semana de la Crítica de Cannes 2022 con Las criaturas que se derriten bajo el sol. La fecha exacta de la actividad en la UAH queda pendiente de documentar para establecer con precisión su relación temporal con ese festival.",
+        "en": "Paula Dinamarca appeared in The Melting Creatures at Cannes Critics' Week 2022. The exact UAH screening date is not documented, so its sequence relative to Cannes cannot be asserted.",
+        "pt": "Paula Dinamarca participou da Semana da Crítica de Cannes 2022 com Las criaturas. A data exata da atividade na UAH não está documentada para afirmar sua sequência temporal."
+      },
+      "source": "https://www.retinalatina.org/peliculas/naomi-campbel/"
+    },
+    {
+      "id": "2025",
+      "year": "2025",
+      "title": "Las criaturas que se derriten bajo el sol",
+      "label": {
+        "es": "Segunda jornada · comunidad, cine y derechos",
+        "en": "Second event · community, cinema and rights",
+        "pt": "Segundo encontro · comunidade, cinema e direitos"
+      },
+      "filmYear": "2022",
+      "type": {
+        "es": "Cortometraje de ficción",
+        "en": "Fiction short film",
+        "pt": "Curta de ficção"
+      },
+      "directors": "Diego Céspedes",
+      "cast": "Paula Dinamarca · Rafaela Capote · Daniel Antivilo",
+      "audience": null,
+      "context": {
+        "es": "Repetimos el formato en la UAH mediante una proyección y conversación con Paula Dinamarca, Fundación Poderes y representantes del Sindicato Amanda Jofré, con apoyo de la productora Quijote Films. La convocatoria se orientó a experiencias trans, memoria, género y diversidades sexogenéricas. Colaboraciones y formato documentados por el organizador, a la espera de afiches y fotografías de la jornada.",
+        "en": "We repeated the format at UAH with a screening and conversation involving Paula Dinamarca, Fundación Poderes and Sindicato Amanda Jofré, with support from Quijote Films. The organizer reports the event, with original posters and photos to follow.",
+        "pt": "Repetimos o formato na UAH com exibição e conversa com Paula Dinamarca, Fundação Poderes e Sindicato Amanda Jofré, com apoio da Quijote Films. O relato vem do organizador, aguardando cartazes e fotos."
+      },
+      "filmSummary": {
+        "es": "Nataly, mujer trans, viaja con su hija a reunirse con un antiguo amante en una comunidad que huye de la luz del sol. La ficción aborda vínculos familiares, heridas, miedo y resistencia.",
+        "en": "Nataly, a trans woman, travels with her daughter to visit a former lover in a community that hides from sunlight. The story examines family bonds, vulnerability and resistance.",
+        "pt": "Nataly, mulher trans, viaja com a filha para encontrar um ex-companheiro numa comunidade que foge da luz solar. A história aborda vínculos, feridas e resistência."
+      },
+      "cinemaMoment": {
+        "es": "El cortometraje se estrenó en Cannes en 2022. En 2025 Paula Dinamarca volvió al festival como parte del elenco de La misteriosa mirada del flamenco, largometraje de Diego Céspedes ganador del Premio Un Certain Regard. El premio fue concedido a la película, no como distinción individual de la actriz.",
+        "en": "The short premiered at Cannes Critics' Week in 2022. In 2025, Paula Dinamarca returned as a cast member of Diego Céspedes's feature The Mysterious Gaze of the Flamingo, winner of the Un Certain Regard Prize. The prize went to the film, not individually to the actress.",
+        "pt": "O curta estreou em Cannes 2022. Em 2025, Paula Dinamarca voltou com o longa La misteriosa mirada del flamenco, de Diego Céspedes, vencedor do prêmio Un Certain Regard, atribuído ao filme, não individualmente à atriz."
+      },
+      "source": "https://quijotefilms.com/quijote_cine/el-hombre-mas-infame-que-escondio-el-desierto/"
+    }
+  ],
+  "cinemaPath": [
+    {
+      "year": "2013",
+      "label": {
+        "es": "Naomi Campbel",
+        "en": "Naomi Campbel",
+        "pt": "Naomi Campbel"
+      },
+      "desc": {
+        "es": "Largometraje de Camila José Donoso y Nicolás Videla con Paula Dinamarca.",
+        "en": "Feature by Camila José Donoso and Nicolás Videla starring Paula Dinamarca.",
+        "pt": "Longa de Camila José Donoso e Nicolás Videla com Paula Dinamarca."
+      },
+      "event": false
+    },
+    {
+      "year": "2022",
+      "label": {
+        "es": "Cannes · Las criaturas",
+        "en": "Cannes · The Melting Creatures",
+        "pt": "Cannes · Las criaturas"
+      },
+      "desc": {
+        "es": "Estreno mundial del cortometraje de Diego Céspedes en la Semana de la Crítica; mismo año de la primera jornada UAH.",
+        "en": "Diego Céspedes short premieres at Critics' Week; same year as the first UAH screening.",
+        "pt": "Estreia na Semana da Crítica; mesmo ano da primeira sessão UAH."
+      },
+      "event": false
+    },
+    {
+      "year": "2022",
+      "label": {
+        "es": "UAH · Proyección y encuentro",
+        "en": "UAH · Screening and conversation",
+        "pt": "UAH · Sessão e encontro"
+      },
+      "desc": {
+        "es": "Naomi Campbel, diálogo con Paula Dinamarca y aproximadamente 50 asistentes según el organizador.",
+        "en": "Naomi Campbel screening and a dialogue with Paula Dinamarca; about 50 people according to organizer.",
+        "pt": "Sessão de Naomi Campbel e diálogo com Paula Dinamarca; cerca de 50 pessoas segundo o organizador."
+      },
+      "event": true
+    },
+    {
+      "year": "2025",
+      "label": {
+        "es": "Cannes · Un Certain Regard",
+        "en": "Cannes · Un Certain Regard",
+        "pt": "Cannes · Un Certain Regard"
+      },
+      "desc": {
+        "es": "La misteriosa mirada del flamenco, con Paula Dinamarca en el elenco, gana el premio Un Certain Regard en Cannes.",
+        "en": "The Mysterious Gaze of the Flamingo, featuring Dinamarca, wins the Un Certain Regard Prize at Cannes.",
+        "pt": "La misteriosa mirada del flamenco, com Dinamarca, ganha o prêmio Un Certain Regard em Cannes."
+      },
+      "event": false
+    },
+    {
+      "year": "2025",
+      "label": {
+        "es": "UAH · Segunda jornada",
+        "en": "UAH · Second screening",
+        "pt": "UAH · Segundo encontro"
+      },
+      "desc": {
+        "es": "Las criaturas que se derriten bajo el sol y conversación con actriz, organizaciones de diversidad y productora.",
+        "en": "The Melting Creatures screening and discussion with the actress, advocacy groups and production support.",
+        "pt": "Sessão de Las criaturas e conversa com atriz, organizações e produtora."
+      },
+      "event": true
+    }
+  ],
+  "partners": [
+    {
+      "name": "Paula Dinamarca",
+      "description": {
+        "es": "Actriz invitada y protagonista de las conversaciones públicas; figura del cine chileno y de la representación trans.",
+        "en": "Guest actress and central participant in the public discussions; an important voice in Chilean trans representation.",
+        "pt": "Atriz convidada e participante central dos encontros; voz da representação trans no cinema chileno."
+      },
+      "link": "https://www.festival-cannes.com/en/p/paula-dinamarca/",
+      "source": "confirmed actor / event user-reported"
+    },
+    {
+      "name": "Fundación Poderes",
+      "description": {
+        "es": "Organización chilena LGBTIQANB+ mencionada por el organizador como participante en la actividad de 2025.",
+        "en": "Chilean LGBTIQANB+ organization reported as a 2025 participant.",
+        "pt": "Organização chilena LGBTIQANB+ relatada como participante em 2025."
+      },
+      "link": "https://ilga.org/es/lo-que-somos/organizaciones-miembros/",
+      "source": "organization confirmed; event participation user-reported"
+    },
+    {
+      "name": "Sindicato Amanda Jofré",
+      "description": {
+        "es": "Organización histórica de personas trans y trabajadoras sexuales, señalada por el organizador como participante de la conversación en 2025.",
+        "en": "Historic trans and sex worker organization, reported as participating in the 2025 conversation.",
+        "pt": "Organização histórica trans e de trabalhadoras sexuais, relatada como participante em 2025."
+      },
+      "link": "https://ciudadano.indh.cl/organizaciones-lgbtiqa-en-la-sociedad-civil/",
+      "source": "organization confirmed; event participation user-reported"
+    },
+    {
+      "name": "Quijote Films",
+      "description": {
+        "es": "Productora del cortometraje de 2022, que según el organizador apoyó la realización de la proyección de 2025.",
+        "en": "Production company of the 2022 short; the organizer reports support for the 2025 screening.",
+        "pt": "Produtora do curta de 2022; apoio à sessão de 2025 informado pelo organizador."
+      },
+      "link": "https://quijotefilms.com/quijote_cine/el-hombre-mas-infame-que-escondio-el-desierto/",
+      "source": "film producer confirmed; screening support user-reported"
+    }
+  ],
+  "discussion": [
+    {
+      "title": {
+        "es": "Derecho a narrar la propia experiencia",
+        "en": "The right to tell one's own story",
+        "pt": "Direito a narrar a própria experiência"
+      },
+      "text": {
+        "es": "Cómo las historias audiovisuales ponen en cuestión representaciones estereotipadas y abren conversaciones sobre agencia y memoria.",
+        "en": "How film can challenge stereotypes and open conversation about agency and memory.",
+        "pt": "Como o cinema questiona estereótipos e abre conversas sobre agência e memória."
+      }
+    },
+    {
+      "title": {
+        "es": "Cuerpos, reconocimiento y exclusión",
+        "en": "Bodies, recognition and exclusion",
+        "pt": "Corpos, reconhecimento e exclusão"
+      },
+      "text": {
+        "es": "Experiencias trans y el lugar de la representación social y cultural en las disputas por derechos y visibilidad.",
+        "en": "Trans experiences and the role of cultural representation in rights and visibility.",
+        "pt": "Experiências trans e o papel da representação cultural nas disputas por direitos."
+      }
+    },
+    {
+      "title": {
+        "es": "Universidad como espacio público",
+        "en": "The university as a public space",
+        "pt": "Universidade como espaço público"
+      },
+      "text": {
+        "es": "Una proyección seguida por una conversación permite conectar educación, arte, organizaciones sociales y comunidades.",
+        "en": "Screenings and conversations can connect education, art and social organizations.",
+        "pt": "Exibição e debate conectam educação, arte e organizações sociais."
+      }
+    },
+    {
+      "title": {
+        "es": "Del reconocimiento artístico al diálogo",
+        "en": "From artistic recognition to dialogue",
+        "pt": "Do reconhecimento artístico ao diálogo"
+      },
+      "text": {
+        "es": "El reconocimiento internacional de una película ayuda a abrir audiencias, pero la conversación local vuelve las preguntas a la experiencia cotidiana.",
+        "en": "International film recognition attracts audiences, while local dialogue brings the questions back to lived experience.",
+        "pt": "O reconhecimento internacional amplia públicos, mas o diálogo local aproxima as questões das experiências vividas."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "Naomi Campbel · Retina Latina",
+      "description": {
+        "es": "Ficha, sinopsis, elenco y dirección de la película de 2013.",
+        "en": "2013 film synopsis, cast and directors.",
+        "pt": "Sinopse, elenco e direção do filme de 2013."
+      },
+      "url": "https://www.retinalatina.org/peliculas/naomi-campbel/",
+      "status": "verified"
+    },
+    {
+      "label": "Naomi Campbel · Mimbre Films",
+      "description": {
+        "es": "Ficha de producción del largometraje y participación de Paula Dinamarca.",
+        "en": "Production record and Paula Dinamarca's role.",
+        "pt": "Ficha de produção e participação de Paula Dinamarca."
+      },
+      "url": "https://www.mimbrefilms.com/portfolio-item/naomi/",
+      "status": "verified"
+    },
+    {
+      "label": "Las criaturas · Quijote Films",
+      "description": {
+        "es": "Ficha de la productora, sinopsis y elenco del cortometraje.",
+        "en": "Producer's short-film synopsis and cast.",
+        "pt": "Ficha da produtora, sinopse e elenco."
+      },
+      "url": "https://quijotefilms.com/quijote_cine/el-hombre-mas-infame-que-escondio-el-desierto/",
+      "status": "verified"
+    },
+    {
+      "label": "Las criaturas · Semana de la Crítica Cannes 2022",
+      "description": {
+        "es": "Acredita la selección de la película y a Paula Dinamarca en su elenco.",
+        "en": "Confirms Critics' Week selection and Paula Dinamarca in the cast.",
+        "pt": "Confirma seleção em Cannes e presença de Paula Dinamarca no elenco."
+      },
+      "url": "https://www.semainedelacritique.com/en/edition/2022/movie/las-criaturas-que-se-derriten-bajo-el-sol",
+      "status": "verified"
+    },
+    {
+      "label": "La misteriosa mirada del flamenco · Cannes",
+      "description": {
+        "es": "La película ganó el premio Un Certain Regard 2025. Paula Dinamarca interpreta a Boa.",
+        "en": "Un Certain Regard Prize for the film in 2025; Dinamarca plays Boa.",
+        "pt": "O filme recebeu o prêmio Un Certain Regard em 2025; Dinamarca interpreta Boa."
+      },
+      "url": "https://www.festival-cannes.com/en/f/la-misteriosa-mirada-del-flamenco/",
+      "status": "verified"
+    },
+    {
+      "label": "Paula Dinamarca · entrevista La Tercera",
+      "description": {
+        "es": "Trayectoria artística y dimensión pública de su trabajo y activismo.",
+        "en": "Her artistic career and public advocacy.",
+        "pt": "Trajetória artística e ativismo."
+      },
+      "url": "https://www.latercera.com/paula/noticia/paula-dinamarca-actriz-para-una-trans-todo-es-politico/?outputType=base-amp-type",
+      "status": "verified"
+    },
+    {
+      "label": "Sindicato Amanda Jofré · INDH",
+      "description": {
+        "es": "Referente histórico de organización trans en Chile.",
+        "en": "Historic trans organization in Chile.",
+        "pt": "Organização trans histórica do Chile."
+      },
+      "url": "https://ciudadano.indh.cl/organizaciones-lgbtiqa-en-la-sociedad-civil/",
+      "status": "verified"
+    },
+    {
+      "label": "Fundación Poderes · ILGA World",
+      "description": {
+        "es": "Registro de la organización chilena en la red internacional.",
+        "en": "Listing of the Chilean group in an international network.",
+        "pt": "Registro da organização chilena na rede internacional."
+      },
+      "url": "https://ilga.org/es/lo-que-somos/organizaciones-miembros/",
+      "status": "verified"
+    }
+  ],
+  "gallery": {
+    "placeholder": {
+      "es": "Pendiente: fotografías, afiches, entrevistas y material autorizado de las jornadas 2022 y 2025. Se organizarán por película y por actividad, sin utilizar imágenes de terceros sin comprobar derechos.",
+      "en": "Pending: photographs, posters, interviews and authorized documentation of the 2022 and 2025 gatherings. They will be organized by film and activity, subject to rights checks.",
+      "pt": "Pendente: fotos, cartazes, entrevistas e material autorizado dos encontros de 2022 e 2025, organizados por filme e atividade com revisão de direitos."
+    },
+    "manifest": "cine-disidencias/assets/galeria.json"
+  },
+  "limitation": {
+    "es": "Los encuentros, la convocatoria de 50 personas, la entrevista, la colaboración de Fundación Poderes, Sindicato Amanda Jofré y Quijote Films proceden del relato del organizador, no de una publicación institucional independiente localizada hasta ahora. No se ha documentado día/mes de las actividades ni autorización para publicar fotografías. El premio Un Certain Regard corresponde al largometraje de 2025, no al cortometraje proyectado en la UAH ni a un premio individual de Paula Dinamarca.",
+    "en": "The event organization, 50 attendees, conversation and partner support come from the organizer's account, not an independently located UAH event report. Specific dates and photo rights remain unverified. Un Certain Regard 2025 went to the feature film, not the earlier short nor as an individual award to Paula Dinamarca.",
+    "pt": "As sessões, público de 50 pessoas e colaboração de entidades vêm do relato do organizador, sem publicação institucional independente encontrada. Datas específicas e direitos das fotos não estão confirmados. O prêmio Un Certain Regard foi atribuído ao longa de 2025, não ao curta ou individualmente à atriz."
+  }
+}
