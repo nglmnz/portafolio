@@ -94,3 +94,15 @@ El antiguo `nglmnz/vitrina-piloto/perfil/` permanece sin borrar para no romper l
 ## Fuentes y rigor
 
 El caso CESI se basa en el informe de resultados y rendición de cuentas, y enlaza documentación institucional. Se distinguen el conteo de asistentes únicos, las 88 propuestas recibidas (80 aceptadas) y el total de recursos efectivamente ejecutados (CLP 3.448.060). Los videos de talleres y la conferencia de Daniel Chernilo están enlazados a los registros externos originales.
+
+
+### Actualización: evaluación académica y contexto internacional (1 noviembre 2026)
+
+La ruta `/tesis/` incorpora dos nuevas secciones cuyos datos están en `assets/tesis-evaluacion.json`:
+
+- **Evaluación UAH**: Claudio Ramos Zincke (profesor guía, pauta del 15-07-2026, 7,0) y Cristóbal Bonelli (profesor informante, pauta del 21-07-2026, 6,6). La **media simple 6,8** se identifica como operación aritmética, *no como certificado de calificación final oficial*. Se presentan fortalezas y críticas metodológicas documentadas. Las pautas PDF privadas no se publican.
+- **Fotografía de Claudio**: se usa una fotografía académica de la Universidad de Chile, enlazada a la fuente, donde aparece junto a otra persona. No es un retrato individual y depende de la disponibilidad de la imagen original.
+- **Fotografía de Bonelli**: aún **no hay una URL directa verificada**; por tanto la tarjeta usa iniciales de identidad y un vínculo a su perfil institucional. Para sustituirla con seguridad, subir una fotografía autorizada a `assets/` y actualizar `reviewers[1].photo` (src, source, credit) en el JSON.
+- **Contexto internacional**: OMS 2024, UNICEF Innocenti 2025, UNESCO GEM 2023 y OCDE 2025. Las fuentes aportan contexto externo; **no se usan como pruebas de replicación ni de causalidad**. Todos los textos están en ES/EN/PT.
+- **Trayectoria intelectual**: los enlaces de Claudio incluyen el artículo de Alexis Cortés, «El relato sociológico de Claudio Ramos», *Estudios Públicos* 181 (2026), además de su libro UAH.
+- **Títulos del manuscrito**: se conserva la portada «Habitus tecnológico y conexión cuerpo-mente» del archivo aportado y se deja constancia del título alternativo consignado en las dos pautas: «La compulsividad, no el tiempo: habitus tecnológico y deterioro de la salud mental en estudiantes universitarios de primer año».
