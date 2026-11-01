@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "case": "alas",
+  "description": "Archivo fotográfico pendiente. Subir únicamente material del autor o autorizado y registrar créditos.",
+  "images": [],
+  "expectedDir": "alas/assets/",
+  "schema": {
+    "src": "nombre-de-foto.webp",
+    "category": "congreso|entrevista|uah|cultura",
+    "caption": {
+      "es": "Pie verificable",
+      "en": "Verified caption",
+      "pt": "Legenda verificável"
+    },
+    "alt": {
+      "es": "Descripción accesible",
+      "en": "Accessible alt text",
+      "pt": "Descrição acessível"
+    },
+    "credit": "Autor/a de la fotografía",
+    "permission": "Autorización para publicación documentada",
+    "source": "Archivo del evento",
+    "date": "2026-07-DD o fecha documentada",
+    "sensitive": false
+  },
+  "note": "No publicar testimonios, imágenes de terceros o materiales sensibles sin verificar permisos y contexto; no atribuir declaraciones sin registros."
+}
