@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "source": "Informe CESI 2025, pp. 10–16; nombres y funciones preservados del organigrama de la organización. El diseño interpreta visualmente una estructura híbrida de coordinación horizontal y dirección estratégica.",
+  "mission": {
+    "es": "Impulsar un espacio crítico, interdisciplinario y colaborativo en el que el estudiantado, la academia, la sociedad civil y el mundo del arte y la cultura dialoguen para analizar y enfrentar las desigualdades estructurales. A través de la investigación, la creación y la acción colectiva, buscamos co-construir relatos e iniciativas que fomenten prácticas públicas y culturales más justas e inclusivas, promoviendo el acceso al conocimiento como un bien común para la transformación social.",
+    "en": "To build a critical, interdisciplinary and collaborative space where students, academia, civil society, artists and cultural practitioners engage with structural inequalities. Through research, creation and collective action, we seek to co-produce narratives and initiatives that foster fairer and more inclusive public and cultural practices, treating knowledge as a common good for social transformation.",
+    "pt": "Promover um espaço crítico, interdisciplinar e colaborativo em que estudantes, academia, sociedade civil, artistas e agentes culturais dialoguem para analisar e enfrentar desigualdades estruturais. Por meio de pesquisa, criação e ação coletiva, buscamos coconstruir narrativas e iniciativas que promovam práticas públicas e culturais mais justas e inclusivas, reconhecendo o conhecimento como bem comum para a transformação social."
+  },
+  "vision": {
+    "es": "Posicionarnos como el principal encuentro estudiantil de sociología con enfoque interdisciplinario en Chile —y con proyección latinoamericana—, articulando redes nacionales de conocimiento crítico e innovación social. Aspiramos a ser un motor sostenido de formación, producción simbólica con incidencia real en políticas públicas y prácticas culturales, garantizando autonomía institucional, gobernanza responsable y vinculación productiva con comunidades locales y territorios.",
+    "en": "To become Chile's leading student sociology gathering with an interdisciplinary approach and Latin American outlook, connecting national networks of critical knowledge and social innovation. We aim to sustain learning and cultural production with real influence on public policy and cultural practice, supported by institutional autonomy, responsible governance and meaningful engagement with local communities.",
+    "pt": "Consolidar-se como o principal encontro estudantil de sociologia interdisciplinar do Chile, com projeção latino-americana, articulando redes nacionais de conhecimento crítico e inovação social. Buscamos sustentar formação e produção simbólica com incidência em políticas públicas e práticas culturais, assegurando autonomia institucional, governança responsável e vínculos efetivos com comunidades e territórios."
+  },
+  "values": [
+    {
+      "id": 1,
+      "label": {
+        "es": "Conocimiento como bien común",
+        "en": "Knowledge as a common good",
+        "pt": "Conhecimento como bem comum"
+      }
+    },
+    {
+      "id": 2,
+      "label": {
+        "es": "Colaboración",
+        "en": "Collaboration",
+        "pt": "Colaboração"
+      }
+    },
+    {
+      "id": 3,
+      "label": {
+        "es": "Diversidad e inclusión",
+        "en": "Diversity and inclusion",
+        "pt": "Diversidade e inclusão"
+      }
+    },
+    {
+      "id": 4,
+      "label": {
+        "es": "Interdisciplinariedad",
+        "en": "Interdisciplinarity",
+        "pt": "Interdisciplinaridade"
+      }
+    },
+    {
+      "id": 5,
+      "label": {
+        "es": "Arte y creatividad",
+        "en": "Art and creativity",
+        "pt": "Arte e criatividade"
+      }
+    },
+    {
+      "id": 6,
+      "label": {
+        "es": "Transparencia y rendición de cuentas",
+        "en": "Transparency and accountability",
+        "pt": "Transparência e prestação de contas"
+      }
+    },
+    {
+      "id": 7,
+      "label": {
+        "es": "Probidad y uso responsable de recursos",
+        "en": "Integrity and responsible use of resources",
+        "pt": "Probidade e uso responsável de recursos"
+      }
+    },
+    {
+      "id": 8,
+      "label": {
+        "es": "Autonomía y sustentabilidad institucional",
+        "en": "Institutional autonomy and sustainability",
+        "pt": "Autonomia e sustentabilidade institucional"
+      }
+    },
+    {
+      "id": 9,
+      "label": {
+        "es": "Respeto y no discriminación",
+        "en": "Respect and non-discrimination",
+        "pt": "Respeito e não discriminação"
+      }
+    },
+    {
+      "id": 10,
+      "label": {
+        "es": "Memoria y compromiso con los derechos humanos",
+        "en": "Memory and human rights",
+        "pt": "Memória e compromisso com os direitos humanos"
+      }
+    },
+    {
+      "id": 11,
+      "label": {
+        "es": "Alianzas y solidaridad",
+        "en": "Partnerships and solidarity",
+        "pt": "Parcerias e solidariedade"
+      }
+    }
+  ],
+  "governance": "Coordinación general con comisiones operativas y comité asesor: combina colaboración horizontal y responsabilidades decisorias definidas.",
+  "teams": [
+    {
+      "id": "direccion",
+      "role": {
+        "es": "Dirección ejecutiva y curaduría general",
+        "en": "Executive direction and general curation",
+        "pt": "Direção executiva e curadoria geral"
+      },
+      "people": [
+        "Ángel Muñoz"
+      ],
+      "task": {
+        "es": "Conducción estratégica, ejecución general y concepto curatorial",
+        "en": "Strategic leadership, overall delivery and curatorial concept",
+        "pt": "Direção estratégica, execução geral e conceito curatorial"
+      }
+    },
+    {
+      "id": "finanzas",
+      "role": {
+        "es": "Finanzas",
+        "en": "Finance",
+        "pt": "Finanças"
+      },
+      "people": [
+        "Karla Medina",
+        "Catalina Escobedo",
+        "Vicente Catalán",
+        "Gabriela Chacón",
+        "Daniel Jiménez",
+        "Ángel Muñoz",
+        "José Moena"
+      ],
+      "task": {
+        "es": "Presupuesto, aportes, proveedores y rendición",
+        "en": "Budget, funding, suppliers and accounting",
+        "pt": "Orçamento, recursos, fornecedores e prestação de contas"
+      }
+    },
+    {
+      "id": "programacion",
+      "role": {
+        "es": "Programación académica",
+        "en": "Academic programming",
+        "pt": "Programação acadêmica"
+      },
+      "people": [
+        "Ángel Muñoz",
+        "Camila Arancibia",
+        "Francesca Rocco",
+        "Gabriela Mardones",
+        "Daniel Jiménez",
+        "Macarena Pol",
+        "Karla Medina",
+        "José Moena"
+      ],
+      "task": {
+        "es": "Programa, invitados, ponencias y dossier",
+        "en": "Program, guests, papers and proceedings",
+        "pt": "Programa, convidados, apresentações e dossiê"
+      }
+    },
+    {
+      "id": "curaduria",
+      "role": {
+        "es": "Comité de curaduría académica",
+        "en": "Academic curation committee",
+        "pt": "Comitê de curadoria acadêmica"
+      },
+      "people": [
+        "Gabriela Velásquez",
+        "José Moena",
+        "Renatta Herrera"
+      ],
+      "task": {
+        "es": "Evaluación ciega y distribución de trabajos",
+        "en": "Blind review and allocation of papers",
+        "pt": "Avaliação cega e distribuição de trabalhos"
+      }
+    },
+    {
+      "id": "comunicaciones",
+      "role": {
+        "es": "Comunicación y redes",
+        "en": "Communications and social channels",
+        "pt": "Comunicação e redes"
+      },
+      "people": [
+        "Gabriela Mardones",
+        "Ángel Muñoz",
+        "Lauro Bande",
+        "Josefa Jorquera",
+        "Daniel Jiménez"
+      ],
+      "task": {
+        "es": "Línea editorial, diseño, redes y prensa",
+        "en": "Editorial strategy, design, social channels and press",
+        "pt": "Linha editorial, design, redes e imprensa"
+      }
+    },
+    {
+      "id": "difusion",
+      "role": {
+        "es": "Difusión e impacto",
+        "en": "Outreach and impact",
+        "pt": "Divulgação e impacto"
+      },
+      "people": [
+        "Ángel Muñoz",
+        "Catalina Escobedo",
+        "Gabriela Chacón",
+        "Camila Arancibia",
+        "José Moena",
+        "Daniel Jiménez"
+      ],
+      "task": {
+        "es": "Vinculación territorial, alianzas y difusión institucional",
+        "en": "Territorial partnerships and institutional outreach",
+        "pt": "Articulação territorial e divulgação institucional"
+      }
+    },
+    {
+      "id": "logistica",
+      "role": {
+        "es": "Logística y producción",
+        "en": "Logistics and production",
+        "pt": "Logística e produção"
+      },
+      "people": [
+        "Karla Medina",
+        "Ángel Muñoz",
+        "Macarena Pol"
+      ],
+      "task": {
+        "es": "Infraestructura, montaje, acreditación y seguridad",
+        "en": "Venues, installation, registration and safety",
+        "pt": "Espaços, montagem, credenciamento e segurança"
+      }
+    },
+    {
+      "id": "arte",
+      "role": {
+        "es": "Coordinación artística",
+        "en": "Artistic coordination",
+        "pt": "Coordenação artística"
+      },
+      "people": [
+        "Ángel Muñoz",
+        "Josefa del Río",
+        "Gianluca Baselli",
+        "Matías Gavilán",
+        "Simón Huerta"
+      ],
+      "task": {
+        "es": "Relación con artistas, fichas técnicas, montaje y curaduría",
+        "en": "Artist coordination, technical records, installation and curation",
+        "pt": "Contato com artistas, fichas técnicas, montagem e curadoria"
+      }
+    },
+    {
+      "id": "web",
+      "role": {
+        "es": "Plataforma web y documentación",
+        "en": "Website and documentation",
+        "pt": "Plataforma web e documentação"
+      },
+      "people": [
+        "Ángel Muñoz",
+        "Karla Medina"
+      ],
+      "task": {
+        "es": "Sitio web, inscripciones y archivo documental",
+        "en": "Website, registration and documentary archive",
+        "pt": "Site, inscrições e arquivo documental"
+      }
+    },
+    {
+      "id": "asesor",
+      "role": {
+        "es": "Comité asesor",
+        "en": "Advisory committee",
+        "pt": "Comitê consultivo"
+      },
+      "people": [
+        "Matías Bargsted",
+        "Tomás Undurraga",
+        "Juan Pablo Rodríguez",
+        "Beatriz Revuelta",
+        "Daniel Chernilo",
+        "Emilia Valenzuela",
+        "Pilar Ortiz",
+        "Francisco Salinas",
+        "Nicolás Fleet",
+        "Lom Ediciones",
+        "Odisea Libros",
+        "Dara Silva"
+      ],
+      "task": {
+        "es": "Orientación estratégica y respaldo académico e institucional",
+        "en": "Strategic advice, academic and institutional support",
+        "pt": "Orientação estratégica e apoio acadêmico e institucional"
+      }
+    }
+  ],
+  "sponsors": [
+    {
+      "id": "uah",
+      "name": "Departamento de Sociología · Universidad Alberto Hurtado",
+      "short": "Sociología UAH",
+      "url": "https://csociales.uahurtado.cl/departamentos/departamento-de-sociologia/"
+    },
+    {
+      "id": "uc",
+      "name": "Instituto de Sociología · Pontificia Universidad Católica de Chile",
+      "short": "Instituto de Sociología UC",
+      "url": "https://sociologia.uc.cl/"
+    },
+    {
+      "id": "ucen",
+      "name": "Sociología · Universidad Central de Chile",
+      "short": "Sociología UCEN",
+      "url": "https://admision.ucentral.cl/carrera/sociologia/"
+    },
+    {
+      "id": "uai",
+      "name": "Escuela de Gobierno · Universidad Adolfo Ibáñez",
+      "short": "Escuela de Gobierno UAI",
+      "url": "https://www.uai.cl/gobierno"
+    }
+  ],
+  "officialCESI": "https://csociales.uahurtado.cl/cesi2025/"
+}
