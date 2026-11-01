@@ -33,3 +33,49 @@ body[data-case="sustancia"] .accent-panel,body[data-case="sustancia"] .bridge{ba
 body[data-case="sustancia"] .level-panel{background:#1c2d4d}
 body[data-case="sustancia"] .action.primary{color:#101935}
 body[data-case="sustancia"] .state{background:#283e72;color:#cbd6ff}
+
+/* Thesis assessment & global context: evidence-based editorial layer */
+.external-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:28px 0 22px}
+.external-card{padding:25px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,#1c3137,#192a32);display:flex;flex-direction:column;min-width:0;min-height:230px}
+.external-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
+.external-org{color:var(--accent);text-transform:uppercase;font-size:11px;font-weight:830;letter-spacing:.09em}
+.external-top small{color:var(--muted)}
+.external-stat{font-size:clamp(1.1rem,2.1vw,1.7rem);line-height:1.1;letter-spacing:-.045em;color:var(--gold);margin-bottom:8px}
+.external-card h3{font-size:18px;line-height:1.25;max-width:410px}
+.external-card p{font-size:13px;line-height:1.55;margin:4px 0 18px}
+.external-card .link-inline{margin-top:auto}
+.academic-grade-ribbon{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid #4c8276;border-radius:12px;overflow:hidden;margin:27px 0 24px;background:linear-gradient(120deg,#1f3d3f,#172e31)}
+.grade-cell{display:flex;flex-direction:column;align-items:flex-start;padding:25px 25px 22px;gap:7px;min-width:0;border-right:1px solid #42665f}
+.grade-cell:last-child{border-right:none}
+.grade-cell strong{font-size:clamp(2.3rem,4.2vw,3.4rem);font-weight:800;line-height:1;letter-spacing:-.07em;color:var(--accent)}
+.grade-cell span{font-size:14px;font-weight:780}.grade-cell small{color:var(--muted);font-size:11px;line-height:1.45}
+.grade-cell.average-grade{background:rgba(167,234,208,.08)}
+.grade-cell.average-grade strong{color:var(--gold)}
+.reviewer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 23px}
+.reviewer-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#1b2e33;padding:27px;display:flex;flex-direction:column;min-width:0}
+.reviewer-person{display:flex;align-items:center;gap:21px;margin-bottom:22px;min-height:142px}
+.reviewer-picture{flex:0 0 136px;height:152px;position:relative;overflow:hidden;border-radius:10px;text-decoration:none;background:linear-gradient(130deg,#25544c,#30495e);border:1px solid #6a9185;display:flex;align-items:center;justify-content:center}
+.reviewer-picture:hover{outline:2px solid var(--accent);outline-offset:3px}
+.reviewer-picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:85% center;filter:grayscale(.25);transition:filter .2s}
+.reviewer-picture:hover img{filter:grayscale(0)}
+.reviewer-initials{color:#dbfff1;font-size:41px;font-weight:760;letter-spacing:-.08em}
+.reviewer-identity{min-width:0}.reviewer-identity h3{font-size:clamp(1.25rem,2vw,1.6rem);margin:7px 0 8px;line-height:1.16}
+.reviewer-role{color:var(--accent);font-size:12px;font-weight:790;letter-spacing:.02em}
+.reviewer-affiliation{display:block;color:#b0cbcb;font-size:10px;font-weight:800;letter-spacing:.09em}
+.reviewer-bio{font-size:14px!important;line-height:1.66;margin:0 0 17px!important}
+.reviewer-quote{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.24rem,1.9vw,1.55rem);line-height:1.43;letter-spacing:-.017em;padding:5px 0 5px 17px;border-left:3px solid var(--accent);color:#f1f9f6;margin:7px 0 23px}
+.review-evidence{display:grid;grid-template-columns:1fr;gap:14px;margin-top:3px}
+.review-evidence>div{border-radius:9px;border:1px solid #41635d;padding:16px;background:#20383b}
+.review-evidence .review-caution{border-color:#6b6250;background:#373630}
+.review-axis{font-weight:850;font-size:10px;letter-spacing:.12em;color:var(--accent)}
+.review-caution .review-axis{color:var(--gold)}
+.review-evidence p{font-size:12px!important;line-height:1.6;margin:9px 0 0!important;color:#dfede5!important}
+.reviewer-links{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 12px;margin-top:auto;padding-top:24px}
+.reviewer-link{border:1px solid #4d7d72;border-radius:7px;padding:8px 11px;text-decoration:none;font-size:11px;color:#daf5e8;line-height:1.35;font-weight:750}
+.reviewer-link:hover{color:#061c17;background:var(--accent);border-color:var(--accent)}
+.photo-credit{font-size:10px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.reviewer-card>.tiny{margin-top:9px;font-size:11px!important}
+@media(max-width:850px){.reviewer-grid{grid-template-columns:1fr}.reviewer-card{padding:24px}.reviewer-picture{flex-basis:145px}}
+@media(max-width:640px){.external-grid{grid-template-columns:1fr}.academic-grade-ribbon{grid-template-columns:1fr}.grade-cell{border-right:0;border-bottom:1px solid #42665f;padding:17px 20px}.grade-cell:last-child{border-bottom:0}.reviewer-picture{flex:0 0 110px;height:131px}.reviewer-person{gap:15px}.reviewer-card{padding:19px}.reviewer-identity h3{font-size:20px}.reviewer-affiliation{font-size:9px}}
+@media(max-width:360px){.reviewer-person{align-items:flex-start;flex-direction:column}.reviewer-picture{width:132px;flex-basis:auto;height:140px}}
+@media(prefers-reduced-motion:reduce){.reviewer-picture img{transition:none}}
