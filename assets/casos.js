@@ -108,7 +108,7 @@ function renderAcademicReview(){
   }
   add(grid,card);
  }
- add(box,grid,p(label(REVIEW.scoreNote),"method-note"),p(label(REVIEW.source),"tiny"));
+ add(box,grid,p(label(REVIEW.scoreNote),"method-note"),p(label(REVIEW.titleNote),"tiny"),p(label(REVIEW.source),"tiny"));
  root.append(sectionNode);
 }
 
