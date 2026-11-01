@@ -14,37 +14,89 @@
   },
   "hero": {
     "kicker": {
-      "es": "CINE · DIVERSIDADES · UNIVERSIDAD",
-      "en": "CINEMA · DIVERSITY · UNIVERSITY",
-      "pt": "CINEMA · DIVERSIDADES · UNIVERSIDADE"
+      "es": "CINE · REALIDADES TRANS · PARENTALIDADES",
+      "en": "CINEMA · TRANS LIVES · PARENTHOOD",
+      "pt": "CINEMA · VIVÊNCIAS TRANS · PARENTALIDADES"
     },
     "title": {
-      "es": "Del cine a la conversación colectiva.",
-      "en": "From cinema to collective dialogue.",
-      "pt": "Do cinema à conversa coletiva."
+      "es": "Dos encuentros, dos conversaciones necesarias.",
+      "en": "Two events, two conversations that matter.",
+      "pt": "Dois encontros, duas conversas necessárias."
     },
     "subtitle": {
-      "es": "Dos encuentros en la Universidad Alberto Hurtado conectaron cine chileno, experiencias trans, creación cultural y diálogo sobre género y diversidades sexogenéricas.",
-      "en": "Two events at Universidad Alberto Hurtado connected Chilean cinema, trans experiences, cultural production and conversation on gender and sexual diversity.",
-      "pt": "Dois encontros na Universidad Alberto Hurtado conectaram cinema chileno, experiências trans, criação cultural e diálogo sobre gênero e diversidade."
+      "es": "En 2022, la Mesa de Disidencias UAH abrió un diálogo para comprender la realidad trans. En 2025, desde el Centro de Estudiantes de Sociología UAH, retomé la mediación cultural para conversar sobre experiencias de parentalidad transgénero.",
+      "en": "In 2022, the UAH Mesa de Disidencias opened a dialogue to better understand trans lived realities. In 2025, working through the Sociology Student Centre, I helped organize a film conversation on transgender parenthood.",
+      "pt": "Em 2022, a Mesa de Disidencias UAH abriu um diálogo sobre vivências trans. Em 2025, no Centro de Estudantes de Sociologia UAH, retomei a mediação cultural para debater parentalidades transgênero."
+    },
+    "flyer": {
+      "src": "Flyer2025.jpg",
+      "related": "Flyer2025-2.jpg",
+      "alt": {
+        "es": "Flyer original de la jornada «Las criaturas que se derriten bajo el sol + Conversatorio», 2 de julio de 2025, con Paula Dinamarca, Sindicato Amanda Jofré y Fundación Poderes.",
+        "en": "Original poster for 'Las criaturas que se derriten bajo el sol + Conversation', 2 July 2025, with Paula Dinamarca, Sindicato Amanda Jofré and Fundación Poderes.",
+        "pt": "Cartaz original de 'Las criaturas que se derriten bajo el sol + Conversa', 2 de julho de 2025, com Paula Dinamarca, Sindicato Amanda Jofré e Fundación Poderes."
+      },
+      "caption": {
+        "es": "Flyer original de la jornada del 2 de julio de 2025 · Archivo de la organización",
+        "en": "Original poster for the 2 July 2025 event · Organizer's archive",
+        "pt": "Cartaz original do encontro de 2 de julho de 2025 · Arquivo da organização"
+      }
     }
   },
   "intro": {
-    "es": "Desde la Mesa de Disidencias impulsamos instancias de proyección y conversación pública con la actriz Paula Dinamarca. Una primera jornada en 2022 con Naomi Campbel reunió a unas 50 personas; en 2025 retomamos el formato con Las criaturas que se derriten bajo el sol, el acompañamiento de organizaciones de diversidad y apoyo de Quijote Films. El hilo conductor fue crear un espacio donde las historias filmadas dialogaran con experiencias, derechos y representación.",
-    "en": "Through the Mesa de Disidencias, we organized screenings and public conversations with actress Paula Dinamarca. A 2022 showing of Naomi Campbel brought approximately 50 attendees; in 2025 we returned with Las criaturas que se derriten bajo el sol, with community organizations and Quijote Films' support. Both events treated film as a meeting point for experience, rights and representation.",
-    "pt": "Na Mesa de Disidencias, organizamos exibições e conversas públicas com a atriz Paula Dinamarca. Em 2022, Naomi Campbel reuniu cerca de 50 pessoas; em 2025 retomamos o formato com Las criaturas que se derriten bajo el sol, entidades comunitárias e apoio da Quijote Films. Os encontros conectaram experiências, direitos e representação."
+    "es": "En 2022 participé en una actividad de la Mesa de Disidencias UAH: proyectamos Naomi Campbel y conversamos con Paula Dinamarca para acercarnos a las realidades de las personas trans en Chile. En 2025, como vicepresidente del Centro de Estudiantes de Sociología UAH, participé en la organización de una segunda jornada con Las criaturas que se derriten bajo el sol. Esta vez la conversación se centró en experiencias de parentalidad transgénero, junto a Paula Dinamarca, Sindicato Amanda Jofré y Fundación Poderes, con apoyo de Quijote Films.",
+    "en": "In 2022 I participated in a UAH Mesa de Disidencias event, screening Naomi Campbel and talking with Paula Dinamarca about the realities of trans people in Chile. In 2025, as vice-president of the UAH Sociology Student Centre, I helped organize a second screening of Las criaturas que se derriten bajo el sol, focusing on transgender parenthood with Paula Dinamarca, Sindicato Amanda Jofré, Fundación Poderes and support from Quijote Films.",
+    "pt": "Em 2022 participei de uma atividade da Mesa de Disidencias UAH, com exibição de Naomi Campbel e conversa com Paula Dinamarca sobre as realidades trans no Chile. Em 2025, como vice-presidente do Centro de Estudantes de Sociologia UAH, participei da organização de um segundo encontro com Las criaturas que se derriten bajo el sol, sobre parentalidades transgênero, junto a Paula Dinamarca, Sindicato Amanda Jofré, Fundación Poderes e apoio da Quijote Films."
   },
   "role": {
     "headline": {
-      "es": "Mi participación en la mediación cultural",
-      "en": "My contribution to cultural mediation",
-      "pt": "Minha participação na mediação cultural"
+      "es": "Mediación cultural desde dos espacios estudiantiles distintos",
+      "en": "Cultural mediation through two distinct student groups",
+      "pt": "Mediação cultural em dois espaços estudantis distintos"
     },
     "body": {
-      "es": "Participé en la organización de actividades de la Mesa de Disidencias y en la generación de espacios de diálogo con la actriz y organizaciones invitadas. Los materiales fotográficos y audiovisuales permitirán documentar tareas específicas, carteles, equipos y participantes, sin adjudicar autoría total de un trabajo colectivo.",
-      "en": "I participated in organizing Mesa de Disidencias activities and creating dialogue with the actress and invited organizations. Photos and audiovisual material will later document specific tasks and participants, without claiming sole authorship of collective work.",
-      "pt": "Participei na organização de atividades da Mesa de Disidencias e na criação de diálogo com a atriz e organizações convidadas. Fotos e vídeos permitirão documentar tarefas específicas sem reivindicar autoria exclusiva do trabalho coletivo."
-    }
+      "es": "Mi participación se desarrolló en contextos organizativos diferentes: en 2022, con la Mesa de Disidencias UAH, y en 2025, desde el Centro de Estudiantes de Sociología UAH, donde ejercí la vicepresidencia. En ambos encuentros colaboré en la creación de espacios de conversación pública a partir de obras del cine chileno, sin atribuirme la organización exclusiva de iniciativas colectivas.",
+      "en": "My involvement took place in two distinct organizational settings: the UAH Mesa de Disidencias in 2022 and, in 2025, the UAH Sociology Student Centre, where I served as vice-president. I helped create public discussions around Chilean films without claiming sole credit for collective initiatives.",
+      "pt": "Minha participação ocorreu em dois contextos organizacionais: a Mesa de Disidencias UAH em 2022 e, em 2025, o Centro de Estudantes de Sociologia UAH, do qual fui vice-presidente. Colaborei na criação de conversas públicas a partir do cinema chileno, sem assumir autoria exclusiva de iniciativas coletivas."
+    },
+    "organizations": [
+      {
+        "id": "2022",
+        "organizer": {
+          "es": "Mesa de Disidencias · UAH",
+          "en": "Mesa de Disidencias · UAH",
+          "pt": "Mesa de Disidencias · UAH"
+        },
+        "role": {
+          "es": "Participación en una actividad organizada desde la Mesa de Disidencias.",
+          "en": "Participation in an event of the Mesa de Disidencias.",
+          "pt": "Participação em atividade da Mesa de Disidencias."
+        },
+        "focus": {
+          "es": "Comprender realidades y experiencias trans en Chile.",
+          "en": "Understanding trans lived experiences in Chile.",
+          "pt": "Compreender realidades e vivências trans no Chile."
+        }
+      },
+      {
+        "id": "2025",
+        "organizer": {
+          "es": "Centro de Estudiantes de Sociología · UAH",
+          "en": "UAH Sociology Student Centre",
+          "pt": "Centro de Estudantes de Sociologia · UAH"
+        },
+        "role": {
+          "es": "Participación en la organización durante mi vicepresidencia del Centro de Estudiantes.",
+          "en": "Co-organized during my vice-presidency of the Student Centre.",
+          "pt": "Organização durante minha vice-presidência do Centro de Estudantes."
+        },
+        "focus": {
+          "es": "Conversar sobre experiencias de parentalidad transgénero y vínculos familiares.",
+          "en": "Dialogue on transgender parenthood and family relationships.",
+          "pt": "Dialogar sobre parentalidades transgênero e vínculos familiares."
+        }
+      }
+    ]
   },
   "events": [
     {
@@ -52,9 +104,9 @@
       "year": "2022",
       "title": "Naomi Campbel",
       "label": {
-        "es": "Primera jornada · cine y conversación",
-        "en": "First screening and dialogue",
-        "pt": "Primeira exibição e debate"
+        "es": "Mesa de Disidencias UAH · comprender las realidades trans",
+        "en": "Mesa de Disidencias UAH · understanding trans realities",
+        "pt": "Mesa de Disidencias UAH · compreender realidades trans"
       },
       "filmYear": "2013",
       "type": {
@@ -66,9 +118,9 @@
       "cast": "Paula Dinamarca · Ingrid Mancilla · Josefina Ramírez · Camilo Carmona",
       "audience": "50",
       "context": {
-        "es": "Se proyectó Naomi Campbel en la UAH y se realizó un encuentro con Paula Dinamarca para conversar sobre la película y las experiencias de género y diversidad. La cifra de 50 asistentes corresponde al registro facilitado por el organizador.",
-        "en": "Naomi Campbel was screened at UAH with a conversation featuring Paula Dinamarca about the film and gender and diversity. The reported audience of 50 comes from the organizer.",
-        "pt": "Naomi Campbel foi exibido na UAH com uma conversa com Paula Dinamarca sobre cinema, gênero e diversidade. O público de 50 pessoas foi informado pelo organizador."
+        "es": "La actividad fue realizada desde la Mesa de Disidencias UAH. Proyectamos Naomi Campbel y sostuvimos una conversación con Paula Dinamarca para conocer y comprender experiencias, condiciones de vida, representación y derechos de las personas trans. Asistieron aproximadamente 50 personas, según el registro del organizador.",
+        "en": "Organized through the UAH Mesa de Disidencias, the event screened Naomi Campbel and hosted a conversation with Paula Dinamarca about trans experiences, living conditions, representation and rights. Approximately 50 people attended, according to the organizer.",
+        "pt": "Realizada pela Mesa de Disidencias UAH, a atividade exibiu Naomi Campbel e contou com conversa com Paula Dinamarca para compreender vivências, condições de vida, representação e direitos das pessoas trans. Cerca de 50 pessoas participaram, segundo o organizador."
       },
       "filmSummary": {
         "es": "Yermén, mujer trans que vive en la población La Victoria y trabaja como tarotista, conoce a una inmigrante que busca parecerse a Naomi Campbell. La película combina ficción y documental para reflexionar sobre identidad, deseo, cuerpos y medios de comunicación.",
@@ -80,16 +132,26 @@
         "en": "Paula Dinamarca appeared in The Melting Creatures at Cannes Critics' Week 2022. The exact UAH screening date is not documented, so its sequence relative to Cannes cannot be asserted.",
         "pt": "Paula Dinamarca participou da Semana da Crítica de Cannes 2022 com Las criaturas. A data exata da atividade na UAH não está documentada para afirmar sua sequência temporal."
       },
-      "source": "https://www.retinalatina.org/peliculas/naomi-campbel/"
+      "source": "https://www.retinalatina.org/peliculas/naomi-campbel/",
+      "organizer": {
+        "es": "Mesa de Disidencias · UAH",
+        "en": "Mesa de Disidencias · UAH",
+        "pt": "Mesa de Disidencias · UAH"
+      },
+      "focus": {
+        "es": "Comprender realidades y experiencias trans en Chile.",
+        "en": "Understanding trans lived experiences in Chile.",
+        "pt": "Compreender realidades e vivências trans no Chile."
+      }
     },
     {
       "id": "2025",
       "year": "2025",
       "title": "Las criaturas que se derriten bajo el sol",
       "label": {
-        "es": "Segunda jornada · comunidad, cine y derechos",
-        "en": "Second event · community, cinema and rights",
-        "pt": "Segundo encontro · comunidade, cinema e direitos"
+        "es": "Centro de Estudiantes de Sociología UAH · parentalidades trans",
+        "en": "UAH Sociology Student Centre · transgender parenthood",
+        "pt": "Centro de Estudantes de Sociologia UAH · parentalidades trans"
       },
       "filmYear": "2022",
       "type": {
@@ -101,9 +163,9 @@
       "cast": "Paula Dinamarca · Rafaela Capote · Daniel Antivilo",
       "audience": null,
       "context": {
-        "es": "Repetimos el formato en la UAH mediante una proyección y conversación con Paula Dinamarca, Fundación Poderes y representantes del Sindicato Amanda Jofré, con apoyo de la productora Quijote Films. La convocatoria se orientó a experiencias trans, memoria, género y diversidades sexogenéricas. Colaboraciones y formato documentados por el organizador, a la espera de afiches y fotografías de la jornada.",
-        "en": "We repeated the format at UAH with a screening and conversation involving Paula Dinamarca, Fundación Poderes and Sindicato Amanda Jofré, with support from Quijote Films. The organizer reports the event, with original posters and photos to follow.",
-        "pt": "Repetimos o formato na UAH com exibição e conversa com Paula Dinamarca, Fundação Poderes e Sindicato Amanda Jofré, com apoio da Quijote Films. O relato vem do organizador, aguardando cartazes e fotos."
+        "es": "El 2 de julio de 2025, a las 15:00, realizamos en la sala L13 de Cienfuegos 46 una proyección de Las criaturas que se derriten bajo el sol y un conversatorio centrado en experiencias de parentalidad transgénero. Participaron Paula Dinamarca, Sindicato Amanda Jofré y Fundación Poderes; Quijote Films apoyó la jornada según el registro del organizador. La actividad se articuló desde el Centro de Estudiantes de Sociología UAH, durante mi vicepresidencia. El flyer original confirma la fecha, el lugar y las personas y organizaciones anunciadas.",
+        "en": "On 2 July 2025 at 3 pm, the Sociology Student Centre organized a screening of Las criaturas que se derriten bajo el sol and a discussion on transgender parenthood in room L13, Cienfuegos 46. Announced participants included Paula Dinamarca, Sindicato Amanda Jofré and Fundación Poderes, with support from Quijote Films according to the organizer. I served as Student Centre vice-president. The original poster confirms the date, venue and announced guests.",
+        "pt": "Em 2 de julho de 2025, às 15h, o Centro de Estudantes de Sociologia organizou uma sessão de Las criaturas que se derriten bajo el sol e um debate sobre parentalidades transgênero na sala L13, Cienfuegos 46. O cartaz anuncia Paula Dinamarca, Sindicato Amanda Jofré e Fundación Poderes. A Quijote Films apoiou o encontro segundo o organizador, durante minha vice-presidência."
       },
       "filmSummary": {
         "es": "Nataly, mujer trans, viaja con su hija a reunirse con un antiguo amante en una comunidad que huye de la luz del sol. La ficción aborda vínculos familiares, heridas, miedo y resistencia.",
@@ -115,7 +177,20 @@
         "en": "The short premiered at Cannes Critics' Week in 2022. In 2025, Paula Dinamarca returned as a cast member of Diego Céspedes's feature The Mysterious Gaze of the Flamingo, winner of the Un Certain Regard Prize. The prize went to the film, not individually to the actress.",
         "pt": "O curta estreou em Cannes 2022. Em 2025, Paula Dinamarca voltou com o longa La misteriosa mirada del flamenco, de Diego Céspedes, vencedor do prêmio Un Certain Regard, atribuído ao filme, não individualmente à atriz."
       },
-      "source": "https://quijotefilms.com/quijote_cine/el-hombre-mas-infame-que-escondio-el-desierto/"
+      "source": "https://quijotefilms.com/quijote_cine/el-hombre-mas-infame-que-escondio-el-desierto/",
+      "organizer": {
+        "es": "Centro de Estudiantes de Sociología · UAH",
+        "en": "UAH Sociology Student Centre",
+        "pt": "Centro de Estudantes de Sociologia · UAH"
+      },
+      "focus": {
+        "es": "Conversar sobre experiencias de parentalidad transgénero y vínculos familiares.",
+        "en": "Dialogue on transgender parenthood and family relationships.",
+        "pt": "Dialogar sobre parentalidades transgênero e vínculos familiares."
+      },
+      "date": "2025-07-02",
+      "time": "15:00",
+      "venue": "Sala L13 · Cienfuegos 46 · Universidad Alberto Hurtado"
     }
   ],
   "cinemaPath": [
@@ -155,9 +230,9 @@
         "pt": "UAH · Sessão e encontro"
       },
       "desc": {
-        "es": "Naomi Campbel, diálogo con Paula Dinamarca y aproximadamente 50 asistentes según el organizador.",
-        "en": "Naomi Campbel screening and a dialogue with Paula Dinamarca; about 50 people according to organizer.",
-        "pt": "Sessão de Naomi Campbel e diálogo com Paula Dinamarca; cerca de 50 pessoas segundo o organizador."
+        "es": "Mesa de Disidencias UAH: Naomi Campbel, diálogo con Paula Dinamarca para comprender la realidad trans y alrededor de 50 asistentes.",
+        "en": "UAH Mesa de Disidencias: Naomi Campbel, a dialogue on trans lived realities with Paula Dinamarca and around 50 attendees.",
+        "pt": "Mesa de Disidencias UAH: Naomi Campbel, diálogo sobre realidades trans com Paula Dinamarca e cerca de 50 participantes."
       },
       "event": true
     },
@@ -183,9 +258,9 @@
         "pt": "UAH · Segundo encontro"
       },
       "desc": {
-        "es": "Las criaturas que se derriten bajo el sol y conversación con actriz, organizaciones de diversidad y productora.",
-        "en": "The Melting Creatures screening and discussion with the actress, advocacy groups and production support.",
-        "pt": "Sessão de Las criaturas e conversa com atriz, organizações e produtora."
+        "es": "2 de julio · Centro de Estudiantes de Sociología UAH: Las criaturas y conversatorio sobre parentalidades trans con organizaciones invitadas.",
+        "en": "2 July · UAH Sociology Student Centre: Las criaturas and a conversation on transgender parenthood with invited organizations.",
+        "pt": "2 de julho · Centro de Estudantes de Sociologia UAH: Las criaturas e conversa sobre parentalidades trans com organizações convidadas."
       },
       "event": true
     }
@@ -235,50 +310,50 @@
   "discussion": [
     {
       "title": {
-        "es": "Derecho a narrar la propia experiencia",
-        "en": "The right to tell one's own story",
-        "pt": "Direito a narrar a própria experiência"
+        "es": "2022 · Conocer la realidad trans",
+        "en": "2022 · Understanding trans lives",
+        "pt": "2022 · Conhecer realidades trans"
       },
       "text": {
-        "es": "Cómo las historias audiovisuales ponen en cuestión representaciones estereotipadas y abren conversaciones sobre agencia y memoria.",
-        "en": "How film can challenge stereotypes and open conversation about agency and memory.",
-        "pt": "Como o cinema questiona estereótipos e abre conversas sobre agência e memória."
+        "es": "El cine abrió un espacio de escucha y aprendizaje acerca de la vida cotidiana, la discriminación, los derechos y la representación de las personas trans.",
+        "en": "Film opened a space to listen and learn about trans daily lives, discrimination, rights and representation.",
+        "pt": "O cinema abriu espaço de escuta sobre vida cotidiana, discriminação, direitos e representação de pessoas trans."
       }
     },
     {
       "title": {
-        "es": "Cuerpos, reconocimiento y exclusión",
-        "en": "Bodies, recognition and exclusion",
-        "pt": "Corpos, reconhecimento e exclusão"
+        "es": "2025 · Parentalidades transgénero",
+        "en": "2025 · Transgender parenthood",
+        "pt": "2025 · Parentalidades transgênero"
       },
       "text": {
-        "es": "Experiencias trans y el lugar de la representación social y cultural en las disputas por derechos y visibilidad.",
-        "en": "Trans experiences and the role of cultural representation in rights and visibility.",
-        "pt": "Experiências trans e o papel da representação cultural nas disputas por direitos."
+        "es": "El segundo conversatorio puso en el centro los vínculos de crianza, las relaciones familiares, las experiencias de cuidado y el reconocimiento de parentalidades trans.",
+        "en": "The second discussion centered on parenting, family relationships, care and the recognition of trans parenthood.",
+        "pt": "O segundo debate enfocou criação, vínculos familiares, cuidado e reconhecimento das parentalidades trans."
       }
     },
     {
       "title": {
-        "es": "Universidad como espacio público",
-        "en": "The university as a public space",
-        "pt": "Universidade como espaço público"
+        "es": "Cine, conversación y comunidad",
+        "en": "Cinema, dialogue and community",
+        "pt": "Cinema, conversa e comunidade"
       },
       "text": {
-        "es": "Una proyección seguida por una conversación permite conectar educación, arte, organizaciones sociales y comunidades.",
-        "en": "Screenings and conversations can connect education, art and social organizations.",
-        "pt": "Exibição e debate conectam educação, arte e organizações sociais."
+        "es": "Ambas actividades vincularon cine chileno, personas invitadas y organización estudiantil para conversar colectivamente sobre género y diversidad.",
+        "en": "Both events connected Chilean cinema, guests and student organizers to discuss gender and diversity together.",
+        "pt": "Ambos os eventos conectaram cinema chileno, convidadas e organização estudantil para debater gênero e diversidade."
       }
     },
     {
       "title": {
-        "es": "Del reconocimiento artístico al diálogo",
-        "en": "From artistic recognition to dialogue",
-        "pt": "Do reconhecimento artístico ao diálogo"
+        "es": "Dos experiencias de organización estudiantil",
+        "en": "Two forms of student organizing",
+        "pt": "Duas formas de organização estudantil"
       },
       "text": {
-        "es": "El reconocimiento internacional de una película ayuda a abrir audiencias, pero la conversación local vuelve las preguntas a la experiencia cotidiana.",
-        "en": "International film recognition attracts audiences, while local dialogue brings the questions back to lived experience.",
-        "pt": "O reconhecimento internacional amplia públicos, mas o diálogo local aproxima as questões das experiências vividas."
+        "es": "La Mesa de Disidencias impulsó la jornada de 2022. La actividad de 2025 correspondió al Centro de Estudiantes de Sociología UAH, en el período de mi vicepresidencia.",
+        "en": "The Mesa de Disidencias initiated the 2022 event. The Sociology Student Centre organized the 2025 activity during my vice-presidency.",
+        "pt": "A Mesa de Disidencias promoveu o evento de 2022. O Centro de Estudantes de Sociologia organizou o de 2025 durante minha vice-presidência."
       }
     }
   ],
@@ -366,15 +441,15 @@
   ],
   "gallery": {
     "placeholder": {
-      "es": "Pendiente: fotografías, afiches, entrevistas y material autorizado de las jornadas 2022 y 2025. Se organizarán por película y por actividad, sin utilizar imágenes de terceros sin comprobar derechos.",
-      "en": "Pending: photographs, posters, interviews and authorized documentation of the 2022 and 2025 gatherings. They will be organized by film and activity, subject to rights checks.",
-      "pt": "Pendente: fotos, cartazes, entrevistas e material autorizado dos encontros de 2022 e 2025, organizados por filme e atividade com revisão de direitos."
+      "es": "El archivo fotográfico del proyecto incluye registros de ambas jornadas y el flyer original de 2025. Las imágenes se organizan por año, con descripciones que evitan identificar personas únicamente por su apariencia.",
+      "en": "The visual archive includes photographs of both events and the original 2025 poster. Images are organized by year, without identifying individuals by appearance.",
+      "pt": "O arquivo visual inclui fotografias dos dois encontros e o cartaz original de 2025, organizados por ano, sem identificar pessoas por sua aparência."
     },
     "manifest": "cine-disidencias/assets/galeria.json"
   },
   "limitation": {
-    "es": "Los encuentros, la convocatoria de 50 personas, la entrevista, la colaboración de Fundación Poderes, Sindicato Amanda Jofré y Quijote Films proceden del relato del organizador, no de una publicación institucional independiente localizada hasta ahora. No se ha documentado día/mes de las actividades ni autorización para publicar fotografías. El premio Un Certain Regard corresponde al largometraje de 2025, no al cortometraje proyectado en la UAH ni a un premio individual de Paula Dinamarca.",
-    "en": "The event organization, 50 attendees, conversation and partner support come from the organizer's account, not an independently located UAH event report. Specific dates and photo rights remain unverified. Un Certain Regard 2025 went to the feature film, not the earlier short nor as an individual award to Paula Dinamarca.",
-    "pt": "As sessões, público de 50 pessoas e colaboração de entidades vêm do relato do organizador, sem publicação institucional independente encontrada. Datas específicas e direitos das fotos não estão confirmados. O prêmio Un Certain Regard foi atribuído ao longa de 2025, não ao curta ou individualmente à atriz."
+    "es": "La atribución organizativa —Mesa de Disidencias en 2022, Centro de Estudiantes de Sociología UAH en 2025— y los objetivos de ambas conversaciones proceden del testimonio del participante y organizador. El flyer subido acredita fecha (2 de julio de 2025), horario (15:00), sala L13, Cienfuegos 46, así como los nombres anunciados Paula Dinamarca, Sindicato Amanda Jofré y Fundación Poderes; no demuestra por sí solo la organización completa ni las intervenciones efectivamente realizadas. La cifra de 50 asistentes en 2022 es reportada por el autor. El Premio Un Certain Regard 2025 corresponde al largometraje La misteriosa mirada del flamenco, no al cortometraje exhibido en la UAH ni a un premio personal a la actriz.",
+    "en": "The organizer reports that the Mesa de Disidencias led the 2022 event and the Sociology Student Centre led the 2025 event, along with their respective discussion aims. The uploaded poster verifies 2 July 2025, 3 pm, room L13, Cienfuegos 46 and announced guests; it does not prove every organizer or speech. The 2022 audience estimate of 50 is author-reported. The 2025 Un Certain Regard Prize belongs to the film The Mysterious Gaze of the Flamingo, not the short screened at UAH nor as an individual award to the actress.",
+    "pt": "A atribuição de 2022 à Mesa de Disidencias e de 2025 ao Centro de Estudantes de Sociologia, e os enfoques de cada encontro, vêm do relato do organizador. O cartaz comprova 2 de julho de 2025, 15h, sala L13, Cienfuegos 46 e convidados anunciados, mas não todas as funções organizativas. Os 50 participantes em 2022 vêm do autor. O prêmio Un Certain Regard 2025 pertence ao longa La misteriosa mirada del flamenco, não ao curta exibido na UAH nem individualmente à atriz."
   }
 }
