@@ -118,11 +118,11 @@ append(detail,para(tr(data.international.methodological)),para(tr(data.internati
 const dest=node("div","international-links");
 append(dest,a(lang==="es"?"Leer crónica UAB ↗":lang==="en"?"Read UAB account ↗":"Ler notícia UAB ↗",data.international.link,"source-link"),a(lang==="es"?"Perfil de Macarena Trujillo · CALAS ↗":lang==="en"?"Macarena Trujillo · CALAS profile ↗":"Perfil de Macarena Trujillo · CALAS ↗",data.international.calasLink,"source-link"));
 append(detail,dest);append(cross,route,detail);append(international,cross);
-const credits=section("equipo","05 / "+i("credits"),i("team"),lang==="es"?"Se conserva la autoría y responsabilidad de la investigación, la curaduría y las funciones de colaboración.":lang==="en"?"Research, curation and collaboration roles are carefully distinguished.":"São diferenciadas as responsabilidades pela pesquisa, pela curadoria e pela colaboração.");
+const credits=section("equipo","06 / "+i("credits"),i("team"),lang==="es"?"Se conserva la autoría y responsabilidad de la investigación, la curaduría y las funciones de colaboración.":lang==="en"?"Research, curation and collaboration roles are carefully distinguished.":"São diferenciadas as responsabilidades pela pesquisa, pela curadoria e pela colaboração.");
 let creditGrid=node("div","credit-grid");
 data.credits.forEach(p=>{let x=node("article","credit-card");append(x,h(p.name,3),para(tr(p.role)));if(p.link)append(x,a(i("read")+" ↗",p.link,"source-link"));append(creditGrid,x)});
 append(credits,creditGrid);
-const media=section("archivo","06 / "+i("media"),i("sources"),lang==="es"?"Prensa, documentos institucionales y enlaces audiovisuales para continuar explorando la experiencia.":lang==="en"?"Press, institutional reporting and audiovisual links for further exploration.":"Imprensa, publicações institucionais e links audiovisuais para conhecer a experiência.");
+const media=section("archivo","07 / "+i("media"),i("sources"),lang==="es"?"Prensa, documentos institucionales y enlaces audiovisuales para continuar explorando la experiencia.":lang==="en"?"Press, institutional reporting and audiovisual links for further exploration.":"Imprensa, publicações institucionais e links audiovisuais para conhecer a experiência.");
 const filters=node("div","media-filters");
 const groups=["all","research","exhibition","press","audiovisual","international","social","other"];
 groups.forEach(c=>append(filters,b(i("sourceCats")[c],()=>{mediaFilter=c;drawMedia(filters,mediaGrid)},"media-filter",mediaFilter===c)));
@@ -130,7 +130,7 @@ const mediaGrid=node("div","media-grid");
 append(media,filters,mediaGrid);
 drawMedia(filters,mediaGrid);
 append(media,para(i("sourceWarning"),"source-caveat"));
-const photos=section("fotografias","07 / "+i("photoSource"),i("visual"),tr(data.gallery.intro||data.gallery.placeholder));
+const photos=section("fotografias","08 / "+i("photoSource"),i("visual"),tr(data.gallery.intro||data.gallery.placeholder));
 const allowed=publicPhotos(),galleryGroups=[{id:"all",name:{es:"Todas",en:"All",pt:"Todas"}},...(gallery?.groups||[])];
 const filterRow=node("div","gallery-filters");filterRow.setAttribute("role","group");filterRow.setAttribute("aria-label",i("visual"));
 const photoCount=node("div","gallery-count"),photoGrid=node("div","photo-grid");
@@ -167,7 +167,7 @@ function drawGallery(){
 }
 append(photos,filterRow,photoCount,photoGrid,loadMore,dialog,para(tr(data.gallery.warning),"photo-ethics"));
 drawGallery();
-const ethics=section("etica","08 / "+i("ethic"),i("ethic"));
+const ethics=section("etica","09 / "+i("ethic"),i("ethic"));
 const callout=node("div","ethic-panel");
 append(callout,h(i("attribution"),3),para(tr(data.attribution)),para(i("privacy")),para(i("metaNotice")));
 append(ethics,callout);
