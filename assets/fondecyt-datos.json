@@ -7,7 +7,8 @@
     "dateRange": "15 abril — 15 mayo 2026",
     "venue": "Galería CREArte · Biblioteca Central, Universidad de Playa Ancha · Valparaíso",
     "investigator": "Dra. Macarena Trujillo Cristoffanini",
-    "sourceChecked": "2026-11-01"
+    "sourceChecked": "2026-11-01",
+    "internationalScope": "Chile → España · circulación internacional de resultados, no financiamiento binacional acreditado"
   },
   "headline": {
     "es": "Hilvanar. Investigar, narrar, resistir.",
@@ -268,9 +269,9 @@
         "pt": "Apresentação na UAB · Barcelona"
       },
       "detail": {
-        "es": "Macarena Trujillo presentó Hilvanar y sus metodologías visuales y participativas ante el Grupo de Investigación en Geografía y Género.",
-        "en": "Macarena Trujillo presented Hilvanar and its participatory visual approaches to UAB's Gender and Geography Research Group.",
-        "pt": "Macarena Trujillo apresentou Hilvanar e metodologias participativas ao Grupo de Geografia e Gênero da UAB."
+        "es": "La Dra. Macarena Trujillo presentó en el VII seminario de Geografía y Género de la Universitat Autònoma de Barcelona las metodologías feministas visuales y participativas de Hilvanar. Proyección internacional del proyecto desarrollado en Chile.",
+        "en": "Dr Macarena Trujillo presented Hilvanar’s participatory visual and feminist methods at the seventh Geography and Gender seminar at Universitat Autònoma de Barcelona, extending the Chile-based research's academic reach.",
+        "pt": "A Dra. Macarena Trujillo apresentou metodologias feministas visuais e participativas de Hilvanar no VII seminário de Geografia e Gênero da Universitat Autònoma de Barcelona, ampliando a circulação internacional da pesquisa chilena."
       },
       "url": "https://webs.uab.cat/geografia-genere/es/2026/06/16/seminario-sobre-violencias-de-genero-espacio-y-resistencias-cotidianas-con-macarena-trujillo-cristoffanini/"
     }
@@ -527,6 +528,23 @@
       },
       "url": "https://www.instagram.com/p/DWUt9G9iTZM/",
       "verified": false
+    },
+    {
+      "id": "calas",
+      "category": "international",
+      "year": "Perfil académico",
+      "name": {
+        "es": "CALAS · Macarena Trujillo",
+        "en": "CALAS · Macarena Trujillo",
+        "pt": "CALAS · Macarena Trujillo"
+      },
+      "desc": {
+        "es": "Enlace a perfil académico aportado para contextualizar su trayectoria; contenido aún no cotejado.",
+        "en": "Academic profile link provided for context; content not independently checked.",
+        "pt": "Link de perfil acadêmico fornecido para contextualização; conteúdo ainda não verificado."
+      },
+      "url": "https://calas.lat/es/content/macarena-trujillo",
+      "verified": false
     }
   ],
   "gallery": {
@@ -550,6 +568,42 @@
       "es": "Los primeros planos de testimonios escritos, mensajes personales y tableros de investigación no se muestran aquí: requieren revisión ética y autorización específica antes de una reproducción pública.",
       "en": "Close-ups of written testimony, personal messages and research boards are not displayed: they require ethical review and specific permission before public reproduction.",
       "pt": "Os primeiros planos de depoimentos, mensagens pessoais e painéis de pesquisa não são exibidos: exigem revisão ética e autorização específica."
+    }
+  },
+  "international": {
+    "eyebrow": {
+      "es": "CHILE · ESPAÑA",
+      "en": "CHILE · SPAIN",
+      "pt": "CHILE · ESPANHA"
+    },
+    "title": {
+      "es": "De Valparaíso a Barcelona: una investigación que circula",
+      "en": "From Valparaíso to Barcelona: research in circulation",
+      "pt": "De Valparaíso a Barcelona: uma pesquisa em circulação"
+    },
+    "description": {
+      "es": "El proyecto FONDECYT Regular 1220508 se desarrolló en Chile y tuvo una proyección académica en España. El 12 de junio de 2026, la Dra. Macarena Trujillo Cristoffanini presentó «Hilvanar: contar, narrar, resistir. Espacio, emociones y resistencias cotidianas desde la investigación feminista» en el VII seminario del Grupo de Investigación en Geografía y Género de la Universitat Autònoma de Barcelona. Fue una presentación de la investigadora principal; no constituye evidencia de cofinanciamiento binacional ni de mi participación personal en ese seminario.",
+      "en": "FONDECYT Regular 1220508 was developed in Chile and gained international scholarly reach in Spain. On 12 June 2026, Dr Macarena Trujillo Cristoffanini presented “Hilvanar: contar, narrar, resistir. Space, emotions and everyday resistance from feminist research” at the seventh seminar of the Geography and Gender Research Group, Universitat Autònoma de Barcelona. This was a presentation by the principal investigator; it does not establish binational co-funding or my personal attendance.",
+      "pt": "O projeto FONDECYT Regular 1220508 foi desenvolvido no Chile e alcançou circulação acadêmica na Espanha. Em 12 de junho de 2026, a Dra. Macarena Trujillo Cristoffanini apresentou “Hilvanar: contar, narrar, resistir. Espaço, emoções e resistências cotidianas na pesquisa feminista” no VII seminário do Grupo de Pesquisa em Geografia e Gênero da Universitat Autònoma de Barcelona. Isso não demonstra financiamento binacional nem minha participação pessoal no seminário."
+    },
+    "methodological": {
+      "es": "La presentación abordó cartografía del femicidio y la memoria, fotografía participativa, Relief Maps y cartografías corporales colectivas. Se debatió cómo articular espacio, cuerpo, emociones y agencia sin clausurar los sentidos de las experiencias.",
+      "en": "The presentation discussed mapping femicide and memory, participatory photography, Relief Maps and collective body mapping, focusing on space, bodies, emotions and women's agency without forcing closed interpretations.",
+      "pt": "A apresentação abordou cartografias do feminicídio e da memória, fotografia participativa, Relief Maps e cartografias corporais coletivas, com foco em espaço, corpos, emoções e agência."
+    },
+    "host": "Grup de Recerca en Geografia i Gènere · Universitat Autònoma de Barcelona",
+    "date": "12.06.2026",
+    "link": "https://webs.uab.cat/geografia-genere/es/2026/06/16/seminario-sobre-violencias-de-genero-espacio-y-resistencias-cotidianas-con-macarena-trujillo-cristoffanini/",
+    "calasLink": "https://calas.lat/es/content/macarena-trujillo",
+    "calasNote": {
+      "es": "Perfil académico externo de la investigadora (enlace facilitado; detalles del perfil aún no verificados).",
+      "en": "External academic profile of the researcher (link supplied; profile details not independently verified).",
+      "pt": "Perfil acadêmico da pesquisadora (link fornecido; detalhes não verificados)."
+    },
+    "distinction": {
+      "es": "Investigación chilena con circulación internacional en España; no se presenta como convenio de investigación Chile–España.",
+      "en": "Chile-based research with international circulation in Spain; not represented as a formal Chile–Spain joint grant.",
+      "pt": "Pesquisa chilena com circulação internacional na Espanha; não se afirma convênio formal Chile–Espanha."
     }
   }
 }
