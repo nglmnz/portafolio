@@ -137,3 +137,7 @@ p{margin:0 0 16px}
 .ped-photo-placeholder.ped-photo-loaded{background:#153d56}
 .ped-photo-placeholder.ped-photo-loaded:after{content:"Comisión IA · registro de reunión";position:absolute;bottom:0;left:0;right:0;background:linear-gradient(0deg,rgba(9,28,43,.96),rgba(9,28,43,.15));color:white;padding:35px 16px 14px;z-index:4;text-align:left;font-size:12px;font-weight:800}
 @media(max-width:700px){.ped-evidence-quotes{grid-template-columns:1fr}}
+
+.ped-commission-participants{border:1px solid #658ea5;border-radius:8px;background:#234d67;padding:14px 17px;margin:20px 0 5px}
+.ped-commission-participants strong{font-size:11px;letter-spacing:.03em;color:#9cefe0}
+.ped-commission-participants p{font-size:12px;color:#e1f0f3;margin:8px 0 0}
