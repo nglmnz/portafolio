@@ -61,6 +61,31 @@ Las imágenes se recibieron para presentarlas en el portafolio, pero **su mera s
 
 Los dos MP4 originales pesan aproximadamente **3,0 MB y 4,1 MB**. Se pueden mostrar en el sitio porque ya están disponibles en el repo. Su reproducción usa controles nativos y no precarga el archivo completo. Si posteriormente subes grabaciones mayores, preferiremos un alojamiento audiovisual externo y un reproductor incrustado.
 
+
+## Lineup de artistas y enlaces externos (actualización 2026-11-01)
+
+El lineup mantiene 19 nombres y ahora dispone de fichas desplegables con enlaces a las referencias compartidas por la organización:
+
+- **Datos:** `cesi/assets/artistas.json` (19 artistas, 54 enlaces).
+- **Tipos de referencia:** Instagram, sitio personal, galerías, museos, universidades, artículos, entrevistas, video y LinkedIn.
+- **Presentación:** búsqueda por nombre, orden original o A–Z; botón para desplegar las referencias de cada artista.
+- **Edición:** modifica el objeto del artista correspondiente en `artistas.json`. El nombre en `name` debe coincidir exactamente con el del lineup. No es necesario editar la página HTML para añadir o quitar un enlace.
+- **Criterio editorial:** los enlaces son referencias facilitadas por el responsable del archivo. No todos los destinos externos o perfiles de redes sociales pudieron verificarse automáticamente. Antes de publicar biografías, comprobar las atribuciones.
+
+Francisco Tapia aparece sin enlaces publicados, a la espera de más documentación.
+
+## Texto curatorial y fondos en movimiento (actualización 2026-11-01)
+
+La sección de arte incluye, en un desplegable, el **texto curatorial completo** de `Exhibicion_Arte_CESI2025_texto.docx` (pp. 2–3), con traducción al inglés y portugués. El documento original no fue añadido como archivo descargable porque no se solicitó publicarlo de ese modo.
+
+Además se muestran dos fragmentos de video MP4 como fondo en secciones cinematográficas:
+- `cesi/assets/video_exhibicion_tortuga_eleodoro.mp4` — escultura e identidad visual del CESI.
+- `cesi/assets/exhibicion_video_felisan.mp4` — archivo audiovisual de la muestra.
+
+El bucle es **silencioso** (`muted`, `loop`, `playsinline`). Por accesibilidad y rendimiento, el movimiento se reproduce al entrar en la pantalla, se pausa al salir, se puede detener manualmente y no se inicia automáticamente en dispositivos que solicitan reducción de movimiento o ahorro de datos. Los videos originales con controles permanecen debajo de estos fragmentos para quien quiera verlos completos.
+
+Cuando se documenten los autores de las grabaciones, se actualizarán los créditos en los dos bloques. Ningún recurso externo de Instagram se incrusta en la web: solo hay enlaces, que no cargan rastreadores sociales en la página.
+
 ## Publicación
 
 Confirma en GitHub **Settings → Pages → Deploy from branch → main → /(root)**, y revisa la web desde teléfono y escritorio. Mientras la publicación no esté verificada, conserva el portafolio anterior en `vitrina-piloto/perfil/` para no romper los QR distribuidos.
