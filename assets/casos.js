@@ -101,7 +101,7 @@ function renderAcademicReview(){
   for(const item of reviewer.links)add(links,link(label(item.label)+" ↗",item.url,"reviewer-link",true));
   add(card,links);
   if(reviewer.photo?.src){
-   add(card,link(language==="es"?"Crédito de imagen · Universidad de Chile ↗":language==="en"?"Photo source · University of Chile ↗":"Fonte da foto · Universidade do Chile ↗",reviewer.photo.source,"photo-credit",true));
+   add(card,link((language==="es"?"Fuente de fotografía · ":language==="en"?"Photograph source · ":"Fonte da fotografia · ")+(reviewer.photo.credit||reviewer.name)+" ↗",reviewer.photo.source,"photo-credit",true));
    add(card,p(label(reviewer.photo.note),"tiny"));
   }else{
    add(card,p(language==="es"?"Retrato directo todavía no verificado. Consulta su perfil institucional.":language==="en"?"A directly verifiable portrait is not yet available. See the institutional profile.":"Retrato direto ainda não verificado. Consulte o perfil institucional.","tiny"));
