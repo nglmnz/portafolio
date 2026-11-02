@@ -13,6 +13,7 @@
   if (document.querySelector('script[data-cf-beacon]')) return;
   var beacon = document.createElement("script");
   beacon.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  beacon.type = "module";
   beacon.defer = true;
   beacon.setAttribute("data-cf-beacon", JSON.stringify({ token: token, spa: false }));
   document.head.appendChild(beacon);
