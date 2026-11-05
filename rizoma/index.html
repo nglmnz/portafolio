@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#170f14">
+<meta name="description" content="Rizoma · Líneas de fuga en tiempos de encierro. Proyecto visual sobre pandemia, salud mental, violencia, consumo de alcohol y espacio público, desarrollado entre 2021 y 2023.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rizoma · Líneas de fuga en tiempos de encierro">
+<meta property="og:description" content="Una investigación visual sobre los códigos sociales puestos en tensión durante la pandemia y su retorno a las calles.">
+<link rel="canonical" href="https://nglmnz.github.io/portafolio/rizoma/">
+<title>Rizoma · Líneas de fuga en tiempos de encierro · Ángel Muñoz</title>
+<style>
+:root{--night:#170f14;--night2:#21151c;--panel:#2b1b24;--ink:#261b20;--paper:#f5eee7;--paper2:#e9ddd5;--line:#69404b;--red:#f05b62;--coral:#ff927c;--pink:#f3b3c8;--muted:#cbb8bc;--darkmuted:#69565e;--max:1180px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{margin:0;background:var(--night);color:#fff7f2;font:400 15px/1.7 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:4px}
+button{font:inherit;cursor:pointer}
+.shell{width:min(var(--max),calc(100% - 52px));margin:auto}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(23,15,20,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(243,179,200,.17)}
+.bar-inner{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.brand{font-size:12px;font-weight:900;letter-spacing:.14em;text-decoration:none;white-space:nowrap}
+.brand span{color:var(--coral)}
+.nav{display:flex;align-items:center;gap:21px}
+.nav>a{font-size:11px;text-decoration:none;color:var(--muted);font-weight:750}
+.nav>a:hover{color:#fff}
+.langs{display:flex;gap:3px;border:1px solid var(--line);border-radius:7px;padding:3px}
+.langs button{border:0;background:transparent;color:var(--muted);font-size:10px;font-weight:850;border-radius:4px;padding:5px 7px}
+.langs button[aria-pressed="true"]{background:var(--coral);color:#2a131b}
+.back{display:inline-flex;align-items:center;gap:9px}
+.back:before{content:"←";font-size:16px;color:var(--coral)}
+.hero{position:relative;overflow:hidden;padding:84px 0 65px;background:radial-gradient(ellipse at 72% 36%,rgba(191,35,72,.26),transparent 52%),linear-gradient(130deg,#24131c 0%,#180f15 64%,#30121e 100%)}
+.hero:after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--red),var(--coral),var(--pink),var(--red))}
+.hero-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(440px,1.1fr);gap:54px;align-items:center}
+.eyebrow,.kicker{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:var(--coral)}
+.eyebrow{display:flex;align-items:center;gap:12px}
+.eyebrow:before{content:"";width:27px;height:2px;background:currentColor}
+h1{font:600 clamp(4.1rem,8vw,8.4rem)/.86 Georgia,"Times New Roman",serif;letter-spacing:-.075em;margin:27px 0 23px}
+h1 em{font-weight:400;color:var(--coral)}
+.hero-lead{font-size:clamp(1.05rem,1.7vw,1.35rem);line-height:1.52;color:#f0dce0;max-width:570px;margin:0}
+.hero-copy{max-width:560px;color:var(--muted);font-size:14px;margin:18px 0 0}
+.meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.meta-chip{border:1px solid rgba(243,179,200,.32);border-radius:99px;padding:7px 11px;font-size:10px;color:#f5dfe3;font-weight:750}
+.hero-gallery{display:grid;grid-template-columns:1fr 1fr;gap:11px;transform:rotate(1.2deg)}
+.art-card{position:relative;margin:0;overflow:hidden;background:#35121d;border:1px solid rgba(255,255,255,.18);box-shadow:0 15px 36px rgba(0,0,0,.28)}
+.art-card:first-child{grid-column:1/-1}
+.art-card img{width:100%;height:100%;display:block;object-fit:cover}
+.art-card:first-child img{aspect-ratio:2.25/1}
+.art-card:not(:first-child) img{aspect-ratio:1.12/1}
+.art-card figcaption{position:absolute;bottom:0;left:0;right:0;padding:27px 13px 10px;background:linear-gradient(transparent,rgba(15,8,13,.86));font-size:9px;letter-spacing:.13em;text-transform:uppercase;font-weight:850;color:white}
+.section{padding:88px 0;border-top:1px solid rgba(243,179,200,.14)}
+.section.light{background:var(--paper);color:var(--ink);border:0}
+.section.soft{background:var(--paper2);color:var(--ink);border:0}
+.section.dark{background:var(--night2)}
+.section-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:start;margin-bottom:40px}
+.section-head h2{font:500 clamp(2.3rem,4vw,4.3rem)/1.04 Georgia,"Times New Roman",serif;letter-spacing:-.055em;margin:12px 0 0;max-width:470px}
+.section-head p{color:var(--muted);max-width:710px;font-size:16px;line-height:1.75;margin:0}
+.light .section-head p,.soft .section-head p{color:#62535a}
+.kicker.dark-kicker{color:#a72f4d}
+.statement-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:33px}
+.statement{padding:28px 30px;background:rgba(255,255,255,.045);border:1px solid rgba(243,179,200,.18);border-radius:12px}
+.statement h3{font:500 1.65rem/1.15 Georgia,serif;letter-spacing:-.035em;margin:0 0 13px}
+.statement p{color:var(--muted);font-size:14px;margin:0}
+.pullquote{font:italic 500 clamp(1.55rem,2.8vw,2.6rem)/1.25 Georgia,serif;color:var(--coral);max-width:780px;border-left:2px solid var(--red);padding:3px 0 3px 25px;margin:55px 0 0}
+.concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.concept{padding:25px;border:1px solid #d2c1ba;border-radius:10px;background:#fffaf5;min-height:240px}
+.concept small{color:#a72f4d;font-size:9px;text-transform:uppercase;letter-spacing:.15em;font-weight:900}
+.concept h3{font:500 1.55rem Georgia,serif;letter-spacing:-.035em;margin:18px 0 10px}
+.concept p{font-size:13px;color:#62535a;margin:0}
+.method-note{margin-top:20px;border-left:3px solid #bc3b59;background:#eadbd5;padding:17px 20px;color:#514149;font-size:12px}
+.stats-intro{max-width:790px;color:#62535a;font-size:15px;line-height:1.75;margin:-12px 0 35px}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.stat-card{background:#fffaf5;border:1px solid #d7c8c0;border-radius:12px;padding:25px;display:flex;flex-direction:column;min-height:430px}
+.stat-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.stat-type{font-size:9px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;color:#a72f4d}
+.stat-symbol{font-size:18px;color:#b23d5d}
+.stat-value{font:600 clamp(2.5rem,4.6vw,4.15rem)/.98 Georgia,serif;letter-spacing:-.065em;color:#a72f4d;margin:28px 0 12px}
+.stat-card h3{font:500 1.35rem/1.2 Georgia,serif;margin:0 0 11px;letter-spacing:-.035em}
+.stat-card p{font-size:12px;line-height:1.65;color:#64545c;margin:0 0 17px}
+.stat-foot{font-size:10px;color:#806c73;border-top:1px solid #e2d6cf;padding-top:13px;margin-top:auto}
+.stat-chart{margin:8px 0 15px;padding:13px;background:#f2e8e2;border-radius:7px}
+.bar-row{display:grid;grid-template-columns:63px 1fr 43px;gap:8px;align-items:center;margin:9px 0;font-size:10px;color:#62535a}
+.bar-track{height:8px;background:#dccbc4;border-radius:9px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#a72f4d,#ed7f79);border-radius:9px}
+.mini-compare{font-size:10px;color:#62535a;margin:5px 0}
+.note-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;margin-top:25px;align-items:start}
+.context-number{font:600 3rem Georgia,serif;color:#a72f4d;letter-spacing:-.06em}
+.context-box{padding:24px;border:1px solid #d7c8c0;border-radius:10px;background:#fffaf5}
+.context-box p{font-size:12px;color:#65545c;margin:6px 0 0}
+.methodology{padding:18px 21px;background:#e9ddd5;border:1px solid #d1beb5;border-radius:10px;color:#5f4c55;font-size:12px;line-height:1.7}
+.process{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;counter-reset:step;margin-top:30px}
+.step{padding:25px;background:#2c1c25;border:1px solid rgba(243,179,200,.2);border-radius:10px;min-height:205px;counter-increment:step}
+.step:before{content:"0" counter(step);font-size:10px;letter-spacing:.15em;font-weight:900;color:var(--coral)}
+.step h3{font:500 1.5rem Georgia,serif;margin:18px 0 10px}
+.step p{font-size:12px;color:var(--muted);margin:0}
+.process-period{margin-top:20px;font-size:11px;color:var(--coral);font-weight:850;letter-spacing:.08em}
+.street-note{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:60px;align-items:center}
+.street-note h3{font:500 clamp(2rem,3vw,3.3rem)/1.08 Georgia,serif;letter-spacing:-.05em;margin:0}
+.street-note p{font-size:14px;color:var(--muted);margin:0}
+.sources{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-top:30px}
+.source{border:1px solid rgba(243,179,200,.2);border-radius:9px;padding:18px;background:rgba(255,255,255,.035)}
+.source small{display:block;color:var(--coral);font-size:9px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;margin-bottom:7px}
+.source a{font-size:13px;font-weight:800;text-decoration:none}
+.source a:hover{text-decoration:underline;text-underline-offset:4px}
+.source p{font-size:11px;color:var(--muted);margin:7px 0 0}
+.closing{padding:90px 0;background:linear-gradient(130deg,#391421,#1b1018 58%,#31101e);text-align:center}
+.closing p{font:italic 500 clamp(1.8rem,4vw,3.8rem)/1.18 Georgia,serif;max-width:900px;margin:0 auto;color:#f6d3d9}
+.footer{padding:22px 0;color:#a9929a;font-size:10px}
+.footer .shell{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.footer a{color:#f2bac5;text-decoration:none}
+.footer a:hover{text-decoration:underline}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:38px}.hero-gallery{max-width:730px;width:100%;margin:auto}.section-head{grid-template-columns:1fr;gap:17px}.stats-grid{grid-template-columns:1fr 1fr}.stat-card:last-child{grid-column:1/-1;min-height:unset}.concept-grid{grid-template-columns:1fr 1fr}.concept:last-child{grid-column:1/-1;min-height:unset}}
+@media(max-width:650px){.shell{width:min(100% - 32px,480px)}.bar-inner{min-height:63px}.nav{gap:9px}.nav>a{display:none}.brand{font-size:10px}.hero{padding:61px 0 47px}.hero-grid{grid-template-columns:1fr;gap:30px}h1{font-size:clamp(4.2rem,17vw,6rem)}.hero-gallery{gap:7px}.art-card:first-child img{aspect-ratio:1.6/1}.section{padding:60px 0}.statement-grid,.concept-grid,.stats-grid,.sources,.note-grid,.process,.street-note{grid-template-columns:1fr}.concept:last-child,.stat-card:last-child{grid-column:auto}.stat-card{min-height:unset;padding:22px}.section-head{margin-bottom:29px}.section-head h2{font-size:2.6rem}.pullquote{margin-top:34px}.street-note{gap:14px}.closing{padding:66px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.topbar,.langs{display:none!important}body{background:#fff;color:#111}.hero,.closing,.section.dark{background:#fff;color:#111}.hero-lead,.hero-copy,.section-head p,.statement p,.step p,.source p{color:#333}.art-card{break-inside:avoid}.section{padding:30px 0}.stat-card,.concept,.source,.step{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="shell bar-inner">
+    <a class="brand back" href="../?lang=es" data-back>ÁNGEL MUÑOZ <span>/ PORTAFOLIO</span></a>
+    <nav class="nav" aria-label="Navegación del proyecto">
+      <a href="#obra" data-i18n="navWork">Obra</a>
+      <a href="#lectura" data-i18n="navReading">Lectura</a>
+      <a href="#indicadores" data-i18n="navData">Indicadores</a>
+      <a href="#proceso" data-i18n="navProcess">Proceso</a>
+      <div class="langs" role="group" aria-label="Idioma">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="obra">
+  <div class="shell hero-grid">
+    <div>
+      <div class="eyebrow" data-i18n="eyebrow">Proyecto visual · Chile · 2021–2023</div>
+      <h1>Rizoma<span>:</span><br><em data-i18n="heroTitle">líneas de fuga</em></h1>
+      <p class="hero-lead" data-i18n="heroLead">Una investigación visual sobre la pandemia como interrupción del orden social, repliegue en el espacio privado y crisis de los códigos que organizan la vida cotidiana.</p>
+      <p class="hero-copy" data-i18n="heroCopy">Entre el encierro y la calle, la obra explora los límites porosos entre normalidad y desborde, refugio y cautiverio, experiencia individual y cuerpo social.</p>
+      <div class="meta-row">
+        <span class="meta-chip" data-i18n="metaDates">Agosto 2021 — junio 2023</span>
+        <span class="meta-chip" data-i18n="metaSize">Impresiones de 90 × 90 cm</span>
+        <span class="meta-chip" data-i18n="metaSpace">Intervención urbana</span>
+      </div>
+    </div>
+    <div class="hero-gallery" aria-label="Serie visual">
+      <figure class="art-card"><img src="assets/rizoma-rojo.webp" alt="Composición abstracta roja con trazos blancos superpuestos y textura granulada" width="560" height="560" fetchpriority="high"><figcaption data-i18n="captionRed">Variación cromática · rojo</figcaption></figure>
+      <figure class="art-card"><img src="assets/rizoma-coral.webp" alt="Composición abstracta en tonos coral y naranja con líneas blancas ambiguas" width="560" height="560" loading="lazy" decoding="async"><figcaption data-i18n="captionCoral">Variación cromática · coral</figcaption></figure>
+      <figure class="art-card"><img src="assets/rizoma-magenta.webp" alt="Composición abstracta magenta con trazos curvos blancos y fondo texturado" width="560" height="560" loading="lazy" decoding="async"><figcaption data-i18n="captionMagenta">Variación cromática · magenta</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="section light" id="lectura">
+  <div class="shell">
+    <div class="section-head">
+      <div><span class="kicker dark-kicker" data-i18n="contextKicker">Punto de partida</span><h2 data-i18n="contextTitle">Cuando la casa se convirtió en mundo.</h2></div>
+      <p data-i18n="contextIntro">La pandemia alteró los ritmos y las coordenadas más elementales de la vida social. Lo privado dejó de ser un espacio al que se entraba y del que se salía: para millones de personas se convirtió en el escenario casi total de la existencia.</p>
+    </div>
+    <div class="statement-grid">
+      <article class="statement"><h3 data-i18n="privateTitle">El espacio privado: refugio y encierro</h3><p data-i18n="privateText">El hogar podía ser protección frente a una amenaza exterior, pero también un lugar de convivencia forzada, soledad y exposición prolongada a los propios pensamientos. La experiencia no fue igual para todos: para algunas personas, el aislamiento significó seguridad; para otras, intensificó la violencia, la angustia o la imposibilidad de encontrar un afuera.</p></article>
+      <article class="statement"><h3 data-i18n="limitsTitle">Los límites se volvieron porosos</h3><p data-i18n="limitsText">La obra observa cómo se desdibujaron las fronteras entre lo público y lo doméstico, lo íntimo y lo político, el control y el desborde. La palabra «locura» aparece aquí como una pregunta sobre los límites que una sociedad establece para clasificar ciertas experiencias, nunca como diagnóstico clínico ni como estigma.</p></article>
+    </div>
+    <blockquote class="pullquote" data-i18n="quote">¿Qué ocurre cuando el lugar al que regresábamos para descansar se convierte en el único lugar del que no podemos salir?</blockquote>
+  </div>
+</section>
+<section class="section dark">
+  <div class="shell">
+    <div class="section-head">
+      <div><span class="kicker" data-i18n="theoryKicker">Marco de lectura</span><h2 data-i18n="theoryTitle">Cuerpos, flujos y códigos.</h2></div>
+      <p data-i18n="theoryIntro">La lectura filosófica se inspira en Gilles Deleuze y Félix Guattari. Sus conceptos permiten pensar la crisis no como una pausa exterior al sistema, sino como una perturbación que expone la forma en que se organizan, capturan y vuelven a poner en circulación los flujos sociales.</p>
+    </div>
+    <div class="concept-grid">
+      <article class="concept"><small data-i18n="conceptOneTag">01 · Territorio</small><h3 data-i18n="conceptOneTitle">Desterritorialización</h3><p data-i18n="conceptOneText">Los ritmos de trabajo, cuidado, encuentro y circulación pierden sus coordenadas habituales. El espacio doméstico absorbe funciones antes distribuidas por la ciudad; la calle, el encuentro y la protesta quedan suspendidos o transformados.</p></article>
+      <article class="concept"><small data-i18n="conceptTwoTag">02 · Máquina social</small><h3 data-i18n="conceptTwoTitle">Axiomática</h3><p data-i18n="conceptTwoText">La hipótesis crítica del proyecto es que el capitalismo no permanece simplemente inmóvil ante la ruptura: busca incorporar y reorganizar los flujos que desbordan sus códigos, creando nuevas reglas para hacerlos administrables y volverlos a poner en circulación.</p></article>
+      <article class="concept"><small data-i18n="conceptThreeTag">03 · Percepción</small><h3 data-i18n="conceptThreeTitle">Líneas de fuga</h3><p data-i18n="conceptThreeText">Las formas abstractas no conducen a una figura única. Invitan a proyectar, reconocer, dudar y volver a mirar. La fuga no es una salida garantizada: es la posibilidad de imaginar conexiones y sentidos que todavía no están fijados.</p></article>
+    </div>
+    <div class="method-note" data-i18n="methodNote">Referencia visual: las manchas ambiguas del test de Rorschach. La obra no reproduce el instrumento ni lo utiliza con fines diagnósticos; toma su potencia perceptiva como recurso para activar la interpretación de quien mira.</div>
+  </div>
+</section>
+<section class="section light" id="indicadores">
+  <div class="shell">
+    <div class="section-head">
+      <div><span class="kicker dark-kicker" data-i18n="dataKicker">Una lectura situada</span><h2 data-i18n="dataTitle">La crisis también dejó registros.</h2></div>
+      <p data-i18n="dataIntro">Los siguientes datos ayudan a situar el periodo en Chile. No explican por sí solos la experiencia subjetiva ni demuestran que la pandemia causara cada fenómeno: son indicadores de dimensiones distintas que permiten observar algunas de las tensiones que el proyecto aborda.</p>
+    </div>
+    <div class="stats-grid">
+      <article class="stat-card">
+        <div class="stat-top"><span class="stat-type" data-i18n="mentalType">Salud mental · 2020</span><span class="stat-symbol">◌</span></div>
+        <div class="stat-value">21,4 %</div>
+        <h3 data-i18n="mentalTitle">Síntomas moderados o severos de ansiedad y/o depresión</h3>
+        <p data-i18n="mentalText">Porcentaje de personas de 18 años o más que presentó estos niveles de síntomas según la escala PHQ-4, en la primera ronda de la Encuesta Social COVID-19.</p>
+        <div class="stat-chart">
+          <div class="mini-compare" data-i18n="mentalCompare">Diferencias por sexo registradas en la misma medición</div>
+          <div class="bar-row"><span data-i18n="women">Mujeres</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>26,0 %</b></div>
+          <div class="bar-row"><span data-i18n="men">Hombres</span><div class="bar-track"><div class="bar-fill" style="width:63.5%"></div></div><b>16,5 %</b></div>
+        </div>
+        <div class="stat-foot" data-i18n="mentalFoot">PHQ-4 · Personas de 18 años o más · MDSF, primera ronda, julio de 2020. Síntomas no equivalen a diagnóstico.</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-top"><span class="stat-type" data-i18n="violenceType">Violencia contra las mujeres · 2020</span><span class="stat-symbol">⌂</span></div>
+        <div class="stat-value">+149 %</div>
+        <h3 data-i18n="violenceTitle">Contactos al Fono 1455 respecto de 2019</h3>
+        <p data-i18n="violenceText">El INDH informó 126.645 contactos telefónicos en 2020; 39.647 (32,5 %) correspondieron a pedidos de auxilio por situaciones de violencia. El promedio mensual pasó de 4.236 llamadas en 2019 a 10.554 en 2020.</p>
+        <div class="stat-chart">
+          <div class="mini-compare" data-i18n="callsCompare">Promedio mensual de llamadas</div>
+          <div class="bar-row"><span>2019</span><div class="bar-track"><div class="bar-fill" style="width:40.1%"></div></div><b>4.236</b></div>
+          <div class="bar-row"><span>2020</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>10.554</b></div>
+        </div>
+        <div class="stat-foot" data-i18n="violenceFoot">Contactos de orientación y atención; no son un recuento directo de agresiones. Los canales disponibles y la posibilidad de pedir ayuda también condicionan el registro.</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-top"><span class="stat-type" data-i18n="alcoholType">Consumo de alcohol · 2020</span><span class="stat-symbol">∿</span></div>
+        <div class="stat-value">21,4 %</div>
+        <h3 data-i18n="alcoholTitle">Declaró consumir más alcohol durante la crisis sanitaria</h3>
+        <p data-i18n="alcoholText">Entre quienes declararon aumentar su consumo, el 50,9 % señaló la ansiedad, el estrés o la depresión asociados al COVID-19 como motivo. En contraste, el 74,6 % indicó mantener o disminuir su consumo.</p>
+        <div class="stat-chart">
+          <div class="mini-compare" data-i18n="alcoholSample">Encuesta SENDA · 15.280 respuestas validadas</div>
+          <div class="bar-row"><span data-i18n="more">Aumentó</span><div class="bar-track"><div class="bar-fill" style="width:21.4%"></div></div><b>21,4 %</b></div>
+          <div class="bar-row"><span data-i18n="sameLess">Igual o menos</span><div class="bar-track"><div class="bar-fill" style="width:74.6%"></div></div><b>74,6 %</b></div>
+        </div>
+        <div class="stat-foot" data-i18n="alcoholFoot">Encuesta realizada en junio de 2020; consumo declarado, no diagnóstico de alcoholismo ni estimación de prevalencia clínica.</div>
+      </article>
+    </div>
+    <div class="note-grid">
+      <div class="context-box"><div class="context-number">59,4 %</div><b data-i18n="incomeLabel">de los hogares reportó una disminución de sus ingresos</b><p data-i18n="incomeText">Encuesta Social COVID-19, primera ronda. Una dimensión material de la crisis que acompaña —sin reducirla a ella— la experiencia del encierro.</p></div>
+      <div class="methodology" data-i18n="caution">Nota de lectura: las tres dimensiones no comparten universo, instrumento ni periodo de observación. Los síntomas PHQ-4 son un tamizaje; las llamadas al 1455 reflejan el uso de un servicio y su capacidad de recepción; el dato de alcohol procede de respuestas autodeclaradas. Ninguno debe leerse como diagnóstico o como prueba causal aislada. En violencia de género, además, el confinamiento pudo dificultar la denuncia formal y el acceso a ayuda: menos denuncias no significan necesariamente menos violencia.</div>
+    </div>
+  </div>
+</section>
+<section class="section dark" id="proceso">
+  <div class="shell">
+    <div class="section-head">
+      <div><span class="kicker" data-i18n="processKicker">Desarrollo de la obra</span><h2 data-i18n="processTitle">Del concepto a la calle.</h2></div>
+      <p data-i18n="processIntro">El proyecto se desarrolló entre agosto de 2021 y junio de 2023. El recorrido pasó por una etapa de conceptualización y otra de creación visual, hasta materializarse en impresiones de gran formato que volvieron a ocupar el espacio público.</p>
+    </div>
+    <div class="process">
+      <article class="step"><h3 data-i18n="stepOneTitle">Conceptualización</h3><p data-i18n="stepOneText">Delimitar las preguntas sobre confinamiento, salud mental, violencia, consumo, códigos sociales y crisis del orden cotidiano.</p></article>
+      <article class="step"><h3 data-i18n="stepTwoTitle">Creación visual</h3><p data-i18n="stepTwoText">Experimentar con trazos, texturas y variaciones cromáticas para producir imágenes abiertas, ambiguas y sin una interpretación impuesta.</p></article>
+      <article class="step"><h3 data-i18n="stepThreeTitle">Impresión e intervención</h3><p data-i18n="stepThreeText">Imprimir las composiciones en formato de 90 × 90 cm y pegarlas en calles donde habían ocurrido protestas del estallido social.</p></article>
+    </div>
+    <div class="process-period" data-i18n="period">AGOSTO 2021 — JUNIO 2023 · CONCEPTUALIZACIÓN / CREACIÓN / CIRCULACIÓN URBANA</div>
+    <div class="street-note">
+      <h3 data-i18n="streetTitle">Volver a la calle después del repliegue.</h3>
+      <p data-i18n="streetText">La intervención no fue un simple soporte de exhibición. Al pegar las imágenes en lugares marcados por la protesta social, la obra puso en relación dos interrupciones distintas: la irrupción colectiva que ocupó las calles y el confinamiento que restringió la circulación. El espacio público reaparece como superficie de memoria, conflicto y expresión.</p>
+    </div>
+  </div>
+</section>
+<section class="section dark" id="fuentes" style="padding-top:0">
+  <div class="shell">
+    <span class="kicker" data-i18n="sourcesKicker">Documentación</span>
+    <h2 style="font:500 clamp(2rem,3.3vw,3.3rem)/1.08 Georgia,serif;letter-spacing:-.05em;margin:12px 0" data-i18n="sourcesTitle">Fuentes e indicadores</h2>
+    <p style="max-width:760px;color:var(--muted);font-size:13px" data-i18n="sourcesIntro">Las cifras se presentan con su fuente, año e instrumento para que puedan revisarse y discutirse. Las publicaciones oficiales y los informes técnicos son el respaldo documental de esta sección.</p>
+    <div class="sources">
+      <article class="source"><small data-i18n="srcMentalTag">Salud mental</small><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/covid19/RESUMEN_Encuesta_Social_Covid-19_03.09.2020.pdf" target="_blank" rel="noopener noreferrer" data-i18n="srcMental">Encuesta Social COVID-19 · Resumen de resultados (MDSF, 2020) ↗</a><p data-i18n="srcMentalDesc">Ministerio de Desarrollo Social y Familia, con PNUD e INE. Indicador PHQ-4 y condiciones de vida.</p></article>
+      <article class="source"><small data-i18n="srcViolenceTag">Violencia contra las mujeres</small><a href="https://ciudadano.indh.cl/wp-content/uploads/2024/11/Informe-anual-2021-2.pdf" target="_blank" rel="noopener noreferrer" data-i18n="srcViolence">Informe Anual 2021 · Situación de los derechos humanos en Chile (INDH) ↗</a><p data-i18n="srcViolenceDesc">Capítulo sobre mujeres y pandemia, pp. 101–106. Datos del Fono 1455 atribuidos a SernamEG.</p></article>
+      <article class="source"><small data-i18n="srcCallsTag">Atención telefónica</small><a href="https://www.sistemaspublicos.cl/wp-content/uploads/2025/03/27-07-2023-informe-final-bid-sermaneg_vf.pdf" target="_blank" rel="noopener noreferrer" data-i18n="srcCalls">Mejoramiento del servicio de atención y derivación del Fono 1455 (CSP, U. de Chile / BID / SernamEG, 2023) ↗</a><p data-i18n="srcCallsDesc">Evolución del Servicio de Atención Telefónica y Telemática y promedio mensual de llamadas.</p></article>
+      <article class="source"><small data-i18n="srcAlcoholTag">Consumo de alcohol</small><a href="https://www.minsal.cl/subsecretaria-de-salud-publica-y-director-de-senda-dan-a-conocer-resultados-de-encuesta-sobre-consumo-de-alcohol-durante-la-crisis-sanitaria/" target="_blank" rel="noopener noreferrer" data-i18n="srcAlcohol">Resultados de encuesta sobre consumo de alcohol durante la crisis sanitaria (MINSAL / SENDA, 8 julio 2020) ↗</a><p data-i18n="srcAlcoholDesc">Encuesta realizada entre el 6 y el 27 de junio de 2020; 34.738 respuestas recibidas y 15.280 validadas.</p></article>
+    </div>
+  </div>
+</section>
+<section class="closing"><div class="shell"><p data-i18n="closing">No todas las líneas encuentran una salida. Algunas quedan abiertas para que otros puedan mirar, proyectar y trazar nuevos recorridos.</p></div></section>
+</main>
+<footer class="footer"><div class="shell"><span>© Ángel Muñoz · <span data-i18n="footerProject">Proyecto visual, 2021–2023</span></span><a href="../" data-back data-i18n="backPortfolio">Volver al portafolio ↗</a></div></footer>
+<script>
+(function(){
+"use strict";
+const T={
+es:{
+navWork:"Obra",navReading:"Lectura",navData:"Indicadores",navProcess:"Proceso",eyebrow:"Proyecto visual · Chile · 2021–2023",heroTitle:"líneas de fuga",heroLead:"Una investigación visual sobre la pandemia como interrupción del orden social, repliegue en el espacio privado y crisis de los códigos que organizan la vida cotidiana.",heroCopy:"Entre el encierro y la calle, la obra explora los límites porosos entre normalidad y desborde, refugio y cautiverio, experiencia individual y cuerpo social.",metaDates:"Agosto 2021 — junio 2023",metaSize:"Impresiones de 90 × 90 cm",metaSpace:"Intervención urbana",captionRed:"Variación cromática · rojo",captionCoral:"Variación cromática · coral",captionMagenta:"Variación cromática · magenta",contextKicker:"Punto de partida",contextTitle:"Cuando la casa se convirtió en mundo.",contextIntro:"La pandemia alteró los ritmos y las coordenadas más elementales de la vida social. Lo privado dejó de ser un espacio al que se entraba y del que se salía: para millones de personas se convirtió en el escenario casi total de la existencia.",privateTitle:"El espacio privado: refugio y encierro",privateText:"El hogar podía ser protección frente a una amenaza exterior, pero también un lugar de convivencia forzada, soledad y exposición prolongada a los propios pensamientos. La experiencia no fue igual para todos: para algunas personas, el aislamiento significó seguridad; para otras, intensificó la violencia, la angustia o la imposibilidad de encontrar un afuera.",limitsTitle:"Los límites se volvieron porosos",limitsText:"La obra observa cómo se desdibujaron las fronteras entre lo público y lo doméstico, lo íntimo y lo político, el control y el desborde. La palabra «locura» aparece aquí como una pregunta sobre los límites que una sociedad establece para clasificar ciertas experiencias, nunca como diagnóstico clínico ni como estigma.",quote:"¿Qué ocurre cuando el lugar al que regresábamos para descansar se convierte en el único lugar del que no podemos salir?",theoryKicker:"Marco de lectura",theoryTitle:"Cuerpos, flujos y códigos.",theoryIntro:"La lectura filosófica se inspira en Gilles Deleuze y Félix Guattari. Sus conceptos permiten pensar la crisis no como una pausa exterior al sistema, sino como una perturbación que expone la forma en que se organizan, capturan y vuelven a poner en circulación los flujos sociales.",conceptOneTag:"01 · Territorio",conceptOneTitle:"Desterritorialización",conceptOneText:"Los ritmos de trabajo, cuidado, encuentro y circulación pierden sus coordenadas habituales. El espacio doméstico absorbe funciones antes distribuidas por la ciudad; la calle, el encuentro y la protesta quedan suspendidos o transformados.",conceptTwoTag:"02 · Máquina social",conceptTwoTitle:"Axiomática",conceptTwoText:"La hipótesis crítica del proyecto es que el capitalismo no permanece simplemente inmóvil ante la ruptura: busca incorporar y reorganizar los flujos que desbordan sus códigos, creando nuevas reglas para hacerlos administrables y volverlos a poner en circulación.",conceptThreeTag:"03 · Percepción",conceptThreeTitle:"Líneas de fuga",conceptThreeText:"Las formas abstractas no conducen a una figura única. Invitan a proyectar, reconocer, dudar y volver a mirar. La fuga no es una salida garantizada: es la posibilidad de imaginar conexiones y sentidos que todavía no están fijados.",methodNote:"Referencia visual: las manchas ambiguas del test de Rorschach. La obra no reproduce el instrumento ni lo utiliza con fines diagnósticos; toma su potencia perceptiva como recurso para activar la interpretación de quien mira.",dataKicker:"Una lectura situada",dataTitle:"La crisis también dejó registros.",dataIntro:"Los siguientes datos ayudan a situar el periodo en Chile. No explican por sí solos la experiencia subjetiva ni demuestran que la pandemia causara cada fenómeno: son indicadores de dimensiones distintas que permiten observar algunas de las tensiones que el proyecto aborda.",mentalType:"Salud mental · 2020",mentalTitle:"Síntomas moderados o severos de ansiedad y/o depresión",mentalText:"Porcentaje de personas de 18 años o más que presentó estos niveles de síntomas según la escala PHQ-4, en la primera ronda de la Encuesta Social COVID-19.",mentalCompare:"Diferencias por sexo registradas en la misma medición",women:"Mujeres",men:"Hombres",mentalFoot:"PHQ-4 · Personas de 18 años o más · MDSF, primera ronda, julio de 2020. Síntomas no equivalen a diagnóstico.",violenceType:"Violencia contra las mujeres · 2020",violenceTitle:"Contactos al Fono 1455 respecto de 2019",violenceText:"El INDH informó 126.645 contactos telefónicos en 2020; 39.647 (32,5 %) correspondieron a pedidos de auxilio por situaciones de violencia. El promedio mensual pasó de 4.236 llamadas en 2019 a 10.554 en 2020.",callsCompare:"Promedio mensual de llamadas",violenceFoot:"Contactos de orientación y atención; no son un recuento directo de agresiones. Los canales disponibles y la posibilidad de pedir ayuda también condicionan el registro.",alcoholType:"Consumo de alcohol · 2020",alcoholTitle:"Declaró consumir más alcohol durante la crisis sanitaria",alcoholText:"Entre quienes declararon aumentar su consumo, el 50,9 % señaló la ansiedad, el estrés o la depresión asociados al COVID-19 como motivo. En contraste, el 74,6 % indicó mantener o disminuir su consumo.",alcoholSample:"Encuesta SENDA · 15.280 respuestas validadas",more:"Aumentó",sameLess:"Igual o menos",alcoholFoot:"Encuesta realizada en junio de 2020; consumo declarado, no diagnóstico de alcoholismo ni estimación de prevalencia clínica.",incomeLabel:"de los hogares reportó una disminución de sus ingresos",incomeText:"Encuesta Social COVID-19, primera ronda. Una dimensión material de la crisis que acompaña —sin reducirla a ella— la experiencia del encierro.",caution:"Nota de lectura: las tres dimensiones no comparten universo, instrumento ni periodo de observación. Los síntomas PHQ-4 son un tamizaje; las llamadas al 1455 reflejan el uso de un servicio y su capacidad de recepción; el dato de alcohol procede de respuestas autodeclaradas. Ninguno debe leerse como diagnóstico o como prueba causal aislada. En violencia de género, además, el confinamiento pudo dificultar la denuncia formal y el acceso a ayuda: menos denuncias no significan necesariamente menos violencia.",processKicker:"Desarrollo de la obra",processTitle:"Del concepto a la calle.",processIntro:"El proyecto se desarrolló entre agosto de 2021 y junio de 2023. El recorrido pasó por una etapa de conceptualización y otra de creación visual, hasta materializarse en impresiones de gran formato que volvieron a ocupar el espacio público.",stepOneTitle:"Conceptualización",stepOneText:"Delimitar las preguntas sobre confinamiento, salud mental, violencia, consumo, códigos sociales y crisis del orden cotidiano.",stepTwoTitle:"Creación visual",stepTwoText:"Experimentar con trazos, texturas y variaciones cromáticas para producir imágenes abiertas, ambiguas y sin una interpretación impuesta.",stepThreeTitle:"Impresión e intervención",stepThreeText:"Imprimir las composiciones en formato de 90 × 90 cm y pegarlas en calles donde habían ocurrido protestas del estallido social.",period:"AGOSTO 2021 — JUNIO 2023 · CONCEPTUALIZACIÓN / CREACIÓN / CIRCULACIÓN URBANA",streetTitle:"Volver a la calle después del repliegue.",streetText:"La intervención no fue un simple soporte de exhibición. Al pegar las imágenes en lugares marcados por la protesta social, la obra puso en relación dos interrupciones distintas: la irrupción colectiva que ocupó las calles y el confinamiento que restringió la circulación. El espacio público reaparece como superficie de memoria, conflicto y expresión.",sourcesKicker:"Documentación",sourcesTitle:"Fuentes e indicadores",sourcesIntro:"Las cifras se presentan con su fuente, año e instrumento para que puedan revisarse y discutirse. Las publicaciones oficiales y los informes técnicos son el respaldo documental de esta sección.",srcMentalTag:"Salud mental",srcMental:"Encuesta Social COVID-19 · Resumen de resultados (MDSF, 2020) ↗",srcMentalDesc:"Ministerio de Desarrollo Social y Familia, con PNUD e INE. Indicador PHQ-4 y condiciones de vida.",srcViolenceTag:"Violencia contra las mujeres",srcViolence:"Informe Anual 2021 · Situación de los derechos humanos en Chile (INDH) ↗",srcViolenceDesc:"Capítulo sobre mujeres y pandemia, pp. 101–106. Datos del Fono 1455 atribuidos a SernamEG.",srcCallsTag:"Atención telefónica",srcCalls:"Mejoramiento del servicio de atención y derivación del Fono 1455 (CSP, U. de Chile / BID / SernamEG, 2023) ↗",srcCallsDesc:"Evolución del Servicio de Atención Telefónica y Telemática y promedio mensual de llamadas.",srcAlcoholTag:"Consumo de alcohol",srcAlcohol:"Resultados de encuesta sobre consumo de alcohol durante la crisis sanitaria (MINSAL / SENDA, 8 julio 2020) ↗",srcAlcoholDesc:"Encuesta realizada entre el 6 y el 27 de junio de 2020; 34.738 respuestas recibidas y 15.280 validadas.",closing:"No todas las líneas encuentran una salida. Algunas quedan abiertas para que otros puedan mirar, proyectar y trazar nuevos recorridos.",footerProject:"Proyecto visual, 2021–2023",backPortfolio:"Volver al portafolio ↗"
+},
+en:{
+navWork:"Artwork",navReading:"Reading",navData:"Indicators",navProcess:"Process",eyebrow:"Visual project · Chile · 2021–2023",heroTitle:"lines of flight",heroLead:"A visual inquiry into the pandemic as an interruption of social order, a retreat into private space and a crisis in the codes that organize everyday life.",heroCopy:"Between confinement and the street, the work explores porous boundaries between normality and rupture, refuge and captivity, individual experience and the social body.",metaDates:"August 2021 — June 2023",metaSize:"90 × 90 cm prints",metaSpace:"Urban intervention",captionRed:"Colour variation · red",captionCoral:"Colour variation · coral",captionMagenta:"Colour variation · magenta",contextKicker:"Starting point",contextTitle:"When the home became the world.",contextIntro:"The pandemic altered the rhythms and basic coordinates of social life. Private space ceased to be somewhere people entered and left: for millions, it became almost the entire stage of existence.",privateTitle:"Private space: refuge and confinement",privateText:"Home could offer protection from an external threat, but it could also become a place of forced cohabitation, loneliness and prolonged exposure to one's own thoughts. The experience was not the same for everyone: isolation meant safety for some; for others, it intensified violence, distress or the inability to find an outside.",limitsTitle:"Boundaries became porous",limitsText:"The work observes how the borders between public and domestic, intimate and political, control and rupture became blurred. The word “madness” appears as a question about the boundaries a society establishes to classify certain experiences, never as a clinical diagnosis or a stigma.",quote:"What happens when the place we returned to rest becomes the only place we cannot leave?",theoryKicker:"Conceptual framework",theoryTitle:"Bodies, flows and codes.",theoryIntro:"The philosophical reading draws on Gilles Deleuze and Félix Guattari. Their concepts help approach crisis not as a pause outside the system, but as a disturbance that reveals how social flows are organized, captured and put back into circulation.",conceptOneTag:"01 · Territory",conceptOneTitle:"Deterritorialization",conceptOneText:"The rhythms of work, care, encounter and movement lose their usual coordinates. Domestic space absorbs functions once distributed across the city; the street, meeting and protest are suspended or transformed.",conceptTwoTag:"02 · Social machine",conceptTwoTitle:"Axiomatics",conceptTwoText:"The project's critical hypothesis is that capitalism does not simply remain still in the face of rupture: it seeks to incorporate and reorganize flows that exceed its codes, creating new rules to make them manageable and put them back into circulation.",conceptThreeTag:"03 · Perception",conceptThreeTitle:"Lines of flight",conceptThreeText:"The abstract forms do not lead to a single figure. They invite projection, recognition, doubt and another look. Flight is not a guaranteed exit; it is the possibility of imagining connections and meanings that are not yet fixed.",methodNote:"Visual reference: the ambiguous inkblots of the Rorschach test. The work neither reproduces the instrument nor uses it for diagnosis; it draws on its perceptual potential to activate the viewer's interpretation.",dataKicker:"A situated reading",dataTitle:"The crisis also left records.",dataIntro:"The following figures help situate the period in Chile. They do not explain subjective experience on their own or prove that the pandemic caused each phenomenon: they are indicators from different dimensions that make some of the tensions addressed by the project visible.",mentalType:"Mental health · 2020",mentalTitle:"Moderate or severe symptoms of anxiety and/or depression",mentalText:"Percentage of people aged 18 or older presenting these symptom levels according to the PHQ-4 scale, in the first round of the Social COVID-19 Survey.",mentalCompare:"Differences by sex in the same measurement",women:"Women",men:"Men",mentalFoot:"PHQ-4 · Adults aged 18+ · MDSF, first round, July 2020. Symptoms are not equivalent to a diagnosis.",violenceType:"Violence against women · 2020",violenceTitle:"Contacts to the 1455 helpline compared with 2019",violenceText:"The INDH reported 126,645 telephone contacts in 2020; 39,647 (32.5%) were requests for help related to violence. The monthly average rose from 4,236 calls in 2019 to 10,554 in 2020.",callsCompare:"Average monthly calls",violenceFoot:"Contacts for guidance and support; not a direct count of assaults. Available channels and the ability to seek help also shape the record.",alcoholType:"Alcohol consumption · 2020",alcoholTitle:"Reported drinking more alcohol during the health crisis",alcoholText:"Among those reporting an increase, 50.9% cited anxiety, stress or depression associated with COVID-19 as a reason. By contrast, 74.6% said their consumption stayed the same or decreased.",alcoholSample:"SENDA survey · 15,280 validated responses",more:"Increased",sameLess:"Same or lower",alcoholFoot:"Survey conducted in June 2020; self-reported consumption, not a diagnosis of alcoholism or an estimate of clinical prevalence.",incomeLabel:"of households reported a decrease in income",incomeText:"Social COVID-19 Survey, first round. A material dimension of the crisis that accompanied—but does not reduce—the experience of confinement.",caution:"Reading note: these three dimensions do not share the same population, instrument or observation period. PHQ-4 symptoms are a screening measure; 1455 calls reflect use of a service and its capacity to receive contacts; the alcohol figure comes from self-reported answers. None should be read as a diagnosis or as isolated causal proof. In gender-based violence, confinement may also have hindered formal reporting and access to help: fewer reports do not necessarily mean less violence.",processKicker:"Making the work",processTitle:"From concept to street.",processIntro:"The project developed between August 2021 and June 2023. It moved through a conceptual stage and a visual-creation stage, culminating in large-format prints that returned to public space.",stepOneTitle:"Conceptualization",stepOneText:"Defining questions about confinement, mental health, violence, consumption, social codes and the crisis of everyday order.",stepTwoTitle:"Visual creation",stepTwoText:"Experimenting with marks, textures and colour variations to produce open, ambiguous images without an imposed interpretation.",stepThreeTitle:"Printing and intervention",stepThreeText:"Printing the compositions at 90 × 90 cm and pasting them on streets where protests of the social uprising had taken place.",period:"AUGUST 2021 — JUNE 2023 · CONCEPTUALIZATION / CREATION / URBAN CIRCULATION",streetTitle:"Returning to the street after retreat.",streetText:"The intervention was not merely an exhibition support. By placing the images in locations marked by social protest, the work connected two different interruptions: the collective eruption that occupied the streets and the confinement that restricted movement. Public space reappears as a surface of memory, conflict and expression.",sourcesKicker:"Documentation",sourcesTitle:"Sources and indicators",sourcesIntro:"Figures are presented with their source, year and instrument so they can be reviewed and discussed. Official publications and technical reports underpin this section.",srcMentalTag:"Mental health",srcMental:"Social COVID-19 Survey · Results summary (MDSF, 2020) ↗",srcMentalDesc:"Ministry of Social Development and Family, with UNDP and INE. PHQ-4 indicator and living conditions.",srcViolenceTag:"Violence against women",srcViolence:"2021 Annual Report · Human rights situation in Chile (INDH) ↗",srcViolenceDesc:"Chapter on women and the pandemic, pp. 101–106. 1455 helpline data attributed to SernamEG.",srcCallsTag:"Telephone support",srcCalls:"Improving the 1455 helpline service (CSP, University of Chile / IDB / SernamEG, 2023) ↗",srcCallsDesc:"Evolution of the telephone and telematic service and monthly average calls.",srcAlcoholTag:"Alcohol consumption",srcAlcohol:"Survey results on alcohol use during the health crisis (MINSAL / SENDA, 8 July 2020) ↗",srcAlcoholDesc:"Survey conducted 6–27 June 2020; 34,738 responses received and 15,280 validated.",closing:"Not every line finds an exit. Some remain open so others can look, project and trace new routes.",footerProject:"Visual project, 2021–2023",backPortfolio:"Back to portfolio ↗"
+},
+pt:{
+navWork:"Obra",navReading:"Leitura",navData:"Indicadores",navProcess:"Processo",eyebrow:"Projeto visual · Chile · 2021–2023",heroTitle:"linhas de fuga",heroLead:"Uma investigação visual sobre a pandemia como interrupção da ordem social, retraimento no espaço privado e crise dos códigos que organizam a vida cotidiana.",heroCopy:"Entre o confinamento e a rua, a obra explora fronteiras porosas entre normalidade e ruptura, refúgio e cativeiro, experiência individual e corpo social.",metaDates:"Agosto de 2021 — junho de 2023",metaSize:"Impressões de 90 × 90 cm",metaSpace:"Intervenção urbana",captionRed:"Variação cromática · vermelho",captionCoral:"Variação cromática · coral",captionMagenta:"Variação cromática · magenta",contextKicker:"Ponto de partida",contextTitle:"Quando a casa se tornou mundo.",contextIntro:"A pandemia alterou os ritmos e as coordenadas mais elementares da vida social. O espaço privado deixou de ser um lugar ao qual se entrava e do qual se saía: para milhões de pessoas, tornou-se quase todo o cenário da existência.",privateTitle:"O espaço privado: refúgio e confinamento",privateText:"A casa podia oferecer proteção diante de uma ameaça externa, mas também se tornar um lugar de convivência forçada, solidão e exposição prolongada aos próprios pensamentos. A experiência não foi igual para todos: para algumas pessoas, o isolamento significou segurança; para outras, intensificou a violência, a angústia ou a impossibilidade de encontrar um lado de fora.",limitsTitle:"As fronteiras ficaram porosas",limitsText:"A obra observa como se desfizeram as fronteiras entre o público e o doméstico, o íntimo e o político, o controle e a ruptura. A palavra “loucura” aparece como uma pergunta sobre os limites que uma sociedade estabelece para classificar certas experiências, nunca como diagnóstico clínico ou estigma.",quote:"O que acontece quando o lugar ao qual voltávamos para descansar se torna o único lugar do qual não podemos sair?",theoryKicker:"Marco de leitura",theoryTitle:"Corpos, fluxos e códigos.",theoryIntro:"A leitura filosófica inspira-se em Gilles Deleuze e Félix Guattari. Seus conceitos permitem pensar a crise não como uma pausa externa ao sistema, mas como uma perturbação que revela como os fluxos sociais são organizados, capturados e postos novamente em circulação.",conceptOneTag:"01 · Território",conceptOneTitle:"Desterritorialização",conceptOneText:"Os ritmos de trabalho, cuidado, encontro e circulação perdem suas coordenadas habituais. O espaço doméstico absorve funções antes distribuídas pela cidade; a rua, o encontro e o protesto são suspensos ou transformados.",conceptTwoTag:"02 · Máquina social",conceptTwoTitle:"Axiomática",conceptTwoText:"A hipótese crítica do projeto é que o capitalismo não permanece simplesmente imóvel diante da ruptura: busca incorporar e reorganizar os fluxos que excedem seus códigos, criando novas regras para torná-los administráveis e colocá-los novamente em circulação.",conceptThreeTag:"03 · Percepção",conceptThreeTitle:"Linhas de fuga",conceptThreeText:"As formas abstratas não levam a uma figura única. Convidam a projetar, reconhecer, duvidar e olhar novamente. A fuga não é uma saída garantida: é a possibilidade de imaginar conexões e sentidos ainda não fixados.",methodNote:"Referência visual: as manchas ambíguas do teste de Rorschach. A obra não reproduz o instrumento nem o utiliza para diagnóstico; toma seu potencial perceptivo como recurso para ativar a interpretação de quem olha.",dataKicker:"Uma leitura situada",dataTitle:"A crise também deixou registros.",dataIntro:"Os dados a seguir ajudam a situar o período no Chile. Não explicam, por si só, a experiência subjetiva nem provam que a pandemia causou cada fenômeno: são indicadores de dimensões diferentes que permitem observar algumas tensões abordadas pelo projeto.",mentalType:"Saúde mental · 2020",mentalTitle:"Sintomas moderados ou severos de ansiedade e/ou depressão",mentalText:"Percentual de pessoas com 18 anos ou mais que apresentaram esses níveis de sintomas segundo a escala PHQ-4, na primeira rodada da Pesquisa Social COVID-19.",mentalCompare:"Diferenças por sexo na mesma medição",women:"Mulheres",men:"Homens",mentalFoot:"PHQ-4 · Pessoas com 18 anos ou mais · MDSF, primeira rodada, julho de 2020. Sintomas não equivalem a diagnóstico.",violenceType:"Violência contra as mulheres · 2020",violenceTitle:"Contatos ao Fono 1455 em relação a 2019",violenceText:"O INDH informou 126.645 contatos telefônicos em 2020; 39.647 (32,5%) corresponderam a pedidos de ajuda por situações de violência. A média mensal passou de 4.236 ligações em 2019 para 10.554 em 2020.",callsCompare:"Média mensal de ligações",violenceFoot:"Contatos de orientação e atendimento; não são uma contagem direta de agressões. Os canais disponíveis e a possibilidade de pedir ajuda também condicionam o registro.",alcoholType:"Consumo de álcool · 2020",alcoholTitle:"Declarou consumir mais álcool durante a crise sanitária",alcoholText:"Entre quem declarou aumentar o consumo, 50,9% apontou ansiedade, estresse ou depressão associados à COVID-19 como motivo. Em contraste, 74,6% indicou manter ou diminuir o consumo.",alcoholSample:"Pesquisa SENDA · 15.280 respostas validadas",more:"Aumentou",sameLess:"Igual ou menor",alcoholFoot:"Pesquisa realizada em junho de 2020; consumo autodeclarado, não diagnóstico de alcoolismo nem estimativa de prevalência clínica.",incomeLabel:"dos domicílios relataram diminuição da renda",incomeText:"Pesquisa Social COVID-19, primeira rodada. Uma dimensão material da crise que acompanha — sem reduzi-la a ela — a experiência do confinamento.",caution:"Nota de leitura: as três dimensões não compartilham universo, instrumento ou período de observação. Os sintomas PHQ-4 são uma triagem; as ligações ao 1455 refletem o uso de um serviço e sua capacidade de recepção; o dado de álcool vem de respostas autodeclaradas. Nenhum deles deve ser lido como diagnóstico ou prova causal isolada. Na violência de gênero, o confinamento também pode ter dificultado denúncias formais e o acesso à ajuda: menos denúncias não significam necessariamente menos violência.",processKicker:"Desenvolvimento da obra",processTitle:"Do conceito à rua.",processIntro:"O projeto foi desenvolvido entre agosto de 2021 e junho de 2023. O percurso passou por uma etapa de conceituação e outra de criação visual, até se materializar em impressões de grande formato que voltaram a ocupar o espaço público.",stepOneTitle:"Conceituação",stepOneText:"Delimitar perguntas sobre confinamento, saúde mental, violência, consumo, códigos sociais e crise da ordem cotidiana.",stepTwoTitle:"Criação visual",stepTwoText:"Experimentar traços, texturas e variações cromáticas para produzir imagens abertas, ambíguas e sem interpretação imposta.",stepThreeTitle:"Impressão e intervenção",stepThreeText:"Imprimir as composições no formato de 90 × 90 cm e colá-las em ruas onde haviam ocorrido protestos do estallido social.",period:"AGOSTO 2021 — JUNHO 2023 · CONCEITUAÇÃO / CRIAÇÃO / CIRCULAÇÃO URBANA",streetTitle:"Voltar à rua depois do retraimento.",streetText:"A intervenção não foi apenas um suporte de exposição. Ao colar as imagens em lugares marcados pelo protesto social, a obra colocou em relação duas interrupções distintas: a irrupção coletiva que ocupou as ruas e o confinamento que restringiu a circulação. O espaço público reaparece como superfície de memória, conflito e expressão.",sourcesKicker:"Documentação",sourcesTitle:"Fontes e indicadores",sourcesIntro:"Os números são apresentados com sua fonte, ano e instrumento para que possam ser revisados e discutidos. Publicações oficiais e relatórios técnicos são a base documental desta seção.",srcMentalTag:"Saúde mental",srcMental:"Pesquisa Social COVID-19 · Resumo dos resultados (MDSF, 2020) ↗",srcMentalDesc:"Ministério do Desenvolvimento Social e da Família, com PNUD e INE. Indicador PHQ-4 e condições de vida.",srcViolenceTag:"Violência contra as mulheres",srcViolence:"Relatório Anual 2021 · Situação dos direitos humanos no Chile (INDH) ↗",srcViolenceDesc:"Capítulo sobre mulheres e pandemia, pp. 101–106. Dados do Fono 1455 atribuídos ao SernamEG.",srcCallsTag:"Atendimento telefônico",srcCalls:"Melhoria do serviço de atendimento e encaminhamento do Fono 1455 (CSP, U. do Chile / BID / SernamEG, 2023) ↗",srcCallsDesc:"Evolução do Serviço de Atendimento Telefônico e Telemático e média mensal de ligações.",srcAlcoholTag:"Consumo de álcool",srcAlcohol:"Resultados da pesquisa sobre consumo de álcool durante a crise sanitária (MINSAL / SENDA, 8 julho 2020) ↗",srcAlcoholDesc:"Pesquisa realizada entre 6 e 27 de junho de 2020; 34.738 respostas recebidas e 15.280 validadas.",closing:"Nem todas as linhas encontram uma saída. Algumas permanecem abertas para que outras pessoas possam olhar, projetar e traçar novos percursos.",footerProject:"Projeto visual, 2021–2023",backPortfolio:"Voltar ao portfólio ↗"
+}
+};
+let lang=new URLSearchParams(location.search).get("lang")||"es";
+if(!T[lang])lang="es";
+function setLanguage(next){
+lang=next;
+document.documentElement.lang=lang;
+document.querySelectorAll("[data-i18n]").forEach(function(el){const value=T[lang][el.dataset.i18n];if(value!==undefined)el.textContent=value;});
+document.querySelectorAll("[data-lang]").forEach(function(btn){btn.setAttribute("aria-pressed",String(btn.dataset.lang===lang));});
+document.querySelectorAll("[data-back]").forEach(function(a){a.href="../?lang="+lang;});
+history.replaceState(null,"",location.pathname+"?lang="+lang+location.hash);
+const titles={es:"Rizoma · Líneas de fuga en tiempos de encierro · Ángel Muñoz",en:"Rizoma · Lines of flight in a time of confinement · Ángel Muñoz",pt:"Rizoma · Linhas de fuga em tempos de confinamento · Ángel Muñoz"};
+document.title=titles[lang];
+}
+document.querySelectorAll("[data-lang]").forEach(function(btn){btn.addEventListener("click",function(){setLanguage(btn.dataset.lang);});});
+setLanguage(lang);
+})();
+</script>
+</body>
+</html>
